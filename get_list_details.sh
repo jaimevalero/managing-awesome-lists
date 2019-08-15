@@ -12,7 +12,7 @@ source ./.credentials
 
 AWESOME_LIST_URL=${1:-https://github.com/trimstray/the-book-of-secret-knowledge}
 AWESOME_LIST_URL=https://github.com/josephmisiti/awesome-machine-learning
-
+RESULTS=1000
 URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
 OUTPUT_FILE=`echo $URI | tr \/ @  | sed -e 's@$@.md@'`
 
@@ -26,7 +26,7 @@ curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/mast
   awk '{print $1}' |   \
   cut -d\/ -f 4-5  |   \
   tr -d '\)'       |   \
-  head -10       |   \
+  head -${RESULTS}      |   \
   while read line ; do \
     echo "[$line](https://github.com/$line)" \|  \
     `curl --user  "$CREDENTIALS" -s  -L -k "https://api.github.com/repos/$line" |  \
