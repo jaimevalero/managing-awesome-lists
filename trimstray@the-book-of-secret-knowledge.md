@@ -193,3 +193,8 @@
 |[installation/rkhunter](https://github.com/installation/rkhunter) | :star: 30|Rootkit Hunter install script|
 |[x-way/iptables-tracer](https://github.com/x-way/iptables-tracer) | :star: 23|Insert trace-points into the running configuration to observe the path of packets through the iptables chains.|
 |[mechpen/sockdump](https://github.com/mechpen/sockdump) | :star: 22|Dump unix domain socket traffic with bpf|
+|[FiloSottile/mkcert](https://github.com/FiloSottile/mkcert) | :star: 19994|A simple zero-config tool to make locally trusted development certificates with any names you'd like.|
+|[Bash-it/bash-it](https://github.com/Bash-it/bash-it) | :star: 10591|A community Bash framework.|
+|[1N3/Sn1per](https://github.com/1N3/Sn1per) | :star: 2852|Automated pentest framework for offensive security experts|
+|[0xInfection/Awesome-WAF](https://github.com/0xInfection/Awesome-WAF) | :star: 1892|🔥 Everything awesome about web-application firewalls (WAF).|
+|[Ekultek/WhatWaf](https://github.com/Ekultek/WhatWaf) | :star: 1264|Detect and bypass web application firewalls and protection systems|
