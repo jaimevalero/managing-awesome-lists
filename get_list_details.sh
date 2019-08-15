@@ -50,8 +50,6 @@ https://github.com/vinta/awesome-python
 "
 AWESOME_LIST_LISTS="
 https://github.com/avelino/awesome-go
-"
-a="
 https://github.com/sindresorhus/awesome
 https://github.com/ossu/computer-science
 https://github.com/Kickball/awesome-selfhosted
