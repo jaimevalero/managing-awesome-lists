@@ -61,7 +61,11 @@ https://github.com/veggiemonk/awesome-docker
 https://github.com/lukasz-madon/awesome-remote-job
 https://github.com/ChristosChristofidis/awesome-deep-learning
 https://github.com/30-seconds/30-seconds-of-css
-https://github.com/MunGell/awesome-for-beginners"
+https://github.com/MunGell/awesome-for-beginners
+https://github.com/phanan/htaccess
+https://github.com/academic/awesome-datascience
+https://github.com/onurakpolat/awesome-bigdata
+"
 for AWESOME_LIST_URL in ` echo "${AWESOME_LIST_LISTS}"`
 do
   Generate_Single_List ${AWESOME_LIST_URL}
