@@ -7,3 +7,6 @@
 |[jarun/nnn](https://github.com/jarun/nnn) | :fa-star: 6034|:dolphin: The missing terminal file manager for X|
 |[oh-my-fish/oh-my-fish](https://github.com/oh-my-fish/oh-my-fish) | :fa-star: 5206|The Fish Shell Framework|
 |[peikk0/tmux-cssh](https://github.com/peikk0/tmux-cssh) | :fa-star: 49|ClusterSSH with tmux|
+
+
+:fa-thumbs-up:
