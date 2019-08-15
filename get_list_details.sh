@@ -54,6 +54,10 @@ https://github.com/sindresorhus/awesome-nodejs
 https://github.com/prakhar1989/awesome-courses
 https://github.com/tiimgreen/github-cheat-sheet
 https://github.com/dypsilon/frontend-dev-bookmarks
+https://github.com/binhnguyennus/awesome-scalability
+https://github.com/serhii-londar/open-source-mac-os-apps
+https://github.com/alebcay/awesome-shell
+https://github.com/veggiemonk/awesome-docker
 "
 for AWESOME_LIST_URL in ` echo "${AWESOME_LIST_LISTS}"`
 do
