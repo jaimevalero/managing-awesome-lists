@@ -30,4 +30,4 @@ curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/mast
     `curl --user  "$CREDENTIALS" -s  -L -k "https://api.github.com/repos/$line" |  \
     jq -c '[ .stargazers_count  ,"º" ,  .description , "º"] ' | \
     tr -d '\[' | tr -d '\]' | tr -d ',' | tr -d '\"'  |  tr -d '\|' | tr 'º' '|' `; \
-  done |  sort -r -u -t \| -k2 -n | sed -e 's/^/\|/g' | sed -e 's@) | @) | :fa-star\:@g' >> $OUTPUT_FILE
+  done |  sort -r -u -t \| -k2 -n | sed -e 's/^/\|/g' | sed -e 's@) | @) | :fa-star\: @g' >> $OUTPUT_FILE
