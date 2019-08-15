@@ -23,13 +23,14 @@ Generate_Single_List( )
     egrep -E  -o  'https://github.com/.*/.*'      | \
     tr \" \  | \
     sed -e 's@[>#"\) ]?@ @g' | \
-    tr '\#' ' ' |        \
+    tr '\#' ' '      |   \
     awk '{print $1}' |   \
     cut -d\/ -f 4-5  |   \
     tr -d '\)'       |   \
     tr -d ':'        |   \
     sort -du         |   \
-    head -${RESULTS}      |   \
+    grep -v  ${URI}  |   \
+    head -${RESULTS} |   \
     while read line ; do \
       echo "[$line](https://github.com/$line)" \|  \
       `curl --user  "$CREDENTIALS" -s  -L -k "https://api.github.com/repos/$line" |  \
