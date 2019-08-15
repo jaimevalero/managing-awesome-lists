@@ -26,6 +26,7 @@ curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/mast
   awk '{print $1}' |   \
   cut -d\/ -f 4-5  |   \
   tr -d '\)'       |   \
+  head -10       |   \
   while read line ; do \
     echo "[$line](https://github.com/$line)" \|  \
     `curl --user  "$CREDENTIALS" -s  -L -k "https://api.github.com/repos/$line" |  \
