@@ -17,7 +17,7 @@ Generate_Single_List( )
   echo Parsing ${URI} ...
 
   README_NAME=`curl -L --user  "$CREDENTIALS" -s "https:/github.com/${URI}" | grep --colour -o -i /readme.md | head -1 | cut -d\/ -f2  ``
-
+  # Name of the file
   OUTPUT_FILE=`echo $URI | tr \/ @  | sed -e 's@$@.md@'`
 
   echo '| Link  | Stars   | Description'                      > $OUTPUT_FILE
