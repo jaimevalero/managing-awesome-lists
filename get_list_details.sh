@@ -10,13 +10,13 @@
 source ./.credentials
 #CREDENTIALS="replace-for-your-github-user:replace-for-your-github-password"
 
-AWESOME_LIST_URL=https://github.com/trimstray/the-book-of-secret-knowledge
-
+AWESOME_LIST_URL=${1:https://github.com/trimstray/the-book-of-secret-knowledge}
+OUTPUT_FILE=$2
 
 URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
 
-echo '| Link  | Stars | Description'
-echo '| ------------- | ------------- | ------------- |'
+echo '| Link  | Stars | Description'                      > $OUTPUT_FILE
+echo '| ------------- | ------------- | ------------- |' >> $OUTPUT_FILE
 curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/master/README.md" | \
   egrep -E  -o  'https://github.com/.*/.*'      | \
   tr \" \  | \
@@ -29,4 +29,6 @@ curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/mast
     `curl --user  "$CREDENTIALS" -s  -L -k "https://api.github.com/repos/$line" |  \
     jq -c '[ .stargazers_count  ,"º" ,  .description , "º"] ' | \
     tr -d '\[' | tr -d '\]' | tr -d ',' | tr -d '\"' |  tr -d '\|' | tr 'º' '|' `; \
-  done |  sort -r -u -t \| -k2 -n | sed -e 's/^/\|/g'
+  done |  sort -r -u -t \| -k2 -n | sed -e 's/^/\|/g' >> $OUTPUT_FILE
+
+
