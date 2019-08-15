@@ -14,7 +14,6 @@ Generate_Single_List( )
 {
   AWESOME_LIST_URL=$1
   echo Parsing ${AWESOME_LIST_URL} ...
-
   URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
   OUTPUT_FILE=`echo $URI | tr \/ @  | sed -e 's@$@.md@'`
 
@@ -48,6 +47,8 @@ https://github.com/vinta/awesome-python
 "
 AWESOME_LIST_LISTS="
 https://github.com/sindresorhus/awesome
+"
+a="
 https://github.com/avelino/awesome-go
 https://github.com/ossu/computer-science
 https://github.com/Kickball/awesome-selfhosted
