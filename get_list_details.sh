@@ -15,10 +15,14 @@ AWESOME_LIST_URL=https://github.com/trimstray/the-book-of-secret-knowledge
 URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
 curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/master/README.md" | \
   egrep -E  -o  'https://github.com/.*/.*'      | \
-  tr \" \  | sed -e 's@[>#"\) ]?@ @g' | tr '\#' ' ' | awk '{print $1}' | \
+  tr \" \  | \
+  sed -e 's@[>#"\) ]?@ @g' | \
+  tr '\#' ' ' | \
+  awk '{print $1}' | \
+  cut -d\/ -f 4-5  | \
   while read line ; do \
     echo "[$line](https://github.com/$line)" \|  \
-    `curl --user  "$CREDENTIALS" -s  -L -k "https://api.github.com/repos/$line" | \
+    `curl --user  "$CREDENTIALS" -s  -L -k "https://api.github.com/repos/$line" |  \
     jq -c '[ .stargazers_count  ,"º" ,  .description , "º"] ' | \
     tr -d '\[' | tr -d '\]' | tr -d ',' | tr -d '\"' |  tr -d '\|' | tr 'º' '|' `; \
   done |  sort -r -u -t \| -k2 -n | sed -e 's/^/\|/g'
