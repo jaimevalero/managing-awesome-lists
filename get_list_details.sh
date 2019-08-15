@@ -44,6 +44,7 @@ Generate_Single_List( )
 }
 NON_WORKING="
 https://github.com/ossu/computer-science
+https://github.com/MunGell/awesome-for-beginners
 "
 AWESOME_LIST_LISTS="
 https://github.com/trimstray/the-book-of-secret-knowledge
