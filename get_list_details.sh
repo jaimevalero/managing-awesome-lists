@@ -8,7 +8,7 @@
 # Awesome List to extract, in raw
 source ./.credentials
 #CREDENTIALS="replace-for-your-github-user:replace-for-your-github-password"
-RESULTS=5
+RESULTS=50000
 
 Generate_Single_List( )
 {
