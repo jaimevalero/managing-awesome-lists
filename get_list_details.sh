@@ -12,14 +12,18 @@ source ./.credentials
 
 AWESOME_LIST_URL=https://github.com/trimstray/the-book-of-secret-knowledge
 
+
 URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
+
+echo '| Link  | Stars | Description'
+echo '| ------------- | ------------- | ------------- |'
 curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/master/README.md" | \
   egrep -E  -o  'https://github.com/.*/.*'      | \
   tr \" \  | \
   sed -e 's@[>#"\) ]?@ @g' | \
   tr '\#' ' ' | \
   awk '{print $1}' | \
-  cut -d\/ -f 4-5  | \
+  cut -d\/ -f 4-5  | head | \
   while read line ; do \
     echo "[$line](https://github.com/$line)" \|  \
     `curl --user  "$CREDENTIALS" -s  -L -k "https://api.github.com/repos/$line" |  \
