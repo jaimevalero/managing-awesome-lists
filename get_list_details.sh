@@ -12,8 +12,9 @@ RESULTS=50000
 
 Generate_Single_List( )
 {
-
   AWESOME_LIST_URL=$1
+  echo Parsing ${AWESOME_LIST_URL} ...
+
   URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
   OUTPUT_FILE=`echo $URI | tr \/ @  | sed -e 's@$@.md@'`
 
