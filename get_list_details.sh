@@ -6,9 +6,9 @@
 
 # Parameter
 # Awesome List to extract, in raw
-#AWESOME_LIST=https://raw.githubusercontent.com/pditommaso/awesome-pipeline/master/README.md
 source ./.credentials
 #CREDENTIALS="replace-for-your-github-user:replace-for-your-github-password"
+RESULTS=5000
 
 Generate_Single_List( )
 {
@@ -44,8 +44,8 @@ https://github.com/trimstray/the-book-of-secret-knowledge}
 https://github.com/josephmisiti/awesome-machine-learning
 https://github.com/vinta/awesome-python
 "
+
 for AWESOME_LIST_URL in ` echo "${AWESOME_LIST_LISTS}"`
 do
-Generate_Single_List ${AWESOME_LIST_URL}
+  Generate_Single_List ${AWESOME_LIST_URL}
 done
-RESULTS=5000
