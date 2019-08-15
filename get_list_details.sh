@@ -29,7 +29,7 @@ Generate_Single_List( )
     tr -d '\)'       |   \
     tr -d ':'        |   \
     sort -du         |   \
-    grep -v  ${URI}  |   \
+    grep -v ${URI}   |   \
     head -${RESULTS} |   \
     while read line ; do \
       echo "[$line](https://github.com/$line)" \|  \
