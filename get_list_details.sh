@@ -45,7 +45,15 @@ https://github.com/trimstray/the-book-of-secret-knowledge
 https://github.com/josephmisiti/awesome-machine-learning
 https://github.com/vinta/awesome-python
 "
-#AWESOME_LIST_LISTS="https://github.com/sindresorhus/awesome"
+AWESOME_LIST_LISTS="
+https://github.com/sindresorhus/awesome
+https://github.com/avelino/awesome-go
+https://github.com/ossu/computer-science
+https://github.com/Kickball/awesome-selfhosted
+https://github.com/sindresorhus/awesome-nodejs
+https://github.com/prakhar1989/awesome-courses
+https://github.com/tiimgreen/github-cheat-sheet
+"
 for AWESOME_LIST_URL in ` echo "${AWESOME_LIST_LISTS}"`
 do
   Generate_Single_List ${AWESOME_LIST_URL}
