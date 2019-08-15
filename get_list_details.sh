@@ -24,6 +24,7 @@ curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/mast
   sed -e 's@[>#"\) ]?@ @g' | \
   tr '\#' ' ' | \
   awk '{print $1}' |   \
+  tr -d '\)'       |   \
   cut -d\/ -f 4-5  |   \
   while read line ; do \
     echo "[$line](https://github.com/$line)" \|  \
