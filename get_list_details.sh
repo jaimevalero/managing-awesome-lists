@@ -16,11 +16,13 @@ Generate_Single_List( )
   URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
   echo Parsing ${URI} ...
 
+  README_NAME=`curl -L --user  "$CREDENTIALS" -s "https:/github.com/${URI}" | grep --colour -o -i /readme.md | head -1 | cut -d\/ -f2  ``
+
   OUTPUT_FILE=`echo $URI | tr \/ @  | sed -e 's@$@.md@'`
 
   echo '| Link  | Stars   | Description'                      > $OUTPUT_FILE
   echo '| ------------- | ------------- | ------------- |' >> $OUTPUT_FILE
-  curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/master/readme.md" | \
+  curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/master/${README_NAME}" | \
     egrep -E  -o  'https://github.com/.*/.*'      | \
     tr \" \  | \
     sed -e 's@[>#"\) ]?@ @g' | \
