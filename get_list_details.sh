@@ -80,6 +80,7 @@ https://github.com/sdras/awesome-actions
 "
 AWESOME_LIST_LISTS="
 https://github.com/n1trux/awesome-sysadmin
+https://github.com/fasouto/awesome-dataviz
 "
 for AWESOME_LIST_URL in ` echo "${AWESOME_LIST_LISTS}"`
 do
