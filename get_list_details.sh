@@ -14,13 +14,13 @@ Generate_Single_List( )
 {
   AWESOME_LIST_URL=$1
   URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
-  echo Parsing ${URI}...
+  echo Parsing ${URI} ...
 
   OUTPUT_FILE=`echo $URI | tr \/ @  | sed -e 's@$@.md@'`
 
   echo '| Link  | Stars   | Description'                      > $OUTPUT_FILE
   echo '| ------------- | ------------- | ------------- |' >> $OUTPUT_FILE
-  curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/master/README.md" | \
+  curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/master/readme.md" | \
     egrep -E  -o  'https://github.com/.*/.*'      | \
     tr \" \  | \
     sed -e 's@[>#"\) ]?@ @g' | \
