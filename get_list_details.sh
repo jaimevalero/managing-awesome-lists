@@ -53,6 +53,7 @@ https://github.com/Kickball/awesome-selfhosted
 https://github.com/sindresorhus/awesome-nodejs
 https://github.com/prakhar1989/awesome-courses
 https://github.com/tiimgreen/github-cheat-sheet
+https://github.com/dypsilon/frontend-dev-bookmarks
 "
 for AWESOME_LIST_URL in ` echo "${AWESOME_LIST_LISTS}"`
 do
