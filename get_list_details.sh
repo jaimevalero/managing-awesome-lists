@@ -1,3 +1,4 @@
+#! /bin/bash
 # Order an awesome list by number stars.
 #
 # Tis one liner scripts extracts the number of stars from each repo from a given awesome list, and order repos by the number of start
@@ -5,14 +6,16 @@
 
 # Parameter
 # Awesome List to extract, in raw
-AWESOME_LIST=https://raw.githubusercontent.com/pditommaso/awesome-pipeline/master/README.md
+#AWESOME_LIST=https://raw.githubusercontent.com/pditommaso/awesome-pipeline/master/README.md
 source ./.credentials
-#CREDENTIALS="jaimevalero:mysecret"
 #CREDENTIALS="replace-for-your-github-user:replace-for-your-github-password"
 
-curl -L --user  "$CREDENTIALS" -s "$AWESOME_LIST" | \
-  egrep -E  -o  'https://github.com/.*/.*)'      | \
-  cut -d\/ -f 4-5 | cut -d\) -f1 | \
+AWESOME_LIST_URL=https://github.com/trimstray/the-book-of-secret-knowledge
+
+URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
+curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/master/README.md" | \
+  egrep -E  -o  'https://github.com/.*/.*'      | \
+  tr \" \  | sed -e 's@[>#"\) ]?@ @g' | tr '\#' ' ' | awk '{print $1}' | \
   while read line ; do \
     echo "[$line](https://github.com/$line)" \|  \
     `curl --user  "$CREDENTIALS" -s  -L -k "https://api.github.com/repos/$line" | \
