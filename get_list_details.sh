@@ -21,7 +21,7 @@ echo '| ------------- | ------------- | ------------- |' >> $OUTPUT_FILE
 curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/master/README.md" | \
   egrep -E  -o  'https://github.com/.*/.*'      | \
   tr \" \  | \
-  sed -e 's@[>#"\) ]?@ @g' | \
+  sed -e 's@[>#":\) ]?@ @g' | \
   tr '\#' ' ' |        \
   awk '{print $1}' |   \
   cut -d\/ -f 4-5  |   \
