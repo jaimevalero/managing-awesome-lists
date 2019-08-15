@@ -16,7 +16,7 @@ AWESOME_LIST_URL=https://github.com/josephmisiti/awesome-machine-learning
 URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
 OUTPUT_FILE=`echo $URI | tr \/ @  | sed -e 's@$@.md@'`
 
-echo '| Link  | Stars | Description'                      > $OUTPUT_FILE
+echo '| Link  | Stars   | Description'                      > $OUTPUT_FILE
 echo '| ------------- | ------------- | ------------- |' >> $OUTPUT_FILE
 curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/master/README.md" | \
   egrep -E  -o  'https://github.com/.*/.*'      | \
