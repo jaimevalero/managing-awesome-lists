@@ -39,7 +39,9 @@ Generate_Single_List( )
 
 }
 
-AWESOME_LIST_URL=${1:-https://github.com/trimstray/the-book-of-secret-knowledge}
-AWESOME_LIST_URL=https://github.com/josephmisiti/awesome-machine-learning
-AWESOME_LIST_URL=https://github.com/vinta/awesome-python
+AWESOME_LIST_LISTS="
+https://github.com/trimstray/the-book-of-secret-knowledge}
+https://github.com/josephmisiti/awesome-machine-learning
+https://github.com/vinta/awesome-python
+"
 RESULTS=5000
