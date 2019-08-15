@@ -65,6 +65,10 @@ https://github.com/MunGell/awesome-for-beginners
 https://github.com/phanan/htaccess
 https://github.com/academic/awesome-datascience
 https://github.com/onurakpolat/awesome-bigdata
+https://github.com/bharathgs/Awesome-pytorch-list
+https://github.com/davidsonfellipe/awesome-wpo
+https://github.com/thibmaek/awesome-raspberry-pi
+https://github.com/rshipp/awesome-malware-analysis
 "
 for AWESOME_LIST_URL in ` echo "${AWESOME_LIST_LISTS}"`
 do
