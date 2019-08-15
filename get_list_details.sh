@@ -14,7 +14,7 @@ AWESOME_LIST_URL=${1:https://github.com/trimstray/the-book-of-secret-knowledge}
 
 
 URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
-OUTPUT_FILE=`echo $URI | tr \/ @  | sed -e 's@$@.md@''`
+OUTPUT_FILE=`echo $URI | tr \/ @  | sed -e 's@$@.md@'`
 
 echo '| Link  | Stars | Description'                      > $OUTPUT_FILE
 echo '| ------------- | ------------- | ------------- |' >> $OUTPUT_FILE
