@@ -44,4 +44,8 @@ https://github.com/trimstray/the-book-of-secret-knowledge}
 https://github.com/josephmisiti/awesome-machine-learning
 https://github.com/vinta/awesome-python
 "
+for AWESOME_LIST_URL in ` echo "${AWESOME_LIST_LISTS}"`
+do
+echo ::$AWESOME_LIST_URL::
+done
 RESULTS=5000
