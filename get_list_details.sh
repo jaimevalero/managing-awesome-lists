@@ -87,12 +87,7 @@ https://github.com/heynickc/awesome-ddd
 https://github.com/AllThingsSmitty/jquery-tips-everyone-should-know
 https://github.com/sdras/awesome-actions
 https://github.com/n1trux/awesome-sysadmin
-
 "
 AWESOME_LIST_LISTS="
 https://github.com/fasouto/awesome-dataviz
 "
-for AWESOME_LIST_URL in ` echo "${AWESOME_LIST_LISTS}"`
-do
-  Generate_Single_List ${AWESOME_LIST_URL}
-done
