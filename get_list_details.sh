@@ -23,7 +23,8 @@ Generate_Single_List( )
   echo "# List: $URI "   >  $OUTPUT_FILE
   echo "<br>"            >> $OUTPUT_FILE
   echo "## $DESCRIPTION" >> $OUTPUT_FILE
-  echo "<br>"            >> $OUTPUT_FILE
+  echo "<br>---<br>"     >> $OUTPUT_FILE
+  echo ""            >> $OUTPUT_FILE
 
   # Get name of the list - typically readme.md in upper or lowercase
   echo Parsing ${URI} ...
