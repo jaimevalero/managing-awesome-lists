@@ -20,6 +20,7 @@ Generate_Single_List( )
 
   # Create Header
   DESCRIPTION=`curl --user  "$CREDENTIALS" -s  -L -k "https://api.github.com/repos/$line" | jq -r .description`
+  echo URI=$URI= DESCRIPTION=$DESCRIPTION=
   echo "# List: $URI "   >  $OUTPUT_FILE
   echo " "               >> $OUTPUT_FILE
   echo "## $DESCRIPTION" >> $OUTPUT_FILE
