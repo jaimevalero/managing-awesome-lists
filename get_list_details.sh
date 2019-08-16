@@ -8,7 +8,7 @@
 # Awesome List to extract, in raw
 source ./.credentials
 #CREDENTIALS="replace-for-your-github-user:replace-for-your-github-password"
-RESULTS=3
+RESULTS=50000
 
 Generate_Single_List( )
 {
@@ -64,8 +64,6 @@ AWESOME_LIST_LISTS="
 https://github.com/trimstray/the-book-of-secret-knowledge
 https://github.com/josephmisiti/awesome-machine-learning
 https://github.com/vinta/awesome-python
-"
-AWESOME_LIST_LISTS="
 https://github.com/avelino/awesome-go
 https://github.com/sindresorhus/awesome
 https://github.com/Kickball/awesome-selfhosted
