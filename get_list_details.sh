@@ -17,7 +17,7 @@ Generate_Single_List( )
   echo Parsing ${URI} ...
 
   # Create Header
-  DESCRIPTION=`curl --user  "$CREDENTIALS" -s  -L -k "https://api.github.com/repos/$line" ``
+  DESCRIPTION=`curl --user  "$CREDENTIALS" -s  -L -k "https://api.github.com/repos/$line" `
   echo "# List: $URI "   > $OUTPUT_FILE
   echo "<br>"           >> $OUTPUT_FILE
   echo '## $DESCRIPTION' >> $OUTPUT_FILE
@@ -91,3 +91,7 @@ https://github.com/n1trux/awesome-sysadmin
 AWESOME_LIST_LISTS="
 https://github.com/fasouto/awesome-dataviz
 "
+for AWESOME_LIST_URL in ` echo "${AWESOME_LIST_LISTS}"`
+do
+  Generate_Single_List ${AWESOME_LIST_URL}
+done
