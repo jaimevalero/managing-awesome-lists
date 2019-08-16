@@ -16,12 +16,14 @@ Generate_Single_List( )
   URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
   echo Parsing ${URI} ...
 
+  # Create Header
   DESCRIPTION=`curl --user  "$CREDENTIALS" -s  -L -k "https://api.github.com/repos/$line" ``
   echo "# List: $URI "   > $OUTPUT_FILE
   echo "<br>"           >> $OUTPUT_FILE
   echo '## $DESCRIPTION' >> $OUTPUT_FILE
   echo "<br>"           >> $OUTPUT_FILE
 
+  # Get name of the list - typically readme.md in upper or lowercase
   README_NAME=`curl -L --user  "$CREDENTIALS" -s "https:/github.com/${URI}" | grep --colour -o -i /readme.md | head -1 | cut -d\/ -f2  `
   # Name of the file
   OUTPUT_FILE=`echo $URI | tr \/ @  | sed -e 's@$@.md@'`
@@ -84,9 +86,10 @@ https://github.com/agarrharr/awesome-cli-apps
 https://github.com/heynickc/awesome-ddd
 https://github.com/AllThingsSmitty/jquery-tips-everyone-should-know
 https://github.com/sdras/awesome-actions
+https://github.com/n1trux/awesome-sysadmin
+
 "
 AWESOME_LIST_LISTS="
-https://github.com/n1trux/awesome-sysadmin
 https://github.com/fasouto/awesome-dataviz
 "
 for AWESOME_LIST_URL in ` echo "${AWESOME_LIST_LISTS}"`
