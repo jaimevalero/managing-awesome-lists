@@ -20,10 +20,10 @@ Generate_Single_List( )
 
   # Create Header
   DESCRIPTION=`curl --user  "$CREDENTIALS" -s  -L -k "https://api.github.com/repos/$line" `
-  echo "# List: $URI "   > $OUTPUT_FILE
-  echo "<br>"           >> $OUTPUT_FILE
+  echo "# List: $URI "   >  $OUTPUT_FILE
+  echo "<br>"            >> $OUTPUT_FILE
   echo '## $DESCRIPTION' >> $OUTPUT_FILE
-  echo "<br>"           >> $OUTPUT_FILE
+  echo "<br>"            >> $OUTPUT_FILE
 
   # Get name of the list - typically readme.md in upper or lowercase
   echo Parsing ${URI} ...
@@ -52,6 +52,7 @@ Generate_Single_List( )
     done |  sort -r -u -t \| -k2 -n | sed -e 's/^/\|/g' | sed -e 's@) | @) | :star: @g' >> $OUTPUT_FILE
 
 }
+
 NON_WORKING="
 https://github.com/ossu/computer-science
 https://github.com/MunGell/awesome-for-beginners
