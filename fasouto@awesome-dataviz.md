@@ -1,6 +1,6 @@
 # List: fasouto/awesome-dataviz 
  
-## null
+## :chart_with_upwards_trend:  A curated list of awesome data visualization libraries and resources.
  
 ---
  
