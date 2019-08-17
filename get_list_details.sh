@@ -6,35 +6,73 @@
 
 # Parameter
 # Awesome List to extract, in raw
+
+LOG_FILE=/var/log/`basename $0`.log
+#######################################################
+#
+# Funcion MostrarLog
+#
+#
+#######################################################
+Log( )
+{
+#echo "[`basename $0`] [`date +'%Y_%m_%d %H:%M:%S'`] [$$] [${FUNCNAME[1]}] $@" | /usr/bin/tee -a $LOG_FILE
+a=0
+}
+
+
 source ./.credentials
 #CREDENTIALS="replace-for-your-github-user:replace-for-your-github-password"
-RESULTS=50000
+RESULTS=3
 
-Generate_Single_List( )
+Create_Info_Render( )
 {
-  AWESOME_LIST_URL=$1
-  URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
+  URI=$1
+  README_LIST_FILE=`echo ${URI}| tr \/ @  `
+#Log URI=$URI= README_LIST_FILE=$README_LIST_FILE=
+echo ' { "repos" : [ '
+while read REPO
+do
+  MY_FILE=`echo $REPO | tr \/ @`
+  cat .cache/api-$MY_FILE.json | jq -c .
+  echo ","
+done < .cache/readme-${README_LIST_FILE}.txt
+echo "]"
+echo ' , "list" : '
+MY_AWESOME_LIST=`echo $URI | tr \/ @`
+cat .cache/api-$MY_AWESOME_LIST.json | jq -c .
+echo ' } '
+}
+Create_Info_Render_Wrapper( )
+{
+  URI=$1
+  README_LIST_FILE=`echo ${URI}| tr \/ @  `
+  Log URI=$URI= README_LIST_FILE=$README_LIST_FILE=
+  Create_Info_Render $URI | tr '\n' ' '  | sed -e 's@, ]  ,@],@g'
+}
 
-  # Name of the file
-  OUTPUT_FILE=`echo $URI | tr \/ @  | sed -e 's@$@.md@'`
+Download_Api_Repo( )
+{
+URI="$1"
+# Name of the file
+OUTPUT_FILE=`echo $URI | tr \/ @  `
+Log Download_Api_Repo $URI $OUTPUT_FILE
 
-  # Create Header
-  DESCRIPTION=`curl --user  "$CREDENTIALS" -s  -L -k "https://api.github.com/repos/$URI" | jq -r .description`
-  echo URI=$URI= DESCRIPTION=$DESCRIPTION=
-  echo "# List: $URI "   >  $OUTPUT_FILE
-  echo " "               >> $OUTPUT_FILE
-  echo "## $DESCRIPTION" >> $OUTPUT_FILE
-  echo " "               >> $OUTPUT_FILE
-  echo "---"             >> $OUTPUT_FILE
-  echo " "               >> $OUTPUT_FILE
+[[  ! -f ".cache/api-${OUTPUT_FILE}.json" ]]  && curl --user  "$CREDENTIALS" -s  -L -k "https://api.github.com/repos/$URI" > ./.cache/api-${OUTPUT_FILE}.json
 
-  # Get name of the list - typically readme.md in upper or lowercase
-  echo Parsing ${URI} ...
+}
+
+Download_Readme( )
+{
+  Log Download_Readme ${URI} ...
+  URI="$1"
+  if [[ ! -f  .cache/readme-${OUTPUT_FILE}.txt ]]
+  then
+  OUTPUT_FILE=`echo $URI | tr \/ @  `
+
   README_NAME=`curl -L --user  "$CREDENTIALS" -s "https:/github.com/${URI}" | grep --colour -o -i /readme.md | head -1 | cut -d\/ -f2  `
+  Log Download_Readme ${README_NAME} ...
 
-
-  echo '| Link  | Stars   | Description'                   >> $OUTPUT_FILE
-  echo '| ------------- | ------------- | ------------- |' >> $OUTPUT_FILE
   curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/master/${README_NAME}" | \
     egrep -E  -o  'https://github.com/.*/.*'      | \
     tr \" \  | \
@@ -44,15 +82,28 @@ Generate_Single_List( )
     cut -d\/ -f 4-5  |   \
     tr -d '\)'       |   \
     tr -d ':'        |   \
-    sort -du         |   \
-    grep -v ${URI}   |   \
     head -${RESULTS} |   \
-    while read line ; do \
-      echo "[$line](https://github.com/$line)" \|  \
-      `curl --user  "$CREDENTIALS" -s  -L -k "https://api.github.com/repos/$line" |  \
-      jq -c '[ .stargazers_count  ,"º" ,  .description , "º"] ' | \
-      tr -d '\[' | tr -d '\]' | tr -d ',' | tr -d '\"'  |  tr -d '\|' | tr 'º' '|' `; \
-    done |  sort -r -u -t \| -k2 -n | sed -e 's/^/\|/g' | sed -e 's@) | @) | :star: @g' >> $OUTPUT_FILE
+    sort -du  > .cache/readme-${OUTPUT_FILE}.txt
+  fi
+}
+Generate_Single_List( )
+{
+  AWESOME_LIST_URL=$1
+  URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
+  Download_Api_Repo "$URI"
+  Log URI=$URI
+
+  Log Parsing ${URI} ...
+
+  # Get name of the list - typically readme.md in upper or lowercase
+  Download_Readme ${URI}
+
+   README_LIST_FILE=`echo ${URI}| tr \/ @  `
+   while read REPO
+   do
+     Download_Api_Repo $REPO
+   done < .cache/readme-${README_LIST_FILE}.txt
+
 
 }
 
@@ -93,7 +144,15 @@ https://github.com/sdras/awesome-actions
 https://github.com/n1trux/awesome-sysadmin
 https://github.com/fasouto/awesome-dataviz
 "
+#AWESOME_LIST_LISTS="
+#https://github.com/heynickc/awesome-ddd
+#"
+
+
 for AWESOME_LIST_URL in ` echo "${AWESOME_LIST_LISTS}"`
 do
   Generate_Single_List ${AWESOME_LIST_URL}
 done
+#Create_Info_Render_Wrapper heynickc@awesome-ddd > /tmp/lista.json
+
+#./generate_render_template.py  --template template-list.j2 --data /tmp/lista.json
