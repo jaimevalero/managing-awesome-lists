@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Awesome List </title>
+		{% include 'layout/head/meta.html' %}
+		{% include 'layout/head/scripts.html' %}
+	</head>
+
+	<body>
+    <nav class="navbar navbar-inverse" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;">
+			{% with  %}
+				{% include "layout/navbar.html" %}
+			{% endwith %}
+		</nav>
+
+    <div class="container-fluid" >
+			<div class="row">
+				<!-- Main alert pop-ups -->
+        <div class="col-xl-12 mb-4">
+
+
+					{% block tabla_resultados %}
+					{% endblock %}
+				</div>
+
+
+			</div>
+			<!-- /.row -->
+
+		</div>
+		<!-- /.container -->
+
+		{% include "layout/footer.html" %}
+
+	</body>
+
+</html>

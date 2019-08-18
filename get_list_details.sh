@@ -7,7 +7,7 @@
 # Parameter
 # Awesome List to extract, in raw
 
-LOG_FILE=/var/log/`basename $0`.log
+LOG_FILE=/var/log/awesome.log
 #######################################################
 #
 # Funcion MostrarLog
@@ -16,27 +16,53 @@ LOG_FILE=/var/log/`basename $0`.log
 #######################################################
 Log( )
 {
-#echo "[`basename $0`] [`date +'%Y_%m_%d %H:%M:%S'`] [$$] [${FUNCNAME[1]}] $@" | /usr/bin/tee -a $LOG_FILE
-a=0
+echo "[`basename $0`] [`date +'%Y_%m_%d %H:%M:%S'`] [$$] [${FUNCNAME[1]}] $@" >>  $LOG_FILE
 }
-
+RESULTS=5000
 
 source ./.credentials
 #CREDENTIALS="replace-for-your-github-user:replace-for-your-github-password"
-RESULTS=3
+
+Generate_Data_Readme_Doc( )
+{
+  #LISTS_GENERATED=`find .cache/ | grep readme- | cut -d- -f2-10 | sed -e 's@\.txt@@g' | sort -du `
+  LIST_FILELIST=`find .cache/ | grep readme- | sed -e 's@/readme-@/api-@g' -e 's@.txt$@.json@g'| sort -du `
+
+  echo ' { "repos" : [ '
+  for LIST_FILE  in `echo ${LIST_FILELIST}`
+  do
+    cat ${LIST_FILE} | jq -c .
+    echo ","
+  done < ${CACHE_README_FILE}
+  echo "]"
+  echo " } "
+
+}
+
+Generate_Data_Readme_Doc_Wrapper( )
+{
+
+  Generate_Data_Readme_Doc| tr '\n' ' '  | sed -e 's@, ]  ,@],@g'
+}
+
 
 Create_Info_Render( )
 {
-  URI=$1
-  README_LIST_FILE=`echo ${URI}| tr \/ @  `
-#Log URI=$URI= README_LIST_FILE=$README_LIST_FILE=
+  URI="$1"
+
+  OUTPUT_FILE=`echo $URI | tr \/ @  `
+  CACHE_README_FILE=".cache/readme-${OUTPUT_FILE}.txt"
+
+ Log "URI=$URI= CACHE_README_FILE=$CACHE_README_FILE="
 echo ' { "repos" : [ '
 while read REPO
 do
   MY_FILE=`echo $REPO | tr \/ @`
+  [ ` grep '"message": "Not Found",' .cache/api-$MY_FILE.json | wc -l ` -ge 1 ] && Log "Warning : Repo Vacio $REPO" && continue
+
   cat .cache/api-$MY_FILE.json | jq -c .
   echo ","
-done < .cache/readme-${README_LIST_FILE}.txt
+done < ${CACHE_README_FILE}
 echo "]"
 echo ' , "list" : '
 MY_AWESOME_LIST=`echo $URI | tr \/ @`
@@ -45,10 +71,9 @@ echo ' } '
 }
 Create_Info_Render_Wrapper( )
 {
-  URI=$1
-  README_LIST_FILE=`echo ${URI}| tr \/ @  `
-  Log URI=$URI= README_LIST_FILE=$README_LIST_FILE=
-  Create_Info_Render $URI | tr '\n' ' '  | sed -e 's@, ]  ,@],@g'
+  URI="$1"
+  Log URI=$URI=
+  Create_Info_Render "$URI" | tr '\n' ' '  | sed -e 's@, ]  ,@],@g'
 }
 
 Download_Api_Repo( )
@@ -56,19 +81,24 @@ Download_Api_Repo( )
 URI="$1"
 # Name of the file
 OUTPUT_FILE=`echo $URI | tr \/ @  `
-Log Download_Api_Repo $URI $OUTPUT_FILE
+#Log Download_Api_Repo $URI $OUTPUT_FILE
 
-[[  ! -f ".cache/api-${OUTPUT_FILE}.json" ]]  && curl --user  "$CREDENTIALS" -s  -L -k "https://api.github.com/repos/$URI" > ./.cache/api-${OUTPUT_FILE}.json
+[[  ! -f ".cache/api-${OUTPUT_FILE}.json" ]]  && curl --user  "$CREDENTIALS"  -H "Accept: application/vnd.github.mercy-preview+json"  -s  -L -k "https://api.github.com/repos/$URI" > ./.cache/api-${OUTPUT_FILE}.json
 
 }
 
 Download_Readme( )
 {
-  Log Download_Readme ${URI} ...
   URI="$1"
-  if [[ ! -f  .cache/readme-${OUTPUT_FILE}.txt ]]
-  then
   OUTPUT_FILE=`echo $URI | tr \/ @  `
+  CACHE_README_FILE=.cache/readme-${OUTPUT_FILE}.txt
+
+  Log URI=${URI}=
+  Log OUTPUT_FILE=${OUTPUT_FILE}=
+  Log CACHE_README_FILE=${CACHE_README_FILE}=
+
+  if [[ ! -f ${CACHE_README_FILE} ]]
+  then
 
   README_NAME=`curl -L --user  "$CREDENTIALS" -s "https:/github.com/${URI}" | grep --colour -o -i /readme.md | head -1 | cut -d\/ -f2  `
   Log Download_Readme ${README_NAME} ...
@@ -83,10 +113,12 @@ Download_Readme( )
     tr -d '\)'       |   \
     tr -d ':'        |   \
     head -${RESULTS} |   \
-    sort -du  > .cache/readme-${OUTPUT_FILE}.txt
+    sort -du  > ${CACHE_README_FILE}
   fi
+  Log ` ls -latr ${CACHE_README_FILE} `
 }
-Generate_Single_List( )
+
+Generate_Contents_Single_List( )
 {
   AWESOME_LIST_URL=$1
   URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
@@ -98,20 +130,45 @@ Generate_Single_List( )
   # Get name of the list - typically readme.md in upper or lowercase
   Download_Readme ${URI}
 
-   README_LIST_FILE=`echo ${URI}| tr \/ @  `
+   OUTPUT_FILE=`echo $URI | tr \/ @  `
+   CACHE_README_FILE=.cache/readme-${OUTPUT_FILE}.txt
    while read REPO
    do
      Download_Api_Repo $REPO
-   done < .cache/readme-${README_LIST_FILE}.txt
+   done < ${CACHE_README_FILE}
 
 
 }
 
+Generate_Render_Readme( )
+{
+Update_Readme_Doc > /tmp/readme.json
+./generate_render_template.py  -t template-readme.html --data /tmp/readme.json >> README.md
+
+}
+Generate_Render_Single_List( )
+{
+AWESOME_LIST_URL="$1"
+MY_URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
+FILE_HTML=`echo ${MY_URI} | tr \/ @  `
+Log AWESOME_LIST_URL=$AWESOME_LIST_URL= FILE_HTML=$FILE_HTML=
+
+Generate_Contents_Single_List ${AWESOME_LIST_URL}
+Create_Info_Render_Wrapper "${MY_URI}" > /tmp/lista.json
+
+ if [ `cat /tmp/lista.json | grep ' "repos" : \[  \]' | wc -l ` -eq 1 ]
+ then
+  Log  ERRROR . Repos Vacios ${URI}
+else
+ ./generate_render_template.py  -t template-list.html --data /tmp/lista.json > var/awl-$FILE_HTML.html
+fi
+}
 NON_WORKING="
 https://github.com/ossu/computer-science
 https://github.com/MunGell/awesome-for-beginners
 "
 AWESOME_LIST_LISTS="
+https://github.com/k4m4/terminals-are-sexy
 https://github.com/trimstray/the-book-of-secret-knowledge
 https://github.com/josephmisiti/awesome-machine-learning
 https://github.com/vinta/awesome-python
@@ -148,11 +205,14 @@ https://github.com/fasouto/awesome-dataviz
 #https://github.com/heynickc/awesome-ddd
 #"
 
-
+Log Inicio
 for AWESOME_LIST_URL in ` echo "${AWESOME_LIST_LISTS}"`
 do
-  Generate_Single_List ${AWESOME_LIST_URL}
+  Generate_Render_Single_List ${AWESOME_LIST_URL}
 done
-#Create_Info_Render_Wrapper heynickc@awesome-ddd > /tmp/lista.json
 
-#./generate_render_template.py  --template template-list.j2 --data /tmp/lista.json
+#AWESOME_LIST_URL="https://github.com/heynickc/awesome-ddd"
+#URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
+#Create_Info_Render_Wrapper "${URI}"
+
+Log Fin
