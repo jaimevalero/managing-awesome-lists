@@ -38,8 +38,7 @@ Generate_Partial_Doc( )
 }
 Generate_Json_Data( )
 {
-
-  Generate_Data_Readme_Doc| tr '\n' ' '  | sed -e 's@, ]  }^@] }@g'
+  Generate_Data_Readme_Doc| tr '\n' ' ' | sed -e  's@, ]@]@g'
 }
 
 Document_Readme( )
@@ -66,4 +65,4 @@ Main( )
 }
 
 Main
-git add . ; git commit -m "Templatin'" ;  git push origin develop
+#git add . ; git commit -m "Templatin'" ;  git push origin develop
