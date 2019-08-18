@@ -7,7 +7,7 @@ Discover new and amazing resources in the awesome lists!
 This repo format the awesome list by number of stars, add tags and filters.
 
 
-Lists : 39
+Lists : 40
 
 
 | List     | Description | Stars
@@ -44,6 +44,7 @@ Lists : 39
 |[onurakpolat/awesome-bigdata](http://htmlpreview.github.com/?https://github.com/jaimevalero/managing-awesome-lists/blob/master/var/awl-onurakpolat%40awesome-bigdata.html)| A curated list of awesome big data frameworks, ressources and other awesomeness. | 7804 |
 |[bharathgs/Awesome-pytorch-list](http://htmlpreview.github.com/?https://github.com/jaimevalero/managing-awesome-lists/blob/master/var/awl-bharathgs%40Awesome-pytorch-list.html)| A comprehensive list of pytorch related content on github,such as different models,implementations,helper libraries,tutorials etc. | 7680 |
 |[davidsonfellipe/awesome-wpo](http://htmlpreview.github.com/?https://github.com/jaimevalero/managing-awesome-lists/blob/master/var/awl-davidsonfellipe%40awesome-wpo.html)| :pencil: A curated list of Web Performance Optimization. Everyone can contribute here! | 6640 |
+|[unixorn/awesome-zsh-plugins](http://htmlpreview.github.com/?https://github.com/jaimevalero/managing-awesome-lists/blob/master/var/awl-unixorn%40awesome-zsh-plugins.html)| A collection of ZSH frameworks, plugins & themes inspired by the various awesome list collections out there. | 6506 |
 |[thibmaek/awesome-raspberry-pi](http://htmlpreview.github.com/?https://github.com/jaimevalero/managing-awesome-lists/blob/master/var/awl-thibmaek%40awesome-raspberry-pi.html)| 📝 A curated list of awesome Raspberry Pi tools, projects, images and resources | 5725 |
 |[rshipp/awesome-malware-analysis](http://htmlpreview.github.com/?https://github.com/jaimevalero/managing-awesome-lists/blob/master/var/awl-rshipp%40awesome-malware-analysis.html)| A curated list of awesome malware analysis tools and resources. | 5092 |
 |[heynickc/awesome-ddd](http://htmlpreview.github.com/?https://github.com/jaimevalero/managing-awesome-lists/blob/master/var/awl-heynickc%40awesome-ddd.html)| A curated list of Domain-Driven Design (DDD), Command Query Responsibility Segregation (CQRS), Event Sourcing, and Event Storming resources | 4514 |
