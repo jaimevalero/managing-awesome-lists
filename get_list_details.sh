@@ -23,27 +23,6 @@ RESULTS=5000
 source ./.credentials
 #CREDENTIALS="replace-for-your-github-user:replace-for-your-github-password"
 
-Generate_Data_Readme_Doc( )
-{
-  #LISTS_GENERATED=`find .cache/ | grep readme- | cut -d- -f2-10 | sed -e 's@\.txt@@g' | sort -du `
-  LIST_FILELIST=`find .cache/ | grep readme- | sed -e 's@/readme-@/api-@g' -e 's@.txt$@.json@g'| sort -du `
-
-  echo ' { "repos" : [ '
-  for LIST_FILE  in `echo ${LIST_FILELIST}`
-  do
-    cat ${LIST_FILE} | jq -c .
-    echo ","
-  done < ${CACHE_README_FILE}
-  echo "]"
-  echo " } "
-
-}
-
-Generate_Data_Readme_Doc_Wrapper( )
-{
-
-  Generate_Data_Readme_Doc| tr '\n' ' '  | sed -e 's@, ]  ,@],@g'
-}
 
 
 Create_Info_Render( )
@@ -200,6 +179,13 @@ https://github.com/AllThingsSmitty/jquery-tips-everyone-should-know
 https://github.com/sdras/awesome-actions
 https://github.com/n1trux/awesome-sysadmin
 https://github.com/fasouto/awesome-dataviz
+https://github.com/enaqx/awesome-react
+https://github.com/jaywcjlove/awesome-mac
+https://github.com/ripienaar/free-for-dev
+https://github.com/ziadoz/awesome-php
+https://github.com/akullpp/awesome-java
+https://github.com/sorrycc/awesome-javascript
+https://github.com/viatsko/awesome-vscode
 "
 #AWESOME_LIST_LISTS="
 #https://github.com/heynickc/awesome-ddd
@@ -211,8 +197,6 @@ do
   Generate_Render_Single_List ${AWESOME_LIST_URL}
 done
 
-#AWESOME_LIST_URL="https://github.com/heynickc/awesome-ddd"
-#URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
-#Create_Info_Render_Wrapper "${URI}"
 
 Log Fin
+./update-documentation.sh
