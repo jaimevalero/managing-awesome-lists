@@ -1,4 +1,3 @@
-Begin automatic doc
 
 <h3 > Awesome List Viewer </h3>
 
@@ -9,4 +8,3 @@ Lists : {{data['repos']|length}}
 {% for repo in data['repos']|sort(attribute='stargazers_count',reverse=true)  -%}|[{{repo.full_name}}]("https://github.com/jaimevalero/var/{{repo.full_name| replace("/","@")}}.html")| {{repo.description}}| {{repo.stargazers_count}}|{%- endfor %}
 
 ----
-End automatic doc

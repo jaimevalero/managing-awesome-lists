@@ -20,7 +20,6 @@ README_PARTIAL_DOC=/tmp/kk-readme.md
 
 Generate_Data_Readme_Doc( )
 {
-  #LISTS_GENERATED=`find .cache/ | grep readme- | cut -d- -f2-10 | sed -e 's@\.txt@@g' | sort -du `
   LIST_FILELIST=`find .cache/ | grep readme- | sed -e 's@/readme-@/api-@g' -e 's@.txt$@.json@g'| sort -du `
 
   echo ' { "repos" : [ '
@@ -39,22 +38,15 @@ Generate_Partial_Doc( )
 }
 Generate_Json_Data( )
 {
-  
-  Generate_Data_Readme_Doc| tr '\n' ' '  | sed -e 's@, ]  }@] }@g'
+
+  Generate_Data_Readme_Doc| tr '\n' ' '  | sed -e 's@, ]  }^@] }@g'
 }
 
 Document_Readme( )
 {
 
-
     README_FILE=README.md
-    if [ ` grep 'Begin automatic doc' $README_FILE | wc -l ` -ge 1 ]
-    then
-      cat $README_FILE  | sed -n '1,/Begin automatic doc/p;/End automatic doc/,$p' | grep -v 'Begin automatic doc' | grep -v 'End automatic doc'  > /tmp/kk-repl
-      cat /tmp/kk-repl  > $README_FILE
-    fi
-    echo "" >> $README_FILE
-    cat $README_PARTIAL_DOC >> $README_FILE
+    cat $README_PARTIAL_DOC > $README_FILE
 
 }
 
