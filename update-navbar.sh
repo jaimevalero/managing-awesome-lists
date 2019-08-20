@@ -27,6 +27,14 @@ Main( )
   # First   : Generate json data
   # Then    : Generate partial doc
   # Finally : Write results to repo file
+  AWESOME_LIST_LISTS=`cat lists.txt`
+
+
+  CACHE_README_FILE=.cache/readme-${OUTPUT_FILE}.txt
+  while read REPO
+  do
+    Download_Api_Repo $REPO
+  done < ${CACHE_README_FILE}
 
 }
 
