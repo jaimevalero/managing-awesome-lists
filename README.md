@@ -1,6 +1,6 @@
 
 <h3>[Awesome List Viewer](https://jaimevalero.github.io/managing-awesome-lists)</h3>
-
+[Awesome List Viewer](https://jaimevalero.github.io/managing-awesome-lists)
 Discover new and amazing resources in the awesome lists!
 
 This repo format the awesome list by number of stars, add tags and filters.
