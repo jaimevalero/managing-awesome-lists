@@ -1,5 +1,5 @@
 
-<h3 >[Awesome List Viewer](https://jaimevalero.github.io/managing-awesome-lists/) </h3>
+<h3>[Awesome List Viewer](https://jaimevalero.github.io/managing-awesome-lists)</h3>
 
 Discover new and amazing resources in the awesome lists!
 
