@@ -187,6 +187,7 @@ https://github.com/akullpp/awesome-java
 https://github.com/sorrycc/awesome-javascript
 https://github.com/viatsko/awesome-vscode
 https://github.com/unixorn/awesome-zsh-plugins
+https://github.com/cugu/awesome-forensics
 "
 #AWESOME_LIST_LISTS="
 #https://github.com/heynickc/awesome-ddd
