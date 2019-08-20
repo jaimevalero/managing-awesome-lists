@@ -7,7 +7,7 @@ Discover new and amazing resources in the awesome lists!
 This repo format the awesome list by number of stars, add tags and filters.
 
 
-Lists : 40
+Lists : 41
 
 
 | List     | Description | Stars
@@ -52,6 +52,7 @@ Lists : 40
 |[AllThingsSmitty/jquery-tips-everyone-should-know](http://htmlpreview.github.com/?https://github.com/jaimevalero/managing-awesome-lists/blob/master/var/awl-AllThingsSmitty%40jquery-tips-everyone-should-know.html)| A collection of tips to help up your jQuery game | 4109 |
 |[sdras/awesome-actions](http://htmlpreview.github.com/?https://github.com/jaimevalero/managing-awesome-lists/blob/master/var/awl-sdras%40awesome-actions.html)| A curated list of awesome actions to use on GitHub | 3761 |
 |[fasouto/awesome-dataviz](http://htmlpreview.github.com/?https://github.com/jaimevalero/managing-awesome-lists/blob/master/var/awl-fasouto%40awesome-dataviz.html)| :chart_with_upwards_trend:  A curated list of awesome data visualization libraries and resources. | 2203 |
+|[cugu/awesome-forensics](http://htmlpreview.github.com/?https://github.com/jaimevalero/managing-awesome-lists/blob/master/var/awl-cugu%40awesome-forensics.html)| A curated list of awesome forensic analysis tools and resources | 764 |
 
 
 ----
