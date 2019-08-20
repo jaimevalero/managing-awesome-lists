@@ -6,13 +6,13 @@ Discover new and amazing resources in the awesome lists!
 
 This repo format the awesome list by number of stars, add tags and filters.
 
-
+{% set BASE_URL= "http://htmlpreview.github.com/?https://github.com/jaimevalero/managing-awesome-lists/blob/master/var" %}
 Lists : {{data['repos']|length}}
 
 
 | List     | Description | Stars
 | ------------- | ------------- | ------------- |
-{% for repo in data['repos']|sort(attribute='stargazers_count',reverse=true)  %}|[{{repo.full_name}}](http://htmlpreview.github.com/?https://github.com/jaimevalero/managing-awesome-lists/blob/master/var/awl-{{repo.full_name|replace("/","%40")}}.html)| {{repo.description}} | {{repo.stargazers_count}} |
+{% for repo in data['repos']|sort(attribute='stargazers_count',reverse=true)  %}|[{{repo.full_name}}]({{BASE_URL}}/awl-{{repo.full_name|replace("/","%40")}}.html)| {{repo.description}} | {{repo.stargazers_count}} |
 {% endfor %}
 
 ----
