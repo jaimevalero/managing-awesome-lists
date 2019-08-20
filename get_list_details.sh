@@ -149,9 +149,6 @@ https://github.com/MunGell/awesome-for-beginners
 AWESOME_LIST_LISTS=`cat lists.txt`
 
 
-#AWESOME_LIST_LISTS="
-#https://github.com/heynickc/awesome-ddd
-#"
 
 Log Inicio
 for AWESOME_LIST_URL in ` echo "${AWESOME_LIST_LISTS}"`
