@@ -42,7 +42,7 @@ Generate_Index_Json_Data( )
   done
   grep full_name  ${INDEX_JSON_DATA}.2 | wc -l
 
-  cat ${INDEX_JSON_DATA}.2  | jq -c .  |   jq   --slurp '.'  | jq -c .  | sed -e 's@^@ { "list" :  { "full_name" : "This list contains every mentioned repo in every awesome list" , "description" : "This list contains all the repos mentioned on all the awesome list."} ,  "repos" :  @g'  | sed -e 's@$@ }@g'     > ${INDEX_JSON_DATA}
+  cat ${INDEX_JSON_DATA}.2  | jq -c .  |   jq   --slurp '.'  | jq -c .  | sed -e 's@^@ { "list" :  { "full_name" : "This list contains every mentioned repo in every awesome list." , "description" : "This list contains all the repos mentioned on all the awesome list."} ,  "repos" :  @g'  | sed -e 's@$@ }@g'     > ${INDEX_JSON_DATA}
 
 
   rm -f  ${INDEX_JSON_DATA}.2
@@ -107,8 +107,8 @@ Main( )
   Generate_Partial_Doc      > ${README_PARTIAL_DOC}
   Document_Readme
 
-  Generate_Index_Json_Data
+  #Generate_Index_Json_Data
 }
 
 Main
-#git add . ; git commit -m "Templatin'" ;  git push origin master
+git add . ; git commit -m "Templatin'" ;  git push origin master
