@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block tabla_resultados %}
+
+
+
+		<h2 >List <a href="https://github.com/{{data['list'].full_name}}">{{data['list'].full_name}}</a> </h2>
+    <h3 >{{data['list'].description}} </h3>
+    {% set STARS_LOWER_THRESOLD = 2000 %}
+    We only display those repos starred more than {{STARS_LOWER_THRESOLD}} times.
+
+    {% set count = [1] %}
+    {% for repo in data['repos']  %}
+      {% if repo.created_at is not none %}
+        {% if repo.stargazers_count > STARS_LOWER_THRESOLD %}
+        {% if count.append(count.pop() + 1) %}{% endif %} {# increment count by 1 #}
+        {% endif	%}
+      {% endif	%}
+    {% endfor	%}
+Elements: {{count}}
+ <br>
+    <div class="table-responsive">
+      <table id="tabla"     class="table table-hover table-condensed table-striped">
+
+        <thead>
+          <tr>
+            <th>Repo</th>
+            <th width="15%">Stars</th>
+            <th>Description</th>
+            <th width="15%">Last Updated</th>
+            <th>Language</th>
+            <th>Tags</th>
+
+
+
+          </tr>
+        </thead>
+        <tbody>
+          {% for repo in data['repos']  %}
+            {% if repo.created_at is not none %}
+              {% if repo.stargazers_count > STARS_LOWER_THRESOLD %}
+                <tr>
+                  <td><a href="https://github.com/{{repo.full_name}}">{{repo.full_name}}</a></td>
+                  <td>{{repo.stargazers_count}}</td>
+                  <td>{{repo.description}}</td>
+                  <td>{{repo.created_at[0:10]}}</td>
+                  <td>{{repo.language}}</td>
+                  <td>
+                    {% if repo.topics is not none %}
+                    {%for tag in repo.topics %}
+                      <font class = "topic-tag">{{tag}}</font>
+                    {% endfor %}
+                    {%endif %}
+                </tr>
+              {% endif	%}
+            {% endif	%}
+          {% endfor	%}
+        </tbody>
+      </table>
+		</div>
+
+
+
+{% endblock %}
