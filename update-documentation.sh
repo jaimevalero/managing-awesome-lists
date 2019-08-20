@@ -11,7 +11,7 @@ LOG_FILE=/var/log/awesome.log
 #######################################################
 Log( )
 {
-echo "[`basename $0`] [`date +'%Y_%m_%d %H:%M:%S'`] [$$] [${FUNCNAME[1]}] $@" >>  $LOG_FILE
+  echo "[`basename $0`] [`date +'%Y_%m_%d %H:%M:%S'`] [$$] [${FUNCNAME[1]}] $@" >>  $LOG_FILE
 }
 README_JSON_DATA=/tmp/kk-readme.json
 INDEX_JSON_DATA=/tmp/kk-index.json
@@ -23,13 +23,13 @@ Generate_Index_Json_Data( )
 {
   RESULTS=10000
 
-> $INDEX_JSON_DATA.2
-echo "Generando el json para el index"
-for i in ` find .cache/ -name 'api-*' | head -${RESULTS}`
-do
-   [ ! -s $i ]  && echo $i no exite && continue
-  [ ` grep "Malformed request" $i | wc -l ` -eq 1 ]  && echo borrando "$i" && rm -f "$i"   && continue
- cat "$i" | jq -c  "
+  > $INDEX_JSON_DATA.2
+  echo "Generando el json para el index"
+  for i in ` find .cache/ -name 'api-*' | head -${RESULTS}`
+  do
+    [ ! -s $i ]  && echo $i no exite && continue
+    [ ` grep "Malformed request" $i | wc -l ` -eq 1 ]  && echo borrando "$i" && rm -f "$i"   && continue
+    cat "$i" | jq -c  "
  {
    full_name,
    description,
@@ -38,11 +38,11 @@ do
    pushed_at,
    stargazers_count,
    language
- }"   >> ${INDEX_JSON_DATA}.2
-done
-grep full_name  ${INDEX_JSON_DATA}.2 | wc -l
+    }"   >> ${INDEX_JSON_DATA}.2
+  done
+  grep full_name  ${INDEX_JSON_DATA}.2 | wc -l
 
- cat ${INDEX_JSON_DATA}.2  | jq -c .  |   jq   --slurp '.'  | jq -c .  | sed -e 's@^@ { "list" :  { "full_name" : "All repos" , "description" : "This list contains all the repos mentioned on all the awesome list."} ,  "repos" :  @g'  | sed -e 's@$@ }@g'     > ${INDEX_JSON_DATA}
+  cat ${INDEX_JSON_DATA}.2  | jq -c .  |   jq   --slurp '.'  | jq -c .  | sed -e 's@^@ { "list" :  { "full_name" : "This list contains every mentioned repo in every awesome list" , "description" : "This list contains all the repos mentioned on all the awesome list."} ,  "repos" :  @g'  | sed -e 's@$@ }@g'     > ${INDEX_JSON_DATA}
 
 
   rm -f  ${INDEX_JSON_DATA}.2
@@ -83,16 +83,16 @@ Generate_Readme_Json_Data( )
 Document_Index( )
 {
 
-    INDEX_FILE=index.html
-    cat $INDEX_PARTIAL_DOC > $INDEX_FILE
+  INDEX_FILE=index.html
+  cat $INDEX_PARTIAL_DOC > $INDEX_FILE
 
 }
 
 Document_Readme( )
 {
 
-    README_FILE=README.md
-    cat $README_PARTIAL_DOC > $README_FILE
+  README_FILE=README.md
+  cat $README_PARTIAL_DOC > $README_FILE
 
 }
 
