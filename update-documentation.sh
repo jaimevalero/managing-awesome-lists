@@ -19,9 +19,9 @@ INDEX_JSON_DATA=/tmp/kk-index.json
 README_PARTIAL_DOC=/tmp/kk-readme.md
 INDEX_PARTIAL_DOC=/tmp/kk-index.html
 
-Generate_Index_Json_Data( )
+Generate_Render_Index( )
 {
-  RESULTS=10
+  RESULTS=10000000
 
   > $INDEX_JSON_DATA.2
   echo "Generando el json para el index"
@@ -98,7 +98,8 @@ Document_Readme( )
 
 Document_Navbar( )
 {
-  ./generate_render_template.py  -t template-navbar.html --data ${INDEX_JSON_DATA} > views/layout/head/navbar.html
+  ./generate_render_template.py  -t template-navbar.html --data ${README_JSON_DATA} >  views/layout/navbar.html
+  ls -altr  views/layout/navbar.html
 }
 
 Main( )
@@ -114,7 +115,7 @@ Main( )
 
   # Document navbar
   Document_Navbar
-  Generate_Index_Json_Data
+  Generate_Render_Index
 }
 
 Main

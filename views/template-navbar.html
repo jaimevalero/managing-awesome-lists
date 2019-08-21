@@ -1,48 +1,50 @@
-{% extends "layout.html" %}
+{% set BASE_URL= "https://jaimevalero.github.io/managing-awesome-lists" %}
 
-{% block tabla_resultados %}
+<div class="container-fluid" >
+	<!-- Brand and toggle get grouped for better mobile display -->
 
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li >
+				<a href="http://search.hi.inet">Awesome list viewer <span class="sr-only">(current)</span></a>
+			</li>
+		</ul>
 
-
-		<h2 >List <a href="https://github.com/{{data['list'].full_name}}">{{data['list'].full_name}}</a> </h2>
-    <h3 >{{data['list'].description}} </h3>
-
- Elements : {{data['repos']|length}}
- <br>
-    <div class="table-responsive">
-      <table id="tabla"     class="table table-hover table-condensed table-striped">
-
-        <thead>
-          <tr>
-            <th>Repo</th>
-            <th width="15%">Stars</th>
-            <th>Description</th>
-            <th width="15%">Last Updated</th>
-            <th>Language</th>
-            <th>Tags</th>
+		<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"
+					 role="button" aria-haspopup="true" aria-expanded="false">
+				 Select list
+				</a>
+				<ul class="dropdown-menu">
 
 
-
-          </tr>
-        </thead>
-        <tbody>
-          {% for repo in data['repos'] |sort(attribute='stargazers_count',reverse=true)  %}
-            <tr>
-              <td><a href="https://github.com/{{repo.full_name}}">{{repo.full_name}}</a></td>
-              <td>{{repo.stargazers_count}}</td>
-              <td>{{repo.description}}</td>
-              <td>{{repo.pushed_at[0:10]}}</td>
-              <td>{{repo.language}}</td>
-              <td>
-                {%for tag in repo.topics %}
-                  <font class = "topic-tag">{{tag}}</font>
-                {% endfor %}
-            </tr>
-          {% endfor	%}
-        </tbody>
-      </table>
-		</div>
+          <li rel="tooltip"  title="Global list" >
+            <a href='{{BASE_URL}}'>
+            <i class="fa fa-internal-link" aria-hidden="true"></i> Global list
+            </a>
+          </li>
+          {% for repo in data['repos']|sort(attribute='name')  -%}
+          <li rel="tooltip"  title="{{repo.description}}" >
+          	<a href='{{BASE_URL}}/var/awl-{{repo.full_name|replace("/","%40")}}.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> {{repo.name|replace("awesome-","") }}
+						</a>
+					</li>
+         {%- endfor %}
 
 
+				</ul>
+			</li>
+		</ul>
 
-{% endblock %}
+
+	</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+
+
+<script type="text/javascript">
+    $(function () {
+        $("[rel='tooltip']").tooltip();
+    });
+</script>
