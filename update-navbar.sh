@@ -14,10 +14,6 @@ Log( )
   echo "[`basename $0`] [`date +'%Y_%m_%d %H:%M:%S'`] [$$] [${FUNCNAME[1]}] $@" >>  $LOG_FILE
 }
 README_JSON_DATA=/tmp/kk-readme.json
-INDEX_JSON_DATA=/tmp/kk-index.json
-
-README_PARTIAL_DOC=/tmp/kk-readme.md
-INDEX_PARTIAL_DOC=/tmp/kk-index.html
 
 
 Main( )
@@ -27,14 +23,9 @@ Main( )
   # First   : Generate json data
   # Then    : Generate partial doc
   # Finally : Write results to repo file
-  AWESOME_LIST_LISTS=`cat lists.txt`
 
+  ./generate_render_template.py  -t template-navbar.html --data ${INDEX_JSON_DATA} > views/layout/head/navbar.html
 
-  CACHE_README_FILE=.cache/readme-${OUTPUT_FILE}.txt
-  while read REPO
-  do
-    Download_Api_Repo $REPO
-  done < ${CACHE_README_FILE}
 
 }
 
