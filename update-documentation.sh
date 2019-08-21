@@ -112,6 +112,7 @@ Main( )
   Generate_Partial_Doc      > ${README_PARTIAL_DOC}
   Document_Readme
 
+  # Document navbar
   Document_Navbar
   #Generate_Index_Json_Data
 }
