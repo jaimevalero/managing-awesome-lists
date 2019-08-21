@@ -96,6 +96,11 @@ Document_Readme( )
 
 }
 
+Document_Navbar( )
+{
+  ./generate_render_template.py  -t template-navbar.html --data ${INDEX_JSON_DATA} > views/layout/head/navbar.html
+}
+
 Main( )
 {
 
@@ -107,6 +112,7 @@ Main( )
   Generate_Partial_Doc      > ${README_PARTIAL_DOC}
   Document_Readme
 
+  Document_Navbar
   #Generate_Index_Json_Data
 }
 
