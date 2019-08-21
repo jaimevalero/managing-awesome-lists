@@ -21,7 +21,7 @@ INDEX_PARTIAL_DOC=/tmp/kk-index.html
 
 Generate_Index_Json_Data( )
 {
-  RESULTS=10000
+  RESULTS=10
 
   > $INDEX_JSON_DATA.2
   echo "Generando el json para el index"
@@ -114,7 +114,7 @@ Main( )
 
   # Document navbar
   Document_Navbar
-  #Generate_Index_Json_Data
+  Generate_Index_Json_Data
 }
 
 Main
