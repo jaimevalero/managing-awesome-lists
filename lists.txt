@@ -1,3 +1,4 @@
+https://github.com/sbilly/awesome-security
 https://github.com/sdogruyol/awesome-ruby
 https://github.com/ligurio/awesome-ci
 https://github.com/ramitsurana/awesome-kubernetes
