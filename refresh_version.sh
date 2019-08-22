@@ -3,7 +3,7 @@
 # Refresh version,
 # Re-render navbar template
 # download json from api
-# # Re render from the new template
+# Re render from the new template
   ./update-documentation.sh ;
   ./get_list_details.sh   ;
 

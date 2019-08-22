@@ -9,7 +9,7 @@ This repo format the awesome list by number of stars, add tags and filters.
 
 
 
-Lists : 41
+Lists : 45
 
 
 | List     | Description | Stars
@@ -45,15 +45,19 @@ Lists : 41
 |[k4m4/terminals-are-sexy](https://jaimevalero.github.io/managing-awesome-lists/var/awl-k4m4%40terminals-are-sexy.html)| 💥 A curated list of Terminal frameworks, plugins & resources for CLI lovers. | 8231 |
 |[onurakpolat/awesome-bigdata](https://jaimevalero.github.io/managing-awesome-lists/var/awl-onurakpolat%40awesome-bigdata.html)| A curated list of awesome big data frameworks, ressources and other awesomeness. | 7804 |
 |[bharathgs/Awesome-pytorch-list](https://jaimevalero.github.io/managing-awesome-lists/var/awl-bharathgs%40Awesome-pytorch-list.html)| A comprehensive list of pytorch related content on github,such as different models,implementations,helper libraries,tutorials etc. | 7680 |
+|[ramitsurana/awesome-kubernetes](https://jaimevalero.github.io/managing-awesome-lists/var/awl-ramitsurana%40awesome-kubernetes.html)| A curated list for awesome kubernetes sources :ship::tada: | 6728 |
 |[davidsonfellipe/awesome-wpo](https://jaimevalero.github.io/managing-awesome-lists/var/awl-davidsonfellipe%40awesome-wpo.html)| :pencil: A curated list of Web Performance Optimization. Everyone can contribute here! | 6640 |
 |[unixorn/awesome-zsh-plugins](https://jaimevalero.github.io/managing-awesome-lists/var/awl-unixorn%40awesome-zsh-plugins.html)| A collection of ZSH frameworks, plugins & themes inspired by the various awesome list collections out there. | 6506 |
 |[thibmaek/awesome-raspberry-pi](https://jaimevalero.github.io/managing-awesome-lists/var/awl-thibmaek%40awesome-raspberry-pi.html)| 📝 A curated list of awesome Raspberry Pi tools, projects, images and resources | 5725 |
 |[rshipp/awesome-malware-analysis](https://jaimevalero.github.io/managing-awesome-lists/var/awl-rshipp%40awesome-malware-analysis.html)| A curated list of awesome malware analysis tools and resources. | 5092 |
+|[sbilly/awesome-security](https://jaimevalero.github.io/managing-awesome-lists/var/awl-sbilly%40awesome-security.html)| A collection of awesome software, libraries, documents, books, resources and cools stuffs about security. | 4741 |
 |[heynickc/awesome-ddd](https://jaimevalero.github.io/managing-awesome-lists/var/awl-heynickc%40awesome-ddd.html)| A curated list of Domain-Driven Design (DDD), Command Query Responsibility Segregation (CQRS), Event Sourcing, and Event Storming resources | 4514 |
 |[agarrharr/awesome-cli-apps](https://jaimevalero.github.io/managing-awesome-lists/var/awl-agarrharr%40awesome-cli-apps.html)| 🖥 📊 🕹 🛠 A curated list of command line apps | 4513 |
 |[AllThingsSmitty/jquery-tips-everyone-should-know](https://jaimevalero.github.io/managing-awesome-lists/var/awl-AllThingsSmitty%40jquery-tips-everyone-should-know.html)| A collection of tips to help up your jQuery game | 4109 |
 |[sdras/awesome-actions](https://jaimevalero.github.io/managing-awesome-lists/var/awl-sdras%40awesome-actions.html)| A curated list of awesome actions to use on GitHub | 3761 |
 |[fasouto/awesome-dataviz](https://jaimevalero.github.io/managing-awesome-lists/var/awl-fasouto%40awesome-dataviz.html)| :chart_with_upwards_trend:  A curated list of awesome data visualization libraries and resources. | 2203 |
+|[ligurio/awesome-ci](https://jaimevalero.github.io/managing-awesome-lists/var/awl-ligurio%40awesome-ci.html)| List of Continuous Integration services | 1625 |
+|[sdogruyol/awesome-ruby](https://jaimevalero.github.io/managing-awesome-lists/var/awl-sdogruyol%40awesome-ruby.html)| A curated list of awesome Ruby frameworks, libraries and resources. Inspired by awesome-php & awesome-python. | 1105 |
 |[cugu/awesome-forensics](https://jaimevalero.github.io/managing-awesome-lists/var/awl-cugu%40awesome-forensics.html)| A curated list of awesome forensic analysis tools and resources | 764 |
 
 

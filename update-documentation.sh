@@ -21,7 +21,7 @@ INDEX_PARTIAL_DOC=/tmp/kk-index.html
 
 Generate_Render_Index( )
 {
-  RESULTS=10000000
+  RESULTS=50000000
 
   > $INDEX_JSON_DATA.2
   echo "Generando el json para el index"
@@ -120,3 +120,24 @@ Main( )
 
 Main
 #git add . ; git commit -m "Templatin'" ;  git push origin master
+REPOS_WITH_LABELS_FILE=/tmp/labels.json
+
+cat $INDEX_JSON_DATA | jq -c ".repos[]|{ full_name , topics}" | grep -v '"topics":\[\]'  > ${REPOS_WITH_LABELS_FILE}
+
+# Label in more than one repo
+TOPICS_LIST=` cat $INDEX_JSON_DATA | jq ".repos[]|.topics"   | grep \" | cut -d\" -f2 | sort  | uniq -c | sort -k1 -n  -r | grep -v "   1 "  | head | awk '{print $2}'`
+
+
+rm -rf .cache/topics/  ; mkdir .cache/topics/
+
+for topic in $TOPICS_LIST
+do
+  grep "\"$topic\"" ${REPOS_WITH_LABELS_FILE} | jq -r .full_name >> ".cache/topics/$topic"
+
+done
+
+
+
+
+
+#for i in

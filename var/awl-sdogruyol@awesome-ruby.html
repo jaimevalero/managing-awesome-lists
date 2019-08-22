@@ -1,0 +1,3738 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Awesome List </title>
+		<!-- Meta Information -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Awesome list manager">
+<meta name="author" content="Jaime Valero">
+
+<!-- CSS Information -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+
+<!-- bootstrap theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+	crossorigin="anonymous">
+
+<!-- Font-awesome -->
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- bootstrap4 -->
+<link rel="stylesheet" type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+
+<!-- bootstrap4 -->
+<link rel="stylesheet" type="text/css"
+  href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+
+<style type="text/css">
+* {
+   font-size: 16px;
+}
+
+.topic-tag {
+display: inline-block;
+padding: 0.3em 0.9em;
+margin: 0 0.5em 0.5em 0;
+white-space: nowrap;
+background-color: #f1f8ff;
+border-radius: 3px;
+font-color: #0366d6;
+color: #0366d6;
+}
+
+</style>
+		<!-- Scripts: JQuery & Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+</script>
+
+<!-- bootstrap4 -->
+<script src="https://code.jquery.com/jquery-3.3.1.js">
+</script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
+</script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
+</script>
+
+ <script type="text/javascript" language="JavaScript" >
+    $(document).ready(function() {
+      $('#tabla').DataTable( { "order": [[ 1, "desc" ]] } );
+  } );
+
+
+ </script>
+	</head>
+
+	<body>
+    <nav class="navbar navbar-inverse" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;">
+			
+				
+
+<div class="container-fluid" >
+	<!-- Brand and toggle get grouped for better mobile display -->
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li >
+				<a href="https://jaimevalero.github.io/managing-awesome-lists">Awesome list viewer <span class="sr-only">(current)</span></a>
+			</li>
+		</ul>
+
+		<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"
+					 role="button" aria-haspopup="true" aria-expanded="false">
+				 Select list
+				</a>
+				<ul class="dropdown-menu">
+
+
+          <li rel="tooltip"  title="Global list" >
+            <a href='https://jaimevalero.github.io/managing-awesome-lists'>
+            <i class="fa fa-internal-link" aria-hidden="true"></i> Global list
+            </a>
+          </li>
+          <li rel="tooltip"  title="A curated collection of useful CSS snippets you can understand in 30 seconds or less." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-30-seconds%4030-seconds-of-css.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> 30-seconds-of-css
+						</a>
+					</li><li rel="tooltip"  title="😎 Awesome lists about all kinds of interesting topics" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sindresorhus%40awesome.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> awesome
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome actions to use on GitHub" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sdras%40awesome-actions.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> actions
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome big data frameworks, ressources and other awesomeness." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-onurakpolat%40awesome-bigdata.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> bigdata
+						</a>
+					</li><li rel="tooltip"  title="🖥 📊 🕹 🛠 A curated list of command line apps" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-agarrharr%40awesome-cli-apps.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> cli-apps
+						</a>
+					</li><li rel="tooltip"  title=":books: List of awesome university courses for learning Computer Science!" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-prakhar1989%40awesome-courses.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> courses
+						</a>
+					</li><li rel="tooltip"  title=":memo: An awesome Data Science repository to learn and apply for real world problems." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-academic%40awesome-datascience.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> datascience
+						</a>
+					</li><li rel="tooltip"  title=":chart_with_upwards_trend:  A curated list of awesome data visualization libraries and resources." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-fasouto%40awesome-dataviz.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> dataviz
+						</a>
+					</li><li rel="tooltip"  title="A curated list of Domain-Driven Design (DDD), Command Query Responsibility Segregation (CQRS), Event Sourcing, and Event Storming resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-heynickc%40awesome-ddd.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> ddd
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Deep Learning tutorials, projects and communities." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ChristosChristofidis%40awesome-deep-learning.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> deep-learning
+						</a>
+					</li><li rel="tooltip"  title=":whale: A curated list of Docker resources and projects" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-veggiemonk%40awesome-docker.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> docker
+						</a>
+					</li><li rel="tooltip"  title="A list of awesome beginners-friendly projects." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-MunGell%40awesome-for-beginners.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> for-beginners
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome forensic analysis tools and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-cugu%40awesome-forensics.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> forensics
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Go frameworks, libraries and software" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-avelino%40awesome-go.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> go
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome frameworks, libraries and software for the Java programming language." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-akullpp%40awesome-java.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> java
+						</a>
+					</li><li rel="tooltip"  title="🐢 A collection of awesome browser-side  JavaScript libraries, resources and shiny things." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sorrycc%40awesome-javascript.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> javascript
+						</a>
+					</li><li rel="tooltip"  title=" Now we have become very big, Different from the original idea. Collect premium software in various categories." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-jaywcjlove%40awesome-mac.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> mac
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Machine Learning frameworks, libraries and software." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-josephmisiti%40awesome-machine-learning.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> machine-learning
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome malware analysis tools and resources." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-rshipp%40awesome-malware-analysis.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> malware-analysis
+						</a>
+					</li><li rel="tooltip"  title=":zap: Delightful Node.js packages and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sindresorhus%40awesome-nodejs.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> nodejs
+						</a>
+					</li><li rel="tooltip"  title="A curated list of amazingly awesome PHP libraries, resources and shiny things." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ziadoz%40awesome-php.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> php
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Python frameworks, libraries, software and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-vinta%40awesome-python.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> python
+						</a>
+					</li><li rel="tooltip"  title="A comprehensive list of pytorch related content on github,such as different models,implementations,helper libraries,tutorials etc." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-bharathgs%40Awesome-pytorch-list.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> Awesome-pytorch-list
+						</a>
+					</li><li rel="tooltip"  title="📝 A curated list of awesome Raspberry Pi tools, projects, images and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-thibmaek%40awesome-raspberry-pi.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> raspberry-pi
+						</a>
+					</li><li rel="tooltip"  title="A collection of awesome things regarding React ecosystem" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-enaqx%40awesome-react.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> react
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome remote jobs and resources. Inspired by https://github.com/vinta/awesome-python" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-lukasz-madon%40awesome-remote-job.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> remote-job
+						</a>
+					</li><li rel="tooltip"  title="The Patterns of Scalable, Reliable, and Performant Large-Scale Systems" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-binhnguyennus%40awesome-scalability.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> scalability
+						</a>
+					</li><li rel="tooltip"  title="This is a list of Free Software network services and web applications which can be hosted locally. Selfhosting is the process of locally hosting and managing applications instead of renting from SaaS providers." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-Kickball%40awesome-selfhosted.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> selfhosted
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awesome-php." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-alebcay%40awesome-shell.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> shell
+						</a>
+					</li><li rel="tooltip"  title="A curated list of amazingly awesome open source sysadmin resources." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-n1trux%40awesome-sysadmin.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> sysadmin
+						</a>
+					</li><li rel="tooltip"  title="🎨 A curated list of delightful VS Code packages and resources." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-viatsko%40awesome-vscode.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> vscode
+						</a>
+					</li><li rel="tooltip"  title=":pencil: A curated list of Web Performance Optimization. Everyone can contribute here!" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-davidsonfellipe%40awesome-wpo.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> wpo
+						</a>
+					</li><li rel="tooltip"  title="A collection of ZSH frameworks, plugins & themes inspired by the various awesome list collections out there." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-unixorn%40awesome-zsh-plugins.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> zsh-plugins
+						</a>
+					</li><li rel="tooltip"  title="A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ripienaar%40free-for-dev.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> free-for-dev
+						</a>
+					</li><li rel="tooltip"  title="Manually curated collection of resources for frontend web developers." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-dypsilon%40frontend-dev-bookmarks.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> frontend-dev-bookmarks
+						</a>
+					</li><li rel="tooltip"  title="A list of cool features of Git and GitHub." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-tiimgreen%40github-cheat-sheet.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> github-cheat-sheet
+						</a>
+					</li><li rel="tooltip"  title="✂A collection of useful .htaccess snippets." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-phanan%40htaccess.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> htaccess
+						</a>
+					</li><li rel="tooltip"  title="A collection of tips to help up your jQuery game" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-AllThingsSmitty%40jquery-tips-everyone-should-know.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> jquery-tips-everyone-should-know
+						</a>
+					</li><li rel="tooltip"  title="🚀 Awesome list of open source applications for macOS." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-serhii-londar%40open-source-mac-os-apps.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> open-source-mac-os-apps
+						</a>
+					</li><li rel="tooltip"  title="💥 A curated list of Terminal frameworks, plugins & resources for CLI lovers." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-k4m4%40terminals-are-sexy.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> terminals-are-sexy
+						</a>
+					</li><li rel="tooltip"  title="A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-trimstray%40the-book-of-secret-knowledge.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> the-book-of-secret-knowledge
+						</a>
+					</li>
+
+
+				</ul>
+			</li>
+		</ul>
+
+
+	</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+
+
+<script type="text/javascript">
+    $(function () {
+        $("[rel='tooltip']").tooltip();
+    });
+</script>
+			
+		</nav>
+
+    <div class="container-fluid" >
+			<div class="row">
+				<!-- Main alert pop-ups -->
+        <div class="col-xl-12 mb-4">
+					
+
+
+
+		<h2 >List <a href="https://github.com/sdogruyol/awesome-ruby">sdogruyol/awesome-ruby</a> </h2>
+    <h3 >A curated list of awesome Ruby frameworks, libraries and resources. Inspired by awesome-php & awesome-python. </h3>
+
+ Elements : 244
+ <br>
+    <div class="table-responsive">
+      <table id="tabla"     class="table table-hover table-condensed table-striped">
+
+        <thead>
+          <tr>
+            <th>Repo</th>
+            <th width="15%">Stars</th>
+            <th>Description</th>
+            <th width="15%">Last Updated</th>
+            <th>Language</th>
+            <th>Tags</th>
+
+
+
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td><a href="https://github.com/jekyll/jekyll">jekyll/jekyll</a></td>
+              <td>38465</td>
+              <td>:globe_with_meridians: Jekyll is a blog-aware static site generator in Ruby</td>
+              <td>2019-08-22</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">blog-engine</font>
+                
+                  <font class = "topic-tag">jekyll</font>
+                
+                  <font class = "topic-tag">liquid</font>
+                
+                  <font class = "topic-tag">markdown</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">static-site-generator</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bayandin/awesome-awesomeness">bayandin/awesome-awesomeness</a></td>
+              <td>24697</td>
+              <td>A curated list of awesome awesomeness</td>
+              <td>2019-08-16</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ziadoz/awesome-php">ziadoz/awesome-php</a></td>
+              <td>21974</td>
+              <td>A curated list of amazingly awesome PHP libraries, resources and shiny things.</td>
+              <td>2019-07-30</td>
+              <td>None</td>
+              <td>
+                
+                  <font class = "topic-tag">awesome</font>
+                
+                  <font class = "topic-tag">awesome-lists</font>
+                
+                  <font class = "topic-tag">php</font>
+                
+                  <font class = "topic-tag">php-applications</font>
+                
+                  <font class = "topic-tag">php-framework</font>
+                
+                  <font class = "topic-tag">php-installation</font>
+                
+                  <font class = "topic-tag">php-library</font>
+                
+                  <font class = "topic-tag">php7</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/plataformatec/devise">plataformatec/devise</a></td>
+              <td>20123</td>
+              <td>Flexible authentication solution for Rails with Warden.</td>
+              <td>2019-08-19</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">authentication</font>
+                
+                  <font class = "topic-tag">devise</font>
+                
+                  <font class = "topic-tag">plataformatec</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/twbs/bootstrap-sass">twbs/bootstrap-sass</a></td>
+              <td>12779</td>
+              <td>Official Sass port of Bootstrap 2 and 3.</td>
+              <td>2019-06-13</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/sass/sass">sass/sass</a></td>
+              <td>12072</td>
+              <td>Sass makes CSS fun!</td>
+              <td>2019-08-20</td>
+              <td>JavaScript</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/elastic/logstash">elastic/logstash</a></td>
+              <td>10473</td>
+              <td>Logstash - transport and process your logs, events, or other data</td>
+              <td>2019-08-22</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">etl-framework</font>
+                
+                  <font class = "topic-tag">java</font>
+                
+                  <font class = "topic-tag">jruby</font>
+                
+                  <font class = "topic-tag">logging</font>
+                
+                  <font class = "topic-tag">real-time-processing</font>
+                
+                  <font class = "topic-tag">streaming</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rubocop-hq/rubocop">rubocop-hq/rubocop</a></td>
+              <td>10220</td>
+              <td>A Ruby static code analyzer and formatter, based on the community Ruby style guide.</td>
+              <td>2019-08-22</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">code-formatter</font>
+                
+                  <font class = "topic-tag">linter</font>
+                
+                  <font class = "topic-tag">rubocop</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">static-code-analysis</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/spree/spree">spree/spree</a></td>
+              <td>9884</td>
+              <td>Spree is a complete, modular & API-driven open source ecommerce solution for Ruby on Rails</td>
+              <td>2019-08-22</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">e-commerce</font>
+                
+                  <font class = "topic-tag">ecommerce</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">rubyonrails</font>
+                
+                  <font class = "topic-tag">spree</font>
+                
+                  <font class = "topic-tag">spreecommerce</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/mperham/sidekiq">mperham/sidekiq</a></td>
+              <td>9770</td>
+              <td>Simple, efficient background processing for Ruby</td>
+              <td>2019-08-15</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">background-jobs</font>
+                
+                  <font class = "topic-tag">jobs</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">sidekiq</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jordansissel/fpm">jordansissel/fpm</a></td>
+              <td>9258</td>
+              <td>Effing package management! Build packages for multiple platforms (deb, rpm, etc) with great ease and sanity.</td>
+              <td>2019-08-03</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">packaging</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/thoughtbot/paperclip">thoughtbot/paperclip</a></td>
+              <td>9059</td>
+              <td>Easy file attachment management for ActiveRecord</td>
+              <td>2019-06-14</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/teamcapybara/capybara">teamcapybara/capybara</a></td>
+              <td>8877</td>
+              <td>Acceptance test framework for web applications</td>
+              <td>2019-08-18</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/thoughtbot/bourbon">thoughtbot/bourbon</a></td>
+              <td>8865</td>
+              <td>A Lightweight Sass Tool Set</td>
+              <td>2019-08-07</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">bourbon</font>
+                
+                  <font class = "topic-tag">bourbon-family</font>
+                
+                  <font class = "topic-tag">css</font>
+                
+                  <font class = "topic-tag">sass</font>
+                
+                  <font class = "topic-tag">sass-functions</font>
+                
+                  <font class = "topic-tag">sass-library</font>
+                
+                  <font class = "topic-tag">sass-mixins</font>
+                
+                  <font class = "topic-tag">scss</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/resque/resque">resque/resque</a></td>
+              <td>8576</td>
+              <td>Resque is a Redis-backed Ruby library for creating background jobs, placing them on multiple queues, and processing them later.</td>
+              <td>2019-08-09</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/activeadmin/activeadmin">activeadmin/activeadmin</a></td>
+              <td>8560</td>
+              <td>The administration framework for Ruby on Rails applications.</td>
+              <td>2019-08-21</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">activeadmin</font>
+                
+                  <font class = "topic-tag">admin-ui</font>
+                
+                  <font class = "topic-tag">arbre</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/carrierwaveuploader/carrierwave">carrierwaveuploader/carrierwave</a></td>
+              <td>8378</td>
+              <td>Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks</td>
+              <td>2019-08-18</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/javan/whenever">javan/whenever</a></td>
+              <td>8043</td>
+              <td>Cron jobs in Ruby</td>
+              <td>2019-08-20</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/faker-ruby/faker">faker-ruby/faker</a></td>
+              <td>7930</td>
+              <td>A library for generating fake data such as names, addresses, and phone numbers.</td>
+              <td>2019-08-21</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">fake</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kaminari/kaminari">kaminari/kaminari</a></td>
+              <td>7547</td>
+              <td>⚡ A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps</td>
+              <td>2019-08-22</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">kaminari</font>
+                
+                  <font class = "topic-tag">pagination</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/plataformatec/simple_form">plataformatec/simple_form</a></td>
+              <td>7443</td>
+              <td>Forms made easy for Rails! It's tied to a simple DSL, with no opinion on markup.</td>
+              <td>2019-08-19</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">dsl</font>
+                
+                  <font class = "topic-tag">form-builder</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">rails-helper</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Shopify/liquid">Shopify/liquid</a></td>
+              <td>7320</td>
+              <td>Liquid markup language. Safe, customer facing template language for flexible web apps. </td>
+              <td>2019-08-21</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/sferik/rails_admin">sferik/rails_admin</a></td>
+              <td>7134</td>
+              <td>RailsAdmin is a Rails engine that provides an easy-to-use interface for managing your data</td>
+              <td>2019-08-21</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/omniauth/omniauth">omniauth/omniauth</a></td>
+              <td>6919</td>
+              <td>OmniAuth is a flexible authentication system utilizing Rack middleware.</td>
+              <td>2019-08-09</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">authentication</font>
+                
+                  <font class = "topic-tag">omniauth</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Compass/compass">Compass/compass</a></td>
+              <td>6905</td>
+              <td>Compass is no longer actively maintained. Compass is a Stylesheet Authoring Environment that makes your website design simpler to implement and easier to maintain.</td>
+              <td>2018-12-09</td>
+              <td>CSS</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/varvet/pundit">varvet/pundit</a></td>
+              <td>6595</td>
+              <td>Minimal authorization through OO design and pure Ruby classes</td>
+              <td>2019-08-22</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/BetterErrors/better_errors">BetterErrors/better_errors</a></td>
+              <td>6543</td>
+              <td>Better error page for Rack apps</td>
+              <td>2019-07-09</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/middleman/middleman">middleman/middleman</a></td>
+              <td>6513</td>
+              <td>Hand-crafted frontend development</td>
+              <td>2019-08-10</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">middleman</font>
+                
+                  <font class = "topic-tag">static-site-generator</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/chef/chef">chef/chef</a></td>
+              <td>5906</td>
+              <td>A systems integration framework, built to bring the benefits of configuration management to your entire infrastructure.</td>
+              <td>2019-08-17</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">cfgmgt</font>
+                
+                  <font class = "topic-tag">chef</font>
+                
+                  <font class = "topic-tag">devops</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/puma/puma">puma/puma</a></td>
+              <td>5854</td>
+              <td>A Ruby/Rack web server built for concurrency</td>
+              <td>2019-08-20</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">multithreading</font>
+                
+                  <font class = "topic-tag">rack</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">server</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/pry/pry">pry/pry</a></td>
+              <td>5713</td>
+              <td>A runtime developer console and IRB alternative with powerful introspection capabilities.</td>
+              <td>2019-08-09</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">console</font>
+                
+                  <font class = "topic-tag">debugger</font>
+                
+                  <font class = "topic-tag">introspection</font>
+                
+                  <font class = "topic-tag">irb</font>
+                
+                  <font class = "topic-tag">pry</font>
+                
+                  <font class = "topic-tag">reflection</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">runtime</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/flyerhzm/bullet">flyerhzm/bullet</a></td>
+              <td>5622</td>
+              <td>help to kill N+1 queries and unused eager loading</td>
+              <td>2019-08-21</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github-changelog-generator/github-changelog-generator">github-changelog-generator/github-changelog-generator</a></td>
+              <td>5513</td>
+              <td>Automatically generate change log from your tags, issues, labels and pull requests on GitHub.</td>
+              <td>2019-08-19</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">changelog</font>
+                
+                  <font class = "topic-tag">changelog-generator</font>
+                
+                  <font class = "topic-tag">generator</font>
+                
+                  <font class = "topic-tag">github-api</font>
+                
+                  <font class = "topic-tag">github-extension</font>
+                
+                  <font class = "topic-tag">labels</font>
+                
+                  <font class = "topic-tag">markdown</font>
+                
+                  <font class = "topic-tag">notable-changes</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/alexreisner/geocoder">alexreisner/geocoder</a></td>
+              <td>5506</td>
+              <td>Complete Ruby geocoding solution.</td>
+              <td>2019-08-19</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/presidentbeef/brakeman">presidentbeef/brakeman</a></td>
+              <td>5469</td>
+              <td>A static analysis security vulnerability scanner for Ruby on Rails applications</td>
+              <td>2019-08-20</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">brakeman</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">security</font>
+                
+                  <font class = "topic-tag">security-audit</font>
+                
+                  <font class = "topic-tag">security-tools</font>
+                
+                  <font class = "topic-tag">security-vulnerability</font>
+                
+                  <font class = "topic-tag">static-analysis</font>
+                
+                  <font class = "topic-tag">vulnerabilities</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/mislav/will_paginate">mislav/will_paginate</a></td>
+              <td>5427</td>
+              <td>Pagination library for Rails, Sinatra, Merb, DataMapper, and more</td>
+              <td>2019-08-19</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/puppetlabs/puppet">puppetlabs/puppet</a></td>
+              <td>5425</td>
+              <td>Server automation framework and application</td>
+              <td>2019-08-22</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rails-api/rails-api">rails-api/rails-api</a></td>
+              <td>5257</td>
+              <td>Rails for API only applications</td>
+              <td>2018-03-04</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/norman/friendly_id">norman/friendly_id</a></td>
+              <td>5238</td>
+              <td>FriendlyId is the “Swiss Army bulldozer” of slugging and permalink plugins for ActiveRecord. It allows you to create pretty URL’s and work with human-friendly strings as if they were numeric ids for ActiveRecord models.</td>
+              <td>2019-08-20</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/justinfrench/formtastic">justinfrench/formtastic</a></td>
+              <td>5083</td>
+              <td>A Rails form builder plugin with semantically rich and accessible markup.</td>
+              <td>2019-08-13</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ankane/searchkick">ankane/searchkick</a></td>
+              <td>5011</td>
+              <td>Intelligent search made easy with Rails and Elasticsearch</td>
+              <td>2019-08-16</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">elasticsearch</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jnunemaker/httparty">jnunemaker/httparty</a></td>
+              <td>4965</td>
+              <td>:tada: Makes http fun again!</td>
+              <td>2019-08-21</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">http</font>
+                
+                  <font class = "topic-tag">httparty</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rails-api/active_model_serializers">rails-api/active_model_serializers</a></td>
+              <td>4877</td>
+              <td>ActiveModel::Serializer implementation and Rails hooks</td>
+              <td>2019-08-21</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">json</font>
+                
+                  <font class = "topic-tag">resource-serializer</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/slim-template/slim">slim-template/slim</a></td>
+              <td>4854</td>
+              <td>Slim is a template language whose goal is to reduce the syntax to the essential parts without becoming cryptic.</td>
+              <td>2019-05-14</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">slim</font>
+                
+                  <font class = "topic-tag">template-engines</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/backup/backup">backup/backup</a></td>
+              <td>4541</td>
+              <td>Easy full stack backup operations on UNIX-like systems.</td>
+              <td>2019-07-17</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">backup</font>
+                
+                  <font class = "topic-tag">database</font>
+                
+                  <font class = "topic-tag">encryption</font>
+                
+                  <font class = "topic-tag">mongodb</font>
+                
+                  <font class = "topic-tag">mysql</font>
+                
+                  <font class = "topic-tag">postgresql</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">s3</font>
+                
+                  <font class = "topic-tag">slack</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/mbleigh/acts-as-taggable-on">mbleigh/acts-as-taggable-on</a></td>
+              <td>4539</td>
+              <td>A tagging plugin for Rails applications that allows for custom tagging along dynamic contexts.</td>
+              <td>2019-08-19</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/lostisland/faraday">lostisland/faraday</a></td>
+              <td>4506</td>
+              <td>Simple, but flexible HTTP client library, with support for multiple backends.</td>
+              <td>2019-08-15</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/thoughtbot/administrate">thoughtbot/administrate</a></td>
+              <td>4476</td>
+              <td>A Rails engine that helps you put together a super-flexible admin dashboard.</td>
+              <td>2019-08-19</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">admin-dashboard</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CanCanCommunity/cancancan">CanCanCommunity/cancancan</a></td>
+              <td>4431</td>
+              <td>The authorization Gem for Ruby on Rails.</td>
+              <td>2019-08-22</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">authorization</font>
+                
+                  <font class = "topic-tag">cancancan</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/phusion/passenger">phusion/passenger</a></td>
+              <td>4430</td>
+              <td>A fast and robust web server and application server for Ruby, Python and Node.js</td>
+              <td>2019-07-23</td>
+              <td>C++</td>
+              <td>
+                
+                  <font class = "topic-tag">application-server</font>
+                
+                  <font class = "topic-tag">appserver</font>
+                
+                  <font class = "topic-tag">cloud</font>
+                
+                  <font class = "topic-tag">nodejs</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/doorkeeper-gem/doorkeeper">doorkeeper-gem/doorkeeper</a></td>
+              <td>4395</td>
+              <td>Doorkeeper is an OAuth 2 provider for Ruby on Rails / Grape.</td>
+              <td>2019-08-15</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">authentication</font>
+                
+                  <font class = "topic-tag">authorization</font>
+                
+                  <font class = "topic-tag">doorkeeper</font>
+                
+                  <font class = "topic-tag">grape</font>
+                
+                  <font class = "topic-tag">identity</font>
+                
+                  <font class = "topic-tag">oauth</font>
+                
+                  <font class = "topic-tag">oauth2</font>
+                
+                  <font class = "topic-tag">oauth2-provider</font>
+                
+                  <font class = "topic-tag">oauth2-server</font>
+                
+                  <font class = "topic-tag">ruby-on-rails</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/erikhuda/thor">erikhuda/thor</a></td>
+              <td>4372</td>
+              <td>Thor is a toolkit for building powerful command-line interfaces.</td>
+              <td>2019-08-13</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/activerecord-hackery/ransack">activerecord-hackery/ransack</a></td>
+              <td>4348</td>
+              <td>Object-based searching. </td>
+              <td>2019-08-19</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">activerecord</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">ruby-gem</font>
+                
+                  <font class = "topic-tag">ruby-library</font>
+                
+                  <font class = "topic-tag">ruby-on-rails</font>
+                
+                  <font class = "topic-tag">search</font>
+                
+                  <font class = "topic-tag">search-interface</font>
+                
+                  <font class = "topic-tag">sql</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fog/fog">fog/fog</a></td>
+              <td>4226</td>
+              <td>The Ruby cloud services library.</td>
+              <td>2019-07-15</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/sferik/twitter">sferik/twitter</a></td>
+              <td>4195</td>
+              <td>A Ruby interface to the Twitter API.</td>
+              <td>2019-07-08</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/binarylogic/authlogic">binarylogic/authlogic</a></td>
+              <td>4132</td>
+              <td>A simple ruby authentication solution.</td>
+              <td>2019-07-03</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kneath/kss">kneath/kss</a></td>
+              <td>4094</td>
+              <td>A methodology for documenting CSS and generating styleguides.</td>
+              <td>2017-12-06</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/mina-deploy/mina">mina-deploy/mina</a></td>
+              <td>4068</td>
+              <td>Blazing fast application deployment tool.</td>
+              <td>2019-05-25</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/activemerchant/active_merchant">activemerchant/active_merchant</a></td>
+              <td>4024</td>
+              <td>Active Merchant is a simple payment abstraction library extracted from Shopify. The aim of the project is to feel natural to Ruby users and to abstract as many parts as possible away from the user to offer a consistent interface across all supported gateways.</td>
+              <td>2019-08-21</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/eventmachine/eventmachine">eventmachine/eventmachine</a></td>
+              <td>3915</td>
+              <td>EventMachine: fast, simple event-processing library for Ruby programs</td>
+              <td>2019-08-20</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/prawnpdf/prawn">prawnpdf/prawn</a></td>
+              <td>3823</td>
+              <td>Fast, Nimble PDF Writer for Ruby</td>
+              <td>2019-07-25</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">pdf</font>
+                
+                  <font class = "topic-tag">pdf-generator</font>
+                
+                  <font class = "topic-tag">prawn</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/OctoLinker/OctoLinker">OctoLinker/OctoLinker</a></td>
+              <td>3816</td>
+              <td>OctoLinker — Links together, what belongs together</td>
+              <td>2019-08-13</td>
+              <td>JavaScript</td>
+              <td>
+                
+                  <font class = "topic-tag">browser-extension</font>
+                
+                  <font class = "topic-tag">chrome-extension</font>
+                
+                  <font class = "topic-tag">firefox-addon</font>
+                
+                  <font class = "topic-tag">github</font>
+                
+                  <font class = "topic-tag">github-extension</font>
+                
+                  <font class = "topic-tag">octolinker</font>
+                
+                  <font class = "topic-tag">opera-addon</font>
+                
+                  <font class = "topic-tag">productivity</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/aasm/aasm">aasm/aasm</a></td>
+              <td>3808</td>
+              <td>AASM - State machines for Ruby classes (plain Ruby, ActiveRecord, Mongoid)</td>
+              <td>2019-08-17</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">aasm</font>
+                
+                  <font class = "topic-tag">activerecord</font>
+                
+                  <font class = "topic-tag">mongoid</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">state-machine</font>
+                
+                  <font class = "topic-tag">transition</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/colszowka/simplecov">colszowka/simplecov</a></td>
+              <td>3777</td>
+              <td>Code coverage for Ruby 1.9+ with a powerful configuration library and automatic merging of coverage across test suites</td>
+              <td>2019-08-18</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">code-quality</font>
+                
+                  <font class = "topic-tag">coverage</font>
+                
+                  <font class = "topic-tag">coverage-library</font>
+                
+                  <font class = "topic-tag">coverage-report</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">test-coverage</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/tpope/vim-rails">tpope/vim-rails</a></td>
+              <td>3659</td>
+              <td>rails.vim: Ruby on Rails power tools</td>
+              <td>2019-08-16</td>
+              <td>Vim script</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rails/jbuilder">rails/jbuilder</a></td>
+              <td>3630</td>
+              <td>Jbuilder: generate JSON objects with a Builder-style DSL</td>
+              <td>2019-07-24</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nesquena/rabl">nesquena/rabl</a></td>
+              <td>3586</td>
+              <td>General ruby templating with json, bson, xml, plist and msgpack support</td>
+              <td>2019-08-17</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/awesome-print/awesome_print">awesome-print/awesome_print</a></td>
+              <td>3581</td>
+              <td>Pretty print your Ruby objects with style -- in full color and with proper indentation</td>
+              <td>2019-06-22</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/basecamp/pow">basecamp/pow</a></td>
+              <td>3467</td>
+              <td>Zero-configuration Rack server for Mac OS X</td>
+              <td>2018-04-12</td>
+              <td>CoffeeScript</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/thoughtbot/suspenders">thoughtbot/suspenders</a></td>
+              <td>3458</td>
+              <td>A Rails template with our standard defaults, ready to deploy to Heroku.</td>
+              <td>2019-08-22</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">template</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/arsduo/koala">arsduo/koala</a></td>
+              <td>3442</td>
+              <td>A lightweight Facebook library supporting the Graph, Marketing, and Atlas APIs, realtime updates, test users, and OAuth.</td>
+              <td>2019-03-29</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">facebook</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">ruby-on-rails</font>
+                
+                  <font class = "topic-tag">social-network</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/haml/haml">haml/haml</a></td>
+              <td>3441</td>
+              <td>HTML Abstraction Markup Language - A Markup Haiku</td>
+              <td>2019-08-06</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ctran/annotate_models">ctran/annotate_models</a></td>
+              <td>3298</td>
+              <td>Annotate Rails classes with schema and routes info</td>
+              <td>2019-08-20</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">activerecord</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grosser/parallel">grosser/parallel</a></td>
+              <td>3282</td>
+              <td>Ruby: parallel processing made simple and fast</td>
+              <td>2019-04-26</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/troessner/reek">troessner/reek</a></td>
+              <td>3125</td>
+              <td>Code smell detector for Ruby</td>
+              <td>2019-08-03</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">linters</font>
+                
+                  <font class = "topic-tag">parsing</font>
+                
+                  <font class = "topic-tag">quality</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">smell</font>
+                
+                  <font class = "topic-tag">smell-detector</font>
+                
+                  <font class = "topic-tag">smell-warnings</font>
+                
+                  <font class = "topic-tag">static-analysis</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rbenv/ruby-build">rbenv/ruby-build</a></td>
+              <td>3123</td>
+              <td>Compile and install Ruby</td>
+              <td>2019-08-21</td>
+              <td>Shell</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/octokit/octokit.rb">octokit/octokit.rb</a></td>
+              <td>3122</td>
+              <td>Ruby toolkit for the GitHub API</td>
+              <td>2019-08-12</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">github</font>
+                
+                  <font class = "topic-tag">github-api</font>
+                
+                  <font class = "topic-tag">octokit</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/mikel/mail">mikel/mail</a></td>
+              <td>3110</td>
+              <td>A Really Ruby Mail Library</td>
+              <td>2019-08-16</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ryanb/letter_opener">ryanb/letter_opener</a></td>
+              <td>3044</td>
+              <td>Preview mail in the browser instead of sending.</td>
+              <td>2019-08-15</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/mojombo/chronic">mojombo/chronic</a></td>
+              <td>2981</td>
+              <td>Chronic is a pure Ruby natural language date parser.</td>
+              <td>2019-06-19</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/aws/aws-sdk-ruby">aws/aws-sdk-ruby</a></td>
+              <td>2962</td>
+              <td>The official AWS SDK for Ruby.</td>
+              <td>2019-08-21</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">aws</font>
+                
+                  <font class = "topic-tag">aws-sdk</font>
+                
+                  <font class = "topic-tag">cloud</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/petergoldstein/dalli">petergoldstein/dalli</a></td>
+              <td>2923</td>
+              <td>High performance memcached client for Ruby</td>
+              <td>2019-08-07</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/mileszs/wicked_pdf">mileszs/wicked_pdf</a></td>
+              <td>2904</td>
+              <td>PDF generator (from HTML) plugin for Ruby on Rails</td>
+              <td>2019-06-13</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/sunspot/sunspot">sunspot/sunspot</a></td>
+              <td>2858</td>
+              <td>Solr-powered search for Ruby objects</td>
+              <td>2019-08-14</td>
+              <td>JavaScript</td>
+              <td>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">solr</font>
+                
+                  <font class = "topic-tag">solr-search-engine</font>
+                
+                  <font class = "topic-tag">sunspot</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nomad/houston">nomad/houston</a></td>
+              <td>2857</td>
+              <td>Apple Push Notifications; No Dirigible Required</td>
+              <td>2019-05-18</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">apns</font>
+                
+                  <font class = "topic-tag">cli</font>
+                
+                  <font class = "topic-tag">houston</font>
+                
+                  <font class = "topic-tag">nomad</font>
+                
+                  <font class = "topic-tag">notifications</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/deivid-rodriguez/byebug">deivid-rodriguez/byebug</a></td>
+              <td>2795</td>
+              <td>Debugging in Ruby 2</td>
+              <td>2019-08-01</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">byebug</font>
+                
+                  <font class = "topic-tag">debugger</font>
+                
+                  <font class = "topic-tag">repl</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/thoughtbot/shoulda-matchers">thoughtbot/shoulda-matchers</a></td>
+              <td>2671</td>
+              <td>Simple one-liner tests for common Rails functionality</td>
+              <td>2019-08-20</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">rspec</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">testing</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/seattlerb/minitest">seattlerb/minitest</a></td>
+              <td>2649</td>
+              <td>minitest provides a complete suite of testing facilities supporting TDD, BDD, mocking, and benchmarking.</td>
+              <td>2019-08-14</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">minitest</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">seattlerb</font>
+                
+                  <font class = "topic-tag">test</font>
+                
+                  <font class = "topic-tag">testing</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/pdfkit/pdfkit">pdfkit/pdfkit</a></td>
+              <td>2632</td>
+              <td>A Ruby gem to transform HTML + CSS into PDFs using the command-line utility wkhtmltopdf</td>
+              <td>2019-07-14</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">html-to-pdf</font>
+                
+                  <font class = "topic-tag">middleware</font>
+                
+                  <font class = "topic-tag">pdfkit</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">wkhtmltopdf</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/sstephenson/sprockets">sstephenson/sprockets</a></td>
+              <td>2629</td>
+              <td>Rack-based asset packaging system</td>
+              <td>2015-12-23</td>
+              <td>None</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cucumber/cucumber">cucumber/cucumber</a></td>
+              <td>2607</td>
+              <td>Cucumber monorepo - building blocks for Cucumber in various languages</td>
+              <td>2019-08-22</td>
+              <td>C</td>
+              <td>
+                
+                  <font class = "topic-tag">bdd-framework</font>
+                
+                  <font class = "topic-tag">cucumber</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/comfy/comfortable-mexican-sofa">comfy/comfortable-mexican-sofa</a></td>
+              <td>2583</td>
+              <td>ComfortableMexicanSofa is a powerful Ruby on Rails 5.2+ CMS (Content Management System) Engine</td>
+              <td>2019-08-13</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">cms</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">rails-engine</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/collectiveidea/audited">collectiveidea/audited</a></td>
+              <td>2530</td>
+              <td>Audited (formerly acts_as_audited) is an ORM extension that logs all changes to your Rails models.</td>
+              <td>2019-07-18</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fetlife/rollout">fetlife/rollout</a></td>
+              <td>2510</td>
+              <td>Feature flippers.</td>
+              <td>2019-06-29</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">feature-flags</font>
+                
+                  <font class = "topic-tag">percentage</font>
+                
+                  <font class = "topic-tag">redis</font>
+                
+                  <font class = "topic-tag">rollout</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/httprb/http">httprb/http</a></td>
+              <td>2503</td>
+              <td>HTTP (The Gem! a.k.a. http.rb) - a fast Ruby HTTP client with a chainable API, streaming support, and timeouts</td>
+              <td>2019-08-08</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">client</font>
+                
+                  <font class = "topic-tag">http</font>
+                
+                  <font class = "topic-tag">http-client</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/minimagick/minimagick">minimagick/minimagick</a></td>
+              <td>2478</td>
+              <td>mini replacement for RMagick</td>
+              <td>2019-07-25</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/postrank-labs/goliath">postrank-labs/goliath</a></td>
+              <td>2464</td>
+              <td>Goliath is a non-blocking Ruby web server framework</td>
+              <td>2018-05-23</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/randym/axlsx">randym/axlsx</a></td>
+              <td>2453</td>
+              <td>    xlsx generation with charts, images, automated column width, customizable styles and full schema validation. Axlsx excels at helping you generate beautiful Office Open XML Spreadsheet documents without having to understand the entire ECMA specification. Check out the README for some examples of how easy it is. Best of all, you can validate your xlsx file before serialization so you know for sure that anything generated is going to load on your client's machine.</td>
+              <td>2019-08-16</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/NoamB/sorcery">NoamB/sorcery</a></td>
+              <td>2394</td>
+              <td>Magical authentication for Rails 3 & 4</td>
+              <td>2016-12-29</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">authentication</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/postmodern/chruby">postmodern/chruby</a></td>
+              <td>2274</td>
+              <td>Changes the current Ruby</td>
+              <td>2019-06-24</td>
+              <td>Shell</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/roo-rb/roo">roo-rb/roo</a></td>
+              <td>2221</td>
+              <td>Roo provides an interface to spreadsheets of several sorts.</td>
+              <td>2019-08-21</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/influitive/apartment">influitive/apartment</a></td>
+              <td>2209</td>
+              <td>Database multi-tenancy for Rack (and Rails) applications</td>
+              <td>2019-08-02</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wardencommunity/warden">wardencommunity/warden</a></td>
+              <td>2183</td>
+              <td>General Rack Authentication Framework</td>
+              <td>2019-07-24</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/tobi/delayed_job">tobi/delayed_job</a></td>
+              <td>2121</td>
+              <td>Database backed asynchronous priority queue -- Extracted from Shopify </td>
+              <td>2016-05-22</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/markevans/dragonfly">markevans/dragonfly</a></td>
+              <td>2099</td>
+              <td>A Ruby gem for on-the-fly processing - suitable for image uploading in Rails, Sinatra and much more!</td>
+              <td>2019-01-22</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/macournoyer/thin">macournoyer/thin</a></td>
+              <td>2064</td>
+              <td>A very fast & simple Ruby web server</td>
+              <td>2019-03-05</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">rack</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">server</font>
+                
+                  <font class = "topic-tag">thin</font>
+                
+                  <font class = "topic-tag">web-server</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/smartinez87/exception_notification">smartinez87/exception_notification</a></td>
+              <td>2043</td>
+              <td>Exception Notifier Plugin for Rails</td>
+              <td>2019-08-16</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jmettraux/rufus-scheduler">jmettraux/rufus-scheduler</a></td>
+              <td>2032</td>
+              <td>scheduler for Ruby (at, in, cron and every jobs)</td>
+              <td>2019-05-25</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">cron</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">scheduler</font>
+                
+                  <font class = "topic-tag">time</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jnunemaker/flipper">jnunemaker/flipper</a></td>
+              <td>1969</td>
+              <td>:dolphin: feature flipping for ruby (performant and simple)</td>
+              <td>2019-08-19</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">api</font>
+                
+                  <font class = "topic-tag">dalli</font>
+                
+                  <font class = "topic-tag">feature</font>
+                
+                  <font class = "topic-tag">feature-flag</font>
+                
+                  <font class = "topic-tag">feature-flagging</font>
+                
+                  <font class = "topic-tag">feature-flags</font>
+                
+                  <font class = "topic-tag">feature-toggle</font>
+                
+                  <font class = "topic-tag">feature-toggles</font>
+                
+                  <font class = "topic-tag">features</font>
+                
+                  <font class = "topic-tag">flipper</font>
+                
+                  <font class = "topic-tag">http</font>
+                
+                  <font class = "topic-tag">memcached</font>
+                
+                  <font class = "topic-tag">mongo</font>
+                
+                  <font class = "topic-tag">mysql</font>
+                
+                  <font class = "topic-tag">postgres</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">redis</font>
+                
+                  <font class = "topic-tag">rollout</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jondot/sneakers">jondot/sneakers</a></td>
+              <td>1908</td>
+              <td>A fast background processing framework for Ruby and RabbitMQ</td>
+              <td>2019-08-16</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/globalize/globalize">globalize/globalize</a></td>
+              <td>1906</td>
+              <td>Rails I18n de-facto standard library for ActiveRecord model/data translation.</td>
+              <td>2019-07-31</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/brianmario/mysql2">brianmario/mysql2</a></td>
+              <td>1897</td>
+              <td>A modern, simple and very fast Mysql library for Ruby - binding to libmysql</td>
+              <td>2019-08-08</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rtomayko/tilt">rtomayko/tilt</a></td>
+              <td>1789</td>
+              <td>Generic interface to multiple Ruby template engines</td>
+              <td>2019-06-07</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/websocket-rails/websocket-rails">websocket-rails/websocket-rails</a></td>
+              <td>1749</td>
+              <td>Plug and play websocket support for ruby on rails.</td>
+              <td>2018-07-18</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vim-ruby/vim-ruby">vim-ruby/vim-ruby</a></td>
+              <td>1747</td>
+              <td>Vim/Ruby Configuration Files</td>
+              <td>2019-07-13</td>
+              <td>Vim script</td>
+              <td>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">vim</font>
+                
+                  <font class = "topic-tag">vim-plugins</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/tenex/rails-assets">tenex/rails-assets</a></td>
+              <td>1668</td>
+              <td>The solution to assets management in Rails</td>
+              <td>2019-01-23</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/resque/resque-scheduler">resque/resque-scheduler</a></td>
+              <td>1665</td>
+              <td>A light-weight job scheduling system built on top of Resque</td>
+              <td>2019-07-09</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/elastic/elasticsearch-ruby">elastic/elasticsearch-ruby</a></td>
+              <td>1626</td>
+              <td>Ruby integrations for Elasticsearch</td>
+              <td>2019-08-22</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">elastic</font>
+                
+                  <font class = "topic-tag">elasticsearch</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">rubynlp</font>
+                
+                  <font class = "topic-tag">search</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/propublica/upton">propublica/upton</a></td>
+              <td>1612</td>
+              <td>A batteries-included framework for easy web-scraping. Just add CSS! (Or do more.)</td>
+              <td>2018-12-26</td>
+              <td>HTML</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/pat/thinking-sphinx">pat/thinking-sphinx</a></td>
+              <td>1582</td>
+              <td>Sphinx plugin for ActiveRecord/Rails</td>
+              <td>2019-08-22</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">search</font>
+                
+                  <font class = "topic-tag">sphinx</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rpush/rpush">rpush/rpush</a></td>
+              <td>1564</td>
+              <td>The push notification service for Ruby.</td>
+              <td>2019-08-16</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">apns</font>
+                
+                  <font class = "topic-tag">apns2</font>
+                
+                  <font class = "topic-tag">fcm</font>
+                
+                  <font class = "topic-tag">firebase-cloud-messaging</font>
+                
+                  <font class = "topic-tag">notification-service</font>
+                
+                  <font class = "topic-tag">notifications</font>
+                
+                  <font class = "topic-tag">pushy</font>
+                
+                  <font class = "topic-tag">rpush</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">windows-phone</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/glebm/i18n-tasks">glebm/i18n-tasks</a></td>
+              <td>1538</td>
+              <td>Manage translation and localization with static analysis, for Ruby i18n</td>
+              <td>2019-06-06</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">i18n</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">static-analysis</font>
+                
+                  <font class = "topic-tag">static-code-analysis</font>
+                
+                  <font class = "topic-tag">translation-management</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/lsegal/yard">lsegal/yard</a></td>
+              <td>1514</td>
+              <td>YARD is a Ruby Documentation tool. The Y stands for "Yay!"</td>
+              <td>2019-07-31</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">documentation</font>
+                
+                  <font class = "topic-tag">rdoc</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">ruby-documentation</font>
+                
+                  <font class = "topic-tag">tool</font>
+                
+                  <font class = "topic-tag">yard</font>
+                
+                  <font class = "topic-tag">yardoc</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/geokit/geokit">geokit/geokit</a></td>
+              <td>1512</td>
+              <td>Official Geokit Gem. Geokit gem provides geocoding and distance/heading calculations. Pair with the geokit-rails plugin for full-fledged location-based app functionality.</td>
+              <td>2019-04-03</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/brainspec/enumerize">brainspec/enumerize</a></td>
+              <td>1485</td>
+              <td>Enumerated attributes with I18n and ActiveRecord/Mongoid support</td>
+              <td>2019-08-17</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">activerecord</font>
+                
+                  <font class = "topic-tag">mongoid</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/facebookarchive/instagram-ruby-gem">facebookarchive/instagram-ruby-gem</a></td>
+              <td>1445</td>
+              <td>The official gem for the Instagram API</td>
+              <td>2019-02-28</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/postmodern/ruby-install">postmodern/ruby-install</a></td>
+              <td>1430</td>
+              <td>Installs Ruby, JRuby, Rubinius, TruffleRuby or MRuby</td>
+              <td>2019-08-09</td>
+              <td>Shell</td>
+              <td>
+                
+                  <font class = "topic-tag">installer</font>
+                
+                  <font class = "topic-tag">jruby</font>
+                
+                  <font class = "topic-tag">mruby</font>
+                
+                  <font class = "topic-tag">rubies</font>
+                
+                  <font class = "topic-tag">rubinius</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">shell</font>
+                
+                  <font class = "topic-tag">truffleruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/streamio/streamio-ffmpeg">streamio/streamio-ffmpeg</a></td>
+              <td>1417</td>
+              <td>Simple yet powerful ruby ffmpeg wrapper for reading metadata and transcoding movies</td>
+              <td>2019-08-08</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bootstrap-ruby/bootstrap_form">bootstrap-ruby/bootstrap_form</a></td>
+              <td>1406</td>
+              <td>Official repository of the bootstrap_form gem, a Rails form builder that makes it super easy to create beautiful-looking forms using Bootstrap 4</td>
+              <td>2019-08-11</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">bootstrap</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">rails-form-builder</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shoes/shoes4">shoes/shoes4</a></td>
+              <td>1387</td>
+              <td>Shoes 4 : the next version of Shoes</td>
+              <td>2019-04-05</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">cross-platform</font>
+                
+                  <font class = "topic-tag">gui</font>
+                
+                  <font class = "topic-tag">jruby</font>
+                
+                  <font class = "topic-tag">linux</font>
+                
+                  <font class = "topic-tag">mac-osx</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">shoes</font>
+                
+                  <font class = "topic-tag">swt</font>
+                
+                  <font class = "topic-tag">windows</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nanobox-io/nanobox">nanobox-io/nanobox</a></td>
+              <td>1359</td>
+              <td>The ideal platform for developers</td>
+              <td>2019-03-11</td>
+              <td>Go</td>
+              <td>
+                
+                  <font class = "topic-tag">cli</font>
+                
+                  <font class = "topic-tag">deployment</font>
+                
+                  <font class = "topic-tag">developer-tools</font>
+                
+                  <font class = "topic-tag">development-environment</font>
+                
+                  <font class = "topic-tag">docker</font>
+                
+                  <font class = "topic-tag">golang</font>
+                
+                  <font class = "topic-tag">nanobox</font>
+                
+                  <font class = "topic-tag">paas-framework</font>
+                
+                  <font class = "topic-tag">virtualbox</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/louismullie/treat">louismullie/treat</a></td>
+              <td>1354</td>
+              <td>Natural language processing framework for Ruby.</td>
+              <td>2017-05-05</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/defunkt/unicorn">defunkt/unicorn</a></td>
+              <td>1351</td>
+              <td>Unofficial Unicorn Mirror.</td>
+              <td>2019-03-25</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/soveran/ohm">soveran/ohm</a></td>
+              <td>1347</td>
+              <td>Object-Hash Mapping for Redis</td>
+              <td>2019-03-11</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">lesscode</font>
+                
+                  <font class = "topic-tag">ohm</font>
+                
+                  <font class = "topic-tag">redis</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ffaker/ffaker">ffaker/ffaker</a></td>
+              <td>1338</td>
+              <td>Faker refactored.</td>
+              <td>2019-08-17</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/toy/image_optim">toy/image_optim</a></td>
+              <td>1298</td>
+              <td>Optimize images using multiple utilities</td>
+              <td>2019-08-05</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">image-optimisation</font>
+                
+                  <font class = "topic-tag">image-optimization</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nathanl/authority">nathanl/authority</a></td>
+              <td>1252</td>
+              <td>*CURRENTLY UNMAINTAINED*. Authority helps you authorize actions in your Rails app. It's ORM-neutral and has very little fancy syntax; just group your models under one or more Authorizer classes and write plain Ruby methods on them.</td>
+              <td>2018-08-27</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">authorization</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shoes/shoes-deprecated">shoes/shoes-deprecated</a></td>
+              <td>1191</td>
+              <td>Former repo for Shoes... see README for up to date locations!</td>
+              <td>2017-11-09</td>
+              <td>C</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/plentz/lol_dba">plentz/lol_dba</a></td>
+              <td>1177</td>
+              <td>lol_dba is a small package of rake tasks that scan your application models and displays a list of columns that probably should be indexed. Also, it can generate .sql migration scripts.</td>
+              <td>2019-07-23</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">database</font>
+                
+                  <font class = "topic-tag">database-migrations</font>
+                
+                  <font class = "topic-tag">gem</font>
+                
+                  <font class = "topic-tag">migrations</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">ruby-on-rails</font>
+                
+                  <font class = "topic-tag">sql</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/twilio/twilio-ruby">twilio/twilio-ruby</a></td>
+              <td>1172</td>
+              <td>A Ruby gem for communicating with the Twilio API and generating TwiML</td>
+              <td>2019-08-21</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">twilio</font>
+                
+                  <font class = "topic-tag">twilio-api</font>
+                
+                  <font class = "topic-tag">twiml</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/tweetstream/tweetstream">tweetstream/tweetstream</a></td>
+              <td>1111</td>
+              <td>A simple EventMachine-based library for consuming Twitter's Streaming API.</td>
+              <td>2018-12-30</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nov/fb_graph">nov/fb_graph</a></td>
+              <td>1065</td>
+              <td>This gem doesn't support FB Graph API v2.0+. Please use fb_graph2 gem instead.</td>
+              <td>2016-01-07</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cinchrb/cinch">cinchrb/cinch</a></td>
+              <td>1032</td>
+              <td>The IRC Bot Building Framework</td>
+              <td>2019-04-13</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zurb/foundation-rails">zurb/foundation-rails</a></td>
+              <td>990</td>
+              <td>Foundation for Rails</td>
+              <td>2019-01-29</td>
+              <td>CSS</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/excon/excon">excon/excon</a></td>
+              <td>966</td>
+              <td>Usable, fast, simple HTTP 1.1 for Ruby</td>
+              <td>2019-08-08</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">excon</font>
+                
+                  <font class = "topic-tag">http</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rspec/rspec-mocks">rspec/rspec-mocks</a></td>
+              <td>955</td>
+              <td>RSpec's 'test double' framework, with support for stubbing and mocking</td>
+              <td>2019-07-24</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zdavatz/spreadsheet">zdavatz/spreadsheet</a></td>
+              <td>947</td>
+              <td>The Ruby Spreadsheet by ywesee GmbH</td>
+              <td>2019-06-06</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">excel</font>
+                
+                  <font class = "topic-tag">gplv3</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">ruby-spreadsheet</font>
+                
+                  <font class = "topic-tag">spreadsheet</font>
+                
+                  <font class = "topic-tag">xls</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jeremyw/stamp">jeremyw/stamp</a></td>
+              <td>940</td>
+              <td>Date and time formatting for humans.</td>
+              <td>2017-02-25</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/haml/haml-rails">haml/haml-rails</a></td>
+              <td>929</td>
+              <td>let your Gemfile do the talking</td>
+              <td>2019-07-24</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/mailman/mailman">mailman/mailman</a></td>
+              <td>928</td>
+              <td>An incoming mail processing microframework in Ruby</td>
+              <td>2018-11-26</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weshatheleopard/rubyXL">weshatheleopard/rubyXL</a></td>
+              <td>924</td>
+              <td>Ruby lib for reading/writing/modifying .xlsx and .xlsm files</td>
+              <td>2019-08-21</td>
+              <td>HTML</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wvanbergen/chunky_png">wvanbergen/chunky_png</a></td>
+              <td>903</td>
+              <td>Read/write access to PNG images in pure Ruby.</td>
+              <td>2019-04-15</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaimeiniesta/metainspector">jaimeiniesta/metainspector</a></td>
+              <td>866</td>
+              <td>Ruby gem for web scraping purposes. It scrapes a given URL, and returns you its title, meta description, meta keywords, links, images...</td>
+              <td>2019-06-26</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/airbrake/airbrake">airbrake/airbrake</a></td>
+              <td>864</td>
+              <td>The official Airbrake library for Ruby applications</td>
+              <td>2019-08-20</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">airbrake</font>
+                
+                  <font class = "topic-tag">crash-reporting</font>
+                
+                  <font class = "topic-tag">error-monitoring</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cldwalker/debugger">cldwalker/debugger</a></td>
+              <td>863</td>
+              <td>port of ruby-debug that works on 1.9.2 and 1.9.3</td>
+              <td>2015-05-26</td>
+              <td>C</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ruby-i18n/i18n">ruby-i18n/i18n</a></td>
+              <td>791</td>
+              <td>Internationalization (i18n) library for Ruby</td>
+              <td>2019-07-25</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">i18n</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rails/sass-rails">rails/sass-rails</a></td>
+              <td>788</td>
+              <td>Ruby on Rails stylesheet engine for Sass</td>
+              <td>2019-08-16</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/sevenwire/forgery">sevenwire/forgery</a></td>
+              <td>782</td>
+              <td>Easy and customizable generation of forged data.</td>
+              <td>2018-12-17</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nixme/jazz_hands">nixme/jazz_hands</a></td>
+              <td>770</td>
+              <td>Pry-based enhancements for the default Rails 3 and 4 consoles</td>
+              <td>2017-12-28</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/NARKOZ/gitlab">NARKOZ/gitlab</a></td>
+              <td>767</td>
+              <td>Ruby wrapper and CLI for the GitLab REST API</td>
+              <td>2019-08-18</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">gitlab</font>
+                
+                  <font class = "topic-tag">gitlab-api</font>
+                
+                  <font class = "topic-tag">gitlab-cli</font>
+                
+                  <font class = "topic-tag">ruby-gem</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rtomayko/rack-cache">rtomayko/rack-cache</a></td>
+              <td>760</td>
+              <td>Real HTTP Caching for Ruby Web Apps</td>
+              <td>2019-02-26</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hexgnu/linkedin">hexgnu/linkedin</a></td>
+              <td>746</td>
+              <td>Ruby wrapper for the LinkedIn API</td>
+              <td>2019-03-13</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dejan/auto_html">dejan/auto_html</a></td>
+              <td>742</td>
+              <td>Collection of filters that transform plain text into HTML code.</td>
+              <td>2018-04-04</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/YorickPeterse/ruby-lint">YorickPeterse/ruby-lint</a></td>
+              <td>730</td>
+              <td>Moved to https://gitlab.com/yorickpeterse/ruby-lint</td>
+              <td>2017-05-03</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/flavorjones/loofah">flavorjones/loofah</a></td>
+              <td>724</td>
+              <td>HTML/XML manipulation and sanitization based on Nokogiri</td>
+              <td>2019-07-27</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/palkan/logidze">palkan/logidze</a></td>
+              <td>645</td>
+              <td>Database changes log for Rails</td>
+              <td>2019-08-20</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">activerecord</font>
+                
+                  <font class = "topic-tag">postgresql</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">versioning</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kylejginavan/youtube_it">kylejginavan/youtube_it</a></td>
+              <td>617</td>
+              <td>An object-oriented Ruby wrapper for the YouTube GData API</td>
+              <td>2015-05-11</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/slim-template/slim-rails">slim-template/slim-rails</a></td>
+              <td>592</td>
+              <td>Slim templates generator for Rails 3, 4 and 5</td>
+              <td>2019-05-16</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/AlchemyCMS/alchemy_cms">AlchemyCMS/alchemy_cms</a></td>
+              <td>584</td>
+              <td>AlchemyCMS is a Rails 5 CMS engine</td>
+              <td>2019-08-21</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">alchemy-cms</font>
+                
+                  <font class = "topic-tag">cms</font>
+                
+                  <font class = "topic-tag">rails-engine</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/codegram/spinach">codegram/spinach</a></td>
+              <td>549</td>
+              <td>Spinach is a BDD framework on top of Gherkin.</td>
+              <td>2018-09-01</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/RailsApps/rails-bootstrap">RailsApps/rails-bootstrap</a></td>
+              <td>542</td>
+              <td>Rails 5.1 starter app with the Bootstrap 4 front-end framework.</td>
+              <td>2017-05-17</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/straydogstudio/axlsx_rails">straydogstudio/axlsx_rails</a></td>
+              <td>526</td>
+              <td>A Rails plugin to provide templates for the axlsx gem</td>
+              <td>2019-05-06</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/sparklemotion/sqlite3-ruby">sparklemotion/sqlite3-ruby</a></td>
+              <td>518</td>
+              <td>Ruby bindings for the SQLite3 embedded database</td>
+              <td>2019-07-09</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">sqlite</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bkeepers/qu">bkeepers/qu</a></td>
+              <td>516</td>
+              <td>a Ruby library for queuing and processing background jobs.</td>
+              <td>2016-10-06</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hanklords/flickraw">hanklords/flickraw</a></td>
+              <td>509</td>
+              <td>Ruby library to access flickr api.</td>
+              <td>2019-06-05</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/maccman/nestful">maccman/nestful</a></td>
+              <td>507</td>
+              <td>Simple Ruby HTTP/REST client with a sane API</td>
+              <td>2017-11-07</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/maxim/bootswatch-rails">maxim/bootswatch-rails</a></td>
+              <td>495</td>
+              <td>Bootswatches converted to SCSS ready to use in Rails asset pipeline.</td>
+              <td>2019-01-09</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">bootstrap-sass</font>
+                
+                  <font class = "topic-tag">bootswatch</font>
+                
+                  <font class = "topic-tag">templates</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rmagick/rmagick">rmagick/rmagick</a></td>
+              <td>490</td>
+              <td>Ruby bindings for ImageMagick</td>
+              <td>2019-08-09</td>
+              <td>C</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/guilhermesad/rspotify">guilhermesad/rspotify</a></td>
+              <td>489</td>
+              <td>A ruby wrapper for the Spotify Web API</td>
+              <td>2019-08-21</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/strzibny/invoice_printer">strzibny/invoice_printer</a></td>
+              <td>488</td>
+              <td>Super simple PDF invoicing</td>
+              <td>2019-07-31</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">command-line-tool</font>
+                
+                  <font class = "topic-tag">invoice</font>
+                
+                  <font class = "topic-tag">invoice-pdf</font>
+                
+                  <font class = "topic-tag">pdf-generation</font>
+                
+                  <font class = "topic-tag">pdf-invoice</font>
+                
+                  <font class = "topic-tag">prawn</font>
+                
+                  <font class = "topic-tag">server</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/muffinista/chatterbot">muffinista/chatterbot</a></td>
+              <td>455</td>
+              <td>A straightforward ruby-based Twitter Bot Framework, using OAuth to authenticate.</td>
+              <td>2018-10-02</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/trinidad/trinidad">trinidad/trinidad</a></td>
+              <td>449</td>
+              <td>Web server for Rails/Rack applications built upon JRuby::Rack and Apache Tomcat</td>
+              <td>2016-07-14</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/glebm/order_query">glebm/order_query</a></td>
+              <td>416</td>
+              <td>Find next / previous Active Record(s) in one query</td>
+              <td>2018-03-22</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">activerecord</font>
+                
+                  <font class = "topic-tag">keyset-paging</font>
+                
+                  <font class = "topic-tag">pagination</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/starterkits/rails4-starterkit">starterkits/rails4-starterkit</a></td>
+              <td>408</td>
+              <td>Rails 4.1 starter app with production ready performance, security, and authentication.</td>
+              <td>2015-04-04</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/arthurnn/apn_sender">arthurnn/apn_sender</a></td>
+              <td>388</td>
+              <td>Background worker to send Apple Push Notifications over a persistent TCP socket.</td>
+              <td>2018-02-26</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/pda/flip">pda/flip</a></td>
+              <td>380</td>
+              <td>Flip lets you declare and manage feature flags, backed by cookies (private testing) and database (site-wide).</td>
+              <td>2019-05-31</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/SonarSource/sonarlint-intellij">SonarSource/sonarlint-intellij</a></td>
+              <td>344</td>
+              <td>SonarLint for IntelliJ</td>
+              <td>2019-08-07</td>
+              <td>Java</td>
+              <td>
+                
+                  <font class = "topic-tag">intellij</font>
+                
+                  <font class = "topic-tag">sonarlint</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/metaskills/less-rails">metaskills/less-rails</a></td>
+              <td>344</td>
+              <td>:-1: :train: Less.js For Rails</td>
+              <td>2018-10-31</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/packetfu/packetfu">packetfu/packetfu</a></td>
+              <td>327</td>
+              <td>PacketFu, a mid-level packet manipulation library for Ruby</td>
+              <td>2018-12-05</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/adamniedzielski/tiddle">adamniedzielski/tiddle</a></td>
+              <td>314</td>
+              <td>Devise strategy for token authentication in API-only Ruby on Rails applications</td>
+              <td>2019-06-14</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/algolia/algoliasearch-rails">algolia/algoliasearch-rails</a></td>
+              <td>297</td>
+              <td>AlgoliaSearch integration to your favorite ORM</td>
+              <td>2019-07-05</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">activerecord</font>
+                
+                  <font class = "topic-tag">algolia</font>
+                
+                  <font class = "topic-tag">gem</font>
+                
+                  <font class = "topic-tag">mongoid</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">search</font>
+                
+                  <font class = "topic-tag">sequel</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gimite/google-spreadsheet-ruby">gimite/google-spreadsheet-ruby</a></td>
+              <td>294</td>
+              <td>Ruby library to read/write Google Spreadsheet</td>
+              <td>2017-12-24</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ismasan/oat">ismasan/oat</a></td>
+              <td>276</td>
+              <td>Adapters-based API serializers with Hypermedia support for Ruby apps.</td>
+              <td>2019-05-18</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/applift/fast_attributes">applift/fast_attributes</a></td>
+              <td>271</td>
+              <td>FastAttributes adds attributes with their types to the class</td>
+              <td>2019-03-28</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kangguru/rack-google-analytics">kangguru/rack-google-analytics</a></td>
+              <td>262</td>
+              <td>Simple Rack middleware for implementing google analytics tracking in your Ruby-Rack based project. Supports synchronous and asynchronous insertion and configurable load options</td>
+              <td>2019-02-23</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/sandrods/odf-report">sandrods/odf-report</a></td>
+              <td>256</td>
+              <td>Generates ODF files, given a template (.odt) and data, replacing tags</td>
+              <td>2019-07-26</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/seamusabshere/remote_table">seamusabshere/remote_table</a></td>
+              <td>221</td>
+              <td>Open local or remote XLSX, XLS, ODS, CSV (comma separated), TSV (tab separated), other delimited, fixed-width files, and Google Docs. Returns an enumerator of Arrays or Hashes, depending on whether there are headers.</td>
+              <td>2016-02-01</td>
+              <td>HTML</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/choonkeat/attache">choonkeat/attache</a></td>
+              <td>211</td>
+              <td>Yet another approach to file upload</td>
+              <td>2019-08-20</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cxn03651/write_xlsx">cxn03651/write_xlsx</a></td>
+              <td>209</td>
+              <td>Rubygem for create excel xlsx file</td>
+              <td>2019-06-20</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rabbit-shocker/rabbit">rabbit-shocker/rabbit</a></td>
+              <td>204</td>
+              <td>A programmable presentation tool by Ruby.</td>
+              <td>2019-07-28</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jedcn/reveal-ck">jedcn/reveal-ck</a></td>
+              <td>197</td>
+              <td>Create slides with markdown</td>
+              <td>2019-04-03</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">cli</font>
+                
+                  <font class = "topic-tag">markdown</font>
+                
+                  <font class = "topic-tag">presentation</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">slides</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apache/predictionio-sdk-ruby">apache/predictionio-sdk-ruby</a></td>
+              <td>192</td>
+              <td>PredictionIO Ruby SDK</td>
+              <td>2018-09-20</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">big-data</font>
+                
+                  <font class = "topic-tag">predictionio</font>
+                
+                  <font class = "topic-tag">scala</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/diowa/ruby2-rails4-bootstrap-heroku">diowa/ruby2-rails4-bootstrap-heroku</a></td>
+              <td>188</td>
+              <td>[UNMAINTAINED] A starter application based on Ruby 2.4, Rails 4.2 and Bootstrap for Sass 3, deployable on Heroku</td>
+              <td>2017-08-01</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">bootstrap</font>
+                
+                  <font class = "topic-tag">font-awesome</font>
+                
+                  <font class = "topic-tag">heroku</font>
+                
+                  <font class = "topic-tag">postgresql</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">sass</font>
+                
+                  <font class = "topic-tag">slim</font>
+                
+                  <font class = "topic-tag">starter-app</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/afeld/magickly">afeld/magickly</a></td>
+              <td>184</td>
+              <td>image manipulation as a (plugin-able) service</td>
+              <td>2016-02-01</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/keenlabs/keen-gem">keenlabs/keen-gem</a></td>
+              <td>180</td>
+              <td>Official Ruby client for the Keen IO API. Build analytics features directly into your Ruby apps.</td>
+              <td>2018-08-27</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Casecommons/pg_search">Casecommons/pg_search</a></td>
+              <td>176</td>
+              <td>pg_search builds ActiveRecord named scopes that take advantage of PostgreSQL’s full text search </td>
+              <td>2019-07-22</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">activerecord</font>
+                
+                  <font class = "topic-tag">metaphone</font>
+                
+                  <font class = "topic-tag">multi-search</font>
+                
+                  <font class = "topic-tag">pg-search</font>
+                
+                  <font class = "topic-tag">postgresql</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">search</font>
+                
+                  <font class = "topic-tag">trigrams</font>
+                
+                  <font class = "topic-tag">tsearch</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/harvesthq/simple_xlsx_writer">harvesthq/simple_xlsx_writer</a></td>
+              <td>158</td>
+              <td>Simpe writer for Office 2007 Excel files</td>
+              <td>2016-02-23</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/randym/acts_as_xlsx">randym/acts_as_xlsx</a></td>
+              <td>154</td>
+              <td>active record mixin for axlsx</td>
+              <td>2017-08-21</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gmontard/helioth">gmontard/helioth</a></td>
+              <td>120</td>
+              <td>Manage feature flipping and rollout</td>
+              <td>2014-10-08</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/smathieu/prosperity">smathieu/prosperity</a></td>
+              <td>119</td>
+              <td>The easiest way to graph data from your Rails models</td>
+              <td>2014-12-22</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/paypal/merchant-sdk-ruby">paypal/merchant-sdk-ruby</a></td>
+              <td>104</td>
+              <td>None</td>
+              <td>2018-02-15</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/postmodern/chgems">postmodern/chgems</a></td>
+              <td>91</td>
+              <td>DEPRECATED: use gem_home instead!</td>
+              <td>2016-08-09</td>
+              <td>Shell</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jimweirich/flexmock">jimweirich/flexmock</a></td>
+              <td>87</td>
+              <td>Flexible mocking for Ruby testing</td>
+              <td>2017-02-09</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/glebm/to_spreadsheet">glebm/to_spreadsheet</a></td>
+              <td>84</td>
+              <td>Render XLSX from Rails using existing views (html ⇒ xlsx)</td>
+              <td>2018-11-17</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/randym/activeadmin-axlsx">randym/activeadmin-axlsx</a></td>
+              <td>83</td>
+              <td>ActiveAdmin plugin using Axlsx for adding Excel (xlsx) download links for your resources</td>
+              <td>2018-03-20</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/DataDog/dogapi-rb">DataDog/dogapi-rb</a></td>
+              <td>68</td>
+              <td>Ruby client for Datadog's API</td>
+              <td>2019-08-21</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ranguba/rroonga">ranguba/rroonga</a></td>
+              <td>55</td>
+              <td>The Ruby bindings of Groonga.</td>
+              <td>2019-08-19</td>
+              <td>C</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Instrumental/instrumental_agent-ruby">Instrumental/instrumental_agent-ruby</a></td>
+              <td>53</td>
+              <td>Ruby Agent for Instrumental Application Monitoring</td>
+              <td>2019-08-21</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">apm</font>
+                
+                  <font class = "topic-tag">metrics</font>
+                
+                  <font class = "topic-tag">monitoring</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">ruby-on-rails</font>
+                
+                  <font class = "topic-tag">timeseries</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Wolox/dictum">Wolox/dictum</a></td>
+              <td>53</td>
+              <td>Create automatic documentation of your Rails API endpoints through your tests</td>
+              <td>2019-06-05</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/a2design-inc/json-compare">a2design-inc/json-compare</a></td>
+              <td>49</td>
+              <td>Returns the difference between two JSON files.</td>
+              <td>2018-08-20</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/lab2023/cybele">lab2023/cybele</a></td>
+              <td>47</td>
+              <td>Rails template for our development standards. Cybele makes your apps ready for faster development and easy deployment.</td>
+              <td>2019-03-19</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/lab2023/katip">lab2023/katip</a></td>
+              <td>38</td>
+              <td>This is a Change Logging gem for a git initialized project.</td>
+              <td>2015-01-15</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kurocha/teapot">kurocha/teapot</a></td>
+              <td>37</td>
+              <td>Teapot is a tool for managing complex cross-platform builds.</td>
+              <td>2019-04-28</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">build-tool</font>
+                
+                  <font class = "topic-tag">cpp</font>
+                
+                  <font class = "topic-tag">game-development</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">teapot</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cercomp/weby">cercomp/weby</a></td>
+              <td>34</td>
+              <td>A simple, flexible and extensible CMS in Ruby on Rails</td>
+              <td>2019-07-05</td>
+              <td>CSS</td>
+              <td>
+                
+                  <font class = "topic-tag">cms</font>
+                
+                  <font class = "topic-tag">rails</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">sites</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/asanghi/excel_rails">asanghi/excel_rails</a></td>
+              <td>30</td>
+              <td>rxls views for Rails 3</td>
+              <td>2012-12-07</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zenchild/viewpoint-spws">zenchild/viewpoint-spws</a></td>
+              <td>30</td>
+              <td>A Microsoft Sharepoint Web Services library for Ruby.</td>
+              <td>2012-02-14</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/lab2023/kangal">lab2023/kangal</a></td>
+              <td>29</td>
+              <td>Extended validation gem for email, subdomain, credit card, tax number etc...</td>
+              <td>2016-10-05</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/codefriar/RubySpamAssassin">codefriar/RubySpamAssassin</a></td>
+              <td>28</td>
+              <td>Ruby Spam Assassin; Kills Spam Dead. Perhaps before it's sent! (Gasp!)</td>
+              <td>2019-06-11</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/500px/f00px">500px/f00px</a></td>
+              <td>23</td>
+              <td>500px api ruby gem</td>
+              <td>2015-10-14</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bspaulding/Sheets">bspaulding/Sheets</a></td>
+              <td>22</td>
+              <td>Work with spreadsheets easily in a native ruby format.</td>
+              <td>2018-02-16</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zhangsu/seal">zhangsu/seal</a></td>
+              <td>20</td>
+              <td>Scorched End Audio Library: a C library (with Ruby binding) for 3D audio rendering.</td>
+              <td>2014-10-12</td>
+              <td>C</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dmk/fastsheet">dmk/fastsheet</a></td>
+              <td>19</td>
+              <td>Fast XLSX reader for ruby</td>
+              <td>2017-10-09</td>
+              <td>Rust</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gbiczo/oxcelix">gbiczo/oxcelix</a></td>
+              <td>18</td>
+              <td>Oxcelix - A fast and simple .xlsx file parser</td>
+              <td>2018-11-01</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/DocRaptor/docraptor-ruby">DocRaptor/docraptor-ruby</a></td>
+              <td>16</td>
+              <td>A native Ruby client for the DocRaptor document generation service.</td>
+              <td>2017-11-21</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/LeonardoCardoso/gsrd">LeonardoCardoso/gsrd</a></td>
+              <td>13</td>
+              <td>GitHub Starred Repos Downloader</td>
+              <td>2019-04-12</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">downloader</font>
+                
+                  <font class = "topic-tag">github</font>
+                
+                  <font class = "topic-tag">repository</font>
+                
+                  <font class = "topic-tag">repository-tools</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">ruby-gem</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/murb/workbook">murb/workbook</a></td>
+              <td>13</td>
+              <td>simple framework for containing spreadsheet like data</td>
+              <td>2019-07-14</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">csv</font>
+                
+                  <font class = "topic-tag">ods</font>
+                
+                  <font class = "topic-tag">ruby</font>
+                
+                  <font class = "topic-tag">rubygem</font>
+                
+                  <font class = "topic-tag">spreadsheet</font>
+                
+                  <font class = "topic-tag">workbook</font>
+                
+                  <font class = "topic-tag">xls</font>
+                
+                  <font class = "topic-tag">xlsx</font>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gnoso/spreadsheet_report">gnoso/spreadsheet_report</a></td>
+              <td>12</td>
+              <td>Simple tool for running queries against ActiveRecord and putting them into a Google Spreadsheet.</td>
+              <td>2013-05-28</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/tomiacannondale/wrap_excel">tomiacannondale/wrap_excel</a></td>
+              <td>12</td>
+              <td>WrapExcel is a wrapper library that specializes in the operation of Excel win32ole.</td>
+              <td>2013-03-15</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/lab2023/tcmb_currency">lab2023/tcmb_currency</a></td>
+              <td>10</td>
+              <td>T.C.M.B. Currency Ruby Gem</td>
+              <td>2017-10-27</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/lab2023/bin_checker">lab2023/bin_checker</a></td>
+              <td>9</td>
+              <td>Bin checker is checks Turkish Banks bin numbers</td>
+              <td>2015-01-15</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/lab2023/blankable">lab2023/blankable</a></td>
+              <td>8</td>
+              <td>Adds blank slates to index view</td>
+              <td>2015-08-30</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/maxd/write_xlsx_rails">maxd/write_xlsx_rails</a></td>
+              <td>4</td>
+              <td>xlsx renderer for Rails base on write_xlsx gem</td>
+              <td>2017-10-31</td>
+              <td>Ruby</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rdoc/rdoc">rdoc/rdoc</a></td>
+              <td>4</td>
+              <td>RDoc produces HTML and online documentation for Ruby projects.  RDoc includes the rdoc and ri tools for generating and displaying online documentation.</td>
+              <td>2017-07-27</td>
+              <td>None</td>
+              <td>
+                
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/torokmark/response_code">torokmark/response_code</a></td>
+              <td>1</td>
+              <td>Response Code in readable way.</td>
+              <td>2018-06-11</td>
+              <td>Ruby</td>
+              <td>
+                
+                  <font class = "topic-tag">http</font>
+                
+                  <font class = "topic-tag">response-code</font>
+                
+                  <font class = "topic-tag">status-codes</font>
+                
+            </tr>
+          
+        </tbody>
+      </table>
+		</div>
+
+
+
+
+				</div>
+
+
+			</div>
+			<!-- /.row -->
+
+		</div>
+		<!-- /.container -->
+
+		<footer>
+	<div class="container-fluid">
+    <div class="text-center">
+      <p>Awesome List management
+    </div>
+	</div>
+
+</footer>
+
+	</body>
+
+</html>
