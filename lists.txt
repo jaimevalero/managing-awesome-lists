@@ -1,3 +1,5 @@
+https://github.com/dudash/openshift-is-awesome
+https://github.com/pditommaso/awesome-pipeline
 https://github.com/sbilly/awesome-security
 https://github.com/sdogruyol/awesome-ruby
 https://github.com/ligurio/awesome-ci

@@ -4,9 +4,9 @@
 # Tis one liner scripts extracts the number of stars from each repo from a given awesome list, and order repos by the number of start
 # This one liner uses jq command, so you should have it installed in your machine
 
-RESULTS=5000
 
 source ./.credentials
+
 # In the credentials file :
 #CREDENTIALS="replace-for-your-github-user:replace-for-your-github-password"
 
@@ -25,7 +25,7 @@ Create_Info_Render( )
   do
     MY_FILE=`echo $REPO | tr \/ @`
     [ ` grep '"message": "Not Found",' .cache/api-$MY_FILE.json | wc -l ` -ge 1 ] && Log "Warning : Repo Vacio $REPO" && continue
-
+    
     cat .cache/api-$MY_FILE.json | jq -c .
     echo ","
   done < ${CACHE_README_FILE}
@@ -48,18 +48,24 @@ Download_Readme( )
   URI="$1"
   OUTPUT_FILE=`echo $URI | tr \/ @  `
   CACHE_README_FILE=.cache/readme-${OUTPUT_FILE}.txt
+  RAW_CACHE_README_FILE=.cache/raw_readme-${OUTPUT_FILE}.txt
+  Log URI=${URI}=   OUTPUT_FILE=${OUTPUT_FILE}=   CACHE_README_FILE=${CACHE_README_FILE}=
+  RESULTS=5000
 
-  Log URI=${URI}=
-  Log OUTPUT_FILE=${OUTPUT_FILE}=
-  Log CACHE_README_FILE=${CACHE_README_FILE}=
-
-  if [[ ! -f ${CACHE_README_FILE} ]]
+  if [[ ! -s ${CACHE_README_FILE} ]]
   then
-
     README_NAME=`curl -L --user  "$CREDENTIALS" -s "https:/github.com/${URI}" | grep --colour -o -i /readme.md | head -1 | cut -d\/ -f2  `
-    Log Download_Readme ${README_NAME} ...
 
-    curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/master/${README_NAME}" | \
+    if [[ ! -f ${RAW_CACHE_README_FILE} ]]
+    then
+      Log Download_Readme README_NAME=${README_NAME}= ...
+      curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/master/${README_NAME}" > ${RAW_CACHE_README_FILE}
+    fi
+    Log Raw readme $URI` ls -latr ${RAW_CACHE_README_FILE} `
+    ls -latr ${RAW_CACHE_README_FILE}
+
+
+    cat ${RAW_CACHE_README_FILE} | \
       egrep -E  -o  'https://github.com/.*/.*'      | \
       tr \" \  | \
       sed -e 's@[>#"\) ]?@ @g' | \
@@ -68,9 +74,11 @@ Download_Readme( )
       cut -d\/ -f 4-5  |   \
       tr -d '\)'       |   \
       tr -d ':'        |   \
+      tr -d ','        |   \
       head -${RESULTS} |   \
       sort -du  > ${CACHE_README_FILE}
   fi
+  ls -latr ${CACHE_README_FILE}
   Log ` ls -latr ${CACHE_README_FILE} `
 }
 
@@ -78,8 +86,9 @@ Generate_Contents_Single_List( )
 {
   AWESOME_LIST_URL=$1
   URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
-  Download_Api_Repo "$URI"
   Log URI=$URI
+
+  Download_Api_Repo "$URI"
 
   Log Parsing ${URI} ...
 
@@ -107,7 +116,7 @@ Generate_Render_Single_List( )
   AWESOME_LIST_URL="$1"
   MY_URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
   FILE_HTML=`echo ${MY_URI} | tr \/ @  `
-  Log AWESOME_LIST_URL=$AWESOME_LIST_URL= FILE_HTML=$FILE_HTML=
+  Log Preparando lista AWESOME_LIST_URL=$AWESOME_LIST_URL= FILE_HTML=$FILE_HTML=
 
   Generate_Contents_Single_List ${AWESOME_LIST_URL}
   Create_Info_Render_Wrapper "${MY_URI}" > /tmp/lista.json
@@ -123,18 +132,23 @@ NON_WORKING="
 https://github.com/ossu/computer-science
 https://github.com/MunGell/awesome-for-beginners
 "
-source ./lib-actions.sh
 
 AWESOME_LIST_LISTS=`cat lists.txt`
 
 
-
-Log Inicio
+Main( )
+{
+  source ./lib-actions.sh
+Log "Iniciando"
+mkdir .cache 2>/dev/null
 for AWESOME_LIST_URL in ` echo "${AWESOME_LIST_LISTS}"`
 do
   Generate_Render_Single_List ${AWESOME_LIST_URL}
 done
 
-
 Log Fin
+
+}
+
+Main
 ./update-documentation.sh
