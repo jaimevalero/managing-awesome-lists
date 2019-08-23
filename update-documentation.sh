@@ -4,7 +4,7 @@
 
 README_JSON_DATA=/tmp/kk-readme.json
 INDEX_JSON_DATA=/tmp/kk-index.json
-TOPIC_JSON_DATA=/tmp/kk-topic.json
+
 REPOS_WITH_LABELS_FILE=/tmp/labels.json
 
 README_PARTIAL_DOC=/tmp/kk-readme.md
@@ -107,6 +107,34 @@ Render_Navbar( )
   ls -altr  views/layout/navbar.html
 }
 
+
+Check_Repos_Are_Downloaded( )
+{
+  TOPIC_FILE="$1"
+while read my_topic_file ; do Download_Api_Repo "$my_topic_file" ; done < "${TOPIC_FILE}"
+}
+Generate_Topic_Json( )
+{
+  TOPIC_FILE="$1"
+  TOPIC_NAME=`basename "$TOPIC_FILE"`
+  Log TOPIC_NAME=$TOPIC_NAME= TOPIC_FILE=$TOPIC_FILE=
+  # Check every repo is in cache
+  Check_Repos_Are_Downloaded "${TOPIC_FILE}" 1>/dev/null 2>/dev/null
+
+  echo " { \"list\" : \"${TOPIC_NAME}\"  , \"repos\" :  "
+  cat "${TOPIC_FILE}" | tr \/ \@ | sed -e 's@^@.cache/api-@g' -e 's@$@.json@g' | xargs cat | jq -c  "
+   {
+     full_name,
+     description,
+     topics,
+     created_at,
+     stargazers_count,
+     language
+      }"  | jq  --slurp .
+  echo " } "
+
+}
+
 Render_Topics( )
 {
   cat $INDEX_JSON_DATA | jq -c ".repos[]|{ full_name , topics}" | grep -v '"topics":\[\]'  > ${REPOS_WITH_LABELS_FILE}
@@ -123,47 +151,29 @@ Render_Topics( )
   do
     Log "Topic: $topic"
     TOPIC_FILE=".cache/topics/$topic"
+    THIS_TOPIC_JSON_DATA="/tmp/topic-${topic}.json"
     # We only generate intermediate data if dont exists
     if [ ! -s "${TOPIC_FILE}"      ]; then  grep "\"$topic\"" ${REPOS_WITH_LABELS_FILE} | jq -r .full_name > "${TOPIC_FILE}"    ; fi
-    if [ ! -s "${TOPIC_JSON_DATA}" ]; then  Generate_Topic_Json "${TOPIC_FILE}"                            > ${TOPIC_JSON_DATA} ; fi
-    Render_Topic "$TOPIC_JSON_DATA"
+    Generate_Topic_Json "${TOPIC_FILE}"   > "${THIS_TOPIC_JSON_DATA}"
+    cat "${THIS_TOPIC_JSON_DATA}" | jq . 1>/dev/null 2>/dev/null
+    RESUL=$?
+    [ $RESUL -ne 0 ] && Log "Error $topic no tiene json correcto de datos en ${THIS_TOPIC_JSON_DATA}"
+    Render_Topic "$THIS_TOPIC_JSON_DATA"
   done
 
 
 }
 
 
-Generate_Topic_Json( )
-{
-  TOPIC_FILE="$1"
-  TOPIC_NAME=`basename "$TOPIC_FILE"`
-  Log TOPIC_NAME=$TOPIC_NAME= TOPIC_FILE=$TOPIC_FILE=
-  # Check every repo is in cache
-  while read my_topic_file ; do Download_Api_Repo "$my_topic_file" ; done < "${TOPIC_FILE}"
-
-  echo " { \"list\" : \"${TOPIC_NAME}\"  , \"repos\" :  "
-  cat "${TOPIC_FILE}" | tr \/ \@ | sed -e 's@^@.cache/api-@g' -e 's@$@.json@g' | xargs cat | jq -c  "
-   {
-     full_name,
-     description,
-     topics,
-     created_at,
-     pushed_at,
-     stargazers_count,
-     language
-      }"  | jq  --slurp .
-  echo " } "
-
-}
-
 Render_Topic( )
 {
 
-  TOPIC_JSON_DATA="$1"
-  Log "TOPIC_JSON_DATA=$TOPIC_JSON_DATA= "
-  TOPIC=`cat $TOPIC_JSON_DATA | jq -r .list  | cut -d\/ -f3-100`
-  ./generate_render_template.py  -t template-topic.html --data ${TOPIC_JSON_DATA} > "var/topics/$TOPIC.html"
-  ls -altr
+  THIS_TOPIC_JSON_DATA="$1"
+  TOPIC=`cat "$THIS_TOPIC_JSON_DATA" | jq -r .list  | cut -d\/ -f3-100`
+  Log "THIS_TOPIC_JSON_DATA=$THIS_TOPIC_JSON_DATA="
+  Log "./generate_render_template.py  -t template-topic.html --data '${THIS_TOPIC_JSON_DATA}' > 'var/topics/$TOPIC.html' "
+  ./generate_render_template.py  -t template-topic.html --data "${THIS_TOPIC_JSON_DATA}" > "var/topics/$TOPIC.html"
+  ls -altr "var/topics/$TOPIC.html"
 }
 
 Main( )

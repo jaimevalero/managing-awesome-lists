@@ -24,7 +24,7 @@
             <th>Repo</th>
             <th width="15%">Stars</th>
             <th>Description</th>
-            <th width="15%">Last Updated</th>
+            <th width="15%">Created</th>
             <th>Language</th>
             <th>Tags</th>
 
@@ -38,7 +38,7 @@
               <td><a href="https://github.com/{{repo.full_name}}">{{repo.full_name}}</a></td>
               <td>{{repo.stargazers_count}}</td>
               <td>{{repo.description}}</td>
-              <td>{{repo.pushed_at[0:10]}}</td>
+              <td>{{repo.created_at[0:10]}}</td>
               <td>{{repo.language}}</td>
               <td>
                 {%for tag in repo.topics %}
