@@ -1,8 +1,8 @@
 #! /bin/bash
 # Order an awesome list by number stars.
 #
-# Tis one liner scripts extracts the number of stars from each repo from a given awesome list, and order repos by the number of start
-# This one liner uses jq command, so you should have it installed in your machine
+# This scripts extracts the number of stars from each repo from a given awesome list, and order repos by the number of start
+# uses jq command, so you should have it installed in your machine
 
 
 source ./.credentials
@@ -19,22 +19,32 @@ Create_Info_Render( )
   OUTPUT_FILE=`echo $URI | tr \/ @  `
   CACHE_README_FILE=".cache/readme-${OUTPUT_FILE}.txt"
 
-  Log "URI=$URI= CACHE_README_FILE=$CACHE_README_FILE="
-  echo ' { "repos" : [ '
-  while read REPO
-  do
-    MY_FILE=`echo $REPO | tr \/ @`
-    [ -f ".cache/api-$MY_FILE.json" ]  ||  Log "Warning : Repo Vacio $REPO" && continue
-    [ ` grep '"message": "Not Found",' ".cache/api-$MY_FILE.json" | wc -l ` -ge 1 ] && Log "Warning : Repo Vacio $REPO" && continue
+  Log "URI=$URI= CACHE_README_FILE=$CACHE_README_FILE=  OUTPUT_FILE=$OUTPUT_FILE="
 
-    cat .cache/api-$MY_FILE.json | jq -c .
-    echo ","
-  done < ${CACHE_README_FILE}
-  echo "]"
-  echo ' , "list" : '
+echo ' { '
+  echo '  "list" : '
   MY_AWESOME_LIST=`echo $URI | tr \/ @`
   cat .cache/api-$MY_AWESOME_LIST.json | jq -c .
-  echo ' } '
+
+echo '  , "repos" : '
+cat  ${CACHE_README_FILE} | tr \/ @ |  sed -e 's@^@.cache/api-@g'  -e 's@$@.json@g' | xargs cat  |  grep -v '"message": "Not Found",' | grep  [0-9] | jq --slurp . 2>/dev/null
+echo ' } '
+
+  #echo " {  \"list\" :  \"repos\" :
+  #while read REPO
+  #do
+  #  MY_FILE=`echo $REPO | tr \/ @`
+  #  [ -f ".cache/api-$MY_FILE.json" ]  ||  echo "Warning : Repo Vacio $REPO" && continue
+  #  [ ` grep '"message": "Not Found",' ".cache/api-$MY_FILE.json" | wc -l ` -ge 1 ] && echo "Warning : Repo Vacio $REPO" && continue
+
+  #  cat .cache/api-$MY_FILE.json | jq -c .
+  #  echo ","
+  #done < ${CACHE_README_FILE}
+  #echo "]"
+  #echo ' , "list" : '
+  #MY_AWESOME_LIST=`echo $URI | tr \/ @`
+  #cat .cache/api-$MY_AWESOME_LIST.json | jq -c .
+  #echo ' } '
 }
 Create_Info_Render_Wrapper( )
 {
@@ -127,6 +137,7 @@ Generate_Render_Single_List( )
     Log  ERRROR . Repos Vacios ${URI}
   else
     ./generate_render_template.py  -t template-list.html --data /tmp/lista.json > var/awl-$FILE_HTML.html
+    ls -altr   var/awl-$FILE_HTML.html
   fi
 }
 NON_WORKING="
@@ -142,6 +153,7 @@ Main( )
   source ./lib-actions.sh
 Log "Iniciando"
 mkdir .cache 2>/dev/null
+
 for AWESOME_LIST_URL in ` echo "${AWESOME_LIST_LISTS}"`
 do
   Generate_Render_Single_List ${AWESOME_LIST_URL}
@@ -152,4 +164,4 @@ Log Fin
 }
 
 Main
-./update-documentation.sh
+#./update-documentation.sh
