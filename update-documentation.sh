@@ -2,7 +2,7 @@
 
 # Generate doc for the readme.md file
 
-
+DEBUG=100000
 README_JSON_DATA=/tmp/kk-readme.json
 INDEX_JSON_DATA=/tmp/kk-index.json
 TOPIC_JSON_DATA=/tmp/kk-topic.json
@@ -12,7 +12,7 @@ README_PARTIAL_DOC=/tmp/kk-readme.md
 INDEX_PARTIAL_DOC=/tmp/kk-index.html
 source ./lib-actions.sh
 
-Generate_Render_Index( )
+Render_Index( )
 {
   RESULTS=50000000
 
@@ -47,6 +47,7 @@ Generate_Render_Index( )
 
 Generate_Readme_Json_Data_Inner( )
 {
+  Log Empezando
   LIST_FILELIST=`find .cache/ | grep readme- | sed -e 's@/readme-@/api-@g' -e 's@.txt$@.json@g'| sort -du `
 
   echo ' { "repos" : [ '
@@ -72,6 +73,7 @@ Generate_Partial_Doc( )
 
 Generate_Readme_Json_Data( )
 {
+  Log Empezando
   Generate_Readme_Json_Data_Inner| tr '\n' ' ' | sed -e  's@, ]@]@g'
 }
 
@@ -83,7 +85,7 @@ Document_Index( )
 
 }
 
-Document_Readme( )
+Render_Readme( )
 {
 
   README_FILE=README.md
@@ -91,29 +93,31 @@ Document_Readme( )
 
 }
 
-Document_Navbar( )
+Render_Navbar( )
 {
+
   ./generate_render_template.py  -t template-navbar.html --data ${README_JSON_DATA} >  views/layout/navbar.html
   ls -altr  views/layout/navbar.html
 }
 
-Document_Topics( )
+Render_Topics( )
 {
   cat $INDEX_JSON_DATA | jq -c ".repos[]|{ full_name , topics}" | grep -v '"topics":\[\]'  > ${REPOS_WITH_LABELS_FILE}
 
   # Label in more than one repo
-  TOPICS_LIST=` cat $INDEX_JSON_DATA | jq ".repos[]|.topics"   | grep \" | cut -d\" -f2 | sort  | uniq -c | sort -k1 -n  -r | grep -v "   1 "  |  awk '{print $2}'  | head`
+  TOPICS_LIST=` cat $INDEX_JSON_DATA | jq ".repos[]|.topics"   | grep \" | cut -d\" -f2 | sort  | uniq -c | sort -k1 -n  -r | grep -v "   1 "  |  awk '{print $2}' | sort -du | head -$DEBUG `
 
-  rm -rf var/topics/     ; mkdir var/topics/
-  rm -rf .cache/topics/  ; mkdir .cache/topics/
+  mkdir var/topics/     2>/dev/null
+  mkdir .cache/topics/  2>/dev/null
 
-  for topic in $TOPICS_LIST
+  for topic in ${TOPICS_LIST}
   do
     Log "Topic: $topic"
     TOPIC_FILE=".cache/topics/$topic"
-    grep "\"$topic\"" ${REPOS_WITH_LABELS_FILE} | jq -r .full_name >> "${TOPIC_FILE}"
-    Generate_Topic_Json "${TOPIC_FILE}" > $TOPIC_JSON_DATA
-    Generate_Render_Topic $TOPIC_JSON_DATA
+    # We only generate intermediate data if dont exists
+    #if [ ! -s "${TOPIC_FILE}"      ]; then  grep "\"$topic\"" ${REPOS_WITH_LABELS_FILE} | jq -r .full_name > "${TOPIC_FILE}"    ; fi
+    #if [ ! -s "${TOPIC_JSON_DATA}" ]; then  Generate_Topic_Json "${TOPIC_FILE}"                            > ${TOPIC_JSON_DATA} ; fi
+    Render_Topic "$TOPIC_JSON_DATA"
   done
 
 
@@ -143,9 +147,7 @@ Generate_Topic_Json( )
 
 }
 
-
-
-Generate_Render_Topic( )
+Render_Topic( )
 {
   TOPIC_JSON_DATA="$1"
   TOPIC=`cat $TOPIC_JSON_DATA | jq -r .list  | cut -d\/ -f3-100`
@@ -161,19 +163,18 @@ Main( )
   # Finally : Write results to repo file
   Generate_Readme_Json_Data > ${README_JSON_DATA}
   Generate_Partial_Doc      > ${README_PARTIAL_DOC}
-  Document_Readme
+  Render_Readme
 
   # Document navbar
-  Document_Navbar
-  Generate_Render_Index
+  Render_Navbar
+  Render_Index
 
   # Topics
-  Document_Topics
+  Render_Topics
 }
 
 
 
-source ./lib-actions.sh
 
-#Main
+Main
 #git add . ; git commit -m "Templatin'" ;  git push origin master

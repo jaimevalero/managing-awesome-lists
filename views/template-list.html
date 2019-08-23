@@ -1,6 +1,7 @@
 {% extends "layout.html" %}
 
 {% block tabla_resultados %}
+{% set BASE_URL= "https://jaimevalero.github.io/managing-awesome-lists" %}
 
 
 
@@ -35,8 +36,11 @@
               <td>{{repo.language}}</td>
               <td>
                 {%for tag in repo.topics %}
-                  <font class = "topic-tag">{{tag}}</font>
+                <a href="{{BASE_URL}}/var/topics/{{tag}}.html" >
+                  <font href= "" class = "topic-tag">{{tag}}</font>
+                </a>
                 {% endfor %}
+              </td>
             </tr>
           {% endfor	%}
         </tbody>

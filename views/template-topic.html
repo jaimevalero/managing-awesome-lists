@@ -3,10 +3,17 @@
 {% set BASE_URL= "https://jaimevalero.github.io/managing-awesome-lists" %}
 
 <h2 >Topic:  <font class = "topic-tag"> {{data['list']}}</font> </h2>
-<br>
-This a generated list with all the repos from the awesome lists containing the topic {{data['list']}}
-<br>
 
+<div class="alert alert-info">
+	<i class="fa fa-eye" aria-hidden="true"></i>
+  This a generated list, with all the repos from the awesome lists, containing the topic
+  <strong>{{data['list']}}</strong>.
+</div>
+
+
+
+<br>
+<br>
  Elements : {{data['repos']|length}}
  <br>
     <div class="table-responsive">
@@ -39,6 +46,7 @@ This a generated list with all the repos from the awesome lists containing the t
                   <font href= "" class = "topic-tag">{{tag}}</font>
                 </a>
                 {% endfor %}
+              </td>
             </tr>
           {% endfor	%}
         </tbody>

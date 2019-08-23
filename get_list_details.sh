@@ -4,23 +4,10 @@
 # Tis one liner scripts extracts the number of stars from each repo from a given awesome list, and order repos by the number of start
 # This one liner uses jq command, so you should have it installed in your machine
 
-# Parameter
-# Awesome List to extract, in raw
-
-LOG_FILE=/var/log/awesome.log
-#######################################################
-#
-# Funcion MostrarLog
-#
-#
-#######################################################
-Log( )
-{
-  echo "[`basename $0`] [`date +'%Y_%m_%d %H:%M:%S'`] [$$] [${FUNCNAME[1]}] $@" >>  $LOG_FILE
-}
 RESULTS=5000
 
 source ./.credentials
+# In the credentials file :
 #CREDENTIALS="replace-for-your-github-user:replace-for-your-github-password"
 
 
@@ -55,16 +42,6 @@ Create_Info_Render_Wrapper( )
   Create_Info_Render "$URI" | tr '\n' ' '  | sed -e 's@, ]  ,@],@g'
 }
 
-Download_Api_Repo( )
-{
-  URI="$1"
-  # Name of the file
-  OUTPUT_FILE=`echo $URI | tr \/ @  `
-  #Log Download_Api_Repo $URI $OUTPUT_FILE
-
-  [[  ! -f ".cache/api-${OUTPUT_FILE}.json" ]]  && curl --user  "$CREDENTIALS"  -H "Accept: application/vnd.github.mercy-preview+json"  -s  -L -k "https://api.github.com/repos/$URI" > ./.cache/api-${OUTPUT_FILE}.json
-
-}
 
 Download_Readme( )
 {
@@ -146,6 +123,8 @@ NON_WORKING="
 https://github.com/ossu/computer-science
 https://github.com/MunGell/awesome-for-beginners
 "
+source ./lib-actions.sh
+
 AWESOME_LIST_LISTS=`cat lists.txt`
 
 
