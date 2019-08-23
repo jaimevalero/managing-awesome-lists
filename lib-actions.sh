@@ -30,9 +30,9 @@ Download_Api_Repo( )
  stargazers_count,
  language
 }"  > "${API_REPO_JSON_FILE}"
-ls -altr  "${API_REPO_JSON_FILE}"
-  [ `cat "${API_REPO_JSON_FILE}" | jq .  | grep null | wc -l ` -ge 5 ]   && Log "Warning repo $URI vacio" && rm -f "${API_REPO_JSON_FILE}"
-  [ -s "${API_REPO_JSON_FILE}" ] ||  Log "Warning repo $URI vacio" && rm -f "${API_REPO_JSON_FILE}"
-  #[ `grep "Not Found" "./.cache/api-${OUTPUT_FILE}.json"  | wc -l ` -ge 1 ] && Log "Warning repo $URI vacio" && rm -f ./.cache/api-${OUTPUT_FILE}.json
+  [ `cat "${API_REPO_JSON_FILE}" | jq .  | grep null | wc -l ` -ge 5 ]   && Log "WARNING repo $URI vacio" && rm -f "${API_REPO_JSON_FILE}"
+  [ -s "${API_REPO_JSON_FILE}" ] ||  Log "WARNING repo $URI vacio"
+  [ -s "${API_REPO_JSON_FILE}" ] ||  rm -f "${API_REPO_JSON_FILE}"
+  #[ `grep "Not Found" "./.cache/api-${OUTPUT_FILE}.json"  | wc -l ` -ge 1 ] && Log "WARNING repo $URI vacio" && rm -f ./.cache/api-${OUTPUT_FILE}.json
   [ -f "${API_REPO_JSON_FILE}" ]  && ls -altr "${API_REPO_JSON_FILE}"
 }

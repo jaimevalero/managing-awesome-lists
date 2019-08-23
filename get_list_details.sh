@@ -24,8 +24,9 @@ Create_Info_Render( )
   while read REPO
   do
     MY_FILE=`echo $REPO | tr \/ @`
-    [ ` grep '"message": "Not Found",' .cache/api-$MY_FILE.json | wc -l ` -ge 1 ] && Log "Warning : Repo Vacio $REPO" && continue
-    
+    [ -f ".cache/api-$MY_FILE.json" ]  ||  Log "Warning : Repo Vacio $REPO" && continue
+    [ ` grep '"message": "Not Found",' ".cache/api-$MY_FILE.json" | wc -l ` -ge 1 ] && Log "Warning : Repo Vacio $REPO" && continue
+
     cat .cache/api-$MY_FILE.json | jq -c .
     echo ","
   done < ${CACHE_README_FILE}
