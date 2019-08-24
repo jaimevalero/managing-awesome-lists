@@ -2,8 +2,6 @@
 
 # Generate doc for the readme.md file
 
-README_JSON_DATA=/tmp/kk-readme.json
-INDEX_JSON_DATA=/tmp/kk-index.json
 
 REPOS_WITH_LABELS_FILE=/tmp/labels.json
 
@@ -112,68 +110,6 @@ Check_Repos_Are_Downloaded( )
 {
   TOPIC_FILE="$1"
 while read my_topic_file ; do Download_Api_Repo "$my_topic_file" ; done < "${TOPIC_FILE}"
-}
-Generate_Topic_Json( )
-{
-  TOPIC_FILE="$1"
-  TOPIC_NAME=`basename "$TOPIC_FILE"`
-  Log TOPIC_NAME=$TOPIC_NAME= TOPIC_FILE=$TOPIC_FILE=
-  # Check every repo is in cache
-  Check_Repos_Are_Downloaded "${TOPIC_FILE}" 1>/dev/null 2>/dev/null
-
-  echo " { \"list\" : \"${TOPIC_NAME}\"  , \"repos\" :  "
-  cat "${TOPIC_FILE}" | tr \/ \@ | sed -e 's@^@.cache/api-@g' -e 's@$@.json@g' | xargs cat | jq -c  "
-   {
-     full_name,
-     description,
-     topics,
-     created_at,
-     stargazers_count,
-     language
-      }"  | jq  --slurp .
-  echo " } "
-
-}
-
-Render_Topics( )
-{
-  cat $INDEX_JSON_DATA | jq -c ".repos[]|{ full_name , topics}" | grep -v '"topics":\[\]'  > ${REPOS_WITH_LABELS_FILE}
-
-  # Label in more than one repo
-  DEBUG=100000
-
-  TOPICS_LIST=` cat $INDEX_JSON_DATA | jq ".repos[]|.topics"   | grep \" | cut -d\" -f2 | sort  | uniq -c | sort -k1 -n  -r | grep -v "   1 "  |  awk '{print $2}' | sort -du | head -$DEBUG `
-
-  mkdir var/topics/     2>/dev/null
-  mkdir .cache/topics/  2>/dev/null
-
-  for topic in ${TOPICS_LIST}
-  do
-    Log "Topic: $topic"
-    TOPIC_FILE=".cache/topics/$topic"
-    THIS_TOPIC_JSON_DATA="/tmp/topic-${topic}.json"
-    # We only generate intermediate data if dont exists
-    if [ ! -s "${TOPIC_FILE}"      ]; then  grep "\"$topic\"" ${REPOS_WITH_LABELS_FILE} | jq -r .full_name > "${TOPIC_FILE}"    ; fi
-    Generate_Topic_Json "${TOPIC_FILE}"   > "${THIS_TOPIC_JSON_DATA}"
-    cat "${THIS_TOPIC_JSON_DATA}" | jq . 1>/dev/null 2>/dev/null
-    RESUL=$?
-    [ $RESUL -ne 0 ] && Log "Error $topic no tiene json correcto de datos en ${THIS_TOPIC_JSON_DATA}"
-    Render_Topic "$THIS_TOPIC_JSON_DATA"
-  done
-
-
-}
-
-
-Render_Topic( )
-{
-
-  THIS_TOPIC_JSON_DATA="$1"
-  TOPIC=`cat "$THIS_TOPIC_JSON_DATA" | jq -r .list  | cut -d\/ -f3-100`
-  Log "THIS_TOPIC_JSON_DATA=$THIS_TOPIC_JSON_DATA="
-  Log "./generate_render_template.py  -t template-topic.html --data '${THIS_TOPIC_JSON_DATA}' > 'var/topics/$TOPIC.html' "
-  ./generate_render_template.py  -t template-topic.html --data "${THIS_TOPIC_JSON_DATA}" > "var/topics/$TOPIC.html"
-  ls -altr "var/topics/$TOPIC.html"
 }
 
 Main( )
