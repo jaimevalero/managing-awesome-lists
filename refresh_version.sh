@@ -7,4 +7,5 @@
   ./update-documentation.sh ;
   ./get_list_details.sh   ;
 
+# Push changes
   git add . ; git commit -m "Refresh version" ;  git push origin master
