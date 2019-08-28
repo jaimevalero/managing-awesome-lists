@@ -22,9 +22,9 @@ with open(args['data'] ) as json_file:
 # The search path can be used to make finding templates by
 #   relative paths much easier.  In this case, we are using
 #   absolute paths and thus set it to the filesystem root.
-templateLoader = jinja2.FileSystemLoader(searchpath="views")
+templateLoader = jinja2.FileSystemLoader(["views","templates"])
 
-# An environment provides the data necessary to read and
+ment provides the data necessary to read and
 #   parse our templates.  We pass in the loader object here.
 templateEnv = jinja2.Environment(loader=templateLoader)
 
