@@ -24,7 +24,7 @@ Create_Info_Render( )
 echo ' { '
   echo '  "list" : '
   MY_AWESOME_LIST=`echo $URI | tr \/ @`
-  cat .cache/api-$MY_AWESOME_LIST.json | jq -c .
+  cat .cache/api-${MY_AWESOME_LIST}.json | jq -c .
 
 echo '  , "repos" : '
 cat  ${CACHE_README_FILE} | tr \/ @ |  sed -e 's@^@.cache/api-@g'  -e 's@$@.json@g' | xargs cat  |  grep -v '"message": "Not Found",' | grep  [0-9] | jq --slurp . 2>/dev/null
@@ -118,34 +118,37 @@ Generate_Contents_Single_List( )
 
 Generate_Render_Readme( )
 {
+
   Update_Readme_Doc > /tmp/readme.json
   ./generate_render_template.py  -t template-readme.html --data /tmp/readme.json >> README.md
 
 }
+
 Generate_Render_Single_List( )
 {
   AWESOME_LIST_URL="$1"
   MY_URI=`echo "${AWESOME_LIST_URL}" | egrep -o -e 'github.com/.*' | cut -d\/ -f2-3`
   FILE_HTML=`echo ${MY_URI} | tr \/ @  `
+  LISTA_JSON_DATA="/tmp/lista-${FILE_HTML}.json"
   Log Preparando lista AWESOME_LIST_URL=$AWESOME_LIST_URL= FILE_HTML=$FILE_HTML=
 
   Generate_Contents_Single_List ${AWESOME_LIST_URL}
-  Create_Info_Render_Wrapper "${MY_URI}" > /tmp/lista.json
+  Create_Info_Render_Wrapper "${MY_URI}" > ${LISTA_JSON_DATA}
 
-  if [ `cat /tmp/lista.json | grep ' "repos" : \[  \]' | wc -l ` -eq 1 ]
+  if [ `cat ${LISTA_JSON_DATA} | grep ' "repos" : \[  \]' | wc -l ` -eq 1 ]
   then
     Log  ERRROR . Repos Vacios ${URI}
   else
-    ./generate_render_template.py  -t template-list.html --data /tmp/lista.json > var/awl-$FILE_HTML.html
+    ./generate_render_template.py  -t template-list.html --data ${LISTA_JSON_DATA} > var/awl-$FILE_HTML.html
     ls -altr   var/awl-$FILE_HTML.html
   fi
 }
+
 NON_WORKING="
 https://github.com/ossu/computer-science
 https://github.com/MunGell/awesome-for-beginners
 "
 
-AWESOME_LIST_LISTS=`cat lists.txt`
 
 
 Main( )

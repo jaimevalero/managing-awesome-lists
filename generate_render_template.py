@@ -6,7 +6,6 @@ import sys
 import json
 import argparse
 
-
 parser = argparse.ArgumentParser(description='Apply Jinja template to a file')
 parser.add_argument('-t','--template', help='Jinja2 template file', required=True)
 parser.add_argument('-d','--data', help='Json or yaml file', required=True)
