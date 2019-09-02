@@ -24,7 +24,7 @@ with open(args['data'] ) as json_file:
 #   absolute paths and thus set it to the filesystem root.
 templateLoader = jinja2.FileSystemLoader(["views","templates"])
 
-ment provides the data necessary to read and
+# Provides the data necessary to read and
 #   parse our templates.  We pass in the loader object here.
 templateEnv = jinja2.Environment(loader=templateLoader)
 

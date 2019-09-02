@@ -111,7 +111,7 @@ Render_Navbar( )
 Check_Repos_Are_Downloaded( )
 {
   TOPIC_FILE="$1"
-  while read my_topic_file ; do Download_Api_Repo "$my_topic_file" ; done < "${TOPIC_FILE}"
+while read my_topic_file ; do Download_Api_Repo "$my_topic_file" ; done < "${TOPIC_FILE}"
 }
 
 Main( )
