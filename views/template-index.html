@@ -2,12 +2,12 @@
 
 {% block tabla_resultados %}
 {% set BASE_URL= "https://jaimevalero.github.io/managing-awesome-lists" %}
+{% set MAX_NUMBER_OF_REPOS = 1000 %}
 
 
 
 		<h2 >Global list: All data </h2>
     <h3 >{{data['list'].description}} </h3>
-    {% set MAX_NUMBER_OF_REPOS = 1600 %}
     <div class="alert alert-info">
     	<i class="fa fa-eye" aria-hidden="true"></i>
       We display only the first {{MAX_NUMBER_OF_REPOS}} repos, sorted by number of stars.
