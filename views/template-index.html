@@ -7,22 +7,15 @@
 
 		<h2 >Global list: All data </h2>
     <h3 >{{data['list'].description}} </h3>
-    {% set STARS_LOWER_THRESOLD = 2500 %}
+    {% set MAX_NUMBER_OF_REPOS = 1500 %}
     <div class="alert alert-info">
     	<i class="fa fa-eye" aria-hidden="true"></i>
       We display only the first 2.000 repos, sorted by number of stars.
     </div>
 
 
-    {% set count = [1] %}
-    {% for repo in data['repos'][:2001]  %}
-      {% if repo.created_at is not none %}
-        {% if repo.stargazers_count > STARS_LOWER_THRESOLD %}
-        {% if count.append(count.pop() + 1) %}{% endif %} {# increment count by 1 #}
-        {% endif	%}
-      {% endif	%}
-    {% endfor	%}
-Elements: {{count}}
+
+Elements: {{MAX_NUMBER_OF_REPOS}}
  <br>
     <div class="table-responsive">
       <table id="tabla"     class="table table-hover table-condensed table-striped">
@@ -41,9 +34,8 @@ Elements: {{count}}
           </tr>
         </thead>
         <tbody>
-          {% for repo in data['repos'][:2001]  %}
+          {% for repo in data['repos'][:MAX_NUMBER_OF_REPOS]  %}
             {% if repo.created_at is not none %}
-              {% if repo.stargazers_count > STARS_LOWER_THRESOLD %}
                 <tr>
                   <td><a href="https://github.com/{{repo.full_name}}">{{repo.full_name}}</a></td>
                   <td>{{repo.stargazers_count}}</td>
@@ -59,7 +51,6 @@ Elements: {{count}}
                       {% endfor %}
                     </td>
                 </tr>
-              {% endif	%}
             {% endif	%}
           {% endfor	%}
         </tbody>
