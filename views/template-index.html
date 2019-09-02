@@ -41,7 +41,7 @@ Elements: {{count}}
           </tr>
         </thead>
         <tbody>
-          {% for repo in data['repos']  %}
+          {% for repo in data['repos'][:2000]  %}
             {% if repo.created_at is not none %}
               {% if repo.stargazers_count > STARS_LOWER_THRESOLD %}
                 <tr>
