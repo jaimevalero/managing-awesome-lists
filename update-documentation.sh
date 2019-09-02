@@ -127,11 +127,11 @@ Main( )
   Render_Readme
 
   # Document navbar
-  #Render_Navbar
-  #Render_Index
+  Render_Navbar
+  Render_Index
 
   # Topics
-  #Render_Topics
+  Render_Topics
 }
 
 
