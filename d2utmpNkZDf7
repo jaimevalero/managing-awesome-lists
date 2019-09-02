@@ -7,6 +7,8 @@ REPOS_WITH_LABELS_FILE=/tmp/labels.json
 
 README_PARTIAL_DOC=/tmp/kk-readme.md
 INDEX_PARTIAL_DOC=/tmp/kk-index.html
+export INDEX_JSON_DATA=/tmp/kk-index.json
+
 export README_JSON_DATA=/tmp/kk-readme.json
 
 source ./lib-actions.sh
@@ -19,7 +21,7 @@ Render_Index( )
   echo "Generando el json para el index"
   for i in ` find .cache/ -name 'api-*' | head -${RESULTS}`
   do
-    [ ! -s $i ]  && echo $i no exite && continue
+    [ ! -s $i ]  && echo $i no existe && continue
     [ ` grep "Malformed request" $i | wc -l ` -eq 1 ]  && echo borrando "$i" && rm -f "$i"   && continue
     cat "$i" | jq -c  "
  {
@@ -111,7 +113,7 @@ Render_Navbar( )
 Check_Repos_Are_Downloaded( )
 {
   TOPIC_FILE="$1"
-while read my_topic_file ; do Download_Api_Repo "$my_topic_file" ; done < "${TOPIC_FILE}"
+  while read my_topic_file ; do Download_Api_Repo "$my_topic_file" ; done < "${TOPIC_FILE}"
 }
 
 Main( )

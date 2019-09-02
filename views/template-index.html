@@ -10,12 +10,12 @@
     {% set STARS_LOWER_THRESOLD = 2500 %}
     <div class="alert alert-info">
     	<i class="fa fa-eye" aria-hidden="true"></i>
-      We only display those repos starred more than {{STARS_LOWER_THRESOLD}} times.
+      We display only the first 2.000 repos, sorted by number of stars.
     </div>
 
 
     {% set count = [1] %}
-    {% for repo in data['repos']  %}
+    {% for repo in data['repos'][:2000]  %}
       {% if repo.created_at is not none %}
         {% if repo.stargazers_count > STARS_LOWER_THRESOLD %}
         {% if count.append(count.pop() + 1) %}{% endif %} {# increment count by 1 #}
