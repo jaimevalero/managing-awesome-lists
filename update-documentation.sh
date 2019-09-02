@@ -8,7 +8,6 @@ REPOS_WITH_LABELS_FILE=/tmp/labels.json
 README_PARTIAL_DOC=/tmp/kk-readme.md
 INDEX_PARTIAL_DOC=/tmp/kk-index.html
 export INDEX_JSON_DATA=/tmp/kk-index.json
-
 export README_JSON_DATA=/tmp/kk-readme.json
 
 source ./lib-actions.sh
@@ -125,11 +124,11 @@ Main( )
   # Finally : Write results to repo file
   Generate_Readme_Json_Data > ${README_JSON_DATA}
   Generate_Partial_Doc      > ${README_PARTIAL_DOC}
-  #Render_Readme
+  Render_Readme
 
   # Document navbar
   #Render_Navbar
-  Render_Index
+  #Render_Index
 
   # Topics
   #Render_Topics
