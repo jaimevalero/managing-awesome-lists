@@ -34,12 +34,12 @@ Elements: {{MAX_NUMBER_OF_REPOS}}
       </tr>
     </thead>
     <tbody>
-			{% set count = 0 %}
+			{% set counter = 0 %}
 			{% for repo in data['repos'] |sort(attribute='stargazers_count',reverse=true)  %}
 
-			{% if count <  MAX_NUMBER_OF_REPOS %}
+			{% if counter < MAX_NUMBER_OF_REPOS %}
 				{% if repo.created_at is not none %}
-					{% set count = count +1 %}
+					{% set counter = counter + 1 %}
 
 
 
