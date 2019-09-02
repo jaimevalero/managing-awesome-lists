@@ -1,56 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 	<head>
-		<title>Awesome List </title>
+		<title>Awesome list viewer</title>
 		
 
 <!-- Meta Information -->
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Awesome list manager">
+<meta name="description" content="Awesome list manager. Discover best resources from github.">
 <meta name="author" content="Jaime Valero">
+<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
 
 <!-- CSS Information -->
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- bootstrap theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 <!-- Font-awesome -->
-<link rel="stylesheet" type="text/css"
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css"
-  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
 
 <!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css"
-  href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
 
 <style type="text/css">
-* {
-   font-size: 16px;
-}
+  * {
+    font-size: 16px;
+  }
 
-.topic-tag {
-display: inline-block;
-padding: 0.3em 0.9em;
-margin: 0 0.5em 0.5em 0;
-white-space: nowrap;
-background-color: #f1f8ff;
-border-radius: 3px;
-font-color: #0366d6;
-color: #0366d6;
-}
-
+  .topic-tag {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    margin: 0 0.5em 0.5em 0;
+    white-space: nowrap;
+    background-color: #f1f8ff;
+    border-radius: 3px;
+    font-color: #0366d6;
+    color: #0366d6;
+  }
 </style>
 		<!-- Scripts: JQuery & Bootstrap -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
@@ -68,24 +62,29 @@ color: #0366d6;
 <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
 </script>
 
- <script type="text/javascript" language="JavaScript" >
-    $(document).ready(function() {
-      $('#tabla').DataTable( { "order": [[ 1, "desc" ]] } );
-  } );
+<script type="text/javascript" language="JavaScript">
+  $(document).ready(function() {
+    $('#tabla').DataTable({
+      "order": [
+        [1, "desc"]
+      ]
+    });
+  });
+</script>
 
 
- </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
 
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
 
- <!-- Global site tag (gtag.js) - Google Analytics -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
- <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-
-   gtag('config', 'UA-146303223-1');
- </script>
+  gtag('config', 'UA-146303223-1');
+</script>
 	</head>
 
 	<body>
@@ -412,7 +411,11 @@ color: #0366d6;
           </tr>
         </thead>
         <tbody>
+					
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kubernetes/kubernetes">kubernetes/kubernetes</a></td>
               <td>56964</td>
@@ -439,7 +442,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kubernetes/minikube">kubernetes/minikube</a></td>
               <td>15396</td>
@@ -474,7 +482,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/helm/helm">helm/helm</a></td>
               <td>13446</td>
@@ -505,7 +518,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/goharbor/harbor">goharbor/harbor</a></td>
               <td>8866</td>
@@ -532,7 +550,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jaegertracing/jaeger">jaegertracing/jaeger</a></td>
               <td>8786</td>
@@ -559,7 +582,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/vitessio/vitess">vitessio/vitess</a></td>
               <td>8517</td>
@@ -590,7 +618,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/vitessio/vitess">vitessio/vitess</a></td>
               <td>8517</td>
@@ -621,7 +654,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/tikv/tikv">tikv/tikv</a></td>
               <td>5838</td>
@@ -668,7 +706,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/rootsongjc/kubernetes-handbook">rootsongjc/kubernetes-handbook</a></td>
               <td>5659</td>
@@ -739,7 +782,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/cncf/landscape">cncf/landscape</a></td>
               <td>5500</td>
@@ -778,7 +826,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/coredns/coredns">coredns/coredns</a></td>
               <td>4631</td>
@@ -813,7 +866,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/containerd/containerd">containerd/containerd</a></td>
               <td>4513</td>
@@ -852,7 +910,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/virtual-kubelet/virtual-kubelet">virtual-kubelet/virtual-kubelet</a></td>
               <td>2144</td>
@@ -871,7 +934,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/theupdateframework/notary">theupdateframework/notary</a></td>
               <td>1961</td>
@@ -894,7 +962,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/brigadecore/brigade">brigadecore/brigade</a></td>
               <td>1710</td>
@@ -913,7 +986,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/falcosecurity/falco">falcosecurity/falco</a></td>
               <td>1687</td>
@@ -944,7 +1022,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/NexClipper/NexClipper">NexClipper/NexClipper</a></td>
               <td>369</td>
@@ -991,7 +1074,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/heptiolabs/eventrouter">heptiolabs/eventrouter</a></td>
               <td>288</td>
@@ -1022,7 +1110,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/rook/operator-kit">rook/operator-kit</a></td>
               <td>248</td>
@@ -1049,6 +1142,8 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
         </tbody>
       </table>
@@ -1069,7 +1164,7 @@ color: #0366d6;
 		<footer>
 	<div class="container-fluid">
     <div class="text-center">
-      <p>Awesome List management
+      <p>Awesome List management.
     </div>
 	</div>
 

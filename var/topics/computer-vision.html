@@ -1,56 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 	<head>
-		<title>Awesome List </title>
+		<title>Awesome list viewer</title>
 		
 
 <!-- Meta Information -->
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Awesome list manager">
+<meta name="description" content="Awesome list manager. Discover best resources from github.">
 <meta name="author" content="Jaime Valero">
+<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
 
 <!-- CSS Information -->
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- bootstrap theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 <!-- Font-awesome -->
-<link rel="stylesheet" type="text/css"
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css"
-  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
 
 <!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css"
-  href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
 
 <style type="text/css">
-* {
-   font-size: 16px;
-}
+  * {
+    font-size: 16px;
+  }
 
-.topic-tag {
-display: inline-block;
-padding: 0.3em 0.9em;
-margin: 0 0.5em 0.5em 0;
-white-space: nowrap;
-background-color: #f1f8ff;
-border-radius: 3px;
-font-color: #0366d6;
-color: #0366d6;
-}
-
+  .topic-tag {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    margin: 0 0.5em 0.5em 0;
+    white-space: nowrap;
+    background-color: #f1f8ff;
+    border-radius: 3px;
+    font-color: #0366d6;
+    color: #0366d6;
+  }
 </style>
 		<!-- Scripts: JQuery & Bootstrap -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
@@ -68,24 +62,29 @@ color: #0366d6;
 <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
 </script>
 
- <script type="text/javascript" language="JavaScript" >
-    $(document).ready(function() {
-      $('#tabla').DataTable( { "order": [[ 1, "desc" ]] } );
-  } );
+<script type="text/javascript" language="JavaScript">
+  $(document).ready(function() {
+    $('#tabla').DataTable({
+      "order": [
+        [1, "desc"]
+      ]
+    });
+  });
+</script>
 
 
- </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
 
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
 
- <!-- Global site tag (gtag.js) - Google Analytics -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
- <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-
-   gtag('config', 'UA-146303223-1');
- </script>
+  gtag('config', 'UA-146303223-1');
+</script>
 	</head>
 
 	<body>
@@ -412,7 +411,11 @@ color: #0366d6;
           </tr>
         </thead>
         <tbody>
+					
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/opencv/opencv">opencv/opencv</a></td>
               <td>37587</td>
@@ -443,7 +446,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix">junyanz/pytorch-CycleGAN-and-pix2pix</a></td>
               <td>9347</td>
@@ -498,7 +506,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/davisking/dlib">davisking/dlib</a></td>
               <td>7783</td>
@@ -533,7 +546,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/bharathgs/Awesome-pytorch-list">bharathgs/Awesome-pytorch-list</a></td>
               <td>7732</td>
@@ -624,7 +642,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/openframeworks/openFrameworks">openframeworks/openFrameworks</a></td>
               <td>7169</td>
@@ -695,7 +718,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/zalandoresearch/fashion-mnist">zalandoresearch/fashion-mnist</a></td>
               <td>6386</td>
@@ -750,7 +778,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/SerpentAI/SerpentAI">SerpentAI/SerpentAI</a></td>
               <td>5297</td>
@@ -789,7 +822,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/astorfi/TensorFlow-World">astorfi/TensorFlow-World</a></td>
               <td>4418</td>
@@ -824,7 +862,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pytorch/vision">pytorch/vision</a></td>
               <td>4128</td>
@@ -843,7 +886,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/PointCloudLibrary/pcl">PointCloudLibrary/pcl</a></td>
               <td>4099</td>
@@ -878,7 +926,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/NVIDIA/pix2pixHD">NVIDIA/pix2pixHD</a></td>
               <td>3835</td>
@@ -925,7 +978,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/bytedeco/javacv">bytedeco/javacv</a></td>
               <td>3604</td>
@@ -964,7 +1022,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/scikit-image/scikit-image">scikit-image/scikit-image</a></td>
               <td>3189</td>
@@ -987,7 +1050,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/amdegroot/ssd.pytorch">amdegroot/ssd.pytorch</a></td>
               <td>2662</td>
@@ -1030,7 +1098,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/hybridgroup/gocv">hybridgroup/gocv</a></td>
               <td>2503</td>
@@ -1121,7 +1194,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/cleardusk/3DDFA">cleardusk/3DDFA</a></td>
               <td>2015</td>
@@ -1160,7 +1238,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kenshohara/3D-ResNets-PyTorch">kenshohara/3D-ResNets-PyTorch</a></td>
               <td>1536</td>
@@ -1195,7 +1278,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/KupynOrest/DeblurGAN">KupynOrest/DeblurGAN</a></td>
               <td>1400</td>
@@ -1262,7 +1350,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/longcw/faster_rcnn_pytorch">longcw/faster_rcnn_pytorch</a></td>
               <td>1222</td>
@@ -1289,7 +1382,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/wkentaro/pytorch-fcn">wkentaro/pytorch-fcn</a></td>
               <td>854</td>
@@ -1328,7 +1426,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/catalyst-team/catalyst">catalyst-team/catalyst</a></td>
               <td>802</td>
@@ -1383,7 +1486,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/arraiyopensource/kornia">arraiyopensource/kornia</a></td>
               <td>697</td>
@@ -1410,7 +1518,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/arraiyopensource/kornia">arraiyopensource/kornia</a></td>
               <td>697</td>
@@ -1437,7 +1550,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/BachiLi/redner">BachiLi/redner</a></td>
               <td>615</td>
@@ -1464,7 +1582,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/perone/medicaltorch">perone/medicaltorch</a></td>
               <td>514</td>
@@ -1499,7 +1622,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dsgiitr/d2l-pytorch">dsgiitr/d2l-pytorch</a></td>
               <td>450</td>
@@ -1550,7 +1678,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ruiminshen/yolo2-pytorch">ruiminshen/yolo2-pytorch</a></td>
               <td>412</td>
@@ -1597,7 +1730,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/RobotLocomotion/pytorch-dense-correspondence">RobotLocomotion/pytorch-dense-correspondence</a></td>
               <td>344</td>
@@ -1644,7 +1782,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/StanfordVL/MinkowskiEngine">StanfordVL/MinkowskiEngine</a></td>
               <td>332</td>
@@ -1715,7 +1858,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/bodokaiser/piwise">bodokaiser/piwise</a></td>
               <td>321</td>
@@ -1746,7 +1894,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/mratsim/Amazon-Forest-Computer-Vision">mratsim/Amazon-Forest-Computer-Vision</a></td>
               <td>303</td>
@@ -1797,7 +1950,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/richzhang/colorization-pytorch">richzhang/colorization-pytorch</a></td>
               <td>282</td>
@@ -1836,7 +1994,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/felixgwu/img_classification_pk_pytorch">felixgwu/img_classification_pk_pytorch</a></td>
               <td>266</td>
@@ -1863,7 +2026,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dmarnerides/pydlt">dmarnerides/pydlt</a></td>
               <td>208</td>
@@ -1890,7 +2058,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/cmsflash/beauty-net">cmsflash/beauty-net</a></td>
               <td>183</td>
@@ -1921,7 +2094,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kentsyx/Neural-IMage-Assessment">kentsyx/Neural-IMage-Assessment</a></td>
               <td>160</td>
@@ -1948,7 +2126,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/MrGemy95/visual-interaction-networks-pytorch">MrGemy95/visual-interaction-networks-pytorch</a></td>
               <td>159</td>
@@ -1999,7 +2182,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/natanielruiz/dockerface">natanielruiz/dockerface</a></td>
               <td>153</td>
@@ -2050,7 +2238,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/truskovskiyk/nima.pytorch">truskovskiyk/nima.pytorch</a></td>
               <td>149</td>
@@ -2093,7 +2286,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jacobgil/pytorch-zssr">jacobgil/pytorch-zssr</a></td>
               <td>139</td>
@@ -2120,7 +2318,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/DavexPro/pytorch-pose-estimation">DavexPro/pytorch-pose-estimation</a></td>
               <td>135</td>
@@ -2155,7 +2358,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/AaltoVision/DGC-Net">AaltoVision/DGC-Net</a></td>
               <td>95</td>
@@ -2190,7 +2398,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/nerox8664/awesome-computer-vision-models">nerox8664/awesome-computer-vision-models</a></td>
               <td>57</td>
@@ -2249,7 +2462,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/utiasSTARS/cat-net">utiasSTARS/cat-net</a></td>
               <td>46</td>
@@ -2276,6 +2494,8 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
         </tbody>
       </table>
@@ -2296,7 +2516,7 @@ color: #0366d6;
 		<footer>
 	<div class="container-fluid">
     <div class="text-center">
-      <p>Awesome List management
+      <p>Awesome List management.
     </div>
 	</div>
 

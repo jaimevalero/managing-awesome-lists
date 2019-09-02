@@ -1,56 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 	<head>
-		<title>Awesome List </title>
+		<title>Awesome list viewer</title>
 		
 
 <!-- Meta Information -->
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Awesome list manager">
+<meta name="description" content="Awesome list manager. Discover best resources from github.">
 <meta name="author" content="Jaime Valero">
+<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
 
 <!-- CSS Information -->
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- bootstrap theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 <!-- Font-awesome -->
-<link rel="stylesheet" type="text/css"
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css"
-  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
 
 <!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css"
-  href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
 
 <style type="text/css">
-* {
-   font-size: 16px;
-}
+  * {
+    font-size: 16px;
+  }
 
-.topic-tag {
-display: inline-block;
-padding: 0.3em 0.9em;
-margin: 0 0.5em 0.5em 0;
-white-space: nowrap;
-background-color: #f1f8ff;
-border-radius: 3px;
-font-color: #0366d6;
-color: #0366d6;
-}
-
+  .topic-tag {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    margin: 0 0.5em 0.5em 0;
+    white-space: nowrap;
+    background-color: #f1f8ff;
+    border-radius: 3px;
+    font-color: #0366d6;
+    color: #0366d6;
+  }
 </style>
 		<!-- Scripts: JQuery & Bootstrap -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
@@ -68,24 +62,29 @@ color: #0366d6;
 <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
 </script>
 
- <script type="text/javascript" language="JavaScript" >
-    $(document).ready(function() {
-      $('#tabla').DataTable( { "order": [[ 1, "desc" ]] } );
-  } );
+<script type="text/javascript" language="JavaScript">
+  $(document).ready(function() {
+    $('#tabla').DataTable({
+      "order": [
+        [1, "desc"]
+      ]
+    });
+  });
+</script>
 
 
- </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
 
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
 
- <!-- Global site tag (gtag.js) - Google Analytics -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
- <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-
-   gtag('config', 'UA-146303223-1');
- </script>
+  gtag('config', 'UA-146303223-1');
+</script>
 	</head>
 
 	<body>
@@ -412,7 +411,11 @@ color: #0366d6;
           </tr>
         </thead>
         <tbody>
+					
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/etcd-io/etcd">etcd-io/etcd</a></td>
               <td>26809</td>
@@ -459,7 +462,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/etcd-io/etcd">etcd-io/etcd</a></td>
               <td>26809</td>
@@ -506,7 +514,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pingcap/tidb">pingcap/tidb</a></td>
               <td>20293</td>
@@ -553,7 +566,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/SheetJS/js-xlsx">SheetJS/js-xlsx</a></td>
               <td>17343</td>
@@ -644,7 +662,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/influxdata/influxdb">influxdata/influxdb</a></td>
               <td>17221</td>
@@ -683,7 +706,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/cockroachdb/cockroach">cockroachdb/cockroach</a></td>
               <td>16870</td>
@@ -714,7 +742,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/mongodb/mongo">mongodb/mongo</a></td>
               <td>16581</td>
@@ -741,7 +774,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/metabase/metabase">metabase/metabase</a></td>
               <td>16471</td>
@@ -824,7 +862,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sqlmapproject/sqlmap">sqlmapproject/sqlmap</a></td>
               <td>14928</td>
@@ -867,7 +910,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/typeorm/typeorm">typeorm/typeorm</a></td>
               <td>14665</td>
@@ -946,7 +994,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pouchdb/pouchdb">pouchdb/pouchdb</a></td>
               <td>12279</td>
@@ -973,7 +1026,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sqlitebrowser/sqlitebrowser">sqlitebrowser/sqlitebrowser</a></td>
               <td>11776</td>
@@ -1012,7 +1070,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/typicode/lowdb">typicode/lowdb</a></td>
               <td>11217</td>
@@ -1059,7 +1122,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dgraph-io/dgraph">dgraph-io/dgraph</a></td>
               <td>10629</td>
@@ -1110,7 +1178,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/realm/realm-java">realm/realm-java</a></td>
               <td>10617</td>
@@ -1149,7 +1222,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dbeaver/dbeaver">dbeaver/dbeaver</a></td>
               <td>10080</td>
@@ -1204,7 +1282,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/boltdb/bolt">boltdb/bolt</a></td>
               <td>10041</td>
@@ -1227,7 +1310,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/go-sql-driver/mysql">go-sql-driver/mysql</a></td>
               <td>8193</td>
@@ -1262,7 +1350,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dbcli/pgcli">dbcli/pgcli</a></td>
               <td>8117</td>
@@ -1293,7 +1386,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dbcli/mycli">dbcli/mycli</a></td>
               <td>7916</td>
@@ -1328,7 +1426,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/onurakpolat/awesome-bigdata">onurakpolat/awesome-bigdata</a></td>
               <td>7832</td>
@@ -1399,7 +1502,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/neo4j/neo4j">neo4j/neo4j</a></td>
               <td>6790</td>
@@ -1434,7 +1542,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/tidwall/tile38">tidwall/tile38</a></td>
               <td>6354</td>
@@ -1481,7 +1594,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dgraph-io/badger">dgraph-io/badger</a></td>
               <td>6341</td>
@@ -1520,7 +1638,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Nozbe/WatermelonDB">Nozbe/WatermelonDB</a></td>
               <td>5789</td>
@@ -1555,7 +1678,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/bookshelf/bookshelf">bookshelf/bookshelf</a></td>
               <td>5633</td>
@@ -1598,7 +1726,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dhamaniasad/awesome-postgres">dhamaniasad/awesome-postgres</a></td>
               <td>5549</td>
@@ -1621,7 +1754,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/apache/cassandra">apache/cassandra</a></td>
               <td>5367</td>
@@ -1644,7 +1782,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/directus/directus">directus/directus</a></td>
               <td>4853</td>
@@ -1735,7 +1878,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/rqlite/rqlite">rqlite/rqlite</a></td>
               <td>4728</td>
@@ -1782,7 +1930,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/backup/backup">backup/backup</a></td>
               <td>4540</td>
@@ -1829,7 +1982,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/apache/couchdb">apache/couchdb</a></td>
               <td>4279</td>
@@ -1884,7 +2042,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/orientechnologies/orientdb">orientechnologies/orientdb</a></td>
               <td>3944</td>
@@ -1943,7 +2106,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/vrana/adminer">vrana/adminer</a></td>
               <td>3635</td>
@@ -1974,7 +2142,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pudo/dataset">pudo/dataset</a></td>
               <td>3595</td>
@@ -1997,7 +2170,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/tonsky/datascript">tonsky/datascript</a></td>
               <td>3332</td>
@@ -2028,7 +2206,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/syndtr/goleveldb">syndtr/goleveldb</a></td>
               <td>3196</td>
@@ -2051,7 +2234,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/go-pg/pg">go-pg/pg</a></td>
               <td>3050</td>
@@ -2094,7 +2282,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/msiemens/tinydb">msiemens/tinydb</a></td>
               <td>3019</td>
@@ -2125,7 +2318,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/golang-migrate/migrate">golang-migrate/migrate</a></td>
               <td>2836</td>
@@ -2216,7 +2414,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dmfay/massive-js">dmfay/massive-js</a></td>
               <td>2545</td>
@@ -2255,7 +2458,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/tidwall/buntdb">tidwall/buntdb</a></td>
               <td>2453</td>
@@ -2286,7 +2494,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/HouzuoGuo/tiedot">HouzuoGuo/tiedot</a></td>
               <td>2374</td>
@@ -2325,7 +2538,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/volatiletech/sqlboiler">volatiletech/sqlboiler</a></td>
               <td>2298</td>
@@ -2376,7 +2594,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ravendb/ravendb">ravendb/ravendb</a></td>
               <td>2287</td>
@@ -2415,7 +2638,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/tarantool/tarantool">tarantool/tarantool</a></td>
               <td>2197</td>
@@ -2458,7 +2686,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/prest/prest">prest/prest</a></td>
               <td>2098</td>
@@ -2501,7 +2734,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/emirozer/fake2db">emirozer/fake2db</a></td>
               <td>1981</td>
@@ -2532,7 +2770,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/upper/db">upper/db</a></td>
               <td>1878</td>
@@ -2595,7 +2838,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/DATA-DOG/go-sqlmock">DATA-DOG/go-sqlmock</a></td>
               <td>1766</td>
@@ -2638,7 +2886,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/baidu/tera">baidu/tera</a></td>
               <td>1707</td>
@@ -2681,7 +2934,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/speedment/speedment">speedment/speedment</a></td>
               <td>1697</td>
@@ -2728,7 +2986,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/OmniDB/OmniDB">OmniDB/OmniDB</a></td>
               <td>1684</td>
@@ -2755,7 +3018,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/emijrp/awesome-awesome">emijrp/awesome-awesome</a></td>
               <td>1460</td>
@@ -2806,7 +3074,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/asdine/storm">asdine/storm</a></td>
               <td>1371</td>
@@ -2845,7 +3118,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/miguelgrinberg/Flask-Migrate">miguelgrinberg/Flask-Migrate</a></td>
               <td>1340</td>
@@ -2880,7 +3158,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/tidwall/summitdb">tidwall/summitdb</a></td>
               <td>1224</td>
@@ -2915,7 +3198,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/plentz/lol_dba">plentz/lol_dba</a></td>
               <td>1177</td>
@@ -2958,7 +3246,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/VictoriaMetrics/VictoriaMetrics">VictoriaMetrics/VictoriaMetrics</a></td>
               <td>1069</td>
@@ -3021,7 +3314,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/cswinter/LocustDB">cswinter/LocustDB</a></td>
               <td>1007</td>
@@ -3044,7 +3342,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/griddb/griddb_nosql">griddb/griddb_nosql</a></td>
               <td>947</td>
@@ -3079,7 +3382,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sdispater/orator">sdispater/orator</a></td>
               <td>946</td>
@@ -3102,7 +3410,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/garrylachman/ElectroCRUD">garrylachman/ElectroCRUD</a></td>
               <td>929</td>
@@ -3145,7 +3458,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/xujiajun/nutsdb">xujiajun/nutsdb</a></td>
               <td>895</td>
@@ -3180,7 +3498,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/CovenantSQL/CovenantSQL">CovenantSQL/CovenantSQL</a></td>
               <td>883</td>
@@ -3239,7 +3562,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/vladmihalcea/flexy-pool">vladmihalcea/flexy-pool</a></td>
               <td>699</td>
@@ -3282,7 +3610,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/doug-martin/goqu">doug-martin/goqu</a></td>
               <td>649</td>
@@ -3333,7 +3666,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/mongodb/mongo-cxx-driver">mongodb/mongo-cxx-driver</a></td>
               <td>647</td>
@@ -3400,7 +3738,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/akumuli/Akumuli">akumuli/Akumuli</a></td>
               <td>629</td>
@@ -3435,7 +3778,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/commanded/eventstore">commanded/eventstore</a></td>
               <td>532</td>
@@ -3478,7 +3826,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/perone/euclidesdb">perone/euclidesdb</a></td>
               <td>499</td>
@@ -3513,7 +3866,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/auraphp/Aura.Sql">auraphp/Aura.Sql</a></td>
               <td>458</td>
@@ -3544,7 +3902,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/vorburger/MariaDB4j">vorburger/MariaDB4j</a></td>
               <td>438</td>
@@ -3603,7 +3966,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/go-ozzo/ozzo-dbx">go-ozzo/ozzo-dbx</a></td>
               <td>436</td>
@@ -3630,7 +3998,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/SiriDB/siridb-server">SiriDB/siridb-server</a></td>
               <td>401</td>
@@ -3665,7 +4038,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/patx/pickledb">patx/pickledb</a></td>
               <td>398</td>
@@ -3708,7 +4086,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/zopefoundation/ZODB">zopefoundation/ZODB</a></td>
               <td>336</td>
@@ -3727,7 +4110,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/go-testfixtures/testfixtures">go-testfixtures/testfixtures</a></td>
               <td>334</td>
@@ -3754,7 +4142,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/axibase/atsd-use-cases">axibase/atsd-use-cases</a></td>
               <td>331</td>
@@ -3809,7 +4202,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/apache/couchdb-nano">apache/couchdb-nano</a></td>
               <td>312</td>
@@ -3864,7 +4262,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kubedb/operator">kubedb/operator</a></td>
               <td>218</td>
@@ -3891,7 +4294,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/arun-gupta/docker-images">arun-gupta/docker-images</a></td>
               <td>215</td>
@@ -3934,7 +4342,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pastapojken/Myflix">pastapojken/Myflix</a></td>
               <td>180</td>
@@ -4025,7 +4438,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/fern4lvarez/piladb">fern4lvarez/piladb</a></td>
               <td>171</td>
@@ -4060,7 +4478,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/arangodb/arangodb-java-driver">arangodb/arangodb-java-driver</a></td>
               <td>143</td>
@@ -4095,7 +4518,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pkosiec/mongo-seeding">pkosiec/mongo-seeding</a></td>
               <td>135</td>
@@ -4182,7 +4610,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/several27/FakeNewsCorpus">several27/FakeNewsCorpus</a></td>
               <td>122</td>
@@ -4225,7 +4658,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Fs02/grimoire">Fs02/grimoire</a></td>
               <td>115</td>
@@ -4268,7 +4706,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/geneweb/geneweb">geneweb/geneweb</a></td>
               <td>114</td>
@@ -4331,7 +4774,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/webfactory/slimdump">webfactory/slimdump</a></td>
               <td>102</td>
@@ -4354,7 +4802,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/philippgille/gokv">philippgille/gokv</a></td>
               <td>90</td>
@@ -4445,7 +4898,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ewhal/Pastebin">ewhal/Pastebin</a></td>
               <td>88</td>
@@ -4500,7 +4958,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/recoilme/slowpoke">recoilme/slowpoke</a></td>
               <td>87</td>
@@ -4535,7 +4998,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/GuiaBolso/darwin">GuiaBolso/darwin</a></td>
               <td>83</td>
@@ -4562,7 +5030,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/leomaurodesenv/game-datasets">leomaurodesenv/game-datasets</a></td>
               <td>64</td>
@@ -4609,7 +5082,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/linxGnu/mssqlx">linxGnu/mssqlx</a></td>
               <td>58</td>
@@ -4644,7 +5122,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/rocketlaunchr/dbq">rocketlaunchr/dbq</a></td>
               <td>45</td>
@@ -4679,7 +5162,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sj14/dbbench">sj14/dbbench</a></td>
               <td>30</td>
@@ -4738,7 +5226,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/emvi/gondolier">emvi/gondolier</a></td>
               <td>26</td>
@@ -4781,7 +5274,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/mlaanderson/database-js">mlaanderson/database-js</a></td>
               <td>23</td>
@@ -4852,7 +5350,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/blockloop/scan">blockloop/scan</a></td>
               <td>13</td>
@@ -4875,7 +5378,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/abrahambotros/lore">abrahambotros/lore</a></td>
               <td>5</td>
@@ -4914,6 +5422,8 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
         </tbody>
       </table>
@@ -4934,7 +5444,7 @@ color: #0366d6;
 		<footer>
 	<div class="container-fluid">
     <div class="text-center">
-      <p>Awesome List management
+      <p>Awesome List management.
     </div>
 	</div>
 

@@ -1,56 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 	<head>
-		<title>Awesome List </title>
+		<title>Awesome list viewer</title>
 		
 
 <!-- Meta Information -->
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Awesome list manager">
+<meta name="description" content="Awesome list manager. Discover best resources from github.">
 <meta name="author" content="Jaime Valero">
+<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
 
 <!-- CSS Information -->
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- bootstrap theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 <!-- Font-awesome -->
-<link rel="stylesheet" type="text/css"
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css"
-  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
 
 <!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css"
-  href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
 
 <style type="text/css">
-* {
-   font-size: 16px;
-}
+  * {
+    font-size: 16px;
+  }
 
-.topic-tag {
-display: inline-block;
-padding: 0.3em 0.9em;
-margin: 0 0.5em 0.5em 0;
-white-space: nowrap;
-background-color: #f1f8ff;
-border-radius: 3px;
-font-color: #0366d6;
-color: #0366d6;
-}
-
+  .topic-tag {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    margin: 0 0.5em 0.5em 0;
+    white-space: nowrap;
+    background-color: #f1f8ff;
+    border-radius: 3px;
+    font-color: #0366d6;
+    color: #0366d6;
+  }
 </style>
 		<!-- Scripts: JQuery & Bootstrap -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
@@ -68,24 +62,29 @@ color: #0366d6;
 <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
 </script>
 
- <script type="text/javascript" language="JavaScript" >
-    $(document).ready(function() {
-      $('#tabla').DataTable( { "order": [[ 1, "desc" ]] } );
-  } );
+<script type="text/javascript" language="JavaScript">
+  $(document).ready(function() {
+    $('#tabla').DataTable({
+      "order": [
+        [1, "desc"]
+      ]
+    });
+  });
+</script>
 
 
- </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
 
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
 
- <!-- Global site tag (gtag.js) - Google Analytics -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
- <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-
-   gtag('config', 'UA-146303223-1');
- </script>
+  gtag('config', 'UA-146303223-1');
+</script>
 	</head>
 
 	<body>
@@ -412,7 +411,11 @@ color: #0366d6;
           </tr>
         </thead>
         <tbody>
+					
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/plotly/dash">plotly/dash</a></td>
               <td>9702</td>
@@ -495,7 +498,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Miserlou/Zappa">Miserlou/Zappa</a></td>
               <td>9583</td>
@@ -550,7 +558,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/humiaozuzu/awesome-flask">humiaozuzu/awesome-flask</a></td>
               <td>7570</td>
@@ -573,7 +586,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pyeve/eve">pyeve/eve</a></td>
               <td>5766</td>
@@ -600,7 +618,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/joeyespo/grip">joeyespo/grip</a></td>
               <td>4104</td>
@@ -635,7 +658,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/miguelgrinberg/Flask-SocketIO">miguelgrinberg/Flask-SocketIO</a></td>
               <td>3199</td>
@@ -666,7 +694,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/gaojiuli/toapi">gaojiuli/toapi</a></td>
               <td>2871</td>
@@ -713,7 +746,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pallets/flask-sqlalchemy">pallets/flask-sqlalchemy</a></td>
               <td>2772</td>
@@ -740,7 +778,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/cookiecutter-flask/cookiecutter-flask">cookiecutter-flask/cookiecutter-flask</a></td>
               <td>2761</td>
@@ -771,7 +814,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/formspree/formspree">formspree/formspree</a></td>
               <td>2534</td>
@@ -806,7 +854,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dpgaspar/Flask-AppBuilder">dpgaspar/Flask-AppBuilder</a></td>
               <td>2319</td>
@@ -853,7 +906,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/rochacbruno-archive/quokka">rochacbruno-archive/quokka</a></td>
               <td>2106</td>
@@ -912,7 +970,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/noirbizarre/flask-restplus">noirbizarre/flask-restplus</a></td>
               <td>1853</td>
@@ -955,7 +1018,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/flasgger/flasgger">flasgger/flasgger</a></td>
               <td>1703</td>
@@ -1022,7 +1090,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/flaskbb/flaskbb">flaskbb/flaskbb</a></td>
               <td>1643</td>
@@ -1053,7 +1126,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/flaskbb/flaskbb">flaskbb/flaskbb</a></td>
               <td>1643</td>
@@ -1084,7 +1162,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/mjhea0/flaskr-tdd">mjhea0/flaskr-tdd</a></td>
               <td>1519</td>
@@ -1115,7 +1198,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/miguelgrinberg/Flask-Migrate">miguelgrinberg/Flask-Migrate</a></td>
               <td>1340</td>
@@ -1150,7 +1238,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/indico/indico">indico/indico</a></td>
               <td>876</td>
@@ -1181,7 +1274,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/marshmallow-code/webargs">marshmallow-code/webargs</a></td>
               <td>861</td>
@@ -1232,7 +1330,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/graphql-python/flask-graphql">graphql-python/flask-graphql</a></td>
               <td>823</td>
@@ -1267,7 +1370,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/miguelgrinberg/Flask-HTTPAuth">miguelgrinberg/Flask-HTTPAuth</a></td>
               <td>700</td>
@@ -1302,7 +1410,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jwkvam/bowtie">jwkvam/bowtie</a></td>
               <td>672</td>
@@ -1365,7 +1478,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Frozen-Flask/Frozen-Flask">Frozen-Flask/Frozen-Flask</a></td>
               <td>597</td>
@@ -1388,7 +1506,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/muatik/flask-profiler">muatik/flask-profiler</a></td>
               <td>517</td>
@@ -1427,7 +1550,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/marshmallow-code/flask-marshmallow">marshmallow-code/flask-marshmallow</a></td>
               <td>468</td>
@@ -1466,7 +1594,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/rochacbruno-archive/Flask-GoogleMaps">rochacbruno-archive/Flask-GoogleMaps</a></td>
               <td>461</td>
@@ -1505,7 +1638,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/biosustain/potion">biosustain/potion</a></td>
               <td>460</td>
@@ -1536,7 +1674,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sh4nks/flask-caching">sh4nks/flask-caching</a></td>
               <td>403</td>
@@ -1563,7 +1706,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ptpb/pb">ptpb/pb</a></td>
               <td>396</td>
@@ -1598,7 +1746,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/spiral-project/ihatemoney">spiral-project/ihatemoney</a></td>
               <td>248</td>
@@ -1621,7 +1774,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pytest-dev/pytest-flask">pytest-dev/pytest-flask</a></td>
               <td>248</td>
@@ -1648,7 +1806,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jeff1evesque/machine-learning">jeff1evesque/machine-learning</a></td>
               <td>208</td>
@@ -1691,7 +1854,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/elastic/apm-agent-python">elastic/apm-agent-python</a></td>
               <td>182</td>
@@ -1718,7 +1886,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/lixxu/flask-paginate">lixxu/flask-paginate</a></td>
               <td>176</td>
@@ -1737,7 +1910,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/cenobites/flask-jsonrpc">cenobites/flask-jsonrpc</a></td>
               <td>176</td>
@@ -1764,7 +1942,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/flask-dashboard/Flask-MonitoringDashboard">flask-dashboard/Flask-MonitoringDashboard</a></td>
               <td>159</td>
@@ -1803,7 +1986,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/honmaple/flask-msearch">honmaple/flask-msearch</a></td>
               <td>105</td>
@@ -1830,7 +2018,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/numberly/flask2postman">numberly/flask2postman</a></td>
               <td>103</td>
@@ -1857,7 +2050,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/alexandre-old/flask-rest-template">alexandre-old/flask-rest-template</a></td>
               <td>80</td>
@@ -1900,7 +2098,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/zzzsochi/Flask-Gravatar">zzzsochi/Flask-Gravatar</a></td>
               <td>76</td>
@@ -1935,7 +2138,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/opentracing-contrib/python-flask">opentracing-contrib/python-flask</a></td>
               <td>71</td>
@@ -1958,7 +2166,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/bepasty/bepasty-server">bepasty/bepasty-server</a></td>
               <td>62</td>
@@ -2013,7 +2226,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/hamidfzm/Flask-HTMLmin">hamidfzm/Flask-HTMLmin</a></td>
               <td>52</td>
@@ -2052,7 +2270,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pawamoy/shell-history">pawamoy/shell-history</a></td>
               <td>46</td>
@@ -2095,7 +2318,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/132ikl/liteshort">132ikl/liteshort</a></td>
               <td>14</td>
@@ -2122,6 +2350,8 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
         </tbody>
       </table>
@@ -2142,7 +2372,7 @@ color: #0366d6;
 		<footer>
 	<div class="container-fluid">
     <div class="text-center">
-      <p>Awesome List management
+      <p>Awesome List management.
     </div>
 	</div>
 

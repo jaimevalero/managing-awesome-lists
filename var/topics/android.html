@@ -1,56 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 	<head>
-		<title>Awesome List </title>
+		<title>Awesome list viewer</title>
 		
 
 <!-- Meta Information -->
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Awesome list manager">
+<meta name="description" content="Awesome list manager. Discover best resources from github.">
 <meta name="author" content="Jaime Valero">
+<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
 
 <!-- CSS Information -->
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- bootstrap theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 <!-- Font-awesome -->
-<link rel="stylesheet" type="text/css"
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css"
-  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
 
 <!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css"
-  href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
 
 <style type="text/css">
-* {
-   font-size: 16px;
-}
+  * {
+    font-size: 16px;
+  }
 
-.topic-tag {
-display: inline-block;
-padding: 0.3em 0.9em;
-margin: 0 0.5em 0.5em 0;
-white-space: nowrap;
-background-color: #f1f8ff;
-border-radius: 3px;
-font-color: #0366d6;
-color: #0366d6;
-}
-
+  .topic-tag {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    margin: 0 0.5em 0.5em 0;
+    white-space: nowrap;
+    background-color: #f1f8ff;
+    border-radius: 3px;
+    font-color: #0366d6;
+    color: #0366d6;
+  }
 </style>
 		<!-- Scripts: JQuery & Bootstrap -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
@@ -68,24 +62,29 @@ color: #0366d6;
 <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
 </script>
 
- <script type="text/javascript" language="JavaScript" >
-    $(document).ready(function() {
-      $('#tabla').DataTable( { "order": [[ 1, "desc" ]] } );
-  } );
+<script type="text/javascript" language="JavaScript">
+  $(document).ready(function() {
+    $('#tabla').DataTable({
+      "order": [
+        [1, "desc"]
+      ]
+    });
+  });
+</script>
 
 
- </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
 
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
 
- <!-- Global site tag (gtag.js) - Google Analytics -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
- <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-
-   gtag('config', 'UA-146303223-1');
- </script>
+  gtag('config', 'UA-146303223-1');
+</script>
 	</head>
 
 	<body>
@@ -412,7 +411,11 @@ color: #0366d6;
           </tr>
         </thead>
         <tbody>
+					
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/wasabeef/awesome-android-ui">wasabeef/awesome-android-ui</a></td>
               <td>35718</td>
@@ -435,7 +438,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Hack-with-Github/Awesome-Hacking">Hack-with-Github/Awesome-Hacking</a></td>
               <td>30974</td>
@@ -482,7 +490,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/PhilJay/MPAndroidChart">PhilJay/MPAndroidChart</a></td>
               <td>28262</td>
@@ -513,7 +526,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/square/leakcanary">square/leakcanary</a></td>
               <td>23445</td>
@@ -552,7 +570,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/zxing/zxing">zxing/zxing</a></td>
               <td>23404</td>
@@ -595,7 +618,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Solido/awesome-flutter">Solido/awesome-flutter</a></td>
               <td>21158</td>
@@ -678,7 +706,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/skylot/jadx">skylot/jadx</a></td>
               <td>19697</td>
@@ -705,7 +738,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/alibaba/fastjson">alibaba/fastjson</a></td>
               <td>18929</td>
@@ -756,7 +794,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/NativeScript/NativeScript">NativeScript/NativeScript</a></td>
               <td>17496</td>
@@ -807,7 +850,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/react-community/create-react-native-app">react-community/create-react-native-app</a></td>
               <td>11700</td>
@@ -846,7 +894,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/realm/realm-java">realm/realm-java</a></td>
               <td>10617</td>
@@ -885,7 +938,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/xbmc/xbmc">xbmc/xbmc</a></td>
               <td>9451</td>
@@ -948,7 +1006,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/iBotPeaches/Apktool">iBotPeaches/Apktool</a></td>
               <td>8663</td>
@@ -983,7 +1046,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/laurent22/joplin">laurent22/joplin</a></td>
               <td>8400</td>
@@ -1038,7 +1106,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/openframeworks/openFrameworks">openframeworks/openFrameworks</a></td>
               <td>7169</td>
@@ -1109,7 +1182,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/facebook/buck">facebook/buck</a></td>
               <td>6902</td>
@@ -1144,7 +1222,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/therecipe/qt">therecipe/qt</a></td>
               <td>6139</td>
@@ -1227,7 +1310,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/samuelclay/NewsBlur">samuelclay/NewsBlur</a></td>
               <td>5295</td>
@@ -1278,7 +1366,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/assimp/assimp">assimp/assimp</a></td>
               <td>4480</td>
@@ -1349,7 +1442,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/diogobernardino/WilliamChart">diogobernardino/WilliamChart</a></td>
               <td>4161</td>
@@ -1380,7 +1478,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ashishb/android-security-awesome">ashishb/android-security-awesome</a></td>
               <td>4041</td>
@@ -1411,7 +1514,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/appleboy/gorush">appleboy/gorush</a></td>
               <td>3744</td>
@@ -1458,7 +1566,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/iSimar/HackerNews-React-Native">iSimar/HackerNews-React-Native</a></td>
               <td>3540</td>
@@ -1481,7 +1594,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/MvvmCross/MvvmCross">MvvmCross/MvvmCross</a></td>
               <td>2971</td>
@@ -1564,7 +1682,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/requery/requery">requery/requery</a></td>
               <td>2856</td>
@@ -1619,7 +1742,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/uber/NullAway">uber/NullAway</a></td>
               <td>2585</td>
@@ -1654,7 +1782,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/mosra/magnum">mosra/magnum</a></td>
               <td>2577</td>
@@ -1745,7 +1878,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/raysan5/raylib">raysan5/raylib</a></td>
               <td>2301</td>
@@ -1792,7 +1930,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/AtomicGameEngine/AtomicGameEngine">AtomicGameEngine/AtomicGameEngine</a></td>
               <td>2204</td>
@@ -1851,7 +1994,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/balsikandar/Android-Studio-Plugins">balsikandar/Android-Studio-Plugins</a></td>
               <td>2071</td>
@@ -1894,7 +2042,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/igniterealtime/Smack">igniterealtime/Smack</a></td>
               <td>1998</td>
@@ -1933,7 +2086,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/nitaliano/react-native-mapbox-gl">nitaliano/react-native-mapbox-gl</a></td>
               <td>1986</td>
@@ -1960,7 +2118,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/7kfpun/FinanceReactNative">7kfpun/FinanceReactNative</a></td>
               <td>1797</td>
@@ -1991,7 +2154,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ThePhD/sol2">ThePhD/sol2</a></td>
               <td>1748</td>
@@ -2066,7 +2234,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/awslabs/aws-sdk-android-samples">awslabs/aws-sdk-android-samples</a></td>
               <td>787</td>
@@ -2089,7 +2262,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jariz/Noti">jariz/Noti</a></td>
               <td>724</td>
@@ -2120,7 +2298,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/aws-amplify/aws-sdk-android">aws-amplify/aws-sdk-android</a></td>
               <td>644</td>
@@ -2155,7 +2338,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ngs-doo/dsl-json">ngs-doo/dsl-json</a></td>
               <td>549</td>
@@ -2190,7 +2378,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/bitnami-labs/cabin">bitnami-labs/cabin</a></td>
               <td>549</td>
@@ -2217,7 +2410,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/commons-app/apps-android-commons">commons-app/apps-android-commons</a></td>
               <td>519</td>
@@ -2236,7 +2434,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dr-soft/miniaudio">dr-soft/miniaudio</a></td>
               <td>516</td>
@@ -2315,7 +2518,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pascaldekloe/colfer">pascaldekloe/colfer</a></td>
               <td>473</td>
@@ -2382,7 +2590,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/c0bra/deviceframe">c0bra/deviceframe</a></td>
               <td>469</td>
@@ -2417,7 +2630,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/gen2brain/raylib-go">gen2brain/raylib-go</a></td>
               <td>387</td>
@@ -2452,7 +2670,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/topfreegames/pitaya">topfreegames/pitaya</a></td>
               <td>303</td>
@@ -2487,7 +2710,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/eleventigers/awesome-rxjava">eleventigers/awesome-rxjava</a></td>
               <td>241</td>
@@ -2522,7 +2750,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dsward2/LocalRadio">dsward2/LocalRadio</a></td>
               <td>168</td>
@@ -2613,7 +2846,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jbkuczma/NBAreact">jbkuczma/NBAreact</a></td>
               <td>96</td>
@@ -2652,7 +2890,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/motion-open-source/awesome-rubymotion">motion-open-source/awesome-rubymotion</a></td>
               <td>82</td>
@@ -2727,7 +2970,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pemistahl/lingua">pemistahl/lingua</a></td>
               <td>81</td>
@@ -2818,7 +3066,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sromku/adb-export">sromku/adb-export</a></td>
               <td>63</td>
@@ -2845,7 +3098,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/iseebi/TransporterPad">iseebi/TransporterPad</a></td>
               <td>43</td>
@@ -2872,7 +3130,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sizovs/PipelinR">sizovs/PipelinR</a></td>
               <td>30</td>
@@ -2927,7 +3190,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Vorlonsoft/GradleMavenPush">Vorlonsoft/GradleMavenPush</a></td>
               <td>15</td>
@@ -3018,7 +3286,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/vgaidarji/android-github-actions">vgaidarji/android-github-actions</a></td>
               <td>11</td>
@@ -3037,7 +3310,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Vorlonsoft/EasyDokkaPlugin">Vorlonsoft/EasyDokkaPlugin</a></td>
               <td>7</td>
@@ -3092,7 +3370,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/51j0/Android-Storage-Extractor">51j0/Android-Storage-Extractor</a></td>
               <td>3</td>
@@ -3127,6 +3410,8 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
         </tbody>
       </table>
@@ -3147,7 +3432,7 @@ color: #0366d6;
 		<footer>
 	<div class="container-fluid">
     <div class="text-center">
-      <p>Awesome List management
+      <p>Awesome List management.
     </div>
 	</div>
 

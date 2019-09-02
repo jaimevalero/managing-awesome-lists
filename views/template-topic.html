@@ -33,7 +33,11 @@
           </tr>
         </thead>
         <tbody>
-          {% for repo in data['repos'] |sort(attribute='stargazers_count',reverse=true)|unique  %}
+					{% set anterior = ""  %}
+          {% for repo in data['repos'] |sort(attribute='stargazers_count',reverse=true)  %}
+					{% if anterior != repo.full_name %}
+					{% set anterior = repo.full_name  %}
+
             <tr>
               <td><a href="https://github.com/{{repo.full_name}}">{{repo.full_name}}</a></td>
               <td>{{repo.stargazers_count}}</td>
@@ -48,6 +52,8 @@
                 {% endfor %}
               </td>
             </tr>
+					{% endif %}
+
           {% endfor	%}
         </tbody>
       </table>

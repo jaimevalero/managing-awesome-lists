@@ -1,56 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 	<head>
-		<title>Awesome List </title>
+		<title>Awesome list viewer</title>
 		
 
 <!-- Meta Information -->
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Awesome list manager">
+<meta name="description" content="Awesome list manager. Discover best resources from github.">
 <meta name="author" content="Jaime Valero">
+<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
 
 <!-- CSS Information -->
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- bootstrap theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 <!-- Font-awesome -->
-<link rel="stylesheet" type="text/css"
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css"
-  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
 
 <!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css"
-  href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
 
 <style type="text/css">
-* {
-   font-size: 16px;
-}
+  * {
+    font-size: 16px;
+  }
 
-.topic-tag {
-display: inline-block;
-padding: 0.3em 0.9em;
-margin: 0 0.5em 0.5em 0;
-white-space: nowrap;
-background-color: #f1f8ff;
-border-radius: 3px;
-font-color: #0366d6;
-color: #0366d6;
-}
-
+  .topic-tag {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    margin: 0 0.5em 0.5em 0;
+    white-space: nowrap;
+    background-color: #f1f8ff;
+    border-radius: 3px;
+    font-color: #0366d6;
+    color: #0366d6;
+  }
 </style>
 		<!-- Scripts: JQuery & Bootstrap -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
@@ -68,24 +62,29 @@ color: #0366d6;
 <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
 </script>
 
- <script type="text/javascript" language="JavaScript" >
-    $(document).ready(function() {
-      $('#tabla').DataTable( { "order": [[ 1, "desc" ]] } );
-  } );
+<script type="text/javascript" language="JavaScript">
+  $(document).ready(function() {
+    $('#tabla').DataTable({
+      "order": [
+        [1, "desc"]
+      ]
+    });
+  });
+</script>
 
 
- </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
 
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
 
- <!-- Global site tag (gtag.js) - Google Analytics -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
- <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-
-   gtag('config', 'UA-146303223-1');
- </script>
+  gtag('config', 'UA-146303223-1');
+</script>
 	</head>
 
 	<body>
@@ -412,7 +411,11 @@ color: #0366d6;
           </tr>
         </thead>
         <tbody>
+					
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/serverless/serverless">serverless/serverless</a></td>
               <td>31632</td>
@@ -463,7 +466,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/localstack/localstack">localstack/localstack</a></td>
               <td>18661</td>
@@ -478,7 +486,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/donnemartin/data-science-ipython-notebooks">donnemartin/data-science-ipython-notebooks</a></td>
               <td>16235</td>
@@ -565,7 +578,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/aws/aws-cli">aws/aws-cli</a></td>
               <td>8421</td>
@@ -592,7 +610,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/apex/apex">apex/apex</a></td>
               <td>7881</td>
@@ -631,7 +654,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/donnemartin/awesome-aws">donnemartin/awesome-aws</a></td>
               <td>7219</td>
@@ -722,7 +750,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kubernetes-sigs/kubespray">kubernetes-sigs/kubespray</a></td>
               <td>7007</td>
@@ -769,7 +802,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ramitsurana/awesome-kubernetes">ramitsurana/awesome-kubernetes</a></td>
               <td>6774</td>
@@ -852,7 +890,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/aws/chalice">aws/chalice</a></td>
               <td>5898</td>
@@ -903,7 +946,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/aws-amplify/amplify-js">aws-amplify/amplify-js</a></td>
               <td>5771</td>
@@ -986,7 +1034,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/aws/aws-sdk-js">aws/aws-sdk-js</a></td>
               <td>5369</td>
@@ -1009,7 +1062,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/aws/aws-sdk-go">aws/aws-sdk-go</a></td>
               <td>5087</td>
@@ -1032,7 +1090,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/awslabs/aws-shell">awslabs/aws-shell</a></td>
               <td>4990</td>
@@ -1059,7 +1122,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/boto/boto3">boto/boto3</a></td>
               <td>4742</td>
@@ -1090,7 +1158,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/donnemartin/dev-setup">donnemartin/dev-setup</a></td>
               <td>4559</td>
@@ -1181,7 +1254,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/awslabs/aws-sam-cli">awslabs/aws-sam-cli</a></td>
               <td>4469</td>
@@ -1224,7 +1302,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/wallix/awless">wallix/awless</a></td>
               <td>4362</td>
@@ -1271,7 +1354,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/caprover/caprover">caprover/caprover</a></td>
               <td>4312</td>
@@ -1350,7 +1438,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/donnemartin/saws">donnemartin/saws</a></td>
               <td>4144</td>
@@ -1429,7 +1522,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Netflix/security_monkey">Netflix/security_monkey</a></td>
               <td>3767</td>
@@ -1492,7 +1590,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/claudiajs/claudia">claudiajs/claudia</a></td>
               <td>3239</td>
@@ -1531,7 +1634,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/aws/aws-sdk-java">aws/aws-sdk-java</a></td>
               <td>3012</td>
@@ -1558,7 +1666,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dtan4/terraforming">dtan4/terraforming</a></td>
               <td>3001</td>
@@ -1585,7 +1698,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/aws/aws-sdk-ruby">aws/aws-sdk-ruby</a></td>
               <td>2963</td>
@@ -1612,7 +1730,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/prakhar1989/docker-curriculum">prakhar1989/docker-curriculum</a></td>
               <td>2929</td>
@@ -1647,7 +1770,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/spulec/moto">spulec/moto</a></td>
               <td>2742</td>
@@ -1674,7 +1802,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/mozilla/sops">mozilla/sops</a></td>
               <td>2699</td>
@@ -1717,7 +1850,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Teevity/ice">Teevity/ice</a></td>
               <td>2612</td>
@@ -1744,7 +1882,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/remind101/empire">remind101/empire</a></td>
               <td>2541</td>
@@ -1771,7 +1914,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/99designs/aws-vault">99designs/aws-vault</a></td>
               <td>2490</td>
@@ -1806,7 +1954,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/cloud-custodian/cloud-custodian">cloud-custodian/cloud-custodian</a></td>
               <td>2372</td>
@@ -1857,7 +2010,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kubernetes-incubator/external-dns">kubernetes-incubator/external-dns</a></td>
               <td>2190</td>
@@ -1896,7 +2054,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Netflix/bless">Netflix/bless</a></td>
               <td>2113</td>
@@ -1939,7 +2102,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ttlequals0/autovpn">ttlequals0/autovpn</a></td>
               <td>1818</td>
@@ -1986,7 +2154,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/convox/rack">convox/rack</a></td>
               <td>1760</td>
@@ -2013,7 +2186,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/awsdocs/aws-doc-sdk-examples">awsdocs/aws-doc-sdk-examples</a></td>
               <td>1635</td>
@@ -2072,7 +2250,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/nccgroup/Scout2">nccgroup/Scout2</a></td>
               <td>1576</td>
@@ -2091,7 +2274,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/lyft/confidant">lyft/confidant</a></td>
               <td>1464</td>
@@ -2114,7 +2302,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/MoonMail/MoonMail">MoonMail/MoonMail</a></td>
               <td>1416</td>
@@ -2189,7 +2382,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/AutoSpotting/AutoSpotting">AutoSpotting/AutoSpotting</a></td>
               <td>1416</td>
@@ -2272,7 +2470,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/danilop/LambdAuth">danilop/LambdAuth</a></td>
               <td>1314</td>
@@ -2299,7 +2502,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jtblin/kube2iam">jtblin/kube2iam</a></td>
               <td>1228</td>
@@ -2318,7 +2526,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kubernetes-sigs/aws-iam-authenticator">kubernetes-sigs/aws-iam-authenticator</a></td>
               <td>1165</td>
@@ -2349,7 +2562,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/gardener/gardener">gardener/gardener</a></td>
               <td>1132</td>
@@ -2396,7 +2614,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kubernetes-sigs/aws-alb-ingress-controller">kubernetes-sigs/aws-alb-ingress-controller</a></td>
               <td>1114</td>
@@ -2431,7 +2654,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/rusoto/rusoto">rusoto/rusoto</a></td>
               <td>1095</td>
@@ -2454,7 +2682,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kubernetes-incubator/kube-aws">kubernetes-incubator/kube-aws</a></td>
               <td>1029</td>
@@ -2485,7 +2718,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/nficano/python-lambda">nficano/python-lambda</a></td>
               <td>991</td>
@@ -2516,7 +2754,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pynamodb/PynamoDB">pynamodb/PynamoDB</a></td>
               <td>980</td>
@@ -2539,7 +2782,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ManageIQ/manageiq">ManageIQ/manageiq</a></td>
               <td>958</td>
@@ -2630,7 +2878,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/aws/aws-sdk-cpp">aws/aws-sdk-cpp</a></td>
               <td>901</td>
@@ -2653,7 +2906,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/blox/blox">blox/blox</a></td>
               <td>899</td>
@@ -2680,7 +2938,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ivanilves/xiringuito">ivanilves/xiringuito</a></td>
               <td>896</td>
@@ -2719,7 +2982,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/airbnb/binaryalert">airbnb/binaryalert</a></td>
               <td>892</td>
@@ -2758,7 +3026,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/awslabs/aws-sdk-ios-samples">awslabs/aws-sdk-ios-samples</a></td>
               <td>891</td>
@@ -2777,7 +3050,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Sceptre/sceptre">Sceptre/sceptre</a></td>
               <td>883</td>
@@ -2816,7 +3094,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/k1LoW/awspec">k1LoW/awspec</a></td>
               <td>866</td>
@@ -2835,7 +3118,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/achiku/jungle">achiku/jungle</a></td>
               <td>844</td>
@@ -2858,7 +3146,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/cloudsploit/scans">cloudsploit/scans</a></td>
               <td>788</td>
@@ -2885,7 +3178,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/awslabs/aws-sdk-android-samples">awslabs/aws-sdk-android-samples</a></td>
               <td>787</td>
@@ -2908,7 +3206,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/eawsy/aws-lambda-go">eawsy/aws-lambda-go</a></td>
               <td>711</td>
@@ -2943,7 +3246,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/bbc/sqs-consumer">bbc/sqs-consumer</a></td>
               <td>691</td>
@@ -2970,7 +3278,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/awslabs/ecs-refarch-continuous-deployment">awslabs/ecs-refarch-continuous-deployment</a></td>
               <td>664</td>
@@ -3009,7 +3322,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/DataBiosphere/toil">DataBiosphere/toil</a></td>
               <td>611</td>
@@ -3060,7 +3378,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/grailbio/reflow">grailbio/reflow</a></td>
               <td>592</td>
@@ -3107,7 +3430,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/NixOS/nixops">NixOS/nixops</a></td>
               <td>544</td>
@@ -3166,7 +3494,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/aws/aws-iot-device-sdk-embedded-C">aws/aws-iot-device-sdk-embedded-C</a></td>
               <td>530</td>
@@ -3181,7 +3514,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/vsespb/mt-aws-glacier">vsespb/mt-aws-glacier</a></td>
               <td>499</td>
@@ -3236,7 +3574,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/chef-cookbooks/aws">chef-cookbooks/aws</a></td>
               <td>396</td>
@@ -3259,7 +3602,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/bastillion-io/Bastillion-EC2">bastillion-io/Bastillion-EC2</a></td>
               <td>395</td>
@@ -3306,7 +3654,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/brendanhay/amazonka">brendanhay/amazonka</a></td>
               <td>393</td>
@@ -3325,7 +3678,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/brandonweiss/discharge">brandonweiss/discharge</a></td>
               <td>385</td>
@@ -3356,7 +3714,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kubenow/KubeNow">kubenow/KubeNow</a></td>
               <td>255</td>
@@ -3395,7 +3758,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/devops-israel/aws-inventory">devops-israel/aws-inventory</a></td>
               <td>236</td>
@@ -3414,7 +3782,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/elpheria/rpc-websockets">elpheria/rpc-websockets</a></td>
               <td>188</td>
@@ -3505,7 +3878,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/aws/awsmobile-cli">aws/awsmobile-cli</a></td>
               <td>142</td>
@@ -3580,7 +3958,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pplu/aws-sdk-perl">pplu/aws-sdk-perl</a></td>
               <td>140</td>
@@ -3663,7 +4046,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/amazon-archives/aws-sdk-arduino">amazon-archives/aws-sdk-arduino</a></td>
               <td>91</td>
@@ -3686,7 +4074,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Appliscale/perun">Appliscale/perun</a></td>
               <td>79</td>
@@ -3777,7 +4170,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/go-furnace/go-furnace">go-furnace/go-furnace</a></td>
               <td>71</td>
@@ -3820,7 +4218,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kubernetes-sigs/aws-ebs-csi-driver">kubernetes-sigs/aws-ebs-csi-driver</a></td>
               <td>60</td>
@@ -3851,7 +4254,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kubernetes-sigs/aws-efs-csi-driver">kubernetes-sigs/aws-efs-csi-driver</a></td>
               <td>54</td>
@@ -3882,7 +4290,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/4dn-dcic/tibanna">4dn-dcic/tibanna</a></td>
               <td>38</td>
@@ -3945,7 +4358,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kubernetes-sigs/aws-fsx-csi-driver">kubernetes-sigs/aws-fsx-csi-driver</a></td>
               <td>24</td>
@@ -3976,7 +4394,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/rhnvrm/simples3">rhnvrm/simples3</a></td>
               <td>9</td>
@@ -4003,7 +4426,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/tylfin/dynatomic">tylfin/dynatomic</a></td>
               <td>8</td>
@@ -4046,7 +4474,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jakejarvis/s3-sync-action">jakejarvis/s3-sync-action</a></td>
               <td>1</td>
@@ -4085,6 +4518,8 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
         </tbody>
       </table>
@@ -4105,7 +4540,7 @@ color: #0366d6;
 		<footer>
 	<div class="container-fluid">
     <div class="text-center">
-      <p>Awesome List management
+      <p>Awesome List management.
     </div>
 	</div>
 

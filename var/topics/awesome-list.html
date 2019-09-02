@@ -1,56 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 	<head>
-		<title>Awesome List </title>
+		<title>Awesome list viewer</title>
 		
 
 <!-- Meta Information -->
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Awesome list manager">
+<meta name="description" content="Awesome list manager. Discover best resources from github.">
 <meta name="author" content="Jaime Valero">
+<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
 
 <!-- CSS Information -->
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- bootstrap theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 <!-- Font-awesome -->
-<link rel="stylesheet" type="text/css"
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css"
-  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
 
 <!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css"
-  href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
 
 <style type="text/css">
-* {
-   font-size: 16px;
-}
+  * {
+    font-size: 16px;
+  }
 
-.topic-tag {
-display: inline-block;
-padding: 0.3em 0.9em;
-margin: 0 0.5em 0.5em 0;
-white-space: nowrap;
-background-color: #f1f8ff;
-border-radius: 3px;
-font-color: #0366d6;
-color: #0366d6;
-}
-
+  .topic-tag {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    margin: 0 0.5em 0.5em 0;
+    white-space: nowrap;
+    background-color: #f1f8ff;
+    border-radius: 3px;
+    font-color: #0366d6;
+    color: #0366d6;
+  }
 </style>
 		<!-- Scripts: JQuery & Bootstrap -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
@@ -68,24 +62,29 @@ color: #0366d6;
 <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
 </script>
 
- <script type="text/javascript" language="JavaScript" >
-    $(document).ready(function() {
-      $('#tabla').DataTable( { "order": [[ 1, "desc" ]] } );
-  } );
+<script type="text/javascript" language="JavaScript">
+  $(document).ready(function() {
+    $('#tabla').DataTable({
+      "order": [
+        [1, "desc"]
+      ]
+    });
+  });
+</script>
 
 
- </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
 
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
 
- <!-- Global site tag (gtag.js) - Google Analytics -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
- <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-
-   gtag('config', 'UA-146303223-1');
- </script>
+  gtag('config', 'UA-146303223-1');
+</script>
 	</head>
 
 	<body>
@@ -412,7 +411,11 @@ color: #0366d6;
           </tr>
         </thead>
         <tbody>
+					
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sindresorhus/awesome">sindresorhus/awesome</a></td>
               <td>114570</td>
@@ -443,7 +446,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/iluwatar/java-design-patterns">iluwatar/java-design-patterns</a></td>
               <td>50743</td>
@@ -482,7 +490,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/30-seconds/30-seconds-of-code">30-seconds/30-seconds-of-code</a></td>
               <td>47963</td>
@@ -533,7 +546,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/avelino/awesome-go">avelino/awesome-go</a></td>
               <td>47122</td>
@@ -564,7 +582,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ossu/computer-science">ossu/computer-science</a></td>
               <td>43073</td>
@@ -587,7 +610,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Kickball/awesome-selfhosted">Kickball/awesome-selfhosted</a></td>
               <td>34813</td>
@@ -626,7 +654,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/enaqx/awesome-react">enaqx/awesome-react</a></td>
               <td>33015</td>
@@ -669,7 +702,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sindresorhus/awesome-nodejs">sindresorhus/awesome-nodejs</a></td>
               <td>32153</td>
@@ -704,7 +742,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jaywcjlove/awesome-mac">jaywcjlove/awesome-mac</a></td>
               <td>31034</td>
@@ -743,7 +786,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/prakhar1989/awesome-courses">prakhar1989/awesome-courses</a></td>
               <td>30522</td>
@@ -770,7 +818,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/MaximAbramchuck/awesome-interview-questions">MaximAbramchuck/awesome-interview-questions</a></td>
               <td>28840</td>
@@ -837,7 +890,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/MaximAbramchuck/awesome-interview-questions">MaximAbramchuck/awesome-interview-questions</a></td>
               <td>28840</td>
@@ -904,7 +962,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/tiimgreen/github-cheat-sheet">tiimgreen/github-cheat-sheet</a></td>
               <td>28739</td>
@@ -927,7 +990,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dypsilon/frontend-dev-bookmarks">dypsilon/frontend-dev-bookmarks</a></td>
               <td>26238</td>
@@ -954,7 +1022,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jondot/awesome-react-native">jondot/awesome-react-native</a></td>
               <td>25087</td>
@@ -981,7 +1054,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/trimstray/the-book-of-secret-knowledge">trimstray/the-book-of-secret-knowledge</a></td>
               <td>22202</td>
@@ -1068,7 +1146,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/herrbischoff/awesome-macos-command-line">herrbischoff/awesome-macos-command-line</a></td>
               <td>21542</td>
@@ -1107,7 +1190,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/binhnguyennus/awesome-scalability">binhnguyennus/awesome-scalability</a></td>
               <td>21534</td>
@@ -1198,7 +1286,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Solido/awesome-flutter">Solido/awesome-flutter</a></td>
               <td>21158</td>
@@ -1281,7 +1374,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/fffaraz/awesome-cpp">fffaraz/awesome-cpp</a></td>
               <td>21158</td>
@@ -1340,7 +1438,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/brillout/awesome-react-components">brillout/awesome-react-components</a></td>
               <td>18912</td>
@@ -1375,7 +1478,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sindresorhus/awesome-electron">sindresorhus/awesome-electron</a></td>
               <td>18094</td>
@@ -1402,7 +1510,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/serhii-londar/open-source-mac-os-apps">serhii-londar/open-source-mac-os-apps</a></td>
               <td>18044</td>
@@ -1481,7 +1594,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/matteocrippa/awesome-swift">matteocrippa/awesome-swift</a></td>
               <td>17776</td>
@@ -1544,7 +1662,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/alebcay/awesome-shell">alebcay/awesome-shell</a></td>
               <td>16868</td>
@@ -1587,7 +1710,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/veggiemonk/awesome-docker">veggiemonk/awesome-docker</a></td>
               <td>15798</td>
@@ -1670,7 +1798,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/viatsko/awesome-vscode">viatsko/awesome-vscode</a></td>
               <td>15578</td>
@@ -1725,7 +1858,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/lukasz-madon/awesome-remote-job">lukasz-madon/awesome-remote-job</a></td>
               <td>14631</td>
@@ -1748,7 +1886,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/AllThingsSmitty/css-protips">AllThingsSmitty/css-protips</a></td>
               <td>13853</td>
@@ -1795,7 +1938,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ChristosChristofidis/awesome-deep-learning">ChristosChristofidis/awesome-deep-learning</a></td>
               <td>13462</td>
@@ -1842,7 +1990,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ChristosChristofidis/awesome-deep-learning">ChristosChristofidis/awesome-deep-learning</a></td>
               <td>13462</td>
@@ -1889,7 +2042,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/30-seconds/30-seconds-of-css">30-seconds/30-seconds-of-css</a></td>
               <td>12801</td>
@@ -1932,7 +2090,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/MunGell/awesome-for-beginners">MunGell/awesome-for-beginners</a></td>
               <td>12191</td>
@@ -1963,7 +2126,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/xgrommx/awesome-redux">xgrommx/awesome-redux</a></td>
               <td>11468</td>
@@ -1990,7 +2158,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/phanan/htaccess">phanan/htaccess</a></td>
               <td>11016</td>
@@ -2033,7 +2206,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kdeldycke/awesome-falsehood">kdeldycke/awesome-falsehood</a></td>
               <td>10545</td>
@@ -2096,7 +2274,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/academic/awesome-datascience">academic/awesome-datascience</a></td>
               <td>10297</td>
@@ -2143,7 +2326,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/academic/awesome-datascience">academic/awesome-datascience</a></td>
               <td>10297</td>
@@ -2190,7 +2378,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/markets/awesome-ruby">markets/awesome-ruby</a></td>
               <td>10265</td>
@@ -2217,7 +2410,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/chentsulin/awesome-graphql">chentsulin/awesome-graphql</a></td>
               <td>10180</td>
@@ -2248,7 +2446,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/mhinz/vim-galore">mhinz/vim-galore</a></td>
               <td>9989</td>
@@ -2303,7 +2506,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/iCHAIT/awesome-macOS">iCHAIT/awesome-macOS</a></td>
               <td>9905</td>
@@ -2342,7 +2550,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/quozd/awesome-dotnet">quozd/awesome-dotnet</a></td>
               <td>9857</td>
@@ -2377,7 +2590,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/thangchung/awesome-dotnet-core">thangchung/awesome-dotnet-core</a></td>
               <td>9707</td>
@@ -2412,7 +2630,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/enaqx/awesome-pentest">enaqx/awesome-pentest</a></td>
               <td>9644</td>
@@ -2431,7 +2654,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ujjwalkarn/Machine-Learning-Tutorials">ujjwalkarn/Machine-Learning-Tutorials</a></td>
               <td>9374</td>
@@ -2486,7 +2714,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/n1trux/awesome-sysadmin">n1trux/awesome-sysadmin</a></td>
               <td>8553</td>
@@ -2513,7 +2746,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/bnb/awesome-hyper">bnb/awesome-hyper</a></td>
               <td>8273</td>
@@ -2548,7 +2786,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/k4m4/terminals-are-sexy">k4m4/terminals-are-sexy</a></td>
               <td>8240</td>
@@ -2587,7 +2830,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/onurakpolat/awesome-bigdata">onurakpolat/awesome-bigdata</a></td>
               <td>7832</td>
@@ -2658,7 +2906,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/bharathgs/Awesome-pytorch-list">bharathgs/Awesome-pytorch-list</a></td>
               <td>7732</td>
@@ -2749,7 +3002,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/k4m4/movies-for-hackers">k4m4/movies-for-hackers</a></td>
               <td>7633</td>
@@ -2792,7 +3050,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/neutraltone/awesome-stock-resources">neutraltone/awesome-stock-resources</a></td>
               <td>7150</td>
@@ -2859,7 +3122,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/JStumpp/awesome-android">JStumpp/awesome-android</a></td>
               <td>7123</td>
@@ -2898,7 +3166,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/lauris/awesome-scala">lauris/awesome-scala</a></td>
               <td>7053</td>
@@ -2929,7 +3202,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dariubs/GoBooks">dariubs/GoBooks</a></td>
               <td>6858</td>
@@ -2968,7 +3246,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/PatrickJS/awesome-angular">PatrickJS/awesome-angular</a></td>
               <td>6737</td>
@@ -2999,7 +3282,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/davidsonfellipe/awesome-wpo">davidsonfellipe/awesome-wpo</a></td>
               <td>6643</td>
@@ -3030,7 +3318,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/unixorn/awesome-zsh-plugins">unixorn/awesome-zsh-plugins</a></td>
               <td>6534</td>
@@ -3089,7 +3382,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ellisonleao/magictools">ellisonleao/magictools</a></td>
               <td>6318</td>
@@ -3160,7 +3458,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/mezod/awesome-indie">mezod/awesome-indie</a></td>
               <td>5967</td>
@@ -3207,7 +3510,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jnv/lists">jnv/lists</a></td>
               <td>5917</td>
@@ -3234,7 +3542,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/mre/awesome-static-analysis">mre/awesome-static-analysis</a></td>
               <td>5908</td>
@@ -3281,7 +3594,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/thibmaek/awesome-raspberry-pi">thibmaek/awesome-raspberry-pi</a></td>
               <td>5747</td>
@@ -3312,7 +3630,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/hsavit1/Awesome-Swift-Education">hsavit1/Awesome-Swift-Education</a></td>
               <td>5389</td>
@@ -3339,7 +3662,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/terkelg/awesome-creative-coding">terkelg/awesome-creative-coding</a></td>
               <td>5263</td>
@@ -3418,7 +3746,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/rshipp/awesome-malware-analysis">rshipp/awesome-malware-analysis</a></td>
               <td>5117</td>
@@ -3501,7 +3834,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/emacs-tw/awesome-emacs">emacs-tw/awesome-emacs</a></td>
               <td>5100</td>
@@ -3520,7 +3858,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/matiassingers/awesome-readme">matiassingers/awesome-readme</a></td>
               <td>5013</td>
@@ -3547,7 +3890,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/chrissimpkins/codeface">chrissimpkins/codeface</a></td>
               <td>4999</td>
@@ -3610,7 +3958,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sbilly/awesome-security">sbilly/awesome-security</a></td>
               <td>4755</td>
@@ -3629,7 +3982,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/hackerkid/Mind-Expanding-Books">hackerkid/Mind-Expanding-Books</a></td>
               <td>4663</td>
@@ -3672,7 +4030,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/lnishan/awesome-competitive-programming">lnishan/awesome-competitive-programming</a></td>
               <td>4638</td>
@@ -3731,7 +4094,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/heynickc/awesome-ddd">heynickc/awesome-ddd</a></td>
               <td>4542</td>
@@ -3754,7 +4122,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/agarrharr/awesome-cli-apps">agarrharr/awesome-cli-apps</a></td>
               <td>4523</td>
@@ -3785,7 +4158,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Vedenin/useful-java-links">Vedenin/useful-java-links</a></td>
               <td>4393</td>
@@ -3836,7 +4214,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/webpro/awesome-dotfiles">webpro/awesome-dotfiles</a></td>
               <td>4230</td>
@@ -3887,7 +4270,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/src-d/awesome-machine-learning-on-source-code">src-d/awesome-machine-learning-on-source-code</a></td>
               <td>4202</td>
@@ -3914,7 +4302,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/likedan/Awesome-CoreML-Models">likedan/Awesome-CoreML-Models</a></td>
               <td>4187</td>
@@ -4005,7 +4398,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/AllThingsSmitty/jquery-tips-everyone-should-know">AllThingsSmitty/jquery-tips-everyone-should-know</a></td>
               <td>4111</td>
@@ -4052,7 +4450,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ashishb/android-security-awesome">ashishb/android-security-awesome</a></td>
               <td>4041</td>
@@ -4083,7 +4486,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sdras/awesome-actions">sdras/awesome-actions</a></td>
               <td>3923</td>
@@ -4126,7 +4534,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/willianjusten/awesome-svg">willianjusten/awesome-svg</a></td>
               <td>3872</td>
@@ -4145,7 +4558,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dastergon/awesome-sre">dastergon/awesome-sre</a></td>
               <td>3801</td>
@@ -4236,7 +4654,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/AllThingsSmitty/must-watch-css">AllThingsSmitty/must-watch-css</a></td>
               <td>3738</td>
@@ -4307,7 +4730,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/qinwf/awesome-R">qinwf/awesome-R</a></td>
               <td>3626</td>
@@ -4346,7 +4774,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/webpack-contrib/awesome-webpack">webpack-contrib/awesome-webpack</a></td>
               <td>3507</td>
@@ -4377,7 +4810,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/paralax/awesome-honeypots">paralax/awesome-honeypots</a></td>
               <td>3421</td>
@@ -4408,7 +4846,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/rehooks/awesome-react-hooks">rehooks/awesome-react-hooks</a></td>
               <td>3389</td>
@@ -4439,7 +4882,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sindresorhus/awesome-npm">sindresorhus/awesome-npm</a></td>
               <td>3334</td>
@@ -4482,7 +4930,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/mmccaff/PlacesToPostYourStartup">mmccaff/PlacesToPostYourStartup</a></td>
               <td>3291</td>
@@ -4513,7 +4966,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Zheaoli/awesome-coins">Zheaoli/awesome-coins</a></td>
               <td>3025</td>
@@ -4580,7 +5038,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/RyanNielson/awesome-unity">RyanNielson/awesome-unity</a></td>
               <td>2991</td>
@@ -4603,7 +5066,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sporto/awesome-elm">sporto/awesome-elm</a></td>
               <td>2987</td>
@@ -4646,7 +5114,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/uraimo/Awesome-Swift-Playgrounds">uraimo/Awesome-Swift-Playgrounds</a></td>
               <td>2948</td>
@@ -4701,7 +5174,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/meirwah/awesome-incident-response">meirwah/awesome-incident-response</a></td>
               <td>2886</td>
@@ -4744,7 +5222,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/The-Art-of-Hacking/h4cker">The-Art-of-Hacking/h4cker</a></td>
               <td>2884</td>
@@ -4835,7 +5318,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/qazbnm456/awesome-web-security">qazbnm456/awesome-web-security</a></td>
               <td>2843</td>
@@ -4874,7 +5362,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/rossant/awesome-math">rossant/awesome-math</a></td>
               <td>2786</td>
@@ -4905,7 +5398,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sindresorhus/promise-fun">sindresorhus/promise-fun</a></td>
               <td>2610</td>
@@ -4996,7 +5494,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/unicodeveloper/awesome-nextjs">unicodeveloper/awesome-nextjs</a></td>
               <td>2570</td>
@@ -5047,7 +5550,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sindresorhus/awesome-scifi">sindresorhus/awesome-scifi</a></td>
               <td>2568</td>
@@ -5094,7 +5602,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/fcambus/nginx-resources">fcambus/nginx-resources</a></td>
               <td>2488</td>
@@ -5129,7 +5642,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pditommaso/awesome-pipeline">pditommaso/awesome-pipeline</a></td>
               <td>2358</td>
@@ -5148,7 +5666,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/onqtam/awesome-cmake">onqtam/awesome-cmake</a></td>
               <td>2301</td>
@@ -5195,7 +5718,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/herrbischoff/awesome-command-line-apps">herrbischoff/awesome-command-line-apps</a></td>
               <td>2301</td>
@@ -5234,7 +5762,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/veelenga/awesome-crystal">veelenga/awesome-crystal</a></td>
               <td>2292</td>
@@ -5265,7 +5798,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/awesome-css-group/awesome-css">awesome-css-group/awesome-css</a></td>
               <td>2258</td>
@@ -5292,7 +5830,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/awesome-css-group/awesome-css">awesome-css-group/awesome-css</a></td>
               <td>2258</td>
@@ -5319,7 +5862,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/fasouto/awesome-dataviz">fasouto/awesome-dataviz</a></td>
               <td>2209</td>
@@ -5354,7 +5902,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/LappleApple/awesome-leading-and-managing">LappleApple/awesome-leading-and-managing</a></td>
               <td>2185</td>
@@ -5413,7 +5966,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ekremkaraca/awesome-rails">ekremkaraca/awesome-rails</a></td>
               <td>2069</td>
@@ -5452,7 +6010,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/gbdev/awesome-gbdev">gbdev/awesome-gbdev</a></td>
               <td>2030</td>
@@ -5543,7 +6106,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sobolevn/awesome-cryptography">sobolevn/awesome-cryptography</a></td>
               <td>1992</td>
@@ -5578,7 +6146,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/troxler/awesome-css-frameworks">troxler/awesome-css-frameworks</a></td>
               <td>1974</td>
@@ -5613,7 +6186,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/aleksandar-todorovic/awesome-linux">aleksandar-todorovic/awesome-linux</a></td>
               <td>1950</td>
@@ -5652,7 +6230,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/nikgraf/awesome-draft-js">nikgraf/awesome-draft-js</a></td>
               <td>1929</td>
@@ -5679,7 +6262,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/stackshareio/awesome-stacks">stackshareio/awesome-stacks</a></td>
               <td>1914</td>
@@ -5718,7 +6306,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dahlia/awesome-sqlalchemy">dahlia/awesome-sqlalchemy</a></td>
               <td>1909</td>
@@ -5761,7 +6354,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/0xInfection/Awesome-WAF">0xInfection/Awesome-WAF</a></td>
               <td>1907</td>
@@ -5808,7 +6406,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/aleksandar-todorovic/awesome-c">aleksandar-todorovic/awesome-c</a></td>
               <td>1861</td>
@@ -5835,7 +6438,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/mehcode/awesome-atom">mehcode/awesome-atom</a></td>
               <td>1777</td>
@@ -5858,7 +6466,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jdorfman/awesome-json-datasets">jdorfman/awesome-json-datasets</a></td>
               <td>1750</td>
@@ -5901,7 +6514,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/MFatihMAR/Awesome-Game-Networking">MFatihMAR/Awesome-Game-Networking</a></td>
               <td>1735</td>
@@ -5992,7 +6610,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/timofurrer/awesome-asyncio">timofurrer/awesome-asyncio</a></td>
               <td>1729</td>
@@ -6027,7 +6650,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/micromata/awesome-javascript-learning">micromata/awesome-javascript-learning</a></td>
               <td>1723</td>
@@ -6062,7 +6690,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/stefanbuck/awesome-browser-extensions-for-github">stefanbuck/awesome-browser-extensions-for-github</a></td>
               <td>1699</td>
@@ -6093,7 +6726,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dustinspecker/awesome-eslint">dustinspecker/awesome-eslint</a></td>
               <td>1680</td>
@@ -6120,7 +6758,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/agarrharr/awesome-macos-screensavers">agarrharr/awesome-macos-screensavers</a></td>
               <td>1600</td>
@@ -6147,7 +6790,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/HQarroum/awesome-iot">HQarroum/awesome-iot</a></td>
               <td>1576</td>
@@ -6166,7 +6814,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/briatte/awesome-network-analysis">briatte/awesome-network-analysis</a></td>
               <td>1535</td>
@@ -6237,7 +6890,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/frenck/awesome-home-assistant">frenck/awesome-home-assistant</a></td>
               <td>1504</td>
@@ -6308,7 +6966,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/love2d-community/awesome-love2d">love2d-community/awesome-love2d</a></td>
               <td>1479</td>
@@ -6335,7 +6998,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/emijrp/awesome-awesome">emijrp/awesome-awesome</a></td>
               <td>1460</td>
@@ -6386,7 +7054,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/joho/awesome-code-review">joho/awesome-code-review</a></td>
               <td>1446</td>
@@ -6413,7 +7086,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ybayle/awesome-deep-learning-music">ybayle/awesome-deep-learning-music</a></td>
               <td>1435</td>
@@ -6504,7 +7182,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dreamingechoes/awesome-mental-health">dreamingechoes/awesome-mental-health</a></td>
               <td>1426</td>
@@ -6535,7 +7218,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jorgebucaran/awesome-fish">jorgebucaran/awesome-fish</a></td>
               <td>1370</td>
@@ -6562,7 +7250,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jorgebucaran/awesome-fish">jorgebucaran/awesome-fish</a></td>
               <td>1370</td>
@@ -6589,7 +7282,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/zudochkin/awesome-newsletters">zudochkin/awesome-newsletters</a></td>
               <td>1364</td>
@@ -6624,7 +7322,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/arbox/machine-learning-with-ruby">arbox/machine-learning-with-ruby</a></td>
               <td>1359</td>
@@ -6671,7 +7374,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/watson/awesome-computer-history">watson/awesome-computer-history</a></td>
               <td>1353</td>
@@ -6714,7 +7422,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pico-8/awesome-PICO-8">pico-8/awesome-PICO-8</a></td>
               <td>1317</td>
@@ -6765,7 +7478,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/derimagia/awesome-alfred-workflows">derimagia/awesome-alfred-workflows</a></td>
               <td>1307</td>
@@ -6796,7 +7514,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Calinou/awesome-godot">Calinou/awesome-godot</a></td>
               <td>1292</td>
@@ -6827,7 +7550,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ramnes/awesome-mongodb">ramnes/awesome-mongodb</a></td>
               <td>1290</td>
@@ -6858,7 +7586,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/janikvonrotz/awesome-powershell">janikvonrotz/awesome-powershell</a></td>
               <td>1290</td>
@@ -6909,7 +7642,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/zingchart/awesome-charting">zingchart/awesome-charting</a></td>
               <td>1279</td>
@@ -6940,7 +7678,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/manuzhang/awesome-streaming">manuzhang/awesome-streaming</a></td>
               <td>1270</td>
@@ -6967,7 +7710,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/AdrienTorris/awesome-blazor">AdrienTorris/awesome-blazor</a></td>
               <td>1264</td>
@@ -7058,7 +7806,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/diegocard/awesome-html5">diegocard/awesome-html5</a></td>
               <td>1262</td>
@@ -7081,7 +7834,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/XamSome/awesome-xamarin">XamSome/awesome-xamarin</a></td>
               <td>1233</td>
@@ -7116,7 +7874,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/teoga/awesome-product-design">teoga/awesome-product-design</a></td>
               <td>1219</td>
@@ -7183,7 +7946,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/markusschanta/awesome-jupyter">markusschanta/awesome-jupyter</a></td>
               <td>1218</td>
@@ -7234,7 +8002,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/learn-anything/alfred-workflows">learn-anything/alfred-workflows</a></td>
               <td>1203</td>
@@ -7281,7 +8054,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/marcobiedermann/search-engine-optimization">marcobiedermann/search-engine-optimization</a></td>
               <td>1185</td>
@@ -7332,7 +8110,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/guillaume-chevalier/Awesome-Deep-Learning-Resources">guillaume-chevalier/Awesome-Deep-Learning-Resources</a></td>
               <td>1162</td>
@@ -7371,7 +8154,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sindresorhus/amas">sindresorhus/amas</a></td>
               <td>1142</td>
@@ -7414,7 +8202,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/moul/awesome-ssh">moul/awesome-ssh</a></td>
               <td>1101</td>
@@ -7457,7 +8250,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/tmcw/awesome-geojson">tmcw/awesome-geojson</a></td>
               <td>1086</td>
@@ -7484,7 +8282,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/drobakowski/awesome-erlang">drobakowski/awesome-erlang</a></td>
               <td>1076</td>
@@ -7515,7 +8318,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/eug/awesome-opengl">eug/awesome-opengl</a></td>
               <td>1073</td>
@@ -7570,7 +8378,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/stevemao/awesome-git-addons">stevemao/awesome-git-addons</a></td>
               <td>1029</td>
@@ -7625,7 +8438,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/shuaibiyy/awesome-terraform">shuaibiyy/awesome-terraform</a></td>
               <td>1004</td>
@@ -7664,7 +8482,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/yissachar/awesome-dart">yissachar/awesome-dart</a></td>
               <td>994</td>
@@ -7695,7 +8518,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/hobbyquaker/awesome-mqtt">hobbyquaker/awesome-mqtt</a></td>
               <td>974</td>
@@ -7730,7 +8558,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/myshov/awesome-mobile-web-development">myshov/awesome-mobile-web-development</a></td>
               <td>963</td>
@@ -7761,7 +8594,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/agarrharr/awesome-static-website-services">agarrharr/awesome-static-website-services</a></td>
               <td>958</td>
@@ -7784,7 +8622,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/mojoaxel/awesome-regression-testing">mojoaxel/awesome-regression-testing</a></td>
               <td>945</td>
@@ -7823,7 +8666,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/brunopulis/awesome-a11y">brunopulis/awesome-a11y</a></td>
               <td>919</td>
@@ -7858,7 +8706,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/matteofigus/awesome-speaking">matteofigus/awesome-speaking</a></td>
               <td>881</td>
@@ -7893,7 +8746,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/aviaryan/awesome-no-login-web-apps">aviaryan/awesome-no-login-web-apps</a></td>
               <td>872</td>
@@ -7944,7 +8802,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/0x4D31/awesome-threat-detection">0x4D31/awesome-threat-detection</a></td>
               <td>868</td>
@@ -7987,7 +8850,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/arbox/nlp-with-ruby">arbox/nlp-with-ruby</a></td>
               <td>853</td>
@@ -8046,7 +8914,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/nayafia/awesome-maintainers">nayafia/awesome-maintainers</a></td>
               <td>851</td>
@@ -8065,7 +8938,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/therebelrobot/awesome-bootstrap">therebelrobot/awesome-bootstrap</a></td>
               <td>832</td>
@@ -8088,7 +8966,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/svaksha/Julia.jl">svaksha/Julia.jl</a></td>
               <td>832</td>
@@ -8147,7 +9030,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Fr0sT-Brutal/awesome-pascal">Fr0sT-Brutal/awesome-pascal</a></td>
               <td>827</td>
@@ -8182,7 +9070,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/gamontal/awesome-katas">gamontal/awesome-katas</a></td>
               <td>817</td>
@@ -8229,7 +9122,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/hackerkid/bots">hackerkid/bots</a></td>
               <td>816</td>
@@ -8264,7 +9162,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/burningtree/awesome-json">burningtree/awesome-json</a></td>
               <td>793</td>
@@ -8283,7 +9186,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/feross/awesome-mad-science">feross/awesome-mad-science</a></td>
               <td>788</td>
@@ -8330,7 +9238,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kakoni/awesome-healthcare">kakoni/awesome-healthcare</a></td>
               <td>784</td>
@@ -8357,7 +9270,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/InQuest/awesome-yara">InQuest/awesome-yara</a></td>
               <td>767</td>
@@ -8424,7 +9342,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/emptymalei/awesome-research">emptymalei/awesome-research</a></td>
               <td>758</td>
@@ -8455,7 +9378,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/candelibas/awesome-ionic">candelibas/awesome-ionic</a></td>
               <td>750</td>
@@ -8498,7 +9426,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/daviddias/awesome-hacking-locations">daviddias/awesome-hacking-locations</a></td>
               <td>746</td>
@@ -8517,7 +9450,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/glauberfc/awesome-react-hooks">glauberfc/awesome-react-hooks</a></td>
               <td>743</td>
@@ -8548,7 +9486,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/noahbuscher/inspire">noahbuscher/inspire</a></td>
               <td>727</td>
@@ -8571,7 +9514,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dreikanter/sublime-bookmarks">dreikanter/sublime-bookmarks</a></td>
               <td>727</td>
@@ -8602,7 +9550,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pFarb/awesome-crypto-papers">pFarb/awesome-crypto-papers</a></td>
               <td>714</td>
@@ -8637,7 +9590,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/hantuzun/awesome-clojurescript">hantuzun/awesome-clojurescript</a></td>
               <td>705</td>
@@ -8708,7 +9666,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/v2-dev/awesome-social-engineering">v2-dev/awesome-social-engineering</a></td>
               <td>694</td>
@@ -8739,7 +9702,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/karlhorky/awesome-speakers">karlhorky/awesome-speakers</a></td>
               <td>687</td>
@@ -8770,7 +9738,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/petk/awesome-jquery">petk/awesome-jquery</a></td>
               <td>686</td>
@@ -8797,7 +9770,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/petk/awesome-jquery">petk/awesome-jquery</a></td>
               <td>686</td>
@@ -8824,7 +9802,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/raphamorim/awesome-canvas">raphamorim/awesome-canvas</a></td>
               <td>680</td>
@@ -8871,7 +9854,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/faroit/awesome-python-scientific-audio">faroit/awesome-python-scientific-audio</a></td>
               <td>679</td>
@@ -8894,7 +9882,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/micromata/awesome-css-learning">micromata/awesome-css-learning</a></td>
               <td>674</td>
@@ -8929,7 +9922,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jyguyomarch/awesome-productivity">jyguyomarch/awesome-productivity</a></td>
               <td>632</td>
@@ -8956,7 +9954,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/DavidLambauer/awesome-magento2">DavidLambauer/awesome-magento2</a></td>
               <td>630</td>
@@ -9007,7 +10010,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/matiassingers/awesome-slack">matiassingers/awesome-slack</a></td>
               <td>622</td>
@@ -9034,7 +10042,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ebu/awesome-broadcasting">ebu/awesome-broadcasting</a></td>
               <td>617</td>
@@ -9057,7 +10070,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/woop/awesome-quantified-self">woop/awesome-quantified-self</a></td>
               <td>610</td>
@@ -9104,7 +10122,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ciconia/awesome-music">ciconia/awesome-music</a></td>
               <td>594</td>
@@ -9159,7 +10182,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/humanetech-community/awesome-humane-tech">humanetech-community/awesome-humane-tech</a></td>
               <td>591</td>
@@ -9250,7 +10278,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/fliptheweb/motion-ui-design">fliptheweb/motion-ui-design</a></td>
               <td>588</td>
@@ -9285,7 +10318,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/mark-rushakoff/awesome-influxdb">mark-rushakoff/awesome-influxdb</a></td>
               <td>575</td>
@@ -9312,7 +10350,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/desireevl/awesome-quantum-computing">desireevl/awesome-quantum-computing</a></td>
               <td>570</td>
@@ -9339,7 +10382,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/yoloseem/awesome-sphinxdoc">yoloseem/awesome-sphinxdoc</a></td>
               <td>568</td>
@@ -9366,7 +10414,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sjfricke/awesome-webgl">sjfricke/awesome-webgl</a></td>
               <td>565</td>
@@ -9421,7 +10474,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Siddharth11/Colorful">Siddharth11/Colorful</a></td>
               <td>550</td>
@@ -9468,7 +10526,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/phalcon/awesome-phalcon">phalcon/awesome-phalcon</a></td>
               <td>549</td>
@@ -9539,7 +10602,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/brabadu/awesome-fonts">brabadu/awesome-fonts</a></td>
               <td>547</td>
@@ -9582,7 +10650,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Wisdom/Awesome-Unicode">Wisdom/Awesome-Unicode</a></td>
               <td>539</td>
@@ -9641,7 +10714,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jakoch/awesome-composer">jakoch/awesome-composer</a></td>
               <td>537</td>
@@ -9700,7 +10778,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/notthetup/awesome-webaudio">notthetup/awesome-webaudio</a></td>
               <td>536</td>
@@ -9735,7 +10818,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/imbaniac/awesome-blockchain">imbaniac/awesome-blockchain</a></td>
               <td>535</td>
@@ -9778,7 +10866,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/alferov/awesome-gulp">alferov/awesome-gulp</a></td>
               <td>535</td>
@@ -9805,7 +10898,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/RichardLitt/awesome-fantasy">RichardLitt/awesome-fantasy</a></td>
               <td>534</td>
@@ -9840,7 +10938,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/CUTR-at-USF/awesome-transit">CUTR-at-USF/awesome-transit</a></td>
               <td>522</td>
@@ -9915,7 +11018,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Cellane/awesome-vapor">Cellane/awesome-vapor</a></td>
               <td>510</td>
@@ -9946,7 +11054,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/christian-bromann/awesome-selenium">christian-bromann/awesome-selenium</a></td>
               <td>508</td>
@@ -9969,7 +11082,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/HollyAdele/awesome-programming-for-kids">HollyAdele/awesome-programming-for-kids</a></td>
               <td>500</td>
@@ -10000,7 +11118,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/analyticalmonk/awesome-neuroscience">analyticalmonk/awesome-neuroscience</a></td>
               <td>483</td>
@@ -10047,7 +11170,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/RyanZim/awesome-npm-scripts">RyanZim/awesome-npm-scripts</a></td>
               <td>481</td>
@@ -10078,7 +11206,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/cbovis/awesome-digital-nomads">cbovis/awesome-digital-nomads</a></td>
               <td>479</td>
@@ -10113,7 +11246,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sindresorhus/awesome-tap">sindresorhus/awesome-tap</a></td>
               <td>477</td>
@@ -10148,7 +11286,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/JesseTG/awesome-qt">JesseTG/awesome-qt</a></td>
               <td>470</td>
@@ -10183,7 +11326,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ucg8j/awesome-dash">ucg8j/awesome-dash</a></td>
               <td>468</td>
@@ -10210,7 +11358,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ucg8j/awesome-dash">ucg8j/awesome-dash</a></td>
               <td>468</td>
@@ -10237,7 +11390,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/SwiftBrain/awesome-CoreML-models">SwiftBrain/awesome-CoreML-models</a></td>
               <td>467</td>
@@ -10304,7 +11462,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/podo/awesome-framer">podo/awesome-framer</a></td>
               <td>463</td>
@@ -10371,7 +11534,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/antontarasenko/awesome-economics">antontarasenko/awesome-economics</a></td>
               <td>452</td>
@@ -10434,7 +11602,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/machinomy/awesome-non-financial-blockchain">machinomy/awesome-non-financial-blockchain</a></td>
               <td>440</td>
@@ -10461,7 +11634,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/xiaohanyu/awesome-tikz">xiaohanyu/awesome-tikz</a></td>
               <td>439</td>
@@ -10492,7 +11670,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/iJackUA/awesome-vagrant">iJackUA/awesome-vagrant</a></td>
               <td>425</td>
@@ -10523,7 +11706,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/davisonio/awesome-irc">davisonio/awesome-irc</a></td>
               <td>425</td>
@@ -10546,7 +11734,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/roaldnefs/awesome-prometheus">roaldnefs/awesome-prometheus</a></td>
               <td>416</td>
@@ -10569,7 +11762,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/automata/awesome-jamstack">automata/awesome-jamstack</a></td>
               <td>411</td>
@@ -10604,7 +11802,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/folkswhocode/awesome-diversity">folkswhocode/awesome-diversity</a></td>
               <td>409</td>
@@ -10631,7 +11834,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/meitar/awesome-lockpicking">meitar/awesome-lockpicking</a></td>
               <td>407</td>
@@ -10682,7 +11890,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/deanhume/typography">deanhume/typography</a></td>
               <td>398</td>
@@ -10705,7 +11918,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/miguelmota/awesome-amazon-alexa">miguelmota/awesome-amazon-alexa</a></td>
               <td>394</td>
@@ -10756,7 +11974,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/fregante/Awesome-WebExtensions">fregante/Awesome-WebExtensions</a></td>
               <td>388</td>
@@ -10779,7 +12002,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/davisonio/awesome-gif">davisonio/awesome-gif</a></td>
               <td>388</td>
@@ -10802,7 +12030,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/craftcms/awesome">craftcms/awesome</a></td>
               <td>380</td>
@@ -10837,7 +12070,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/tobiasbueschel/awesome-pokemon">tobiasbueschel/awesome-pokemon</a></td>
               <td>378</td>
@@ -10872,7 +12110,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Granze/awesome-polymer">Granze/awesome-polymer</a></td>
               <td>378</td>
@@ -10923,7 +12166,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/siboehm/awesome-learn-datascience">siboehm/awesome-learn-datascience</a></td>
               <td>377</td>
@@ -10954,7 +12202,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kai5263499/osx-security-awesome">kai5263499/osx-security-awesome</a></td>
               <td>372</td>
@@ -10993,7 +12246,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/KimberlyMunoz/empathy-in-engineering">KimberlyMunoz/empathy-in-engineering</a></td>
               <td>366</td>
@@ -11028,7 +12286,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/zachflower/awesome-open-source-supporters">zachflower/awesome-open-source-supporters</a></td>
               <td>365</td>
@@ -11079,7 +12342,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/zoidbergwill/awesome-ebpf">zoidbergwill/awesome-ebpf</a></td>
               <td>360</td>
@@ -11122,7 +12390,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/transitive-bullshit/awesome-ffmpeg">transitive-bullshit/awesome-ffmpeg</a></td>
               <td>360</td>
@@ -11149,7 +12422,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Siilwyn/awesome-pixel-art">Siilwyn/awesome-pixel-art</a></td>
               <td>359</td>
@@ -11176,7 +12454,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/web-padawan/awesome-lit-html">web-padawan/awesome-lit-html</a></td>
               <td>352</td>
@@ -11199,7 +12482,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/lurumdare/awesome-asm">lurumdare/awesome-asm</a></td>
               <td>352</td>
@@ -11218,7 +12506,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pageauc/pi-timolo">pageauc/pi-timolo</a></td>
               <td>349</td>
@@ -11309,7 +12602,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/J2TEAM/awesome-AutoIt">J2TEAM/awesome-AutoIt</a></td>
               <td>348</td>
@@ -11352,7 +12650,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/johnjago/awesome-free-software">johnjago/awesome-free-software</a></td>
               <td>347</td>
@@ -11399,7 +12702,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/brunocvcunha/awesome-userscripts">brunocvcunha/awesome-userscripts</a></td>
               <td>341</td>
@@ -11438,7 +12746,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/TheJambo/awesome-testing">TheJambo/awesome-testing</a></td>
               <td>323</td>
@@ -11473,7 +12786,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ooade/awesome-preact">ooade/awesome-preact</a></td>
               <td>321</td>
@@ -11504,7 +12822,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/tramcar/awesome-job-boards">tramcar/awesome-job-boards</a></td>
               <td>317</td>
@@ -11535,7 +12858,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jdrgomes/awesome-postcss">jdrgomes/awesome-postcss</a></td>
               <td>317</td>
@@ -11566,7 +12894,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Kazhnuz/awesome-gnome">Kazhnuz/awesome-gnome</a></td>
               <td>316</td>
@@ -11601,7 +12934,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/BubuAnabelas/awesome-markdown">BubuAnabelas/awesome-markdown</a></td>
               <td>309</td>
@@ -11640,7 +12978,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/meitar/awesome-cybersecurity-blueteam">meitar/awesome-cybersecurity-blueteam</a></td>
               <td>307</td>
@@ -11679,7 +13022,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/fkromer/awesome-ros2">fkromer/awesome-ros2</a></td>
               <td>303</td>
@@ -11702,7 +13050,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/aurelia-contrib/awesome-aurelia">aurelia-contrib/awesome-aurelia</a></td>
               <td>301</td>
@@ -11725,7 +13078,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/avajs/awesome-ava">avajs/awesome-ava</a></td>
               <td>297</td>
@@ -11756,7 +13114,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/pehapkari/awesome-symfony-education">pehapkari/awesome-symfony-education</a></td>
               <td>295</td>
@@ -11791,7 +13154,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/passy/awesome-purescript">passy/awesome-purescript</a></td>
               <td>294</td>
@@ -11818,7 +13186,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/hbokh/awesome-saltstack">hbokh/awesome-saltstack</a></td>
               <td>292</td>
@@ -11849,7 +13222,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/vitalets/awesome-smart-tv">vitalets/awesome-smart-tv</a></td>
               <td>285</td>
@@ -11900,7 +13278,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ksoichiro/awesome-gradle">ksoichiro/awesome-gradle</a></td>
               <td>285</td>
@@ -11923,7 +13306,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/beaorn/awesome-agriculture">beaorn/awesome-agriculture</a></td>
               <td>269</td>
@@ -11982,7 +13370,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/scholtzm/awesome-steam">scholtzm/awesome-steam</a></td>
               <td>265</td>
@@ -12009,7 +13402,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ZYSzys/awesome-captcha">ZYSzys/awesome-captcha</a></td>
               <td>264</td>
@@ -12068,7 +13466,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/standard/awesome-standard">standard/awesome-standard</a></td>
               <td>261</td>
@@ -12131,7 +13534,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/robinstickel/awesome-design-principles">robinstickel/awesome-design-principles</a></td>
               <td>258</td>
@@ -12174,7 +13582,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/busterc/awesome-cordova">busterc/awesome-cordova</a></td>
               <td>255</td>
@@ -12217,7 +13630,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/uraimo/awesome-software-patreons">uraimo/awesome-software-patreons</a></td>
               <td>252</td>
@@ -12252,7 +13670,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/obetomuniz/awesome-webcomponents">obetomuniz/awesome-webcomponents</a></td>
               <td>249</td>
@@ -12271,7 +13694,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sindresorhus/awesome-observables">sindresorhus/awesome-observables</a></td>
               <td>248</td>
@@ -12302,7 +13730,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/eleventigers/awesome-rxjava">eleventigers/awesome-rxjava</a></td>
               <td>241</td>
@@ -12337,7 +13770,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/aliesbelik/awesome-jmeter">aliesbelik/awesome-jmeter</a></td>
               <td>239</td>
@@ -12376,7 +13814,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/filipelinhares/awesome-slack">filipelinhares/awesome-slack</a></td>
               <td>238</td>
@@ -12407,7 +13850,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ironcev/awesome-roslyn">ironcev/awesome-roslyn</a></td>
               <td>230</td>
@@ -12442,7 +13890,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/johnjago/awesome-uncopyright">johnjago/awesome-uncopyright</a></td>
               <td>228</td>
@@ -12481,7 +13934,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/victorlaerte/awesome-it-quotes">victorlaerte/awesome-it-quotes</a></td>
               <td>227</td>
@@ -12504,7 +13962,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/adafruit/awesome-circuitpython">adafruit/awesome-circuitpython</a></td>
               <td>222</td>
@@ -12547,7 +14010,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/seriousmac/awesome-qa">seriousmac/awesome-qa</a></td>
               <td>218</td>
@@ -12594,7 +14062,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/joaomilho/awesome-idris">joaomilho/awesome-idris</a></td>
               <td>213</td>
@@ -12629,7 +14102,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/beardicus/awesome-plotters">beardicus/awesome-plotters</a></td>
               <td>208</td>
@@ -12668,7 +14146,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/h2oai/awesome-h2o">h2oai/awesome-h2o</a></td>
               <td>206</td>
@@ -12707,7 +14190,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/learn-anything/safari-extensions">learn-anything/safari-extensions</a></td>
               <td>201</td>
@@ -12738,7 +14226,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/tleb/awesome-mastodon">tleb/awesome-mastodon</a></td>
               <td>200</td>
@@ -12761,7 +14254,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ianstormtaylor/awesome-heroku">ianstormtaylor/awesome-heroku</a></td>
               <td>189</td>
@@ -12792,7 +14290,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jthegedus/awesome-firebase">jthegedus/awesome-firebase</a></td>
               <td>185</td>
@@ -12831,7 +14334,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/choojs/awesome-choo">choojs/awesome-choo</a></td>
               <td>185</td>
@@ -12858,7 +14366,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/catalinmiron/awesome-prisma">catalinmiron/awesome-prisma</a></td>
               <td>179</td>
@@ -12889,7 +14402,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jonleibowitz/awesome-digitalocean">jonleibowitz/awesome-digitalocean</a></td>
               <td>175</td>
@@ -12924,7 +14442,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/angrykoala/awesome-esolangs">angrykoala/awesome-esolangs</a></td>
               <td>171</td>
@@ -12951,7 +14474,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/cpuu/awesome-fuzzing">cpuu/awesome-fuzzing</a></td>
               <td>167</td>
@@ -12982,7 +14510,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/johnjago/awesome-ad-free">johnjago/awesome-ad-free</a></td>
               <td>163</td>
@@ -13025,7 +14558,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/simskij/awesome-software-architecture">simskij/awesome-software-architecture</a></td>
               <td>157</td>
@@ -13052,7 +14590,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/umbraco-community/awesome-umbraco">umbraco-community/awesome-umbraco</a></td>
               <td>152</td>
@@ -13083,7 +14626,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dspinellis/awesome-msr">dspinellis/awesome-msr</a></td>
               <td>151</td>
@@ -13118,7 +14666,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/nschloe/awesome-scientific-computing">nschloe/awesome-scientific-computing</a></td>
               <td>144</td>
@@ -13153,7 +14706,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/theimpossibleastronaut/awesome-linguistics">theimpossibleastronaut/awesome-linguistics</a></td>
               <td>140</td>
@@ -13172,7 +14730,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/steven2358/awesome-blockchain-ai">steven2358/awesome-blockchain-ai</a></td>
               <td>140</td>
@@ -13203,7 +14766,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/secretGeek/AwesomeCSV">secretGeek/AwesomeCSV</a></td>
               <td>137</td>
@@ -13258,7 +14826,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kyleterry/awesome-radio">kyleterry/awesome-radio</a></td>
               <td>123</td>
@@ -13277,7 +14850,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/robinrodricks/awesome-actionscript3">robinrodricks/awesome-actionscript3</a></td>
               <td>120</td>
@@ -13328,7 +14906,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/tindzk/awesome-scala-native">tindzk/awesome-scala-native</a></td>
               <td>118</td>
@@ -13355,7 +14938,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/mohataher/awesome-tinkerpop">mohataher/awesome-tinkerpop</a></td>
               <td>113</td>
@@ -13398,7 +14986,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/rayokota/awesome-hbase">rayokota/awesome-hbase</a></td>
               <td>111</td>
@@ -13421,7 +15014,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/gunnarmorling/awesome-annotation-processing">gunnarmorling/awesome-annotation-processing</a></td>
               <td>108</td>
@@ -13448,7 +15046,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/shahraizali/awesome-django">shahraizali/awesome-django</a></td>
               <td>107</td>
@@ -13507,7 +15110,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/notlmn/awesome-icons">notlmn/awesome-icons</a></td>
               <td>104</td>
@@ -13542,7 +15150,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/matchai/awesome-pinned-gists">matchai/awesome-pinned-gists</a></td>
               <td>97</td>
@@ -13565,7 +15178,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/xen0l/awesome-dtrace">xen0l/awesome-dtrace</a></td>
               <td>96</td>
@@ -13592,7 +15210,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/gaerae/awesome-algorithms-education">gaerae/awesome-algorithms-education</a></td>
               <td>96</td>
@@ -13627,7 +15250,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/motion-open-source/awesome-rubymotion">motion-open-source/awesome-rubymotion</a></td>
               <td>82</td>
@@ -13702,7 +15330,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jakejarvis/awesome-shodan-queries">jakejarvis/awesome-shodan-queries</a></td>
               <td>79</td>
@@ -13753,7 +15386,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/dend/awesome-product-management">dend/awesome-product-management</a></td>
               <td>79</td>
@@ -13784,7 +15422,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/stve/awesome-dropwizard">stve/awesome-dropwizard</a></td>
               <td>78</td>
@@ -13811,7 +15454,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/gitfrage/guitarspecs">gitfrage/guitarspecs</a></td>
               <td>78</td>
@@ -13866,7 +15514,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/hobbyquaker/awesome-homematic">hobbyquaker/awesome-homematic</a></td>
               <td>73</td>
@@ -13897,7 +15550,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/browserify/awesome-browserify">browserify/awesome-browserify</a></td>
               <td>73</td>
@@ -13924,7 +15582,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/seancoyne/awesome-coldfusion">seancoyne/awesome-coldfusion</a></td>
               <td>69</td>
@@ -13947,7 +15610,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sfischer13/awesome-ledger">sfischer13/awesome-ledger</a></td>
               <td>67</td>
@@ -13990,7 +15658,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/johnjago/awesome-theravada">johnjago/awesome-theravada</a></td>
               <td>67</td>
@@ -14029,7 +15702,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/petk/awesome-dojo">petk/awesome-dojo</a></td>
               <td>64</td>
@@ -14056,7 +15734,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/petk/awesome-dojo">petk/awesome-dojo</a></td>
               <td>64</td>
@@ -14083,7 +15766,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/leomaurodesenv/game-datasets">leomaurodesenv/game-datasets</a></td>
               <td>64</td>
@@ -14130,7 +15818,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jbmoelker/progressive-enhancement-resources">jbmoelker/progressive-enhancement-resources</a></td>
               <td>61</td>
@@ -14169,7 +15862,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/erictleung/awesome-nosql-guides">erictleung/awesome-nosql-guides</a></td>
               <td>61</td>
@@ -14204,7 +15902,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/liuchong/awesome-roadmaps">liuchong/awesome-roadmaps</a></td>
               <td>60</td>
@@ -14235,7 +15938,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/nerox8664/awesome-computer-vision-models">nerox8664/awesome-computer-vision-models</a></td>
               <td>57</td>
@@ -14294,7 +16002,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/nirgn975/awesome-drupal">nirgn975/awesome-drupal</a></td>
               <td>56</td>
@@ -14317,7 +16030,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/hsiaoyi0504/awesome-cheminformatics">hsiaoyi0504/awesome-cheminformatics</a></td>
               <td>56</td>
@@ -14348,7 +16066,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/andrewda/awesome-frc">andrewda/awesome-frc</a></td>
               <td>55</td>
@@ -14375,7 +16098,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/lauthieb/awesome-storybook">lauthieb/awesome-storybook</a></td>
               <td>54</td>
@@ -14398,7 +16126,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sfischer13/awesome-eta">sfischer13/awesome-eta</a></td>
               <td>52</td>
@@ -14433,7 +16166,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/rafaskb/awesome-libgdx">rafaskb/awesome-libgdx</a></td>
               <td>52</td>
@@ -14456,7 +16194,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/PhantomYdn/awesome-wicket">PhantomYdn/awesome-wicket</a></td>
               <td>47</td>
@@ -14495,7 +16238,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/edm00se/awesome-board-games">edm00se/awesome-board-games</a></td>
               <td>47</td>
@@ -14534,7 +16282,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/drmonkeyninja/awesome-textpattern">drmonkeyninja/awesome-textpattern</a></td>
               <td>47</td>
@@ -14573,7 +16326,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/irazasyed/awesome-cloudflare">irazasyed/awesome-cloudflare</a></td>
               <td>46</td>
@@ -14612,7 +16370,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/eselkin/awesome-computational-neuroscience">eselkin/awesome-computational-neuroscience</a></td>
               <td>43</td>
@@ -14643,7 +16406,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ayr-ton/awesome-geek-podcasts">ayr-ton/awesome-geek-podcasts</a></td>
               <td>43</td>
@@ -14662,7 +16430,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ScaleLeap/awesome-amazon-seller">ScaleLeap/awesome-amazon-seller</a></td>
               <td>41</td>
@@ -14713,7 +16486,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/alexk111/awesome-bitcoin-payment-processors">alexk111/awesome-bitcoin-payment-processors</a></td>
               <td>39</td>
@@ -14748,7 +16526,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/xxczaki/awesome-calculators">xxczaki/awesome-calculators</a></td>
               <td>37</td>
@@ -14775,7 +16558,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/bs-community/awesome-minecraft">bs-community/awesome-minecraft</a></td>
               <td>35</td>
@@ -14798,7 +16586,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/DanailMinchev/awesome-eosio">DanailMinchev/awesome-eosio</a></td>
               <td>34</td>
@@ -14833,7 +16626,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/awkward/awesome-netherlands-events">awkward/awesome-netherlands-events</a></td>
               <td>34</td>
@@ -14864,7 +16662,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/stevesong/awesome-connectivity-info">stevesong/awesome-connectivity-info</a></td>
               <td>31</td>
@@ -14899,7 +16702,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/LucasBassetti/awesome-less">LucasBassetti/awesome-less</a></td>
               <td>30</td>
@@ -14930,7 +16738,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ebraminio/awesome-qsharp">ebraminio/awesome-qsharp</a></td>
               <td>30</td>
@@ -14965,7 +16778,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/victorshinya/awesome-ibmcloud">victorshinya/awesome-ibmcloud</a></td>
               <td>28</td>
@@ -15000,7 +16818,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ttumiel/Awesome-Ethereum">ttumiel/Awesome-Ethereum</a></td>
               <td>26</td>
@@ -15023,7 +16846,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/francoism90/awesome-kde">francoism90/awesome-kde</a></td>
               <td>21</td>
@@ -15070,7 +16898,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sfischer13/awesome-frege">sfischer13/awesome-frege</a></td>
               <td>20</td>
@@ -15101,7 +16934,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/mxpv/patreon-go">mxpv/patreon-go</a></td>
               <td>18</td>
@@ -15140,7 +16978,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jzarca01/awesome-food">jzarca01/awesome-food</a></td>
               <td>18</td>
@@ -15159,7 +17002,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/stetso/awesome-gideros">stetso/awesome-gideros</a></td>
               <td>17</td>
@@ -15206,7 +17054,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/adafruit/awesome-adafruitio">adafruit/awesome-adafruitio</a></td>
               <td>12</td>
@@ -15245,7 +17098,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/inspectit-labs/awesome-inspectit">inspectit-labs/awesome-inspectit</a></td>
               <td>10</td>
@@ -15268,7 +17126,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/ecohealthalliance/awesome-parasite">ecohealthalliance/awesome-parasite</a></td>
               <td>10</td>
@@ -15291,7 +17154,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/HenryHoggard/awesome-arm-exploitation">HenryHoggard/awesome-arm-exploitation</a></td>
               <td>5</td>
@@ -15322,6 +17190,8 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
         </tbody>
       </table>
@@ -15342,7 +17212,7 @@ color: #0366d6;
 		<footer>
 	<div class="container-fluid">
     <div class="text-center">
-      <p>Awesome List management
+      <p>Awesome List management.
     </div>
 	</div>
 

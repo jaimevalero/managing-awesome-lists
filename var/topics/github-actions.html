@@ -1,56 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 	<head>
-		<title>Awesome List </title>
+		<title>Awesome list viewer</title>
 		
 
 <!-- Meta Information -->
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Awesome list manager">
+<meta name="description" content="Awesome list manager. Discover best resources from github.">
 <meta name="author" content="Jaime Valero">
+<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
 
 <!-- CSS Information -->
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- bootstrap theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 <!-- Font-awesome -->
-<link rel="stylesheet" type="text/css"
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css"
-  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
 
 <!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css"
-  href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
 
 <style type="text/css">
-* {
-   font-size: 16px;
-}
+  * {
+    font-size: 16px;
+  }
 
-.topic-tag {
-display: inline-block;
-padding: 0.3em 0.9em;
-margin: 0 0.5em 0.5em 0;
-white-space: nowrap;
-background-color: #f1f8ff;
-border-radius: 3px;
-font-color: #0366d6;
-color: #0366d6;
-}
-
+  .topic-tag {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    margin: 0 0.5em 0.5em 0;
+    white-space: nowrap;
+    background-color: #f1f8ff;
+    border-radius: 3px;
+    font-color: #0366d6;
+    color: #0366d6;
+  }
 </style>
 		<!-- Scripts: JQuery & Bootstrap -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
@@ -68,24 +62,29 @@ color: #0366d6;
 <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
 </script>
 
- <script type="text/javascript" language="JavaScript" >
-    $(document).ready(function() {
-      $('#tabla').DataTable( { "order": [[ 1, "desc" ]] } );
-  } );
+<script type="text/javascript" language="JavaScript">
+  $(document).ready(function() {
+    $('#tabla').DataTable({
+      "order": [
+        [1, "desc"]
+      ]
+    });
+  });
+</script>
 
 
- </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
 
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
 
- <!-- Global site tag (gtag.js) - Google Analytics -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
- <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-
-   gtag('config', 'UA-146303223-1');
- </script>
+  gtag('config', 'UA-146303223-1');
+</script>
 	</head>
 
 	<body>
@@ -412,7 +411,11 @@ color: #0366d6;
           </tr>
         </thead>
         <tbody>
+					
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/sdras/awesome-actions">sdras/awesome-actions</a></td>
               <td>3923</td>
@@ -455,7 +458,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/nektos/act">nektos/act</a></td>
               <td>2014</td>
@@ -482,7 +490,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kamilkisiela/graphql-inspector">kamilkisiela/graphql-inspector</a></td>
               <td>448</td>
@@ -529,7 +542,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/JasonEtco/actions-toolkit">JasonEtco/actions-toolkit</a></td>
               <td>366</td>
@@ -560,7 +578,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/maddox/actions">maddox/actions</a></td>
               <td>277</td>
@@ -583,7 +606,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/systemslab/popper">systemslab/popper</a></td>
               <td>124</td>
@@ -634,7 +662,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/peaceiris/actions-gh-pages">peaceiris/actions-gh-pages</a></td>
               <td>108</td>
@@ -673,7 +706,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/cirrus-actions/rebase">cirrus-actions/rebase</a></td>
               <td>100</td>
@@ -688,7 +726,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/bltavares/actions">bltavares/actions</a></td>
               <td>75</td>
@@ -711,7 +754,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jenkinsci/jenkinsfile-runner-github-actions">jenkinsci/jenkinsfile-runner-github-actions</a></td>
               <td>71</td>
@@ -742,7 +790,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/lannonbr/issue-label-manager-action">lannonbr/issue-label-manager-action</a></td>
               <td>67</td>
@@ -757,7 +810,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/maxheld83/ghpages">maxheld83/ghpages</a></td>
               <td>60</td>
@@ -800,7 +858,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/OskarStark/php-cs-fixer-ga">OskarStark/php-cs-fixer-ga</a></td>
               <td>49</td>
@@ -823,7 +886,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/hmarr/auto-approve-action">hmarr/auto-approve-action</a></td>
               <td>48</td>
@@ -842,7 +910,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/swinton/httpie.action">swinton/httpie.action</a></td>
               <td>42</td>
@@ -865,7 +938,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/swinton/SpotHub">swinton/SpotHub</a></td>
               <td>42</td>
@@ -900,7 +978,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/kentaro-m/auto-assign">kentaro-m/auto-assign</a></td>
               <td>42</td>
@@ -939,7 +1022,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/bitoiu/release-notify-action">bitoiu/release-notify-action</a></td>
               <td>42</td>
@@ -982,7 +1070,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/maxheld83/rsync">maxheld83/rsync</a></td>
               <td>27</td>
@@ -1021,7 +1114,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/cedrickring/golang-action">cedrickring/golang-action</a></td>
               <td>27</td>
@@ -1052,7 +1150,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Borales/actions-yarn">Borales/actions-yarn</a></td>
               <td>27</td>
@@ -1071,7 +1174,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/BryanSchuetz/jekyll-deploy-gh-pages">BryanSchuetz/jekyll-deploy-gh-pages</a></td>
               <td>23</td>
@@ -1098,7 +1206,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/devblackops/github-action-psscriptanalyzer">devblackops/github-action-psscriptanalyzer</a></td>
               <td>22</td>
@@ -1121,7 +1234,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/tschoffelen/gha">tschoffelen/gha</a></td>
               <td>21</td>
@@ -1148,7 +1266,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/lubusIN/actions">lubusIN/actions</a></td>
               <td>21</td>
@@ -1167,7 +1290,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/lannonbr/vsce-action">lannonbr/vsce-action</a></td>
               <td>20</td>
@@ -1186,7 +1314,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/OskarStark/phpstan-ga">OskarStark/phpstan-ga</a></td>
               <td>19</td>
@@ -1209,7 +1342,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/appleboy/ssh-action">appleboy/ssh-action</a></td>
               <td>19</td>
@@ -1232,7 +1370,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/w9jds/firebase-action">w9jds/firebase-action</a></td>
               <td>18</td>
@@ -1255,7 +1398,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/peaceiris/actions-hugo">peaceiris/actions-hugo</a></td>
               <td>18</td>
@@ -1274,7 +1422,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/appleboy/telegram-action">appleboy/telegram-action</a></td>
               <td>17</td>
@@ -1297,7 +1450,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/elgohr/Publish-Docker-Github-Action">elgohr/Publish-Docker-Github-Action</a></td>
               <td>16</td>
@@ -1332,7 +1490,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/xorilog/twitter-action">xorilog/twitter-action</a></td>
               <td>14</td>
@@ -1359,7 +1522,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/TimonVS/pr-labeler-action">TimonVS/pr-labeler-action</a></td>
               <td>14</td>
@@ -1382,7 +1550,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/vsoch/pull-request-action">vsoch/pull-request-action</a></td>
               <td>13</td>
@@ -1409,7 +1582,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/khanhicetea/gh-actions-hugo-deploy-gh-pages">khanhicetea/gh-actions-hugo-deploy-gh-pages</a></td>
               <td>13</td>
@@ -1436,7 +1614,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jzweifel/gatsby-cli-github-action">jzweifel/gatsby-cli-github-action</a></td>
               <td>13</td>
@@ -1455,7 +1638,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/appleboy/jenkins-action">appleboy/jenkins-action</a></td>
               <td>13</td>
@@ -1474,7 +1662,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/vgaidarji/android-github-actions">vgaidarji/android-github-actions</a></td>
               <td>11</td>
@@ -1493,7 +1686,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Atrox/github-actions-badge">Atrox/github-actions-badge</a></td>
               <td>11</td>
@@ -1524,7 +1722,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/alex-page/add-new-issue-project">alex-page/add-new-issue-project</a></td>
               <td>10</td>
@@ -1547,7 +1750,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/MrRamych/gradle-actions">MrRamych/gradle-actions</a></td>
               <td>9</td>
@@ -1578,7 +1786,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/maxheld83/pandoc">maxheld83/pandoc</a></td>
               <td>9</td>
@@ -1613,7 +1826,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/xorilog/cloudflare-dns-action">xorilog/cloudflare-dns-action</a></td>
               <td>8</td>
@@ -1644,7 +1862,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/repetitive/actions">repetitive/actions</a></td>
               <td>8</td>
@@ -1675,7 +1898,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/elstudio/actions-js-build">elstudio/actions-js-build</a></td>
               <td>8</td>
@@ -1702,7 +1930,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/cstuder/apprise-ga">cstuder/apprise-ga</a></td>
               <td>8</td>
@@ -1741,7 +1974,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/appleboy/gitlab-ci-action">appleboy/gitlab-ci-action</a></td>
               <td>7</td>
@@ -1764,7 +2002,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/eshork/gitleaks-action">eshork/gitleaks-action</a></td>
               <td>6</td>
@@ -1783,7 +2026,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/devblackops/psake-github-action">devblackops/psake-github-action</a></td>
               <td>6</td>
@@ -1806,7 +2054,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/cirrus-actions/email">cirrus-actions/email</a></td>
               <td>6</td>
@@ -1821,7 +2074,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/appleboy/lambda-action">appleboy/lambda-action</a></td>
               <td>6</td>
@@ -1844,7 +2102,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/xu-cheng/latex-action">xu-cheng/latex-action</a></td>
               <td>5</td>
@@ -1863,7 +2126,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/vsoch/confucious-actions">vsoch/confucious-actions</a></td>
               <td>5</td>
@@ -1886,7 +2154,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/subosito/flutter-action">subosito/flutter-action</a></td>
               <td>5</td>
@@ -1905,7 +2178,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/shalzz/zola-deploy-action">shalzz/zola-deploy-action</a></td>
               <td>5</td>
@@ -1932,7 +2210,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/cpilsworth/cloudflare-worker-action">cpilsworth/cloudflare-worker-action</a></td>
               <td>5</td>
@@ -1951,7 +2234,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/appleboy/scp-action">appleboy/scp-action</a></td>
               <td>5</td>
@@ -1974,7 +2262,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/alex-page/add-new-pulls-project">alex-page/add-new-pulls-project</a></td>
               <td>5</td>
@@ -1997,7 +2290,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/peaceiris/actions-pixela">peaceiris/actions-pixela</a></td>
               <td>4</td>
@@ -2016,7 +2314,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/Ilshidur/action-discord">Ilshidur/action-discord</a></td>
               <td>4</td>
@@ -2035,7 +2338,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/hmarr/debug-action">hmarr/debug-action</a></td>
               <td>4</td>
@@ -2054,7 +2362,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/swinton/serverless">swinton/serverless</a></td>
               <td>3</td>
@@ -2089,7 +2402,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/artemnovichkov/action-zem">artemnovichkov/action-zem</a></td>
               <td>3</td>
@@ -2116,7 +2434,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/retgits/actions">retgits/actions</a></td>
               <td>2</td>
@@ -2135,7 +2458,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/paambaati/codeclimate-action">paambaati/codeclimate-action</a></td>
               <td>2</td>
@@ -2162,7 +2490,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/artemnovichkov/action-homebrew">artemnovichkov/action-homebrew</a></td>
               <td>2</td>
@@ -2185,7 +2518,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/alex-page/move-assigned-issue-column">alex-page/move-assigned-issue-column</a></td>
               <td>2</td>
@@ -2212,7 +2550,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/seferov/pr-lint-action">seferov/pr-lint-action</a></td>
               <td>1</td>
@@ -2235,7 +2578,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/mpepping/github-actions">mpepping/github-actions</a></td>
               <td>1</td>
@@ -2254,7 +2602,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jakejarvis/cloudflare-purge-action">jakejarvis/cloudflare-purge-action</a></td>
               <td>1</td>
@@ -2285,7 +2638,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/jakejarvis/s3-sync-action">jakejarvis/s3-sync-action</a></td>
               <td>1</td>
@@ -2324,7 +2682,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/SpicyPizza/create-envfile">SpicyPizza/create-envfile</a></td>
               <td>0</td>
@@ -2343,7 +2706,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/NuckChorris/ember-cli-actions">NuckChorris/ember-cli-actions</a></td>
               <td>0</td>
@@ -2362,7 +2730,12 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
+					
+					
+
             <tr>
               <td><a href="https://github.com/natemoo-re/action-firebase">natemoo-re/action-firebase</a></td>
               <td>0</td>
@@ -2385,6 +2758,8 @@ color: #0366d6;
                 
               </td>
             </tr>
+					
+
           
         </tbody>
       </table>
@@ -2405,7 +2780,7 @@ color: #0366d6;
 		<footer>
 	<div class="container-fluid">
     <div class="text-center">
-      <p>Awesome List management
+      <p>Awesome List management.
     </div>
 	</div>
 
