@@ -15,7 +15,7 @@
 
 
     {% set count = [1] %}
-    {% for repo in data['repos'][:1999]  %}
+    {% for repo in data['repos'][:2001]  %}
       {% if repo.created_at is not none %}
         {% if repo.stargazers_count > STARS_LOWER_THRESOLD %}
         {% if count.append(count.pop() + 1) %}{% endif %} {# increment count by 1 #}
@@ -41,7 +41,7 @@ Elements: {{count}}
           </tr>
         </thead>
         <tbody>
-          {% for repo in data['repos'][:1999]  %}
+          {% for repo in data['repos'][:2001]  %}
             {% if repo.created_at is not none %}
               {% if repo.stargazers_count > STARS_LOWER_THRESOLD %}
                 <tr>
