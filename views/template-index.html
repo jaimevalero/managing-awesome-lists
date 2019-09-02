@@ -7,7 +7,7 @@
 
 		<h2 >Global list: All data </h2>
     <h3 >{{data['list'].description}} </h3>
-    {% set MAX_NUMBER_OF_REPOS = 1500 %}
+    {% set MAX_NUMBER_OF_REPOS = 1000 %}
     <div class="alert alert-info">
     	<i class="fa fa-eye" aria-hidden="true"></i>
       We display only the first {{MAX_NUMBER_OF_REPOS}} repos, sorted by number of stars.
@@ -27,8 +27,6 @@ Elements: {{MAX_NUMBER_OF_REPOS}}
             <th width="15%">Last Updated</th>
             <th>Language</th>
             <th>Tags</th>
-
-
 
           </tr>
         </thead>
