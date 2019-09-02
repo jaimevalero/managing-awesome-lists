@@ -7,7 +7,7 @@
 
 		<h2 >Global list: All data </h2>
     <h3 >{{data['list'].description}} </h3>
-    {% set MAX_NUMBER_OF_REPOS = 1500 %}
+    {% set MAX_NUMBER_OF_REPOS = 1600 %}
     <div class="alert alert-info">
     	<i class="fa fa-eye" aria-hidden="true"></i>
       We display only the first {{MAX_NUMBER_OF_REPOS}} repos, sorted by number of stars.
@@ -31,8 +31,12 @@ Elements: {{MAX_NUMBER_OF_REPOS}}
           </tr>
         </thead>
         <tbody>
-          {% for repo in data['repos'][:MAX_NUMBER_OF_REPOS]  %}
+					{% set count = 0 %}
+          {% for repo in data['repos']|sort(attribute='stargazers_count',reverse=true)  %}
+
+          {% if count <  MAX_NUMBER_OF_REPOS %}
             {% if repo.created_at is not none %}
+											{% set count = count +1 %}
                 <tr>
                   <td><a href="https://github.com/{{repo.full_name}}">{{repo.full_name}}</a></td>
                   <td>{{repo.stargazers_count}}</td>
@@ -48,6 +52,7 @@ Elements: {{MAX_NUMBER_OF_REPOS}}
                       {% endfor %}
                     </td>
                 </tr>
+								{% endif	%}
             {% endif	%}
           {% endfor	%}
         </tbody>
