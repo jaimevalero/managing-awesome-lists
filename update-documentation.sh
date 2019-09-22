@@ -61,6 +61,7 @@ Generate_Readme_Json_Data_Inner( )
   echo ' { "repos" : [ '
   for LIST_FILE  in `echo ${LIST_FILELIST}`
   do
+    [ ! -s "${LIST_FILE}" ] && continue
     cat ${LIST_FILE} | jq -c .
     echo ","
   done
@@ -122,20 +123,18 @@ Main( )
   # First   : Generate json data
   # Then    : Generate partial doc
   # Finally : Write results to repo file
-  Generate_Readme_Json_Data > ${README_JSON_DATA}
-  Generate_Partial_Doc      > ${README_PARTIAL_DOC}
-  Render_Readme
+  #Generate_Readme_Json_Data > ${README_JSON_DATA}
+  #Generate_Partial_Doc      > ${README_PARTIAL_DOC}
+  #Render_Readme
 
   # Document navbar
   Render_Navbar
   Render_Index
 
   # Topics
-  Render_Topics
+  ###Render_Topics
 }
 
 
-
-
 Main
-git add . ; git commit -m "Templatin'" ;  git push origin master
+###git add . ; git commit -m "Templatin'" ;  git push origin master

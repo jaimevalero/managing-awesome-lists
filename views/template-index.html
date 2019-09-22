@@ -2,8 +2,9 @@
 
 {% block tabla_resultados %}
 {% set BASE_URL= "https://jaimevalero.github.io/managing-awesome-lists" %}
-{% set MAX_NUMBER_OF_REPOS = 1250 %}
+{% set MAX_NUMBER_OF_REPOS = 1000 %}
 
+{% set last_repo = "None" %}
 
 
 		<h2 >Global list: All data </h2>
@@ -34,32 +35,36 @@
       </tr>
     </thead>
     <tbody>
-			{% set counter = 0 %}
-			{% for repo in data['repos'] |sort(attribute='stargazers_count',reverse=true)  %}
+			{% set ns = namespace(counter=0) %}
 
-			{% if counter < MAX_NUMBER_OF_REPOS %}
-				{% if repo.created_at is not none %}
-					{% set counter = counter + 1 %}
+			{% set repos_list = data['repos'] |sort(attribute='stargazers_count',reverse=true) %}
 
+			{% for repo in repos_list[:MAX_NUMBER_OF_REPOS*2]  %}
 
 
+					{% if ns.counter < MAX_NUMBER_OF_REPOS %}
 
-      <tr>
-        <td><a href="https://github.com/{{repo.full_name}}">{{repo.full_name}}</a></td>
-        <td>{{repo.stargazers_count}}</td>
-        <td>{{repo.description}}</td>
-        <td>{{repo.pushed_at[0:10]}}</td>
-        <td>{{repo.language}}</td>
-        <td>
-          {%for tag in repo.topics %}
-          <a href="{{BASE_URL}}/var/topics/{{tag}}.html">
-            <font href="" class="topic-tag">{{tag}}</font>
-          </a>
-          {% endfor %}
-        </td>
-      </tr>
-			{% endif	%}
-	{% endif	%}
+						{% if repo.created_at is not none and  ( repos_list[loop.index].full_name != repos_list[loop.index-1].full_name ) %}
+							{% set ns.counter = ns.counter + 1 %}
+				      <tr>
+				        <td>
+									<a href="https://github.com/{{repo.full_name}}">{{repo.full_name}}</a></td>
+				        <td>{{repo.stargazers_count}}</td>
+				        <td>{{repo.description}}</td>
+				        <td>{{repo.pushed_at[0:10]}}</td>
+				        <td>{{repo.language}}</td>
+				        <td>
+				          {%for tag in repo.topics %}
+				          <a href="{{BASE_URL}}/var/topics/{{tag}}.html">
+				            <font href="" class="topic-tag">{{tag}}</font>
+				          </a>
+				          {% endfor %}
+				        </td>
+				      </tr>
+						{% endif	%}
+
+					{% endif	%}
+
       {% endfor	%}
 
 
