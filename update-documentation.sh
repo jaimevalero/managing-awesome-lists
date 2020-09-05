@@ -40,7 +40,7 @@ Render_Index( )
 
   rm -f  ${INDEX_JSON_DATA}.2
   echo "Generado json  ${INDEX_JSON_DATA} con:" `cat  ${INDEX_JSON_DATA} | grep --colour  repos | jq ".repos|length"` repos
-
+  echo "./generate_render_template.py  -t template-index.html --data ${INDEX_JSON_DATA}"
   ./generate_render_template.py  -t template-index.html --data ${INDEX_JSON_DATA} > index.html
 
 }
@@ -71,11 +71,13 @@ Generate_Readme_Json_Data_Inner( )
 
 Generate_Index( )
 {
+  echo "./generate_render_template.py  -t template-index.html --data ${INDEX_JSON_DATA}"
   ./generate_render_template.py  -t template-index.html --data ${INDEX_JSON_DATA}
 }
 
 Generate_Partial_Doc( )
 {
+  echo "./generate_render_template.py  -t template-readme.html --data ${README_JSON_DATA}"
   ./generate_render_template.py  -t template-readme.html --data ${README_JSON_DATA}
 }
 
@@ -103,7 +105,7 @@ Render_Readme( )
 
 Render_Navbar( )
 {
-
+  echo "./generate_render_template.py  -t template-navbar.html --data ${README_JSON_DATA}"
   ./generate_render_template.py  -t template-navbar.html --data ${README_JSON_DATA} >  views/layout/navbar.html
   ls -altr  views/layout/navbar.html
 }

@@ -1,316 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-
-	<head>
-		<title>Awesome list viewer</title>
-		
-
-<!-- Meta Information -->
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Awesome list manager. Discover best resources from github.">
-<meta name="author" content="Jaime Valero">
-<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
-
-<!-- CSS Information -->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- bootstrap theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Font-awesome -->
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
-
-<!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
-
-<style type="text/css">
-  * {
-    font-size: 16px;
+:::: { "list" : "rest-client"  , "repos" :  
+[
+  {
+    "full_name": "victor-am/rails-ranger",
+    "description": "🤠 An opinionated AJAX client for Ruby on Rails APIs",
+    "topics": [
+      "ajax",
+      "ajax-client",
+      "axios",
+      "javascript",
+      "rails",
+      "rails-api",
+      "rest-client"
+    ],
+    "created_at": "2017-05-20T21:41:35Z",
+    "stargazers_count": 31,
+    "language": "JavaScript"
+  },
+  {
+    "full_name": "mrtazz/restclient-cpp",
+    "description": "C++ client for making HTTP/REST requests",
+    "topics": [
+      "c-plus-plus",
+      "http",
+      "http-client",
+      "libcurl",
+      "packagecloud",
+      "rest",
+      "rest-client",
+      "restclient"
+    ],
+    "created_at": "2010-10-18T15:13:05Z",
+    "stargazers_count": 1132,
+    "language": "C++"
+  },
+  {
+    "full_name": "go-resty/resty",
+    "description": "Simple HTTP and REST client library for Go",
+    "topics": [
+      "backoff",
+      "go",
+      "go-resty",
+      "golang",
+      "golang-library",
+      "http-client",
+      "middleware",
+      "redirects",
+      "rest-client",
+      "retry",
+      "srv-record"
+    ],
+    "created_at": "2015-08-28T17:48:47Z",
+    "stargazers_count": 3241,
+    "language": "Go"
   }
+]
+ } 
 
-  .topic-tag {
-    display: inline-block;
-    padding: 0.3em 0.9em;
-    margin: 0 0.5em 0.5em 0;
-    white-space: nowrap;
-    background-color: #f1f8ff;
-    border-radius: 3px;
-    font-color: #0366d6;
-    color: #0366d6;
-  }
-</style>
-		<!-- Scripts: JQuery & Bootstrap -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-</script>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
-</script>
-
-<!-- bootstrap4 -->
-<script src="https://code.jquery.com/jquery-3.3.1.js">
-</script>
-<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
-</script>
-<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
-</script>
-
-<script type="text/javascript" language="JavaScript">
-  $(document).ready(function() {
-    $('#tabla').DataTable({
-      "order": [
-        [1, "desc"]
-      ]
-    });
-  });
-</script>
-
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-146303223-1');
-</script>
-	</head>
-
-	<body>
-    <nav class="navbar navbar-inverse" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;">
-			
-				
-			
-		</nav>
-
-    <div class="container-fluid" >
-			<div class="row">
-				<!-- Main alert pop-ups -->
-        <div class="col-xl-12 mb-4">
-					
-
-
-<h2 >Topic:  <font class = "topic-tag"> rest-client</font> </h2>
-
-<div class="alert alert-info">
-	<i class="fa fa-eye" aria-hidden="true"></i>
-  This a generated list, with all the repos from the awesome lists, containing the topic
-  <strong>rest-client</strong>.
-</div>
-
-
-
-<br>
-<br>
- Elements : 3
- <br>
-    <div class="table-responsive">
-      <table id="tabla"     class="table table-hover table-condensed table-striped">
-
-        <thead>
-          <tr>
-            <th>Repo</th>
-            <th width="15%">Stars</th>
-            <th>Description</th>
-            <th width="15%">Created</th>
-            <th>Language</th>
-            <th>Tags</th>
-
-
-
-          </tr>
-        </thead>
-        <tbody>
-					
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/go-resty/resty">go-resty/resty</a></td>
-              <td>3241</td>
-              <td>Simple HTTP and REST client library for Go</td>
-              <td>2015-08-28</td>
-              <td>Go</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/backoff.html" >
-                  <font href= "" class = "topic-tag">backoff</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/go.html" >
-                  <font href= "" class = "topic-tag">go</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/go-resty.html" >
-                  <font href= "" class = "topic-tag">go-resty</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/golang.html" >
-                  <font href= "" class = "topic-tag">golang</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/golang-library.html" >
-                  <font href= "" class = "topic-tag">golang-library</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/http-client.html" >
-                  <font href= "" class = "topic-tag">http-client</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/middleware.html" >
-                  <font href= "" class = "topic-tag">middleware</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/redirects.html" >
-                  <font href= "" class = "topic-tag">redirects</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rest-client.html" >
-                  <font href= "" class = "topic-tag">rest-client</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/retry.html" >
-                  <font href= "" class = "topic-tag">retry</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/srv-record.html" >
-                  <font href= "" class = "topic-tag">srv-record</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/mrtazz/restclient-cpp">mrtazz/restclient-cpp</a></td>
-              <td>1132</td>
-              <td>C++ client for making HTTP/REST requests</td>
-              <td>2010-10-18</td>
-              <td>C++</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/c-plus-plus.html" >
-                  <font href= "" class = "topic-tag">c-plus-plus</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/http.html" >
-                  <font href= "" class = "topic-tag">http</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/http-client.html" >
-                  <font href= "" class = "topic-tag">http-client</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/libcurl.html" >
-                  <font href= "" class = "topic-tag">libcurl</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/packagecloud.html" >
-                  <font href= "" class = "topic-tag">packagecloud</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rest.html" >
-                  <font href= "" class = "topic-tag">rest</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rest-client.html" >
-                  <font href= "" class = "topic-tag">rest-client</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/restclient.html" >
-                  <font href= "" class = "topic-tag">restclient</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/victor-am/rails-ranger">victor-am/rails-ranger</a></td>
-              <td>31</td>
-              <td>🤠 An opinionated AJAX client for Ruby on Rails APIs</td>
-              <td>2017-05-20</td>
-              <td>JavaScript</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ajax.html" >
-                  <font href= "" class = "topic-tag">ajax</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ajax-client.html" >
-                  <font href= "" class = "topic-tag">ajax-client</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/axios.html" >
-                  <font href= "" class = "topic-tag">axios</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html" >
-                  <font href= "" class = "topic-tag">javascript</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
-                  <font href= "" class = "topic-tag">rails</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails-api.html" >
-                  <font href= "" class = "topic-tag">rails-api</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rest-client.html" >
-                  <font href= "" class = "topic-tag">rest-client</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-        </tbody>
-      </table>
-		</div>
-
-
-
-
-				</div>
-
-
-			</div>
-			<!-- /.row -->
-
-		</div>
-		<!-- /.container -->
-
-		<footer>
-	<div class="container-fluid">
-    <div class="text-center">
-      <p>Awesome List management.
-    </div>
-	</div>
-
-</footer>
-
-	</body>
-
-</html>

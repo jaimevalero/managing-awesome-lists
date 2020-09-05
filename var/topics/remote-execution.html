@@ -1,336 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-
-	<head>
-		<title>Awesome list viewer</title>
-		
-
-<!-- Meta Information -->
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Awesome list manager. Discover best resources from github.">
-<meta name="author" content="Jaime Valero">
-<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
-
-<!-- CSS Information -->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- bootstrap theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Font-awesome -->
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
-
-<!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
-
-<style type="text/css">
-  * {
-    font-size: 16px;
+:::: { "list" : "remote-execution"  , "repos" :  
+[
+  {
+    "full_name": "saltstack/salt",
+    "description": "Software to automate the management and configuration of any infrastructure or application at scale. Get access to the Salt software package repository here: ",
+    "topics": [
+      "cloud-management",
+      "cloud-providers",
+      "cloud-provisioning",
+      "configuration-management",
+      "event-management",
+      "event-stream",
+      "infrastructure-management",
+      "python",
+      "remote-execution",
+      "zeromq"
+    ],
+    "created_at": "2011-02-20T20:16:56Z",
+    "stargazers_count": 11215,
+    "language": "Python"
+  },
+  {
+    "full_name": "kilgaloon/leprechaun",
+    "description": "You had one job, or more then one, which can be done in steps",
+    "topics": [
+      "cron",
+      "cron-jobs",
+      "cron-pattern",
+      "cronjob",
+      "job-scheduler",
+      "jobs",
+      "recurring",
+      "recurring-commands",
+      "recurring-jobs",
+      "recurring-tasks",
+      "remote-execution",
+      "schedule",
+      "task-runner",
+      "task-scheduler",
+      "tasks",
+      "webhook"
+    ],
+    "created_at": "2018-04-08T13:44:04Z",
+    "stargazers_count": 71,
+    "language": "Go"
+  },
+  {
+    "full_name": "Fizzadar/pyinfra",
+    "description": "pyinfra automates infrastructure super fast at massive scale. It can be used for ad-hoc command execution, service deployment, configuration management and more.",
+    "topics": [
+      "cloud-management",
+      "configuration-management",
+      "high-performance",
+      "python",
+      "remote-execution"
+    ],
+    "created_at": "2014-10-19T19:37:45Z",
+    "stargazers_count": 935,
+    "language": "Python"
   }
+]
+ } 
 
-  .topic-tag {
-    display: inline-block;
-    padding: 0.3em 0.9em;
-    margin: 0 0.5em 0.5em 0;
-    white-space: nowrap;
-    background-color: #f1f8ff;
-    border-radius: 3px;
-    font-color: #0366d6;
-    color: #0366d6;
-  }
-</style>
-		<!-- Scripts: JQuery & Bootstrap -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-</script>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
-</script>
-
-<!-- bootstrap4 -->
-<script src="https://code.jquery.com/jquery-3.3.1.js">
-</script>
-<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
-</script>
-<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
-</script>
-
-<script type="text/javascript" language="JavaScript">
-  $(document).ready(function() {
-    $('#tabla').DataTable({
-      "order": [
-        [1, "desc"]
-      ]
-    });
-  });
-</script>
-
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-146303223-1');
-</script>
-	</head>
-
-	<body>
-    <nav class="navbar navbar-inverse" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;">
-			
-				
-			
-		</nav>
-
-    <div class="container-fluid" >
-			<div class="row">
-				<!-- Main alert pop-ups -->
-        <div class="col-xl-12 mb-4">
-					
-
-
-<h2 >Topic:  <font class = "topic-tag"> remote-execution</font> </h2>
-
-<div class="alert alert-info">
-	<i class="fa fa-eye" aria-hidden="true"></i>
-  This a generated list, with all the repos from the awesome lists, containing the topic
-  <strong>remote-execution</strong>.
-</div>
-
-
-
-<br>
-<br>
- Elements : 3
- <br>
-    <div class="table-responsive">
-      <table id="tabla"     class="table table-hover table-condensed table-striped">
-
-        <thead>
-          <tr>
-            <th>Repo</th>
-            <th width="15%">Stars</th>
-            <th>Description</th>
-            <th width="15%">Created</th>
-            <th>Language</th>
-            <th>Tags</th>
-
-
-
-          </tr>
-        </thead>
-        <tbody>
-					
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/saltstack/salt">saltstack/salt</a></td>
-              <td>11215</td>
-              <td>Software to automate the management and configuration of any infrastructure or application at scale. Get access to the Salt software package repository here: </td>
-              <td>2011-02-20</td>
-              <td>Python</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cloud-management.html" >
-                  <font href= "" class = "topic-tag">cloud-management</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cloud-providers.html" >
-                  <font href= "" class = "topic-tag">cloud-providers</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cloud-provisioning.html" >
-                  <font href= "" class = "topic-tag">cloud-provisioning</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/configuration-management.html" >
-                  <font href= "" class = "topic-tag">configuration-management</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/event-management.html" >
-                  <font href= "" class = "topic-tag">event-management</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/event-stream.html" >
-                  <font href= "" class = "topic-tag">event-stream</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/infrastructure-management.html" >
-                  <font href= "" class = "topic-tag">infrastructure-management</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html" >
-                  <font href= "" class = "topic-tag">python</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/remote-execution.html" >
-                  <font href= "" class = "topic-tag">remote-execution</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/zeromq.html" >
-                  <font href= "" class = "topic-tag">zeromq</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/Fizzadar/pyinfra">Fizzadar/pyinfra</a></td>
-              <td>935</td>
-              <td>pyinfra automates infrastructure super fast at massive scale. It can be used for ad-hoc command execution, service deployment, configuration management and more.</td>
-              <td>2014-10-19</td>
-              <td>Python</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cloud-management.html" >
-                  <font href= "" class = "topic-tag">cloud-management</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/configuration-management.html" >
-                  <font href= "" class = "topic-tag">configuration-management</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/high-performance.html" >
-                  <font href= "" class = "topic-tag">high-performance</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html" >
-                  <font href= "" class = "topic-tag">python</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/remote-execution.html" >
-                  <font href= "" class = "topic-tag">remote-execution</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/kilgaloon/leprechaun">kilgaloon/leprechaun</a></td>
-              <td>71</td>
-              <td>You had one job, or more then one, which can be done in steps</td>
-              <td>2018-04-08</td>
-              <td>Go</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cron.html" >
-                  <font href= "" class = "topic-tag">cron</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cron-jobs.html" >
-                  <font href= "" class = "topic-tag">cron-jobs</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cron-pattern.html" >
-                  <font href= "" class = "topic-tag">cron-pattern</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cronjob.html" >
-                  <font href= "" class = "topic-tag">cronjob</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/job-scheduler.html" >
-                  <font href= "" class = "topic-tag">job-scheduler</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jobs.html" >
-                  <font href= "" class = "topic-tag">jobs</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/recurring.html" >
-                  <font href= "" class = "topic-tag">recurring</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/recurring-commands.html" >
-                  <font href= "" class = "topic-tag">recurring-commands</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/recurring-jobs.html" >
-                  <font href= "" class = "topic-tag">recurring-jobs</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/recurring-tasks.html" >
-                  <font href= "" class = "topic-tag">recurring-tasks</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/remote-execution.html" >
-                  <font href= "" class = "topic-tag">remote-execution</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/schedule.html" >
-                  <font href= "" class = "topic-tag">schedule</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/task-runner.html" >
-                  <font href= "" class = "topic-tag">task-runner</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/task-scheduler.html" >
-                  <font href= "" class = "topic-tag">task-scheduler</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/tasks.html" >
-                  <font href= "" class = "topic-tag">tasks</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webhook.html" >
-                  <font href= "" class = "topic-tag">webhook</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-        </tbody>
-      </table>
-		</div>
-
-
-
-
-				</div>
-
-
-			</div>
-			<!-- /.row -->
-
-		</div>
-		<!-- /.container -->
-
-		<footer>
-	<div class="container-fluid">
-    <div class="text-center">
-      <p>Awesome List management.
-    </div>
-	</div>
-
-</footer>
-
-	</body>
-
-</html>

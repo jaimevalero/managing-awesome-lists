@@ -1,360 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-
-	<head>
-		<title>Awesome list viewer</title>
-		
-
-<!-- Meta Information -->
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Awesome list manager. Discover best resources from github.">
-<meta name="author" content="Jaime Valero">
-<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
-
-<!-- CSS Information -->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- bootstrap theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Font-awesome -->
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
-
-<!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
-
-<style type="text/css">
-  * {
-    font-size: 16px;
+:::: { "list" : "repository"  , "repos" :  
+[
+  {
+    "full_name": "samvera/hyrax",
+    "description": "Hyrax is a front-end based on the robust Samvera framework, providing a user interface for common repository features",
+    "topics": [
+      "blacklight",
+      "fcrepo",
+      "hydra-community",
+      "hyrax",
+      "rails",
+      "repository",
+      "samvera",
+      "sufia"
+    ],
+    "created_at": "2016-11-29T23:09:59Z",
+    "stargazers_count": 120,
+    "language": "Ruby"
+  },
+  {
+    "full_name": "line/centraldogma",
+    "description": "Highly-available version-controlled service configuration repository based on Git, ZooKeeper and HTTP/2",
+    "topics": [
+      "config",
+      "config-server",
+      "configuration",
+      "configuration-management",
+      "configuration-server",
+      "git",
+      "repository",
+      "service-configuration",
+      "vcs",
+      "version-control",
+      "zookeeper"
+    ],
+    "created_at": "2017-08-29T07:23:31Z",
+    "stargazers_count": 345,
+    "language": "Java"
+  },
+  {
+    "full_name": "LeonardoCardoso/gsrd",
+    "description": "GitHub Starred Repos Downloader",
+    "topics": [
+      "downloader",
+      "github",
+      "repository",
+      "repository-tools",
+      "ruby",
+      "ruby-gem"
+    ],
+    "created_at": "2016-07-14T14:13:48Z",
+    "stargazers_count": 18,
+    "language": "Ruby"
+  },
+  {
+    "full_name": "Finesse/web-fonts-repository",
+    "description": "A simple webfont hosting. Google Fonts alternative for your own fonts.",
+    "topics": [
+      "application",
+      "css",
+      "fonts",
+      "google-fonts",
+      "hosting",
+      "repository",
+      "web",
+      "webfont"
+    ],
+    "created_at": "2017-08-06T11:11:21Z",
+    "stargazers_count": 45,
+    "language": "PHP"
   }
+]
+ } 
 
-  .topic-tag {
-    display: inline-block;
-    padding: 0.3em 0.9em;
-    margin: 0 0.5em 0.5em 0;
-    white-space: nowrap;
-    background-color: #f1f8ff;
-    border-radius: 3px;
-    font-color: #0366d6;
-    color: #0366d6;
-  }
-</style>
-		<!-- Scripts: JQuery & Bootstrap -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-</script>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
-</script>
-
-<!-- bootstrap4 -->
-<script src="https://code.jquery.com/jquery-3.3.1.js">
-</script>
-<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
-</script>
-<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
-</script>
-
-<script type="text/javascript" language="JavaScript">
-  $(document).ready(function() {
-    $('#tabla').DataTable({
-      "order": [
-        [1, "desc"]
-      ]
-    });
-  });
-</script>
-
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-146303223-1');
-</script>
-	</head>
-
-	<body>
-    <nav class="navbar navbar-inverse" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;">
-			
-				
-			
-		</nav>
-
-    <div class="container-fluid" >
-			<div class="row">
-				<!-- Main alert pop-ups -->
-        <div class="col-xl-12 mb-4">
-					
-
-
-<h2 >Topic:  <font class = "topic-tag"> repository</font> </h2>
-
-<div class="alert alert-info">
-	<i class="fa fa-eye" aria-hidden="true"></i>
-  This a generated list, with all the repos from the awesome lists, containing the topic
-  <strong>repository</strong>.
-</div>
-
-
-
-<br>
-<br>
- Elements : 4
- <br>
-    <div class="table-responsive">
-      <table id="tabla"     class="table table-hover table-condensed table-striped">
-
-        <thead>
-          <tr>
-            <th>Repo</th>
-            <th width="15%">Stars</th>
-            <th>Description</th>
-            <th width="15%">Created</th>
-            <th>Language</th>
-            <th>Tags</th>
-
-
-
-          </tr>
-        </thead>
-        <tbody>
-					
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/line/centraldogma">line/centraldogma</a></td>
-              <td>345</td>
-              <td>Highly-available version-controlled service configuration repository based on Git, ZooKeeper and HTTP/2</td>
-              <td>2017-08-29</td>
-              <td>Java</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/config.html" >
-                  <font href= "" class = "topic-tag">config</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/config-server.html" >
-                  <font href= "" class = "topic-tag">config-server</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/configuration.html" >
-                  <font href= "" class = "topic-tag">configuration</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/configuration-management.html" >
-                  <font href= "" class = "topic-tag">configuration-management</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/configuration-server.html" >
-                  <font href= "" class = "topic-tag">configuration-server</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/git.html" >
-                  <font href= "" class = "topic-tag">git</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/repository.html" >
-                  <font href= "" class = "topic-tag">repository</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/service-configuration.html" >
-                  <font href= "" class = "topic-tag">service-configuration</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/vcs.html" >
-                  <font href= "" class = "topic-tag">vcs</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/version-control.html" >
-                  <font href= "" class = "topic-tag">version-control</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/zookeeper.html" >
-                  <font href= "" class = "topic-tag">zookeeper</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/samvera/hyrax">samvera/hyrax</a></td>
-              <td>120</td>
-              <td>Hyrax is a front-end based on the robust Samvera framework, providing a user interface for common repository features</td>
-              <td>2016-11-29</td>
-              <td>Ruby</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/blacklight.html" >
-                  <font href= "" class = "topic-tag">blacklight</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/fcrepo.html" >
-                  <font href= "" class = "topic-tag">fcrepo</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hydra-community.html" >
-                  <font href= "" class = "topic-tag">hydra-community</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hyrax.html" >
-                  <font href= "" class = "topic-tag">hyrax</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
-                  <font href= "" class = "topic-tag">rails</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/repository.html" >
-                  <font href= "" class = "topic-tag">repository</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/samvera.html" >
-                  <font href= "" class = "topic-tag">samvera</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sufia.html" >
-                  <font href= "" class = "topic-tag">sufia</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/Finesse/web-fonts-repository">Finesse/web-fonts-repository</a></td>
-              <td>45</td>
-              <td>A simple webfont hosting. Google Fonts alternative for your own fonts.</td>
-              <td>2017-08-06</td>
-              <td>PHP</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/application.html" >
-                  <font href= "" class = "topic-tag">application</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/css.html" >
-                  <font href= "" class = "topic-tag">css</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/fonts.html" >
-                  <font href= "" class = "topic-tag">fonts</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/google-fonts.html" >
-                  <font href= "" class = "topic-tag">google-fonts</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hosting.html" >
-                  <font href= "" class = "topic-tag">hosting</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/repository.html" >
-                  <font href= "" class = "topic-tag">repository</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/web.html" >
-                  <font href= "" class = "topic-tag">web</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webfont.html" >
-                  <font href= "" class = "topic-tag">webfont</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/LeonardoCardoso/gsrd">LeonardoCardoso/gsrd</a></td>
-              <td>18</td>
-              <td>GitHub Starred Repos Downloader</td>
-              <td>2016-07-14</td>
-              <td>Ruby</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/downloader.html" >
-                  <font href= "" class = "topic-tag">downloader</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/github.html" >
-                  <font href= "" class = "topic-tag">github</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/repository.html" >
-                  <font href= "" class = "topic-tag">repository</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/repository-tools.html" >
-                  <font href= "" class = "topic-tag">repository-tools</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
-                  <font href= "" class = "topic-tag">ruby</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby-gem.html" >
-                  <font href= "" class = "topic-tag">ruby-gem</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-        </tbody>
-      </table>
-		</div>
-
-
-
-
-				</div>
-
-
-			</div>
-			<!-- /.row -->
-
-		</div>
-		<!-- /.container -->
-
-		<footer>
-	<div class="container-fluid">
-    <div class="text-center">
-      <p>Awesome List management.
-    </div>
-	</div>
-
-</footer>
-
-	</body>
-
-</html>

@@ -1,360 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-
-	<head>
-		<title>Awesome list viewer</title>
-		
-
-<!-- Meta Information -->
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Awesome list manager. Discover best resources from github.">
-<meta name="author" content="Jaime Valero">
-<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
-
-<!-- CSS Information -->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- bootstrap theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Font-awesome -->
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
-
-<!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
-
-<style type="text/css">
-  * {
-    font-size: 16px;
+:::: { "list" : "reviewdog"  , "repos" :  
+[
+  {
+    "full_name": "reviewdog/action-eslint",
+    "description": "Run eslint with reviewdog",
+    "topics": [
+      "eslint",
+      "reviewdog"
+    ],
+    "created_at": "2019-09-23T15:07:15Z",
+    "stargazers_count": 58,
+    "language": "Shell"
+  },
+  {
+    "full_name": "reviewdog/action-golangci-lint",
+    "description": "Run golangci-lint with reviewdog",
+    "topics": [
+      "golangci-lint",
+      "reviewdog"
+    ],
+    "created_at": "2019-09-15T04:38:33Z",
+    "stargazers_count": 77,
+    "language": "Shell"
+  },
+  {
+    "full_name": "reviewdog/action-misspell",
+    "description": "Run misspell with reviewdog",
+    "topics": [
+      "misspell",
+      "reviewdog"
+    ],
+    "created_at": "2019-09-15T18:17:33Z",
+    "stargazers_count": 28,
+    "language": "Shell"
+  },
+  {
+    "full_name": "reviewdog/action-shellcheck",
+    "description": "Run shellcheck with reviewdog",
+    "topics": [
+      "reviewdog",
+      "shellcheck"
+    ],
+    "created_at": "2019-09-26T15:00:28Z",
+    "stargazers_count": 27,
+    "language": "Shell"
+  },
+  {
+    "full_name": "reviewdog/action-stylelint",
+    "description": "Run stylelint with reviewdog",
+    "topics": [
+      "reviewdog",
+      "stylelint"
+    ],
+    "created_at": "2019-09-23T05:48:38Z",
+    "stargazers_count": 17,
+    "language": "Shell"
+  },
+  {
+    "full_name": "reviewdog/action-tflint",
+    "description": "Run tflint with reviewdog on pull requests to enforce best practices",
+    "topics": [
+      "reviewdog",
+      "tflint"
+    ],
+    "created_at": "2019-09-26T16:19:46Z",
+    "stargazers_count": 24,
+    "language": "Dockerfile"
+  },
+  {
+    "full_name": "reviewdog/action-vint",
+    "description": "Run vint with reviewdog",
+    "topics": [
+      "reviewdog",
+      "vint"
+    ],
+    "created_at": "2019-09-23T08:48:08Z",
+    "stargazers_count": 6,
+    "language": "Dockerfile"
+  },
+  {
+    "full_name": "dotenv-linter/action-dotenv-linter",
+    "description": "⚡️Run dotenv-linter with reviewdog 🐶",
+    "topics": [
+      "dotenv-linter",
+      "github-actions",
+      "reviewdog"
+    ],
+    "created_at": "2020-01-09T17:55:00Z",
+    "stargazers_count": 3,
+    "language": "Dockerfile"
   }
+]
+ } 
 
-  .topic-tag {
-    display: inline-block;
-    padding: 0.3em 0.9em;
-    margin: 0 0.5em 0.5em 0;
-    white-space: nowrap;
-    background-color: #f1f8ff;
-    border-radius: 3px;
-    font-color: #0366d6;
-    color: #0366d6;
-  }
-</style>
-		<!-- Scripts: JQuery & Bootstrap -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-</script>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
-</script>
-
-<!-- bootstrap4 -->
-<script src="https://code.jquery.com/jquery-3.3.1.js">
-</script>
-<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
-</script>
-<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
-</script>
-
-<script type="text/javascript" language="JavaScript">
-  $(document).ready(function() {
-    $('#tabla').DataTable({
-      "order": [
-        [1, "desc"]
-      ]
-    });
-  });
-</script>
-
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-146303223-1');
-</script>
-	</head>
-
-	<body>
-    <nav class="navbar navbar-inverse" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;">
-			
-				
-			
-		</nav>
-
-    <div class="container-fluid" >
-			<div class="row">
-				<!-- Main alert pop-ups -->
-        <div class="col-xl-12 mb-4">
-					
-
-
-<h2 >Topic:  <font class = "topic-tag"> reviewdog</font> </h2>
-
-<div class="alert alert-info">
-	<i class="fa fa-eye" aria-hidden="true"></i>
-  This a generated list, with all the repos from the awesome lists, containing the topic
-  <strong>reviewdog</strong>.
-</div>
-
-
-
-<br>
-<br>
- Elements : 8
- <br>
-    <div class="table-responsive">
-      <table id="tabla"     class="table table-hover table-condensed table-striped">
-
-        <thead>
-          <tr>
-            <th>Repo</th>
-            <th width="15%">Stars</th>
-            <th>Description</th>
-            <th width="15%">Created</th>
-            <th>Language</th>
-            <th>Tags</th>
-
-
-
-          </tr>
-        </thead>
-        <tbody>
-					
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/reviewdog/action-golangci-lint">reviewdog/action-golangci-lint</a></td>
-              <td>77</td>
-              <td>Run golangci-lint with reviewdog</td>
-              <td>2019-09-15</td>
-              <td>Shell</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/golangci-lint.html" >
-                  <font href= "" class = "topic-tag">golangci-lint</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/reviewdog.html" >
-                  <font href= "" class = "topic-tag">reviewdog</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/reviewdog/action-eslint">reviewdog/action-eslint</a></td>
-              <td>58</td>
-              <td>Run eslint with reviewdog</td>
-              <td>2019-09-23</td>
-              <td>Shell</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/eslint.html" >
-                  <font href= "" class = "topic-tag">eslint</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/reviewdog.html" >
-                  <font href= "" class = "topic-tag">reviewdog</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/reviewdog/action-misspell">reviewdog/action-misspell</a></td>
-              <td>28</td>
-              <td>Run misspell with reviewdog</td>
-              <td>2019-09-15</td>
-              <td>Shell</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/misspell.html" >
-                  <font href= "" class = "topic-tag">misspell</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/reviewdog.html" >
-                  <font href= "" class = "topic-tag">reviewdog</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/reviewdog/action-shellcheck">reviewdog/action-shellcheck</a></td>
-              <td>27</td>
-              <td>Run shellcheck with reviewdog</td>
-              <td>2019-09-26</td>
-              <td>Shell</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/reviewdog.html" >
-                  <font href= "" class = "topic-tag">reviewdog</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/shellcheck.html" >
-                  <font href= "" class = "topic-tag">shellcheck</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/reviewdog/action-tflint">reviewdog/action-tflint</a></td>
-              <td>24</td>
-              <td>Run tflint with reviewdog on pull requests to enforce best practices</td>
-              <td>2019-09-26</td>
-              <td>Dockerfile</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/reviewdog.html" >
-                  <font href= "" class = "topic-tag">reviewdog</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/tflint.html" >
-                  <font href= "" class = "topic-tag">tflint</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/reviewdog/action-stylelint">reviewdog/action-stylelint</a></td>
-              <td>17</td>
-              <td>Run stylelint with reviewdog</td>
-              <td>2019-09-23</td>
-              <td>Shell</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/reviewdog.html" >
-                  <font href= "" class = "topic-tag">reviewdog</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/stylelint.html" >
-                  <font href= "" class = "topic-tag">stylelint</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/reviewdog/action-vint">reviewdog/action-vint</a></td>
-              <td>6</td>
-              <td>Run vint with reviewdog</td>
-              <td>2019-09-23</td>
-              <td>Dockerfile</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/reviewdog.html" >
-                  <font href= "" class = "topic-tag">reviewdog</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/vint.html" >
-                  <font href= "" class = "topic-tag">vint</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/dotenv-linter/action-dotenv-linter">dotenv-linter/action-dotenv-linter</a></td>
-              <td>3</td>
-              <td>⚡️Run dotenv-linter with reviewdog 🐶</td>
-              <td>2020-01-09</td>
-              <td>Dockerfile</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/dotenv-linter.html" >
-                  <font href= "" class = "topic-tag">dotenv-linter</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/github-actions.html" >
-                  <font href= "" class = "topic-tag">github-actions</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/reviewdog.html" >
-                  <font href= "" class = "topic-tag">reviewdog</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-        </tbody>
-      </table>
-		</div>
-
-
-
-
-				</div>
-
-
-			</div>
-			<!-- /.row -->
-
-		</div>
-		<!-- /.container -->
-
-		<footer>
-	<div class="container-fluid">
-    <div class="text-center">
-      <p>Awesome List management.
-    </div>
-	</div>
-
-</footer>
-
-	</body>
-
-</html>

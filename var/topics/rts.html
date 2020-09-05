@@ -1,324 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-
-	<head>
-		<title>Awesome list viewer</title>
-		
-
-<!-- Meta Information -->
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Awesome list manager. Discover best resources from github.">
-<meta name="author" content="Jaime Valero">
-<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
-
-<!-- CSS Information -->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- bootstrap theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Font-awesome -->
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
-
-<!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
-
-<style type="text/css">
-  * {
-    font-size: 16px;
+:::: { "list" : "rts"  , "repos" :  
+[
+  {
+    "full_name": "OpenRA/OpenRA",
+    "description": "Open Source real-time strategy game engine for early Westwood games such as Command & Conquer: Red Alert written in C# using SDL and OpenGL. Runs on Windows, Linux, *BSD and Mac OS X.",
+    "topics": [
+      "command-and-conquer",
+      "cross-platform",
+      "csharp",
+      "dotnet",
+      "dune-2000",
+      "engine",
+      "game",
+      "game-engine",
+      "openra",
+      "real-time-strategy",
+      "red-alert",
+      "rts",
+      "strategy-game-engine",
+      "tiberian-dawn"
+    ],
+    "created_at": "2010-10-04T07:38:05Z",
+    "stargazers_count": 8534,
+    "language": "C#"
+  },
+  {
+    "full_name": "galeone/rts",
+    "description": "RTS: request to struct. Generates Go structs from JSON server responses.",
+    "topics": [
+      "cli",
+      "json",
+      "json-server",
+      "rest",
+      "rts"
+    ],
+    "created_at": "2016-04-04T13:17:19Z",
+    "stargazers_count": 205,
+    "language": "Go"
+  },
+  {
+    "full_name": "Anuken/Mindustry",
+    "description": "A sandbox tower defense game",
+    "topics": [
+      "desktop",
+      "game",
+      "java",
+      "mindustry",
+      "mobile-game",
+      "multiplatform",
+      "rts",
+      "sandbox-game",
+      "tower-defense"
+    ],
+    "created_at": "2017-04-30T01:24:29Z",
+    "stargazers_count": 5455,
+    "language": "Java"
   }
+]
+ } 
 
-  .topic-tag {
-    display: inline-block;
-    padding: 0.3em 0.9em;
-    margin: 0 0.5em 0.5em 0;
-    white-space: nowrap;
-    background-color: #f1f8ff;
-    border-radius: 3px;
-    font-color: #0366d6;
-    color: #0366d6;
-  }
-</style>
-		<!-- Scripts: JQuery & Bootstrap -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-</script>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
-</script>
-
-<!-- bootstrap4 -->
-<script src="https://code.jquery.com/jquery-3.3.1.js">
-</script>
-<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
-</script>
-<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
-</script>
-
-<script type="text/javascript" language="JavaScript">
-  $(document).ready(function() {
-    $('#tabla').DataTable({
-      "order": [
-        [1, "desc"]
-      ]
-    });
-  });
-</script>
-
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-146303223-1');
-</script>
-	</head>
-
-	<body>
-    <nav class="navbar navbar-inverse" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;">
-			
-				
-			
-		</nav>
-
-    <div class="container-fluid" >
-			<div class="row">
-				<!-- Main alert pop-ups -->
-        <div class="col-xl-12 mb-4">
-					
-
-
-<h2 >Topic:  <font class = "topic-tag"> rts</font> </h2>
-
-<div class="alert alert-info">
-	<i class="fa fa-eye" aria-hidden="true"></i>
-  This a generated list, with all the repos from the awesome lists, containing the topic
-  <strong>rts</strong>.
-</div>
-
-
-
-<br>
-<br>
- Elements : 3
- <br>
-    <div class="table-responsive">
-      <table id="tabla"     class="table table-hover table-condensed table-striped">
-
-        <thead>
-          <tr>
-            <th>Repo</th>
-            <th width="15%">Stars</th>
-            <th>Description</th>
-            <th width="15%">Created</th>
-            <th>Language</th>
-            <th>Tags</th>
-
-
-
-          </tr>
-        </thead>
-        <tbody>
-					
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/OpenRA/OpenRA">OpenRA/OpenRA</a></td>
-              <td>8534</td>
-              <td>Open Source real-time strategy game engine for early Westwood games such as Command & Conquer: Red Alert written in C# using SDL and OpenGL. Runs on Windows, Linux, *BSD and Mac OS X.</td>
-              <td>2010-10-04</td>
-              <td>C#</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/command-and-conquer.html" >
-                  <font href= "" class = "topic-tag">command-and-conquer</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cross-platform.html" >
-                  <font href= "" class = "topic-tag">cross-platform</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/csharp.html" >
-                  <font href= "" class = "topic-tag">csharp</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/dotnet.html" >
-                  <font href= "" class = "topic-tag">dotnet</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/dune-2000.html" >
-                  <font href= "" class = "topic-tag">dune-2000</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/engine.html" >
-                  <font href= "" class = "topic-tag">engine</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/game.html" >
-                  <font href= "" class = "topic-tag">game</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/game-engine.html" >
-                  <font href= "" class = "topic-tag">game-engine</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/openra.html" >
-                  <font href= "" class = "topic-tag">openra</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/real-time-strategy.html" >
-                  <font href= "" class = "topic-tag">real-time-strategy</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/red-alert.html" >
-                  <font href= "" class = "topic-tag">red-alert</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rts.html" >
-                  <font href= "" class = "topic-tag">rts</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/strategy-game-engine.html" >
-                  <font href= "" class = "topic-tag">strategy-game-engine</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/tiberian-dawn.html" >
-                  <font href= "" class = "topic-tag">tiberian-dawn</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/Anuken/Mindustry">Anuken/Mindustry</a></td>
-              <td>5455</td>
-              <td>A sandbox tower defense game</td>
-              <td>2017-04-30</td>
-              <td>Java</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/desktop.html" >
-                  <font href= "" class = "topic-tag">desktop</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/game.html" >
-                  <font href= "" class = "topic-tag">game</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/java.html" >
-                  <font href= "" class = "topic-tag">java</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mindustry.html" >
-                  <font href= "" class = "topic-tag">mindustry</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mobile-game.html" >
-                  <font href= "" class = "topic-tag">mobile-game</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/multiplatform.html" >
-                  <font href= "" class = "topic-tag">multiplatform</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rts.html" >
-                  <font href= "" class = "topic-tag">rts</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sandbox-game.html" >
-                  <font href= "" class = "topic-tag">sandbox-game</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/tower-defense.html" >
-                  <font href= "" class = "topic-tag">tower-defense</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/galeone/rts">galeone/rts</a></td>
-              <td>205</td>
-              <td>RTS: request to struct. Generates Go structs from JSON server responses.</td>
-              <td>2016-04-04</td>
-              <td>Go</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cli.html" >
-                  <font href= "" class = "topic-tag">cli</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/json.html" >
-                  <font href= "" class = "topic-tag">json</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/json-server.html" >
-                  <font href= "" class = "topic-tag">json-server</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rest.html" >
-                  <font href= "" class = "topic-tag">rest</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rts.html" >
-                  <font href= "" class = "topic-tag">rts</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-        </tbody>
-      </table>
-		</div>
-
-
-
-
-				</div>
-
-
-			</div>
-			<!-- /.row -->
-
-		</div>
-		<!-- /.container -->
-
-		<footer>
-	<div class="container-fluid">
-    <div class="text-center">
-      <p>Awesome List management.
-    </div>
-	</div>
-
-</footer>
-
-	</body>
-
-</html>

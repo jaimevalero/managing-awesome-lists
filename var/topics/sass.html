@@ -1,500 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-
-	<head>
-		<title>Awesome list viewer</title>
-		
-
-<!-- Meta Information -->
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Awesome list manager. Discover best resources from github.">
-<meta name="author" content="Jaime Valero">
-<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
-
-<!-- CSS Information -->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- bootstrap theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Font-awesome -->
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
-
-<!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
-
-<style type="text/css">
-  * {
-    font-size: 16px;
+:::: { "list" : "sass"  , "repos" :  
+[
+  {
+    "full_name": "symfony/webpack-encore",
+    "description": "A simple but powerful API for processing & compiling assets built around Webpack",
+    "topics": [
+      "babel",
+      "less",
+      "postcss",
+      "react",
+      "sass",
+      "symfony",
+      "webpack"
+    ],
+    "created_at": "2017-06-12T17:02:00Z",
+    "stargazers_count": 1730,
+    "language": "JavaScript"
+  },
+  {
+    "full_name": "palantir/blueprint",
+    "description": "A React-based UI toolkit for the web",
+    "topics": [
+      "blueprint",
+      "components",
+      "design",
+      "lerna",
+      "react",
+      "sass",
+      "system",
+      "table",
+      "toolkit",
+      "typescript",
+      "ui"
+    ],
+    "created_at": "2016-10-25T21:17:50Z",
+    "stargazers_count": 16663,
+    "language": "TypeScript"
+  },
+  {
+    "full_name": "jeffersonRibeiro/react-shopping-cart",
+    "description": "🛍️ Simple ecommerce cart application built with React Redux",
+    "topics": [
+      "e2e-tests",
+      "ecommerce",
+      "ecommerce-cart-application",
+      "firebase",
+      "integration-tests",
+      "react",
+      "react-shopping-cart",
+      "redux",
+      "sass",
+      "shopping-cart",
+      "unit-testing"
+    ],
+    "created_at": "2018-04-05T00:40:47Z",
+    "stargazers_count": 1477,
+    "language": "JavaScript"
+  },
+  {
+    "full_name": "elastic/eui",
+    "description": "Elastic UI Framework 🙌",
+    "topics": [
+      "css",
+      "design-system",
+      "elasticsearch",
+      "eui",
+      "kibana",
+      "react",
+      "sass"
+    ],
+    "created_at": "2017-10-18T14:49:20Z",
+    "stargazers_count": 2199,
+    "language": "TypeScript"
+  },
+  {
+    "full_name": "drublic/css-modal",
+    "description": "A modal built with pure CSS, enhanced with JavaScript",
+    "topics": [
+      "css",
+      "css-modal",
+      "plugin",
+      "sass"
+    ],
+    "created_at": "2012-11-22T23:09:26Z",
+    "stargazers_count": 1814,
+    "language": "JavaScript"
+  },
+  {
+    "full_name": "akveo/ngx-admin",
+    "description": "Customizable admin dashboard template based on Angular 10+",
+    "topics": [
+      "admin",
+      "admin-dashboard",
+      "admin-template",
+      "admin-ui",
+      "angular-dashboard-template",
+      "angular10",
+      "angular2",
+      "angular9",
+      "bootstrap4",
+      "dashboard",
+      "framework",
+      "material-theme",
+      "ng2",
+      "ng2-admin",
+      "ngx-admin",
+      "responsive",
+      "sass",
+      "theme",
+      "typescript",
+      "webpack"
+    ],
+    "created_at": "2016-05-25T10:09:03Z",
+    "stargazers_count": 21243,
+    "language": "TypeScript"
   }
+]
+ } 
 
-  .topic-tag {
-    display: inline-block;
-    padding: 0.3em 0.9em;
-    margin: 0 0.5em 0.5em 0;
-    white-space: nowrap;
-    background-color: #f1f8ff;
-    border-radius: 3px;
-    font-color: #0366d6;
-    color: #0366d6;
-  }
-</style>
-		<!-- Scripts: JQuery & Bootstrap -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-</script>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
-</script>
-
-<!-- bootstrap4 -->
-<script src="https://code.jquery.com/jquery-3.3.1.js">
-</script>
-<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
-</script>
-<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
-</script>
-
-<script type="text/javascript" language="JavaScript">
-  $(document).ready(function() {
-    $('#tabla').DataTable({
-      "order": [
-        [1, "desc"]
-      ]
-    });
-  });
-</script>
-
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-146303223-1');
-</script>
-	</head>
-
-	<body>
-    <nav class="navbar navbar-inverse" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;">
-			
-				
-			
-		</nav>
-
-    <div class="container-fluid" >
-			<div class="row">
-				<!-- Main alert pop-ups -->
-        <div class="col-xl-12 mb-4">
-					
-
-
-<h2 >Topic:  <font class = "topic-tag"> sass</font> </h2>
-
-<div class="alert alert-info">
-	<i class="fa fa-eye" aria-hidden="true"></i>
-  This a generated list, with all the repos from the awesome lists, containing the topic
-  <strong>sass</strong>.
-</div>
-
-
-
-<br>
-<br>
- Elements : 6
- <br>
-    <div class="table-responsive">
-      <table id="tabla"     class="table table-hover table-condensed table-striped">
-
-        <thead>
-          <tr>
-            <th>Repo</th>
-            <th width="15%">Stars</th>
-            <th>Description</th>
-            <th width="15%">Created</th>
-            <th>Language</th>
-            <th>Tags</th>
-
-
-
-          </tr>
-        </thead>
-        <tbody>
-					
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/akveo/ngx-admin">akveo/ngx-admin</a></td>
-              <td>21243</td>
-              <td>Customizable admin dashboard template based on Angular 10+</td>
-              <td>2016-05-25</td>
-              <td>TypeScript</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/admin.html" >
-                  <font href= "" class = "topic-tag">admin</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/admin-dashboard.html" >
-                  <font href= "" class = "topic-tag">admin-dashboard</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/admin-template.html" >
-                  <font href= "" class = "topic-tag">admin-template</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/admin-ui.html" >
-                  <font href= "" class = "topic-tag">admin-ui</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/angular-dashboard-template.html" >
-                  <font href= "" class = "topic-tag">angular-dashboard-template</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/angular10.html" >
-                  <font href= "" class = "topic-tag">angular10</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/angular2.html" >
-                  <font href= "" class = "topic-tag">angular2</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/angular9.html" >
-                  <font href= "" class = "topic-tag">angular9</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/bootstrap4.html" >
-                  <font href= "" class = "topic-tag">bootstrap4</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/dashboard.html" >
-                  <font href= "" class = "topic-tag">dashboard</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/framework.html" >
-                  <font href= "" class = "topic-tag">framework</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/material-theme.html" >
-                  <font href= "" class = "topic-tag">material-theme</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ng2.html" >
-                  <font href= "" class = "topic-tag">ng2</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ng2-admin.html" >
-                  <font href= "" class = "topic-tag">ng2-admin</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ngx-admin.html" >
-                  <font href= "" class = "topic-tag">ngx-admin</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/responsive.html" >
-                  <font href= "" class = "topic-tag">responsive</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sass.html" >
-                  <font href= "" class = "topic-tag">sass</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/theme.html" >
-                  <font href= "" class = "topic-tag">theme</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/typescript.html" >
-                  <font href= "" class = "topic-tag">typescript</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webpack.html" >
-                  <font href= "" class = "topic-tag">webpack</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/palantir/blueprint">palantir/blueprint</a></td>
-              <td>16663</td>
-              <td>A React-based UI toolkit for the web</td>
-              <td>2016-10-25</td>
-              <td>TypeScript</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/blueprint.html" >
-                  <font href= "" class = "topic-tag">blueprint</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/components.html" >
-                  <font href= "" class = "topic-tag">components</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/design.html" >
-                  <font href= "" class = "topic-tag">design</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/lerna.html" >
-                  <font href= "" class = "topic-tag">lerna</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/react.html" >
-                  <font href= "" class = "topic-tag">react</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sass.html" >
-                  <font href= "" class = "topic-tag">sass</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/system.html" >
-                  <font href= "" class = "topic-tag">system</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/table.html" >
-                  <font href= "" class = "topic-tag">table</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/toolkit.html" >
-                  <font href= "" class = "topic-tag">toolkit</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/typescript.html" >
-                  <font href= "" class = "topic-tag">typescript</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ui.html" >
-                  <font href= "" class = "topic-tag">ui</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/elastic/eui">elastic/eui</a></td>
-              <td>2199</td>
-              <td>Elastic UI Framework 🙌</td>
-              <td>2017-10-18</td>
-              <td>TypeScript</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/css.html" >
-                  <font href= "" class = "topic-tag">css</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/design-system.html" >
-                  <font href= "" class = "topic-tag">design-system</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/elasticsearch.html" >
-                  <font href= "" class = "topic-tag">elasticsearch</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/eui.html" >
-                  <font href= "" class = "topic-tag">eui</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/kibana.html" >
-                  <font href= "" class = "topic-tag">kibana</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/react.html" >
-                  <font href= "" class = "topic-tag">react</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sass.html" >
-                  <font href= "" class = "topic-tag">sass</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/drublic/css-modal">drublic/css-modal</a></td>
-              <td>1814</td>
-              <td>A modal built with pure CSS, enhanced with JavaScript</td>
-              <td>2012-11-22</td>
-              <td>JavaScript</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/css.html" >
-                  <font href= "" class = "topic-tag">css</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/css-modal.html" >
-                  <font href= "" class = "topic-tag">css-modal</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/plugin.html" >
-                  <font href= "" class = "topic-tag">plugin</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sass.html" >
-                  <font href= "" class = "topic-tag">sass</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/symfony/webpack-encore">symfony/webpack-encore</a></td>
-              <td>1730</td>
-              <td>A simple but powerful API for processing & compiling assets built around Webpack</td>
-              <td>2017-06-12</td>
-              <td>JavaScript</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/babel.html" >
-                  <font href= "" class = "topic-tag">babel</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/less.html" >
-                  <font href= "" class = "topic-tag">less</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/postcss.html" >
-                  <font href= "" class = "topic-tag">postcss</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/react.html" >
-                  <font href= "" class = "topic-tag">react</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sass.html" >
-                  <font href= "" class = "topic-tag">sass</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/symfony.html" >
-                  <font href= "" class = "topic-tag">symfony</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webpack.html" >
-                  <font href= "" class = "topic-tag">webpack</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/jeffersonRibeiro/react-shopping-cart">jeffersonRibeiro/react-shopping-cart</a></td>
-              <td>1477</td>
-              <td>🛍️ Simple ecommerce cart application built with React Redux</td>
-              <td>2018-04-05</td>
-              <td>JavaScript</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/e2e-tests.html" >
-                  <font href= "" class = "topic-tag">e2e-tests</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ecommerce.html" >
-                  <font href= "" class = "topic-tag">ecommerce</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ecommerce-cart-application.html" >
-                  <font href= "" class = "topic-tag">ecommerce-cart-application</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/firebase.html" >
-                  <font href= "" class = "topic-tag">firebase</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/integration-tests.html" >
-                  <font href= "" class = "topic-tag">integration-tests</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/react.html" >
-                  <font href= "" class = "topic-tag">react</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/react-shopping-cart.html" >
-                  <font href= "" class = "topic-tag">react-shopping-cart</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/redux.html" >
-                  <font href= "" class = "topic-tag">redux</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sass.html" >
-                  <font href= "" class = "topic-tag">sass</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/shopping-cart.html" >
-                  <font href= "" class = "topic-tag">shopping-cart</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/unit-testing.html" >
-                  <font href= "" class = "topic-tag">unit-testing</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-        </tbody>
-      </table>
-		</div>
-
-
-
-
-				</div>
-
-
-			</div>
-			<!-- /.row -->
-
-		</div>
-		<!-- /.container -->
-
-		<footer>
-	<div class="container-fluid">
-    <div class="text-center">
-      <p>Awesome List management.
-    </div>
-	</div>
-
-</footer>
-
-	</body>
-
-</html>

@@ -123,6 +123,7 @@ Generate_Render_Readme( )
 {
 
   Update_Readme_Doc > /tmp/readme.json
+  echo "./generate_render_template.py  -t template-readme.html --data /tmp/readme.json"
   ./generate_render_template.py  -t template-readme.html --data /tmp/readme.json >> README.md
 
 }
@@ -142,6 +143,7 @@ Generate_Render_Single_List( )
   then
     Log  ERRROR . Repos Vacios ${URI}
   else
+     echo"  ./generate_render_template.py  -t template-list.html --data ${LISTA_JSON_DATA} "
     ./generate_render_template.py  -t template-list.html --data ${LISTA_JSON_DATA} > var/awl-$FILE_HTML.html
     ls -altr   var/awl-$FILE_HTML.html
   fi

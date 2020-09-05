@@ -1,480 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-
-	<head>
-		<title>Awesome list viewer</title>
-		
-
-<!-- Meta Information -->
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Awesome list manager. Discover best resources from github.">
-<meta name="author" content="Jaime Valero">
-<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
-
-<!-- CSS Information -->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- bootstrap theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Font-awesome -->
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
-
-<!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
-
-<style type="text/css">
-  * {
-    font-size: 16px;
+:::: { "list" : "ruby-gem"  , "repos" :  
+[
+  {
+    "full_name": "NARKOZ/gitlab",
+    "description": "Ruby wrapper and CLI for the GitLab REST API",
+    "topics": [
+      "gitlab",
+      "gitlab-api",
+      "gitlab-cli",
+      "ruby-gem"
+    ],
+    "created_at": "2012-09-21T17:46:11Z",
+    "stargazers_count": 891,
+    "language": "Ruby"
+  },
+  {
+    "full_name": "LeonardoCardoso/gsrd",
+    "description": "GitHub Starred Repos Downloader",
+    "topics": [
+      "downloader",
+      "github",
+      "repository",
+      "repository-tools",
+      "ruby",
+      "ruby-gem"
+    ],
+    "created_at": "2016-07-14T14:13:48Z",
+    "stargazers_count": 18,
+    "language": "Ruby"
+  },
+  {
+    "full_name": "dtan4/terraforming",
+    "description": "Export existing AWS resources to Terraform style (tf, tfstate)",
+    "topics": [
+      "aws",
+      "ruby-gem",
+      "terraform",
+      "tfstate"
+    ],
+    "created_at": "2015-03-25T03:50:06Z",
+    "stargazers_count": 3676,
+    "language": "Ruby"
+  },
+  {
+    "full_name": "dgroup/lazylead",
+    "description": "Eliminate the annoying work within ticketing systems (Jira, GitHub, Trello). Allows automating (without admin access) daily actions like tickets fields verification, email notifications by JQL/GQL, meeting requests to your (or teammates) calendar.",
+    "topics": [
+      "annoying",
+      "automation",
+      "docker-image",
+      "elegantobjects",
+      "eo-badge",
+      "github",
+      "jira",
+      "management",
+      "mit-license",
+      "ood",
+      "oop-principles",
+      "open-source",
+      "routine-tasks",
+      "ruby",
+      "ruby-gem",
+      "task",
+      "team",
+      "teamwork",
+      "ticketing-systems",
+      "trello"
+    ],
+    "created_at": "2020-01-17T13:46:08Z",
+    "stargazers_count": 8,
+    "language": "Ruby"
+  },
+  {
+    "full_name": "asafschers/scoruby",
+    "description": "Ruby Scoring API for PMML",
+    "topics": [
+      "classification",
+      "decision-tree",
+      "gbm",
+      "gradient-boosted-models",
+      "gradient-boosting-classifier",
+      "machine-learning",
+      "naive-bayes",
+      "pmml",
+      "random-forest",
+      "ruby",
+      "ruby-gem",
+      "rubyml"
+    ],
+    "created_at": "2016-11-12T16:54:47Z",
+    "stargazers_count": 65,
+    "language": "Ruby"
+  },
+  {
+    "full_name": "arbox/machine-learning-with-ruby",
+    "description": "Curated list: Resources for machine learning in Ruby",
+    "topics": [
+      "awesome",
+      "awesome-list",
+      "list",
+      "machine-learning",
+      "ml",
+      "ruby",
+      "ruby-gem",
+      "rubyml",
+      "rubynlp"
+    ],
+    "created_at": "2017-04-20T09:44:48Z",
+    "stargazers_count": 1521,
+    "language": "Ruby"
   }
+]
+ } 
 
-  .topic-tag {
-    display: inline-block;
-    padding: 0.3em 0.9em;
-    margin: 0 0.5em 0.5em 0;
-    white-space: nowrap;
-    background-color: #f1f8ff;
-    border-radius: 3px;
-    font-color: #0366d6;
-    color: #0366d6;
-  }
-</style>
-		<!-- Scripts: JQuery & Bootstrap -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-</script>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
-</script>
-
-<!-- bootstrap4 -->
-<script src="https://code.jquery.com/jquery-3.3.1.js">
-</script>
-<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
-</script>
-<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
-</script>
-
-<script type="text/javascript" language="JavaScript">
-  $(document).ready(function() {
-    $('#tabla').DataTable({
-      "order": [
-        [1, "desc"]
-      ]
-    });
-  });
-</script>
-
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-146303223-1');
-</script>
-	</head>
-
-	<body>
-    <nav class="navbar navbar-inverse" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;">
-			
-				
-			
-		</nav>
-
-    <div class="container-fluid" >
-			<div class="row">
-				<!-- Main alert pop-ups -->
-        <div class="col-xl-12 mb-4">
-					
-
-
-<h2 >Topic:  <font class = "topic-tag"> ruby-gem</font> </h2>
-
-<div class="alert alert-info">
-	<i class="fa fa-eye" aria-hidden="true"></i>
-  This a generated list, with all the repos from the awesome lists, containing the topic
-  <strong>ruby-gem</strong>.
-</div>
-
-
-
-<br>
-<br>
- Elements : 6
- <br>
-    <div class="table-responsive">
-      <table id="tabla"     class="table table-hover table-condensed table-striped">
-
-        <thead>
-          <tr>
-            <th>Repo</th>
-            <th width="15%">Stars</th>
-            <th>Description</th>
-            <th width="15%">Created</th>
-            <th>Language</th>
-            <th>Tags</th>
-
-
-
-          </tr>
-        </thead>
-        <tbody>
-					
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/dtan4/terraforming">dtan4/terraforming</a></td>
-              <td>3676</td>
-              <td>Export existing AWS resources to Terraform style (tf, tfstate)</td>
-              <td>2015-03-25</td>
-              <td>Ruby</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/aws.html" >
-                  <font href= "" class = "topic-tag">aws</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby-gem.html" >
-                  <font href= "" class = "topic-tag">ruby-gem</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/terraform.html" >
-                  <font href= "" class = "topic-tag">terraform</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/tfstate.html" >
-                  <font href= "" class = "topic-tag">tfstate</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/arbox/machine-learning-with-ruby">arbox/machine-learning-with-ruby</a></td>
-              <td>1521</td>
-              <td>Curated list: Resources for machine learning in Ruby</td>
-              <td>2017-04-20</td>
-              <td>Ruby</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/awesome.html" >
-                  <font href= "" class = "topic-tag">awesome</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/awesome-list.html" >
-                  <font href= "" class = "topic-tag">awesome-list</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/list.html" >
-                  <font href= "" class = "topic-tag">list</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/machine-learning.html" >
-                  <font href= "" class = "topic-tag">machine-learning</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ml.html" >
-                  <font href= "" class = "topic-tag">ml</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
-                  <font href= "" class = "topic-tag">ruby</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby-gem.html" >
-                  <font href= "" class = "topic-tag">ruby-gem</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rubyml.html" >
-                  <font href= "" class = "topic-tag">rubyml</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rubynlp.html" >
-                  <font href= "" class = "topic-tag">rubynlp</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/NARKOZ/gitlab">NARKOZ/gitlab</a></td>
-              <td>891</td>
-              <td>Ruby wrapper and CLI for the GitLab REST API</td>
-              <td>2012-09-21</td>
-              <td>Ruby</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gitlab.html" >
-                  <font href= "" class = "topic-tag">gitlab</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gitlab-api.html" >
-                  <font href= "" class = "topic-tag">gitlab-api</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gitlab-cli.html" >
-                  <font href= "" class = "topic-tag">gitlab-cli</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby-gem.html" >
-                  <font href= "" class = "topic-tag">ruby-gem</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/asafschers/scoruby">asafschers/scoruby</a></td>
-              <td>65</td>
-              <td>Ruby Scoring API for PMML</td>
-              <td>2016-11-12</td>
-              <td>Ruby</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/classification.html" >
-                  <font href= "" class = "topic-tag">classification</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/decision-tree.html" >
-                  <font href= "" class = "topic-tag">decision-tree</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gbm.html" >
-                  <font href= "" class = "topic-tag">gbm</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gradient-boosted-models.html" >
-                  <font href= "" class = "topic-tag">gradient-boosted-models</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gradient-boosting-classifier.html" >
-                  <font href= "" class = "topic-tag">gradient-boosting-classifier</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/machine-learning.html" >
-                  <font href= "" class = "topic-tag">machine-learning</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/naive-bayes.html" >
-                  <font href= "" class = "topic-tag">naive-bayes</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pmml.html" >
-                  <font href= "" class = "topic-tag">pmml</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/random-forest.html" >
-                  <font href= "" class = "topic-tag">random-forest</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
-                  <font href= "" class = "topic-tag">ruby</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby-gem.html" >
-                  <font href= "" class = "topic-tag">ruby-gem</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rubyml.html" >
-                  <font href= "" class = "topic-tag">rubyml</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/LeonardoCardoso/gsrd">LeonardoCardoso/gsrd</a></td>
-              <td>18</td>
-              <td>GitHub Starred Repos Downloader</td>
-              <td>2016-07-14</td>
-              <td>Ruby</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/downloader.html" >
-                  <font href= "" class = "topic-tag">downloader</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/github.html" >
-                  <font href= "" class = "topic-tag">github</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/repository.html" >
-                  <font href= "" class = "topic-tag">repository</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/repository-tools.html" >
-                  <font href= "" class = "topic-tag">repository-tools</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
-                  <font href= "" class = "topic-tag">ruby</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby-gem.html" >
-                  <font href= "" class = "topic-tag">ruby-gem</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/dgroup/lazylead">dgroup/lazylead</a></td>
-              <td>8</td>
-              <td>Eliminate the annoying work within ticketing systems (Jira, GitHub, Trello). Allows automating (without admin access) daily actions like tickets fields verification, email notifications by JQL/GQL, meeting requests to your (or teammates) calendar.</td>
-              <td>2020-01-17</td>
-              <td>Ruby</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/annoying.html" >
-                  <font href= "" class = "topic-tag">annoying</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/automation.html" >
-                  <font href= "" class = "topic-tag">automation</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/docker-image.html" >
-                  <font href= "" class = "topic-tag">docker-image</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/elegantobjects.html" >
-                  <font href= "" class = "topic-tag">elegantobjects</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/eo-badge.html" >
-                  <font href= "" class = "topic-tag">eo-badge</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/github.html" >
-                  <font href= "" class = "topic-tag">github</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jira.html" >
-                  <font href= "" class = "topic-tag">jira</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/management.html" >
-                  <font href= "" class = "topic-tag">management</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mit-license.html" >
-                  <font href= "" class = "topic-tag">mit-license</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ood.html" >
-                  <font href= "" class = "topic-tag">ood</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/oop-principles.html" >
-                  <font href= "" class = "topic-tag">oop-principles</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/open-source.html" >
-                  <font href= "" class = "topic-tag">open-source</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/routine-tasks.html" >
-                  <font href= "" class = "topic-tag">routine-tasks</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
-                  <font href= "" class = "topic-tag">ruby</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby-gem.html" >
-                  <font href= "" class = "topic-tag">ruby-gem</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/task.html" >
-                  <font href= "" class = "topic-tag">task</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/team.html" >
-                  <font href= "" class = "topic-tag">team</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/teamwork.html" >
-                  <font href= "" class = "topic-tag">teamwork</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ticketing-systems.html" >
-                  <font href= "" class = "topic-tag">ticketing-systems</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/trello.html" >
-                  <font href= "" class = "topic-tag">trello</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-        </tbody>
-      </table>
-		</div>
-
-
-
-
-				</div>
-
-
-			</div>
-			<!-- /.row -->
-
-		</div>
-		<!-- /.container -->
-
-		<footer>
-	<div class="container-fluid">
-    <div class="text-center">
-      <p>Awesome List management.
-    </div>
-	</div>
-
-</footer>
-
-	</body>
-
-</html>

@@ -1,476 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-
-	<head>
-		<title>Awesome list viewer</title>
-		
-
-<!-- Meta Information -->
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Awesome list manager. Discover best resources from github.">
-<meta name="author" content="Jaime Valero">
-<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
-
-<!-- CSS Information -->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- bootstrap theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Font-awesome -->
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
-
-<!-- bootstrap4 -->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
-
-<style type="text/css">
-  * {
-    font-size: 16px;
+ { "list" : "raft"  , "repos" :  
+[
+  {
+    "full_name": "tidwall/summitdb",
+    "description": "In-memory NoSQL database with ACID transactions, Raft consensus, and Redis API",
+    "topics": [
+      "database",
+      "geospatial",
+      "in-memory",
+      "json",
+      "nosql",
+      "raft"
+    ],
+    "created_at": "2016-10-11T19:41:51Z",
+    "stargazers_count": 1293,
+    "language": "Go"
+  },
+  {
+    "full_name": "tikv/tikv",
+    "description": "Distributed transactional key-value database, originally created to complement TiDB",
+    "topics": [
+      "cncf",
+      "consensus",
+      "distributed-transactions",
+      "key-value",
+      "raft",
+      "rocksdb",
+      "rust",
+      "tidb",
+      "tikv"
+    ],
+    "created_at": "2015-12-31T04:51:32Z",
+    "stargazers_count": 7990,
+    "language": "Rust"
+  },
+  {
+    "full_name": "permazen/permazen",
+    "description": "Language-Natural Persistence Layer for Java",
+    "topics": [
+      "database",
+      "java",
+      "key-value",
+      "orm-framework",
+      "persistence",
+      "persistence-layer",
+      "persistence-programming",
+      "raft",
+      "schema-management",
+      "serialization"
+    ],
+    "created_at": "2015-05-30T19:34:05Z",
+    "stargazers_count": 259,
+    "language": "HTML"
+  },
+  {
+    "full_name": "lni/dragonboat",
+    "description": "A feature complete and high performance multi-group Raft library in Go.  ",
+    "topics": [
+      "consensus",
+      "distributed-consensus",
+      "distributed-storage",
+      "distributed-systems",
+      "go",
+      "golang",
+      "paxos",
+      "raft",
+      "raft-algorithm",
+      "raft-protocol",
+      "replicated-state-machines"
+    ],
+    "created_at": "2018-12-23T07:02:04Z",
+    "stargazers_count": 3219,
+    "language": "Go"
+  },
+  {
+    "full_name": "etcd-io/etcd",
+    "description": "Distributed reliable key-value store for the most critical data of a distributed system",
+    "topics": [
+      "consensus",
+      "database",
+      "distributed-database",
+      "distributed-systems",
+      "etcd",
+      "go",
+      "key-value",
+      "kubernetes",
+      "raft"
+    ],
+    "created_at": "2013-07-06T21:57:21Z",
+    "stargazers_count": 32634,
+    "language": "Go"
+  },
+  {
+    "full_name": "etcd-io/etcd",
+    "description": "Distributed reliable key-value store for the most critical data of a distributed system",
+    "topics": [
+      "consensus",
+      "database",
+      "distributed-database",
+      "distributed-systems",
+      "etcd",
+      "go",
+      "key-value",
+      "kubernetes",
+      "raft"
+    ],
+    "created_at": "2013-07-06T21:57:21Z",
+    "stargazers_count": 32634,
+    "language": "Go"
   }
+]
+ } 
 
-  .topic-tag {
-    display: inline-block;
-    padding: 0.3em 0.9em;
-    margin: 0 0.5em 0.5em 0;
-    white-space: nowrap;
-    background-color: #f1f8ff;
-    border-radius: 3px;
-    font-color: #0366d6;
-    color: #0366d6;
-  }
-</style>
-		<!-- Scripts: JQuery & Bootstrap -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-</script>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
-</script>
-
-<!-- bootstrap4 -->
-<script src="https://code.jquery.com/jquery-3.3.1.js">
-</script>
-<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
-</script>
-<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
-</script>
-
-<script type="text/javascript" language="JavaScript">
-  $(document).ready(function() {
-    $('#tabla').DataTable({
-      "order": [
-        [1, "desc"]
-      ]
-    });
-  });
-</script>
-
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-146303223-1');
-</script>
-	</head>
-
-	<body>
-    <nav class="navbar navbar-inverse" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;">
-			
-				
-			
-		</nav>
-
-    <div class="container-fluid" >
-			<div class="row">
-				<!-- Main alert pop-ups -->
-        <div class="col-xl-12 mb-4">
-					
-
-
-<h2 >Topic:  <font class = "topic-tag"> raft</font> </h2>
-
-<div class="alert alert-info">
-	<i class="fa fa-eye" aria-hidden="true"></i>
-  This a generated list, with all the repos from the awesome lists, containing the topic
-  <strong>raft</strong>.
-</div>
-
-
-
-<br>
-<br>
- Elements : 6
- <br>
-    <div class="table-responsive">
-      <table id="tabla"     class="table table-hover table-condensed table-striped">
-
-        <thead>
-          <tr>
-            <th>Repo</th>
-            <th width="15%">Stars</th>
-            <th>Description</th>
-            <th width="15%">Created</th>
-            <th>Language</th>
-            <th>Tags</th>
-
-
-
-          </tr>
-        </thead>
-        <tbody>
-					
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/etcd-io/etcd">etcd-io/etcd</a></td>
-              <td>32634</td>
-              <td>Distributed reliable key-value store for the most critical data of a distributed system</td>
-              <td>2013-07-06</td>
-              <td>Go</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/consensus.html" >
-                  <font href= "" class = "topic-tag">consensus</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/database.html" >
-                  <font href= "" class = "topic-tag">database</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/distributed-database.html" >
-                  <font href= "" class = "topic-tag">distributed-database</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/distributed-systems.html" >
-                  <font href= "" class = "topic-tag">distributed-systems</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/etcd.html" >
-                  <font href= "" class = "topic-tag">etcd</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/go.html" >
-                  <font href= "" class = "topic-tag">go</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/key-value.html" >
-                  <font href= "" class = "topic-tag">key-value</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/kubernetes.html" >
-                  <font href= "" class = "topic-tag">kubernetes</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/raft.html" >
-                  <font href= "" class = "topic-tag">raft</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/etcd-io/etcd">etcd-io/etcd</a></td>
-              <td>32634</td>
-              <td>Distributed reliable key-value store for the most critical data of a distributed system</td>
-              <td>2013-07-06</td>
-              <td>Go</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/consensus.html" >
-                  <font href= "" class = "topic-tag">consensus</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/database.html" >
-                  <font href= "" class = "topic-tag">database</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/distributed-database.html" >
-                  <font href= "" class = "topic-tag">distributed-database</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/distributed-systems.html" >
-                  <font href= "" class = "topic-tag">distributed-systems</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/etcd.html" >
-                  <font href= "" class = "topic-tag">etcd</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/go.html" >
-                  <font href= "" class = "topic-tag">go</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/key-value.html" >
-                  <font href= "" class = "topic-tag">key-value</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/kubernetes.html" >
-                  <font href= "" class = "topic-tag">kubernetes</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/raft.html" >
-                  <font href= "" class = "topic-tag">raft</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/tikv/tikv">tikv/tikv</a></td>
-              <td>7990</td>
-              <td>Distributed transactional key-value database, originally created to complement TiDB</td>
-              <td>2015-12-31</td>
-              <td>Rust</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cncf.html" >
-                  <font href= "" class = "topic-tag">cncf</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/consensus.html" >
-                  <font href= "" class = "topic-tag">consensus</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/distributed-transactions.html" >
-                  <font href= "" class = "topic-tag">distributed-transactions</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/key-value.html" >
-                  <font href= "" class = "topic-tag">key-value</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/raft.html" >
-                  <font href= "" class = "topic-tag">raft</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rocksdb.html" >
-                  <font href= "" class = "topic-tag">rocksdb</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rust.html" >
-                  <font href= "" class = "topic-tag">rust</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/tidb.html" >
-                  <font href= "" class = "topic-tag">tidb</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/tikv.html" >
-                  <font href= "" class = "topic-tag">tikv</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/lni/dragonboat">lni/dragonboat</a></td>
-              <td>3219</td>
-              <td>A feature complete and high performance multi-group Raft library in Go.  </td>
-              <td>2018-12-23</td>
-              <td>Go</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/consensus.html" >
-                  <font href= "" class = "topic-tag">consensus</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/distributed-consensus.html" >
-                  <font href= "" class = "topic-tag">distributed-consensus</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/distributed-storage.html" >
-                  <font href= "" class = "topic-tag">distributed-storage</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/distributed-systems.html" >
-                  <font href= "" class = "topic-tag">distributed-systems</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/go.html" >
-                  <font href= "" class = "topic-tag">go</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/golang.html" >
-                  <font href= "" class = "topic-tag">golang</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/paxos.html" >
-                  <font href= "" class = "topic-tag">paxos</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/raft.html" >
-                  <font href= "" class = "topic-tag">raft</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/raft-algorithm.html" >
-                  <font href= "" class = "topic-tag">raft-algorithm</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/raft-protocol.html" >
-                  <font href= "" class = "topic-tag">raft-protocol</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/replicated-state-machines.html" >
-                  <font href= "" class = "topic-tag">replicated-state-machines</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/tidwall/summitdb">tidwall/summitdb</a></td>
-              <td>1293</td>
-              <td>In-memory NoSQL database with ACID transactions, Raft consensus, and Redis API</td>
-              <td>2016-10-11</td>
-              <td>Go</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/database.html" >
-                  <font href= "" class = "topic-tag">database</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/geospatial.html" >
-                  <font href= "" class = "topic-tag">geospatial</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/in-memory.html" >
-                  <font href= "" class = "topic-tag">in-memory</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/json.html" >
-                  <font href= "" class = "topic-tag">json</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/nosql.html" >
-                  <font href= "" class = "topic-tag">nosql</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/raft.html" >
-                  <font href= "" class = "topic-tag">raft</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-					
-					
-
-            <tr>
-              <td><a href="https://github.com/permazen/permazen">permazen/permazen</a></td>
-              <td>259</td>
-              <td>Language-Natural Persistence Layer for Java</td>
-              <td>2015-05-30</td>
-              <td>HTML</td>
-              <td>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/database.html" >
-                  <font href= "" class = "topic-tag">database</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/java.html" >
-                  <font href= "" class = "topic-tag">java</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/key-value.html" >
-                  <font href= "" class = "topic-tag">key-value</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/orm-framework.html" >
-                  <font href= "" class = "topic-tag">orm-framework</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/persistence.html" >
-                  <font href= "" class = "topic-tag">persistence</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/persistence-layer.html" >
-                  <font href= "" class = "topic-tag">persistence-layer</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/persistence-programming.html" >
-                  <font href= "" class = "topic-tag">persistence-programming</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/raft.html" >
-                  <font href= "" class = "topic-tag">raft</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/schema-management.html" >
-                  <font href= "" class = "topic-tag">schema-management</font>
-                </a>
-                
-                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/serialization.html" >
-                  <font href= "" class = "topic-tag">serialization</font>
-                </a>
-                
-              </td>
-            </tr>
-					
-
-          
-        </tbody>
-      </table>
-		</div>
-
-
-
-
-				</div>
-
-
-			</div>
-			<!-- /.row -->
-
-		</div>
-		<!-- /.container -->
-
-		<footer>
-	<div class="container-fluid">
-    <div class="text-center">
-      <p>Awesome List management.
-    </div>
-	</div>
-
-</footer>
-
-	</body>
-
-</html>
