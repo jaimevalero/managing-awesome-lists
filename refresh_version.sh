@@ -4,7 +4,7 @@
 # Re-render navbar template
 # download json from api
 # Re render from the new template
-sh  -xv ./get_list_details.sh   ;
+ ./get_list_details.sh   ;
 ./update-documentation.sh ;
 ./get_list_details.sh   ;
 ./update-documentation.sh ;

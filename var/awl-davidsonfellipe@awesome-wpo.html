@@ -1,0 +1,2685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Awesome list viewer</title>
+		
+
+<!-- Meta Information -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Awesome list manager. Discover best resources from github.">
+<meta name="author" content="Jaime Valero">
+<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
+
+<!-- CSS Information -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- bootstrap theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Font-awesome -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- bootstrap4 -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+
+<!-- bootstrap4 -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+
+<style type="text/css">
+  * {
+    font-size: 16px;
+  }
+
+  .topic-tag {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    margin: 0 0.5em 0.5em 0;
+    white-space: nowrap;
+    background-color: #f1f8ff;
+    border-radius: 3px;
+    font-color: #0366d6;
+    color: #0366d6;
+  }
+</style>
+		<!-- Scripts: JQuery & Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+</script>
+
+<!-- bootstrap4 -->
+<script src="https://code.jquery.com/jquery-3.3.1.js">
+</script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
+</script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
+</script>
+
+<script type="text/javascript" language="JavaScript">
+  $(document).ready(function() {
+    $('#tabla').DataTable({
+      "order": [
+        [1, "desc"]
+      ]
+    });
+  });
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-146303223-1');
+</script>
+	</head>
+
+	<body>
+    <nav class="navbar navbar-inverse" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;">
+			
+				
+
+<div class="container-fluid" >
+	<!-- Brand and toggle get grouped for better mobile display -->
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li >
+				<a href="https://jaimevalero.github.io/managing-awesome-lists">Awesome list viewer <span class="sr-only">(current)</span></a>
+			</li>
+		</ul>
+
+		<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"
+					 role="button" aria-haspopup="true" aria-expanded="false">
+				 Select list
+				</a>
+				<ul class="dropdown-menu">
+
+
+          <li rel="tooltip"  title="Global list" >
+            <a href='https://jaimevalero.github.io/managing-awesome-lists'>
+            <i class="fa fa-internal-link" aria-hidden="true"></i> Global list
+            </a>
+          </li>
+          <li rel="tooltip"  title="A curated collection of useful CSS snippets you can understand in 30 seconds or less." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-30-seconds%4030-seconds-of-css.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> 30-seconds-of-css
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome actions to use on GitHub" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sdras%40awesome-actions.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> actions
+						</a>
+					</li><li rel="tooltip"  title="😎 Awesome lists about all kinds of interesting topics" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sindresorhus%40awesome.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> awesome
+						</a>
+					</li><li rel="tooltip"  title="A comprehensive list of pytorch related content on github,such as different models,implementations,helper libraries,tutorials etc." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-bharathgs%40Awesome-pytorch-list.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> Awesome-pytorch-list
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Amazon Web Services (AWS) libraries, open source repos, guides, blogs, and other resources.  Featuring the Fiery Meter of AWSome." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-donnemartin%40awesome-aws.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> aws
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome big data frameworks, ressources and other awesomeness." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-onurakpolat%40awesome-bigdata.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> bigdata
+						</a>
+					</li><li rel="tooltip"  title="Curated list of blockchain services and exchanges 🔥🏦🔥🏦🔥🏦🔥" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-imbaniac%40awesome-blockchain.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> blockchain
+						</a>
+					</li><li rel="tooltip"  title="✨  Awesome - A curated list of amazing Bootstrap tools and themes." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-therebelrobot%40awesome-bootstrap.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> bootstrap
+						</a>
+					</li><li rel="tooltip"  title="List of Continuous Integration services" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ligurio%40awesome-ci.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> ci
+						</a>
+					</li><li rel="tooltip"  title="🖥 📊 🕹 🛠 A curated list of command line apps" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-agarrharr%40awesome-cli-apps.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> cli-apps
+						</a>
+					</li><li rel="tooltip"  title=":books: List of awesome university courses for learning Computer Science!" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-prakhar1989%40awesome-courses.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> courses
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things. Inspired by awesome-... stuff." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-fffaraz%40awesome-cpp.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> cpp
+						</a>
+					</li><li rel="tooltip"  title="A list of D3 libraries, plugins and utilities" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-wbkd%40awesome-d3.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> d3
+						</a>
+					</li><li rel="tooltip"  title=":memo: An awesome Data Science repository to learn and apply for real world problems." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-academic%40awesome-datascience.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> datascience
+						</a>
+					</li><li rel="tooltip"  title=":chart_with_upwards_trend:  A curated list of awesome data visualization libraries and resources." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-fasouto%40awesome-dataviz.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> dataviz
+						</a>
+					</li><li rel="tooltip"  title="A curated list of Domain-Driven Design (DDD), Command Query Responsibility Segregation (CQRS), Event Sourcing, and Event Storming resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-heynickc%40awesome-ddd.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> ddd
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Deep Learning tutorials, projects and communities." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ChristosChristofidis%40awesome-deep-learning.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> deep-learning
+						</a>
+					</li><li rel="tooltip"  title=":whale: A curated list of Docker resources and projects" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-veggiemonk%40awesome-docker.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> docker
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Flask resources and plugins" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-humiaozuzu%40awesome-flask.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> flask
+						</a>
+					</li><li rel="tooltip"  title="A list of awesome beginners-friendly projects." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-MunGell%40awesome-for-beginners.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> for-beginners
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome forensic analysis tools and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-cugu%40awesome-forensics.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> forensics
+						</a>
+					</li><li rel="tooltip"  title="Manually curated collection of resources for frontend web developers." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-dypsilon%40frontend-dev-bookmarks.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> frontend-dev-bookmarks
+						</a>
+					</li><li rel="tooltip"  title="A list of cool features of Git and GitHub." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-tiimgreen%40github-cheat-sheet.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> github-cheat-sheet
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Go frameworks, libraries and software" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-avelino%40awesome-go.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> go
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome groovy libraries, frameworks and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-kdabir%40awesome-groovy.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> groovy
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Hacking tutorials, tools and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-carpedm20%40awesome-hacking.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> hacking
+						</a>
+					</li><li rel="tooltip"  title="✂A collection of useful .htaccess snippets." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-phanan%40htaccess.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> htaccess
+						</a>
+					</li><li rel="tooltip"  title="A collection of tips to help up your jQuery game" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-AllThingsSmitty%40jquery-tips-everyone-should-know.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> jquery-tips-everyone-should-know
+						</a>
+					</li><li rel="tooltip"  title="A curated list for awesome kubernetes sources :ship::tada:" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ramitsurana%40awesome-kubernetes.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> kubernetes
+						</a>
+					</li><li rel="tooltip"  title=":penguin: A list of awesome projects and resources that make Linux even more awesome. :penguin:" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-aleksandar-todorovic%40awesome-linux.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> linux
+						</a>
+					</li><li rel="tooltip"  title=" Now we have become very big, Different from the original idea. Collect premium software in various categories." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-jaywcjlove%40awesome-mac.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> mac
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome malware analysis tools and resources." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-rshipp%40awesome-malware-analysis.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> malware-analysis
+						</a>
+					</li><li rel="tooltip"  title=":zap: Delightful Node.js packages and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sindresorhus%40awesome-nodejs.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> nodejs
+						</a>
+					</li><li rel="tooltip"  title="🚀 Awesome list of open source applications for macOS." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-serhii-londar%40open-source-mac-os-apps.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> open-source-mac-os-apps
+						</a>
+					</li><li rel="tooltip"  title="A curated list of amazingly awesome PHP libraries, resources and shiny things." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ziadoz%40awesome-php.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> php
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome pipeline toolkits inspired by Awesome Sysadmin" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-pditommaso%40awesome-pipeline.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> pipeline
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Python frameworks, libraries, software and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-vinta%40awesome-python.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> python
+						</a>
+					</li><li rel="tooltip"  title="📝 A curated list of awesome Raspberry Pi tools, projects, images and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-thibmaek%40awesome-raspberry-pi.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> raspberry-pi
+						</a>
+					</li><li rel="tooltip"  title="A collection of awesome things regarding React ecosystem" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-enaqx%40awesome-react.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> react
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome remote jobs and resources. Inspired by https://github.com/vinta/awesome-python" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-lukasz-madon%40awesome-remote-job.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> remote-job
+						</a>
+					</li><li rel="tooltip"  title="The Patterns of Scalable, Reliable, and Performant Large-Scale Systems" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-binhnguyennus%40awesome-scalability.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> scalability
+						</a>
+					</li><li rel="tooltip"  title="A collection of awesome software, libraries, documents, books, resources and cools stuffs about security." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sbilly%40awesome-security.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> security
+						</a>
+					</li><li rel="tooltip"  title="This is a list of Free Software network services and web applications which can be hosted locally. Selfhosting is the process of locally hosting and managing applications instead of renting from SaaS providers." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-Kickball%40awesome-selfhosted.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> selfhosted
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awesome-php." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-alebcay%40awesome-shell.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> shell
+						</a>
+					</li><li rel="tooltip"  title="A curated list of amazingly awesome open source sysadmin resources." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-n1trux%40awesome-sysadmin.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> sysadmin
+						</a>
+					</li><li rel="tooltip"  title="💥 A curated list of Terminal frameworks, plugins & resources for CLI lovers." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-k4m4%40terminals-are-sexy.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> terminals-are-sexy
+						</a>
+					</li><li rel="tooltip"  title="A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-trimstray%40the-book-of-secret-knowledge.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> the-book-of-secret-knowledge
+						</a>
+					</li><li rel="tooltip"  title="🎨 A curated list of delightful VS Code packages and resources." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-viatsko%40awesome-vscode.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> vscode
+						</a>
+					</li><li rel="tooltip"  title=":pencil: A curated list of Web Performance Optimization. Everyone can contribute here!" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-davidsonfellipe%40awesome-wpo.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> wpo
+						</a>
+					</li><li rel="tooltip"  title="A collection of ZSH frameworks, plugins & themes inspired by the various awesome list collections out there." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-unixorn%40awesome-zsh-plugins.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> zsh-plugins
+						</a>
+					</li>
+
+
+				</ul>
+			</li>
+		</ul>
+
+
+	</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+
+
+<script type="text/javascript">
+    $(function () {
+        $("[rel='tooltip']").tooltip();
+    });
+</script>
+			
+		</nav>
+
+    <div class="container-fluid" >
+			<div class="row">
+				<!-- Main alert pop-ups -->
+        <div class="col-xl-12 mb-4">
+					
+
+
+
+
+<h2>List <a href="https://github.com/davidsonfellipe/awesome-wpo">davidsonfellipe/awesome-wpo</a> </h2>
+<h3>:pencil: A curated list of Web Performance Optimization. Everyone can contribute here! </h3>
+
+Elements : 118
+<br>
+<div class="table-responsive">
+  <table id="tabla" class="table table-hover table-condensed table-striped">
+
+    <thead>
+      <tr>
+        <th>Repo</th>
+        <th width="15%">Stars</th>
+        <th>Description</th>
+        <th width="15%">Last Updated</th>
+        <th>Language</th>
+        <th>Tags</th>
+
+
+
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td><a href="https://github.com/sindresorhus/awesome">sindresorhus/awesome</a></td>
+        <td>140376</td>
+        <td>😎 Awesome lists about all kinds of interesting topics</td>
+        <td>2020-09-04</td>
+        <td>None</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/awesome.html">
+            <font href="" class="topic-tag">awesome</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/awesome-list.html">
+            <font href="" class="topic-tag">awesome-list</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/lists.html">
+            <font href="" class="topic-tag">lists</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/resources.html">
+            <font href="" class="topic-tag">resources</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/unicorns.html">
+            <font href="" class="topic-tag">unicorns</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/wg/wrk">wg/wrk</a></td>
+        <td>26107</td>
+        <td>Modern HTTP benchmarking tool</td>
+        <td>2020-05-25</td>
+        <td>C</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/GoogleChrome/lighthouse">GoogleChrome/lighthouse</a></td>
+        <td>20643</td>
+        <td>Automated auditing, performance metrics, and best practices for the web.</td>
+        <td>2020-09-04</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/audit.html">
+            <font href="" class="topic-tag">audit</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/best-practices.html">
+            <font href="" class="topic-tag">best-practices</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/chrome-devtools.html">
+            <font href="" class="topic-tag">chrome-devtools</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/developer-tools.html">
+            <font href="" class="topic-tag">developer-tools</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/performance-analysis.html">
+            <font href="" class="topic-tag">performance-analysis</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/performance-metrics.html">
+            <font href="" class="topic-tag">performance-metrics</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pwa.html">
+            <font href="" class="topic-tag">pwa</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/web.html">
+            <font href="" class="topic-tag">web</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/lovell/sharp">lovell/sharp</a></td>
+        <td>17536</td>
+        <td>High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP and TIFF images. Uses the libvips library.</td>
+        <td>2020-09-02</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/crop.html">
+            <font href="" class="topic-tag">crop</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/exif.html">
+            <font href="" class="topic-tag">exif</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/icc.html">
+            <font href="" class="topic-tag">icc</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/image.html">
+            <font href="" class="topic-tag">image</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/image-processing.html">
+            <font href="" class="topic-tag">image-processing</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html">
+            <font href="" class="topic-tag">javascript</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jpeg.html">
+            <font href="" class="topic-tag">jpeg</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/libvips.html">
+            <font href="" class="topic-tag">libvips</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/nodejs.html">
+            <font href="" class="topic-tag">nodejs</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/overlay.html">
+            <font href="" class="topic-tag">overlay</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/performance.html">
+            <font href="" class="topic-tag">performance</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/png.html">
+            <font href="" class="topic-tag">png</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/resize.html">
+            <font href="" class="topic-tag">resize</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sharp.html">
+            <font href="" class="topic-tag">sharp</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/svg.html">
+            <font href="" class="topic-tag">svg</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/tiff.html">
+            <font href="" class="topic-tag">tiff</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/typical.html">
+            <font href="" class="topic-tag">typical</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webp.html">
+            <font href="" class="topic-tag">webp</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/svg/svgo">svg/svgo</a></td>
+        <td>14724</td>
+        <td>:tiger: Node.js tool for optimizing SVG files</td>
+        <td>2020-09-04</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cli.html">
+            <font href="" class="topic-tag">cli</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html">
+            <font href="" class="topic-tag">javascript</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/minification.html">
+            <font href="" class="topic-tag">minification</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/nodejs.html">
+            <font href="" class="topic-tag">nodejs</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/optimization.html">
+            <font href="" class="topic-tag">optimization</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/svg.html">
+            <font href="" class="topic-tag">svg</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/svgo.html">
+            <font href="" class="topic-tag">svgo</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/aFarkas/lazysizes">aFarkas/lazysizes</a></td>
+        <td>14054</td>
+        <td>High performance and SEO friendly lazy loader for images (responsive and normal), iframes and more, that detects any visibility changes triggered through user interaction, CSS or JavaScript without configuration.</td>
+        <td>2020-08-26</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html">
+            <font href="" class="topic-tag">javascript</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/lazy-evaluation.html">
+            <font href="" class="topic-tag">lazy-evaluation</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/lazyload.html">
+            <font href="" class="topic-tag">lazyload</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/lazysizes.html">
+            <font href="" class="topic-tag">lazysizes</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/performance.html">
+            <font href="" class="topic-tag">performance</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/responsive-images.html">
+            <font href="" class="topic-tag">responsive-images</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/mishoo/UglifyJS">mishoo/UglifyJS</a></td>
+        <td>10980</td>
+        <td> JavaScript parser / mangler / compressor / beautifier toolkit</td>
+        <td>2020-09-04</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/h4cc/awesome-elixir">h4cc/awesome-elixir</a></td>
+        <td>10197</td>
+        <td>A curated list of amazingly awesome Elixir and Erlang libraries, resources and shiny things. Updates:</td>
+        <td>2020-08-31</td>
+        <td>Elixir</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/webpack-contrib/webpack-bundle-analyzer">webpack-contrib/webpack-bundle-analyzer</a></td>
+        <td>10193</td>
+        <td>Webpack plugin and CLI utility that represents bundle content as convenient interactive zoomable treemap</td>
+        <td>2020-09-04</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/analyze.html">
+            <font href="" class="topic-tag">analyze</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/bundle.html">
+            <font href="" class="topic-tag">bundle</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/chart.html">
+            <font href="" class="topic-tag">chart</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/interactive.html">
+            <font href="" class="topic-tag">interactive</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/size.html">
+            <font href="" class="topic-tag">size</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/treemap.html">
+            <font href="" class="topic-tag">treemap</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webpack.html">
+            <font href="" class="topic-tag">webpack</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webpack-bundle-analyzer.html">
+            <font href="" class="topic-tag">webpack-bundle-analyzer</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/addyosmani/critical">addyosmani/critical</a></td>
+        <td>8600</td>
+        <td>Extract & Inline Critical-path CSS in HTML pages</td>
+        <td>2020-08-21</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/critical-css.html">
+            <font href="" class="topic-tag">critical-css</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/critical-path-css.html">
+            <font href="" class="topic-tag">critical-path-css</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/critical-path-styles.html">
+            <font href="" class="topic-tag">critical-path-styles</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/css.html">
+            <font href="" class="topic-tag">css</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/inline-css.html">
+            <font href="" class="topic-tag">inline-css</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/inline-styles.html">
+            <font href="" class="topic-tag">inline-styles</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/davidsonfellipe/awesome-wpo">davidsonfellipe/awesome-wpo</a></td>
+        <td>6961</td>
+        <td>:pencil: A curated list of Web Performance Optimization. Everyone can contribute here!</td>
+        <td>2020-08-04</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/awesome.html">
+            <font href="" class="topic-tag">awesome</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/awesome-list.html">
+            <font href="" class="topic-tag">awesome-list</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/list.html">
+            <font href="" class="topic-tag">list</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webperf.html">
+            <font href="" class="topic-tag">webperf</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webperformance.html">
+            <font href="" class="topic-tag">webperformance</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/mrdoob/stats.js">mrdoob/stats.js</a></td>
+        <td>6657</td>
+        <td>JavaScript Performance Monitor</td>
+        <td>2020-04-06</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/ApoorvSaxena/lozad.js">ApoorvSaxena/lozad.js</a></td>
+        <td>6369</td>
+        <td>🔥  Highly performant, light ~1kb and configurable lazy loader in pure JS with no dependencies for responsive images, iframes and more</td>
+        <td>2020-08-11</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/html.html">
+            <font href="" class="topic-tag">html</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/images.html">
+            <font href="" class="topic-tag">images</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html">
+            <font href="" class="topic-tag">javascript</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/lazy-loading.html">
+            <font href="" class="topic-tag">lazy-loading</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/lazyload.html">
+            <font href="" class="topic-tag">lazyload</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/performance.html">
+            <font href="" class="topic-tag">performance</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/aheckmann/gm">aheckmann/gm</a></td>
+        <td>6213</td>
+        <td>GraphicsMagick for node</td>
+        <td>2020-03-06</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/newsapps/beeswithmachineguns">newsapps/beeswithmachineguns</a></td>
+        <td>5906</td>
+        <td>A utility for arming (creating) many bees (micro EC2 instances) to attack (load test) targets (web applications).</td>
+        <td>2020-03-19</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/dieulot/instantclick">dieulot/instantclick</a></td>
+        <td>5288</td>
+        <td>InstantClick makes following links in your website instant.</td>
+        <td>2018-06-06</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/kangax/html-minifier">kangax/html-minifier</a></td>
+        <td>4269</td>
+        <td>Javascript-based HTML compressor/minifier (with Node.js support)</td>
+        <td>2020-08-30</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/imagemin/imagemin">imagemin/imagemin</a></td>
+        <td>4224</td>
+        <td>Minify images seamlessly</td>
+        <td>2020-08-11</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/buffer.html">
+            <font href="" class="topic-tag">buffer</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gif.html">
+            <font href="" class="topic-tag">gif</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/imagemin.html">
+            <font href="" class="topic-tag">imagemin</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jpg.html">
+            <font href="" class="topic-tag">jpg</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/minify.html">
+            <font href="" class="topic-tag">minify</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/nodejs.html">
+            <font href="" class="topic-tag">nodejs</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/optimization.html">
+            <font href="" class="topic-tag">optimization</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/png.html">
+            <font href="" class="topic-tag">png</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/svg.html">
+            <font href="" class="topic-tag">svg</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/mozilla/mozjpeg">mozilla/mozjpeg</a></td>
+        <td>4204</td>
+        <td>Improved JPEG encoder.</td>
+        <td>2020-09-01</td>
+        <td>C</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/image-optimization.html">
+            <font href="" class="topic-tag">image-optimization</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jpeg-encoder.html">
+            <font href="" class="topic-tag">jpeg-encoder</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/libjpeg.html">
+            <font href="" class="topic-tag">libjpeg</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mozjpeg.html">
+            <font href="" class="topic-tag">mozjpeg</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/web-performance.html">
+            <font href="" class="topic-tag">web-performance</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/siddharthkp/bundlesize">siddharthkp/bundlesize</a></td>
+        <td>3930</td>
+        <td>Keep your bundle size in check</td>
+        <td>2020-07-15</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/uncss/grunt-uncss">uncss/grunt-uncss</a></td>
+        <td>3875</td>
+        <td>:scissors: A grunt task for removing unused CSS from your projects.</td>
+        <td>2020-09-04</td>
+        <td>HTML</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/zeman/perfmap">zeman/perfmap</a></td>
+        <td>3810</td>
+        <td>Front-end performance heatmap bookmarklet.</td>
+        <td>2017-05-12</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jakubpawlowicz/clean-css">jakubpawlowicz/clean-css</a></td>
+        <td>3576</td>
+        <td>Fast and efficient CSS optimizer for node.js and the Web</td>
+        <td>2020-05-27</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/clean-css.html">
+            <font href="" class="topic-tag">clean-css</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/css.html">
+            <font href="" class="topic-tag">css</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/css-optimizations.html">
+            <font href="" class="topic-tag">css-optimizations</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/css-optimizer.html">
+            <font href="" class="topic-tag">css-optimizer</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/minification.html">
+            <font href="" class="topic-tag">minification</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/optimization.html">
+            <font href="" class="topic-tag">optimization</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jsdelivr/jsdelivr">jsdelivr/jsdelivr</a></td>
+        <td>3368</td>
+        <td>A free, fast, and reliable Open Source CDN for npm and GitHub</td>
+        <td>2020-08-25</td>
+        <td>None</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cdn.html">
+            <font href="" class="topic-tag">cdn</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/distribution.html">
+            <font href="" class="topic-tag">distribution</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/http.html">
+            <font href="" class="topic-tag">http</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/infrastructure.html">
+            <font href="" class="topic-tag">infrastructure</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html">
+            <font href="" class="topic-tag">javascript</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jsdelivr.html">
+            <font href="" class="topic-tag">jsdelivr</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/npm.html">
+            <font href="" class="topic-tag">npm</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/npm-cdn.html">
+            <font href="" class="topic-tag">npm-cdn</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/css/csso">css/csso</a></td>
+        <td>3134</td>
+        <td>CSS minifier with structural optimizations</td>
+        <td>2020-06-29</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/css.html">
+            <font href="" class="topic-tag">css</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/css-minifier.html">
+            <font href="" class="topic-tag">css-minifier</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/fast.html">
+            <font href="" class="topic-tag">fast</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/minifier.html">
+            <font href="" class="topic-tag">minifier</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/usage-data.html">
+            <font href="" class="topic-tag">usage-data</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/JamieMason/ImageOptim-CLI">JamieMason/ImageOptim-CLI</a></td>
+        <td>3049</td>
+        <td>Make optimisation of images part of your automated build process</td>
+        <td>2020-05-22</td>
+        <td>TypeScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/advpng.html">
+            <font href="" class="topic-tag">advpng</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/compress.html">
+            <font href="" class="topic-tag">compress</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gifsicle.html">
+            <font href="" class="topic-tag">gifsicle</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/image-optimisation.html">
+            <font href="" class="topic-tag">image-optimisation</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/imagealpha.html">
+            <font href="" class="topic-tag">imagealpha</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/imageoptim.html">
+            <font href="" class="topic-tag">imageoptim</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jpegmini.html">
+            <font href="" class="topic-tag">jpegmini</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jpegoptim.html">
+            <font href="" class="topic-tag">jpegoptim</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jpegtran.html">
+            <font href="" class="topic-tag">jpegtran</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/optimize.html">
+            <font href="" class="topic-tag">optimize</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/optipng.html">
+            <font href="" class="topic-tag">optipng</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/performance.html">
+            <font href="" class="topic-tag">performance</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pngcrush.html">
+            <font href="" class="topic-tag">pngcrush</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pngout.html">
+            <font href="" class="topic-tag">pngout</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pngquant.html">
+            <font href="" class="topic-tag">pngquant</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/site-speed.html">
+            <font href="" class="topic-tag">site-speed</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webperf.html">
+            <font href="" class="topic-tag">webperf</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/GoogleChromeLabs/psi">GoogleChromeLabs/psi</a></td>
+        <td>3004</td>
+        <td>PageSpeed Insights Reporting for Node</td>
+        <td>2020-09-03</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/danvk/source-map-explorer">danvk/source-map-explorer</a></td>
+        <td>2939</td>
+        <td>Analyze and debug space usage through source maps</td>
+        <td>2020-08-21</td>
+        <td>TypeScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html">
+            <font href="" class="topic-tag">javascript</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/minification.html">
+            <font href="" class="topic-tag">minification</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/source-map.html">
+            <font href="" class="topic-tag">source-map</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/treemap.html">
+            <font href="" class="topic-tag">treemap</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/yui/yuicompressor">yui/yuicompressor</a></td>
+        <td>2899</td>
+        <td>YUI Compressor</td>
+        <td>2020-05-08</td>
+        <td>Java</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/google/zopfli">google/zopfli</a></td>
+        <td>2819</td>
+        <td>Zopfli Compression Algorithm is a compression library programmed in C to perform very good, but slow, deflate or zlib compression.</td>
+        <td>2020-04-28</td>
+        <td>C++</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/google/tracing-framework">google/tracing-framework</a></td>
+        <td>2595</td>
+        <td>Web Tracing Framework libraries and extensions.</td>
+        <td>2019-12-10</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jorgebastida/glue">jorgebastida/glue</a></td>
+        <td>2563</td>
+        <td>Glue is a simple command line tool to generate CSS sprites</td>
+        <td>2018-07-24</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/django-compressor/django-compressor">django-compressor/django-compressor</a></td>
+        <td>2356</td>
+        <td>Compresses linked and inline javascript or CSS into a single cached file.</td>
+        <td>2020-08-22</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/macbre/phantomas">macbre/phantomas</a></td>
+        <td>2137</td>
+        <td>Headless Chromium-based web performance metrics collector and monitoring tool</td>
+        <td>2020-09-03</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/automation.html">
+            <font href="" class="topic-tag">automation</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/chromium.html">
+            <font href="" class="topic-tag">chromium</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/css.html">
+            <font href="" class="topic-tag">css</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/developer-tools.html">
+            <font href="" class="topic-tag">developer-tools</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/dom.html">
+            <font href="" class="topic-tag">dom</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/domquery.html">
+            <font href="" class="topic-tag">domquery</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/headless-chrome.html">
+            <font href="" class="topic-tag">headless-chrome</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html">
+            <font href="" class="topic-tag">javascript</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jquery.html">
+            <font href="" class="topic-tag">jquery</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/metrics.html">
+            <font href="" class="topic-tag">metrics</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/phantomas.html">
+            <font href="" class="topic-tag">phantomas</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/puppeteer.html">
+            <font href="" class="topic-tag">puppeteer</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webperf.html">
+            <font href="" class="topic-tag">webperf</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webperformance.html">
+            <font href="" class="topic-tag">webperformance</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/marcelduran/yslow">marcelduran/yslow</a></td>
+        <td>2125</td>
+        <td>YSlow analyzes web pages and suggests ways to improve their performance based on a set of rules for high performance web pages.</td>
+        <td>2020-08-05</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/paulirish/memory-stats.js">paulirish/memory-stats.js</a></td>
+        <td>2014</td>
+        <td>minimal monitor for JS Heap Size via performance.memory</td>
+        <td>2015-07-03</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/yandex/yandex-tank">yandex/yandex-tank</a></td>
+        <td>1903</td>
+        <td>Load and performance benchmark tool</td>
+        <td>2020-07-31</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/framework.html">
+            <font href="" class="topic-tag">framework</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/load-testing.html">
+            <font href="" class="topic-tag">load-testing</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/performance.html">
+            <font href="" class="topic-tag">performance</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/performance-test.html">
+            <font href="" class="topic-tag">performance-test</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/speedracer/speedracer">speedracer/speedracer</a></td>
+        <td>1858</td>
+        <td>Collect performance metrics for your library/application.</td>
+        <td>2019-01-29</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/chrome-headless.html">
+            <font href="" class="topic-tag">chrome-headless</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/performance.html">
+            <font href="" class="topic-tag">performance</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/performance-analysis.html">
+            <font href="" class="topic-tag">performance-analysis</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/performance-metrics.html">
+            <font href="" class="topic-tag">performance-metrics</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/performance-test.html">
+            <font href="" class="topic-tag">performance-test</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/performance-testing.html">
+            <font href="" class="topic-tag">performance-testing</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/runner.html">
+            <font href="" class="topic-tag">runner</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/sindresorhus/gulp-imagemin">sindresorhus/gulp-imagemin</a></td>
+        <td>1791</td>
+        <td>Minify PNG, JPEG, GIF and SVG images</td>
+        <td>2020-08-10</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/compress-images.html">
+            <font href="" class="topic-tag">compress-images</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gulp-plugin.html">
+            <font href="" class="topic-tag">gulp-plugin</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/imagemin.html">
+            <font href="" class="topic-tag">imagemin</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html">
+            <font href="" class="topic-tag">javascript</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/minify-images.html">
+            <font href="" class="topic-tag">minify-images</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/nodejs.html">
+            <font href="" class="topic-tag">nodejs</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/addyosmani/tmi">addyosmani/tmi</a></td>
+        <td>1656</td>
+        <td>TMI (Too Many Images) - discover your image weight on the web</td>
+        <td>2017-02-14</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/oyvindeh/ucss">oyvindeh/ucss</a></td>
+        <td>1629</td>
+        <td>Find unused and duplicate CSS</td>
+        <td>2017-01-26</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/addyosmani/timing.js">addyosmani/timing.js</a></td>
+        <td>1491</td>
+        <td>Navigation Timing API measurement helpers</td>
+        <td>2020-04-02</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/marcelduran/webpagetest-api">marcelduran/webpagetest-api</a></td>
+        <td>1490</td>
+        <td>WebPageTest API wrapper for NodeJS</td>
+        <td>2020-06-17</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/gruntjs/grunt-contrib-uglify">gruntjs/grunt-contrib-uglify</a></td>
+        <td>1468</td>
+        <td>Minify files with UglifyJS.</td>
+        <td>2020-07-16</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jazzband/django-pipeline">jazzband/django-pipeline</a></td>
+        <td>1373</td>
+        <td>Pipeline is an asset packaging library for Django.</td>
+        <td>2020-08-16</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/gruntjs/grunt-contrib-imagemin">gruntjs/grunt-contrib-imagemin</a></td>
+        <td>1222</td>
+        <td>Minify PNG, JPG, GIF and SVG images.</td>
+        <td>2020-04-01</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/RazrFalcon/svgcleaner">RazrFalcon/svgcleaner</a></td>
+        <td>1174</td>
+        <td>svgcleaner could help you to clean up your SVG files from the unnecessary data.</td>
+        <td>2020-01-30</td>
+        <td>Rust</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cleaner.html">
+            <font href="" class="topic-tag">cleaner</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rust.html">
+            <font href="" class="topic-tag">rust</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/svg.html">
+            <font href="" class="topic-tag">svg</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/webpack-contrib/compression-webpack-plugin">webpack-contrib/compression-webpack-plugin</a></td>
+        <td>1162</td>
+        <td>Prepare compressed versions of assets to serve them with Content-Encoding</td>
+        <td>2020-09-02</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webpack-plugin.html">
+            <font href="" class="topic-tag">webpack-plugin</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/twolfson/grunt-spritesmith">twolfson/grunt-spritesmith</a></td>
+        <td>1155</td>
+        <td>Grunt task for converting a set of images into a spritesheet and corresponding CSS variables</td>
+        <td>2019-09-13</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/stoyan/cssshrink">stoyan/cssshrink</a></td>
+        <td>1074</td>
+        <td>CSS minifier</td>
+        <td>2017-09-09</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/tjko/jpegoptim">tjko/jpegoptim</a></td>
+        <td>972</td>
+        <td>jpegoptim - utility to optimize/compress JPEG files</td>
+        <td>2020-05-21</td>
+        <td>C</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/ben-eb/gulp-uncss">ben-eb/gulp-uncss</a></td>
+        <td>969</td>
+        <td>DEPRECATED. Remove unused CSS selectors.</td>
+        <td>2017-07-08</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/micmro/performance-bookmarklet">micmro/performance-bookmarklet</a></td>
+        <td>969</td>
+        <td>Performance-Bookmarklet helps to analyze the current page through the Resource Timing API, Navigation Timing API and User-Timing - requests by type, domain, load times, marks and more. Sort of a light live WebPageTest.</td>
+        <td>2020-07-31</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/analyzer.html">
+            <font href="" class="topic-tag">analyzer</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/bookmarklet.html">
+            <font href="" class="topic-tag">bookmarklet</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/browser-extension.html">
+            <font href="" class="topic-tag">browser-extension</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/navigation-timing.html">
+            <font href="" class="topic-tag">navigation-timing</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/performance.html">
+            <font href="" class="topic-tag">performance</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/performance-metrics.html">
+            <font href="" class="topic-tag">performance-metrics</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/requests.html">
+            <font href="" class="topic-tag">requests</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/resource-timing.html">
+            <font href="" class="topic-tag">resource-timing</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/user-timing.html">
+            <font href="" class="topic-tag">user-timing</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/waterfall.html">
+            <font href="" class="topic-tag">waterfall</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webperf.html">
+            <font href="" class="topic-tag">webperf</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/vvo/lazyload">vvo/lazyload</a></td>
+        <td>940</td>
+        <td>:bullettrain_front: Lazyload images, iframes, widgets with a standalone JavaScript lazyloader</td>
+        <td>2020-05-26</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jamesgpearce/confess">jamesgpearce/confess</a></td>
+        <td>891</td>
+        <td>Uses PhantomJS to headlessly analyze web pages and generate manifests.</td>
+        <td>2016-08-03</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/tkadlec/grunt-perfbudget">tkadlec/grunt-perfbudget</a></td>
+        <td>856</td>
+        <td>Grunt task for performance budgeting.</td>
+        <td>2020-06-22</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/gruntjs/grunt-contrib-concat">gruntjs/grunt-contrib-concat</a></td>
+        <td>810</td>
+        <td>Concatenate files.</td>
+        <td>2018-03-30</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/gruntjs/grunt-contrib-cssmin">gruntjs/grunt-contrib-cssmin</a></td>
+        <td>792</td>
+        <td>Compress CSS files.</td>
+        <td>2020-07-16</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/httperf/httperf">httperf/httperf</a></td>
+        <td>785</td>
+        <td>The httperf HTTP load generator</td>
+        <td>2020-08-02</td>
+        <td>C</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/iamakulov/awesome-webpack-perf">iamakulov/awesome-webpack-perf</a></td>
+        <td>748</td>
+        <td>A curated list of webpack tools for web performance</td>
+        <td>2020-07-15</td>
+        <td>None</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jonschlinkert/gulp-htmlmin">jonschlinkert/gulp-htmlmin</a></td>
+        <td>713</td>
+        <td>Minify HTML</td>
+        <td>2019-11-08</td>
+        <td>HTML</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gulp.html">
+            <font href="" class="topic-tag">gulp</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gulpplugin.html">
+            <font href="" class="topic-tag">gulpplugin</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/html.html">
+            <font href="" class="topic-tag">html</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/html-minifier.html">
+            <font href="" class="topic-tag">html-minifier</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/min.html">
+            <font href="" class="topic-tag">min</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/minifier.html">
+            <font href="" class="topic-tag">minifier</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/minify.html">
+            <font href="" class="topic-tag">minify</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/plugin.html">
+            <font href="" class="topic-tag">plugin</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/JayXon/Leanify">JayXon/Leanify</a></td>
+        <td>668</td>
+        <td>lightweight lossless file minifier/optimizer</td>
+        <td>2020-08-01</td>
+        <td>C</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/compression.html">
+            <font href="" class="topic-tag">compression</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/data-uri.html">
+            <font href="" class="topic-tag">data-uri</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/epub.html">
+            <font href="" class="topic-tag">epub</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/fb2.html">
+            <font href="" class="topic-tag">fb2</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gzip.html">
+            <font href="" class="topic-tag">gzip</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ico.html">
+            <font href="" class="topic-tag">ico</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jpeg.html">
+            <font href="" class="topic-tag">jpeg</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/lossless.html">
+            <font href="" class="topic-tag">lossless</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/minifier.html">
+            <font href="" class="topic-tag">minifier</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/minify.html">
+            <font href="" class="topic-tag">minify</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mozjpeg.html">
+            <font href="" class="topic-tag">mozjpeg</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/optimizer.html">
+            <font href="" class="topic-tag">optimizer</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/png.html">
+            <font href="" class="topic-tag">png</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/recompress.html">
+            <font href="" class="topic-tag">recompress</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/svg.html">
+            <font href="" class="topic-tag">svg</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/swf.html">
+            <font href="" class="topic-tag">swf</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/tar.html">
+            <font href="" class="topic-tag">tar</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/xml.html">
+            <font href="" class="topic-tag">xml</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/zip.html">
+            <font href="" class="topic-tag">zip</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/zopfli.html">
+            <font href="" class="topic-tag">zopfli</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/tedious/JShrink">tedious/JShrink</a></td>
+        <td>624</td>
+        <td>Javascript Minifier built in PHP </td>
+        <td>2020-08-04</td>
+        <td>PHP</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jakesgordon/sprite-factory">jakesgordon/sprite-factory</a></td>
+        <td>614</td>
+        <td>Automatic CSS Sprite Generator</td>
+        <td>2016-08-16</td>
+        <td>Ruby</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/mdo/css-perf">mdo/css-perf</a></td>
+        <td>583</td>
+        <td>**Archived.** Derping around with measuring CSS performance.</td>
+        <td>2017-06-22</td>
+        <td>HTML</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/madrobby/dom-monster">madrobby/dom-monster</a></td>
+        <td>556</td>
+        <td>None</td>
+        <td>2013-11-29</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/logicalparadox/matcha">logicalparadox/matcha</a></td>
+        <td>538</td>
+        <td>A caffeine driven, simplistic approach to benchmarking.</td>
+        <td>2020-09-04</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/shootaroo/jit-grunt">shootaroo/jit-grunt</a></td>
+        <td>510</td>
+        <td>JIT(Just In Time) plugin loader for Grunt.</td>
+        <td>2018-05-11</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/cobrateam/django-htmlmin">cobrateam/django-htmlmin</a></td>
+        <td>490</td>
+        <td>HTML minifier for Python frameworks (not only Django, despite the name).</td>
+        <td>2020-07-17</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/JamieMason/grunt-imageoptim">JamieMason/grunt-imageoptim</a></td>
+        <td>486</td>
+        <td>Make ImageOptim, ImageAlpha and JPEGmini part of your automated build process</td>
+        <td>2019-08-04</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/sprity/sprity">sprity/sprity</a></td>
+        <td>460</td>
+        <td>A image sprite generator</td>
+        <td>2020-07-15</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/sindresorhus/grunt-svgmin">sindresorhus/grunt-svgmin</a></td>
+        <td>437</td>
+        <td>Minify SVG</td>
+        <td>2020-07-31</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/gruntjs/grunt-contrib-htmlmin">gruntjs/grunt-contrib-htmlmin</a></td>
+        <td>430</td>
+        <td>Minify HTML.</td>
+        <td>2020-07-16</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/Polymer/tools">Polymer/tools</a></td>
+        <td>378</td>
+        <td>Polymer Tools Monorepo</td>
+        <td>2020-09-04</td>
+        <td>TypeScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/shakyShane/gulp-svg-sprites">shakyShane/gulp-svg-sprites</a></td>
+        <td>336</td>
+        <td>Create SVG sprites or compile to <symbols></td>
+        <td>2018-12-21</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/stefanjudis/grunt-phantomas">stefanjudis/grunt-phantomas</a></td>
+        <td>291</td>
+        <td>Grunt plugin wrapping phantomas to measure frontend performance</td>
+        <td>2017-01-09</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/igrigorik/webp-detect">igrigorik/webp-detect</a></td>
+        <td>235</td>
+        <td>WebP with Accept negotiation</td>
+        <td>2018-10-05</td>
+        <td>C++</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/sindresorhus/gulp-webp">sindresorhus/gulp-webp</a></td>
+        <td>182</td>
+        <td>Convert images to WebP</td>
+        <td>2019-10-04</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/convert-images.html">
+            <font href="" class="topic-tag">convert-images</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gulp-plugin.html">
+            <font href="" class="topic-tag">gulp-plugin</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/image-processing.html">
+            <font href="" class="topic-tag">image-processing</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html">
+            <font href="" class="topic-tag">javascript</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/nodejs.html">
+            <font href="" class="topic-tag">nodejs</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webp.html">
+            <font href="" class="topic-tag">webp</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/igrigorik/autoperf">igrigorik/autoperf</a></td>
+        <td>181</td>
+        <td>Ruby driver for httperf - automated load and performance testing</td>
+        <td>2014-10-15</td>
+        <td>Ruby</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/broofa/jslitmus">broofa/jslitmus</a></td>
+        <td>168</td>
+        <td>Simple, easy, javascript benchmark testing</td>
+        <td>2010-08-27</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/Swaagie/minimize">Swaagie/minimize</a></td>
+        <td>147</td>
+        <td>Minimize HTML</td>
+        <td>2020-05-23</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/dom.html">
+            <font href="" class="topic-tag">dom</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/html-minifier.html">
+            <font href="" class="topic-tag">html-minifier</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/html-parser.html">
+            <font href="" class="topic-tag">html-parser</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html">
+            <font href="" class="topic-tag">javascript</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/zenorocha/browser-calories">zenorocha/browser-calories</a></td>
+        <td>127</td>
+        <td>:cake: The easiest way to measure your performance budget</td>
+        <td>2016-05-30</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/deanhume/html-minifier">deanhume/html-minifier</a></td>
+        <td>122</td>
+        <td>A simple command line tool to minify your HTML, Razor views & Web Forms views</td>
+        <td>2019-10-16</td>
+        <td>C#</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/c-sharp.html">
+            <font href="" class="topic-tag">c-sharp</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/html-minifier.html">
+            <font href="" class="topic-tag">html-minifier</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/knockout.html">
+            <font href="" class="topic-tag">knockout</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pagespeed.html">
+            <font href="" class="topic-tag">pagespeed</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/razor-views.html">
+            <font href="" class="topic-tag">razor-views</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webperformance.html">
+            <font href="" class="topic-tag">webperformance</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/somerandomdude/grunt-webp">somerandomdude/grunt-webp</a></td>
+        <td>119</td>
+        <td>Convert your images to WebP format.</td>
+        <td>2016-02-21</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/sindresorhus/gulp-vulcanize">sindresorhus/gulp-vulcanize</a></td>
+        <td>101</td>
+        <td>Concatenate a set of Web Components into one file</td>
+        <td>2018-11-08</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/concatenate.html">
+            <font href="" class="topic-tag">concatenate</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/deprecated.html">
+            <font href="" class="topic-tag">deprecated</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gulp-plugin.html">
+            <font href="" class="topic-tag">gulp-plugin</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html">
+            <font href="" class="topic-tag">javascript</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/nodejs.html">
+            <font href="" class="topic-tag">nodejs</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/polymer.html">
+            <font href="" class="topic-tag">polymer</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/vulcanize.html">
+            <font href="" class="topic-tag">vulcanize</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/web-components.html">
+            <font href="" class="topic-tag">web-components</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/keepfast/keepfast">keepfast/keepfast</a></td>
+        <td>99</td>
+        <td>:horse_racing: A model driven framework for the evaluation web page performance</td>
+        <td>2018-03-23</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/web-performance.html">
+            <font href="" class="topic-tag">web-performance</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/andyshora/grunt-yslow">andyshora/grunt-yslow</a></td>
+        <td>92</td>
+        <td>Test web page performance using the YSlow library invoked by a grunt task</td>
+        <td>2017-04-17</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/heldr/grunt-smushit">heldr/grunt-smushit</a></td>
+        <td>86</td>
+        <td>Grunt task to optimize images using reSmush.it</td>
+        <td>2016-03-27</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/sindresorhus/gulp-google-cdn">sindresorhus/gulp-google-cdn</a></td>
+        <td>79</td>
+        <td>Replaces script references with Google CDN ones</td>
+        <td>2019-10-04</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/google-cdn.html">
+            <font href="" class="topic-tag">google-cdn</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gulp-plugin.html">
+            <font href="" class="topic-tag">gulp-plugin</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html">
+            <font href="" class="topic-tag">javascript</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/nodejs.html">
+            <font href="" class="topic-tag">nodejs</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/stoyan/yuicompressor">stoyan/yuicompressor</a></td>
+        <td>76</td>
+        <td>YUI Compressor</td>
+        <td>2011-09-08</td>
+        <td>Java</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/wessman/defer.js">wessman/defer.js</a></td>
+        <td>68</td>
+        <td>Async Everything: Make the meat of your pages load faster with this JS morsel</td>
+        <td>2013-04-06</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript-async.html">
+            <font href="" class="topic-tag">javascript-async</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/mre/PHPench">mre/PHPench</a></td>
+        <td>48</td>
+        <td>Realtime benchmarks for PHP code</td>
+        <td>2019-10-21</td>
+        <td>PHP</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/algorithms.html">
+            <font href="" class="topic-tag">algorithms</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/benchmark.html">
+            <font href="" class="topic-tag">benchmark</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/comparison.html">
+            <font href="" class="topic-tag">comparison</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/framework.html">
+            <font href="" class="topic-tag">framework</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gnuplot.html">
+            <font href="" class="topic-tag">gnuplot</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/php.html">
+            <font href="" class="topic-tag">php</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/profiling.html">
+            <font href="" class="topic-tag">profiling</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/realtime.html">
+            <font href="" class="topic-tag">realtime</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/realtime-metrics.html">
+            <font href="" class="topic-tag">realtime-metrics</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jney/grunt-htmlcompressor">jney/grunt-htmlcompressor</a></td>
+        <td>36</td>
+        <td>grunt plugin for html compression, using htmlcompressor.jar</td>
+        <td>2013-12-16</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/sideroad/grunt-wpt">sideroad/grunt-wpt</a></td>
+        <td>36</td>
+        <td>Grunt WebPageTest plugin for measure with time</td>
+        <td>2018-11-17</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/assetgraph/assetgraph-sprite">assetgraph/assetgraph-sprite</a></td>
+        <td>35</td>
+        <td>AssetGraph plugin for creating sprites from background images</td>
+        <td>2020-08-25</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/stereobooster/html_press">stereobooster/html_press</a></td>
+        <td>35</td>
+        <td> 🚨 [deprecated] Ruby gem for compressing html</td>
+        <td>2016-04-13</td>
+        <td>Ruby</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/heldr/gulp-smushit">heldr/gulp-smushit</a></td>
+        <td>33</td>
+        <td>Gulp plugin to optimize PNG and JPG using reSmush.it.</td>
+        <td>2018-03-08</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/JohnCashmore/grunt-cssshrink">JohnCashmore/grunt-cssshrink</a></td>
+        <td>26</td>
+        <td>A grunt wrapper for CSS Shrink</td>
+        <td>2016-02-20</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/koajs/html-minifier">koajs/html-minifier</a></td>
+        <td>26</td>
+        <td>minify HTML responses like some crazy guy</td>
+        <td>2020-07-21</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jmervine/bench">jmervine/bench</a></td>
+        <td>25</td>
+        <td>Benchmark a web page and display results with a pretty UI.</td>
+        <td>2015-09-20</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jsonmaur/cdnex">jsonmaur/cdnex</a></td>
+        <td>25</td>
+        <td>[DEPRECATED] Prepend cdn urls to your html and css</td>
+        <td>2018-02-24</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jmervine/httperfjs">jmervine/httperfjs</a></td>
+        <td>24</td>
+        <td>NodeJS port of HTTPerf.rb</td>
+        <td>2014-02-28</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/torrottum/gulp-cssshrink">torrottum/gulp-cssshrink</a></td>
+        <td>22</td>
+        <td>Shrinks CSS files using cssshrink</td>
+        <td>2016-03-18</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/pitomba/spriter">pitomba/spriter</a></td>
+        <td>18</td>
+        <td>Pythonic dynamic sprite generator</td>
+        <td>2014-10-10</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/aslansky/gulp-sprite">aslansky/gulp-sprite</a></td>
+        <td>15</td>
+        <td>gulp task for creating image sprites and the corresponding stylesheets</td>
+        <td>2015-11-20</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jmervine/httperfrb">jmervine/httperfrb</a></td>
+        <td>13</td>
+        <td>Simple interface for calling httperf via ruby.</td>
+        <td>2020-02-29</td>
+        <td>Ruby</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/stoyan/csscolormin">stoyan/csscolormin</a></td>
+        <td>12</td>
+        <td>CSS color minification module</td>
+        <td>2019-02-05</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jacobbednarz/php-bench">jacobbednarz/php-bench</a></td>
+        <td>11</td>
+        <td>Benchmarking PHP, the easy way</td>
+        <td>2015-02-02</td>
+        <td>PHP</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/JafarAkhondali/Tapnesh">JafarAkhondali/Tapnesh</a></td>
+        <td>11</td>
+        <td>CLI bash script to optimize images in parallel easily and efficiently!</td>
+        <td>2020-07-21</td>
+        <td>Shell</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/image.html">
+            <font href="" class="topic-tag">image</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/image-optimization.html">
+            <font href="" class="topic-tag">image-optimization</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/optimization.html">
+            <font href="" class="topic-tag">optimization</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/seo.html">
+            <font href="" class="topic-tag">seo</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/seotools.html">
+            <font href="" class="topic-tag">seotools</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jmervine/httperfpy">jmervine/httperfpy</a></td>
+        <td>11</td>
+        <td>Python port of httperfrb</td>
+        <td>2014-12-17</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/stereobooster/html_minifier">stereobooster/html_minifier</a></td>
+        <td>10</td>
+        <td>Ruby wrapper for kangax html-minifier</td>
+        <td>2016-06-01</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jmervine/node-yslowjs">jmervine/node-yslowjs</a></td>
+        <td>9</td>
+        <td>Node.js wrapper for phantomjs yslow.js (see: http://yslow.org/phantomjs/).</td>
+        <td>2016-02-20</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/stoyan/prettyugly">stoyan/prettyugly</a></td>
+        <td>7</td>
+        <td>Prettify or uglify CSS code</td>
+        <td>2014-06-24</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jmervine/gohttperf">jmervine/gohttperf</a></td>
+        <td>5</td>
+        <td>Go Port of HTTPerf.rb - https://github.com/jmervine/httperfrb</td>
+        <td>2015-07-11</td>
+        <td>Go</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jmervine/php-httperf">jmervine/php-httperf</a></td>
+        <td>5</td>
+        <td>Simple PHP Port of HTTPerf.rb [https://github.com/jmervine/httperfrb]</td>
+        <td>2014-04-28</td>
+        <td>PHP</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/pajaydev/lasso-analyzer">pajaydev/lasso-analyzer</a></td>
+        <td>3</td>
+        <td> 📊 Analyzing bundles created by Lasso js.</td>
+        <td>2020-09-02</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/bundle-analyzer.html">
+            <font href="" class="topic-tag">bundle-analyzer</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/lasso.html">
+            <font href="" class="topic-tag">lasso</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/lasso-bundle-analyzer.html">
+            <font href="" class="topic-tag">lasso-bundle-analyzer</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/lasso-marko.html">
+            <font href="" class="topic-tag">lasso-marko</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/lasso-plugin.html">
+            <font href="" class="topic-tag">lasso-plugin</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/kajyr/SvgToCSS">kajyr/SvgToCSS</a></td>
+        <td>2</td>
+        <td>renders SVG in CSS file using data URIs or base64</td>
+        <td>2016-05-23</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/kogarashisan/PerfTests">kogarashisan/PerfTests</a></td>
+        <td>1</td>
+        <td>JavaScript inheritance performance tests done right</td>
+        <td>2015-05-02</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+
+
+
+				</div>
+
+
+			</div>
+			<!-- /.row -->
+
+		</div>
+		<!-- /.container -->
+
+		<footer>
+	<div class="container-fluid">
+    <div class="text-center">
+      <p>Awesome List management.
+    </div>
+	</div>
+
+</footer>
+
+	</body>
+
+</html>

@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+{% block tabla_resultados %}
+{% set BASE_URL= "https://jaimevalero.github.io/managing-awesome-lists" %}
+
+<h2 >Topic:  <font class = "topic-tag"> {{data['list']}}</font> </h2>
+
+<div class="alert alert-info">
+	<i class="fa fa-eye" aria-hidden="true"></i>
+  This a generated list, with all the repos from the awesome lists, containing the topic
+  <strong>{{data['list']}}</strong>.
+</div>
+
+
+
+<br>
+<br>
+ Elements : {{data['repos']|length}}
+ <br>
+    <div class="table-responsive">
+      <table id="tabla"     class="table table-hover table-condensed table-striped">
+
+        <thead>
+          <tr>
+            <th>Repo</th>
+            <th width="15%">Stars</th>
+            <th>Description</th>
+            <th width="15%">Created</th>
+            <th>Language</th>
+            <th>Tags</th>
+
+
+
+          </tr>
+        </thead>
+        <tbody>
+					{% set anterior = ""  %}
+          {% for repo in data['repos'] |sort(attribute='stargazers_count',reverse=true)  %}
+					{% if anterior != repo.full_name %}
+					{% set anterior = repo.full_name  %}
+
+            <tr>
+              <td><a href="https://github.com/{{repo.full_name}}">{{repo.full_name}}</a></td>
+              <td>{{repo.stargazers_count}}</td>
+              <td>{{repo.description}}</td>
+              <td>{{repo.created_at[0:10]}}</td>
+              <td>{{repo.language}}</td>
+              <td>
+                {%for tag in repo.topics %}
+                <a href="{{BASE_URL}}/var/topics/{{tag}}.html" >
+                  <font href= "" class = "topic-tag">{{tag}}</font>
+                </a>
+                {% endfor %}
+              </td>
+            </tr>
+					{% endif %}
+
+          {% endfor	%}
+        </tbody>
+      </table>
+		</div>
+
+
+
+{% endblock %}
