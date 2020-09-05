@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 # Order an awesome list by number stars.
 #
 # This scripts extracts the number of stars from each repo from a given awesome list, and order repos by the number of start
@@ -10,7 +10,8 @@ source ./.credentials
 # In the credentials file :
 #CREDENTIALS="replace-for-your-github-user:replace-for-your-github-password"
 
-
+source ./lib-actions.sh
+Log "Inicio get_list_details"
 
 Create_Info_Render( )
 {
@@ -65,11 +66,13 @@ Download_Readme( )
 
   if [[ ! -s ${CACHE_README_FILE} ]]
   then
+    Refresh_Credentials  ;     echo $CREDENTIALS
     README_NAME=`curl -L --user  "$CREDENTIALS" -s "https:/github.com/${URI}" | grep --colour -o -i /readme.md | head -1 | cut -d\/ -f2  `
 
     if [[ ! -f ${RAW_CACHE_README_FILE} ]]
     then
       Log Download_Readme README_NAME=${README_NAME}= ...
+      Refresh_Credentials  ;     echo $CREDENTIALS
       curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/master/${README_NAME}" > ${RAW_CACHE_README_FILE}
     fi
     Log Raw readme $URI` ls -latr ${RAW_CACHE_README_FILE} `
@@ -153,7 +156,7 @@ https://github.com/MunGell/awesome-for-beginners
 
 Main( )
 {
-  source ./lib-actions.sh
+source ./lib-actions.sh
 Log "Iniciando"
 mkdir .cache 2>/dev/null
 

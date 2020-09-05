@@ -18,8 +18,18 @@ Log( )
   ALL_ARGUMENTS="$*"
   echo "[${THIS_SCRIPT}] [`date +'%Y_%m_%d %H:%M:%S'`] [$$] [${FUNCNAME[1]}] ${ALL_ARGUMENTS}" >>  $LOG_FILE
 }
+Log Loading library
 
 source .credentials
+
+Refresh_Credentials( )
+{
+  RANDOM_CRED=`echo $((1 + RANDOM % 3))`
+  [ $RANDOM_CRED -eq 1 ] && CREDENTIALS="$CRED_JAIMEVALERO"
+  [ $RANDOM_CRED -eq 2 ] && CREDENTIALS="$CRED_EPGTID"
+  [ $RANDOM_CRED -eq 3 ] && CREDENTIALS="$CRED_HERO"
+
+}
 
 Download_Api_Repo( )
 {
@@ -30,8 +40,8 @@ Download_Api_Repo( )
   #Log Download_Api_Repo $URI $OUTPUT_FILE ${API_REPO_JSON_FILE}
 
 
-  cat $KK | grep $AA | wc -l < /dev/null
-
+  #cat $KK | grep $AA | wc -l < /dev/null
+  [[  ! -f ".cache/api-${OUTPUT_FILE}.json" ]]  && Refresh_Credentials  &&    echo $CREDENTIALS
   [[  ! -f ".cache/api-${OUTPUT_FILE}.json" ]]  && curl --user  "$CREDENTIALS"  -H "Accept: application/vnd.github.mercy-preview+json"  -s  -L -k "https://api.github.com/repos/$URI" | jq -c  "
 {
  full_name,

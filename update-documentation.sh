@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 # Generate doc for the readme.md file
 
