@@ -1,5 +1,7 @@
 <h1 > Awesome List Viewer </h1>
 
+![Aite](https://github.com/jaimevalero/managing-awesome-lists/blob/master/img/readme-animated.png)
+
 https://jaimevalero.github.io/managing-awesome-lists
 
 Discover new and amazing resources in the awesome lists!
