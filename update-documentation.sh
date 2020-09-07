@@ -15,7 +15,6 @@ source ./lib-actions.sh
 Render_Index( )
 {
   RESULTS=50000000
-
   > $INDEX_JSON_DATA.2
   echo "Generando el json para el index"
   for i in ` find .cache/ -name 'api-*' | head -${RESULTS}`
@@ -36,13 +35,11 @@ Render_Index( )
   grep full_name  ${INDEX_JSON_DATA}.2 | wc -l
 
   cat ${INDEX_JSON_DATA}.2  | jq -c .  |   jq   --slurp '.'  | jq -c .  | sed -e 's@^@ { "list" :  { "full_name" : "This list contains every mentioned repo in every awesome list." , "description" : "This list contains all the repos mentioned on all the awesome list."} ,  "repos" :  @g'  | sed -e 's@$@ }@g'     > ${INDEX_JSON_DATA}
-
-
   rm -f  ${INDEX_JSON_DATA}.2
+  
   echo "Generado json  ${INDEX_JSON_DATA} con:" `cat  ${INDEX_JSON_DATA} | grep --colour  repos | jq ".repos|length"` repos
   echo "./generate_render_template.py  -t template-index.html --data ${INDEX_JSON_DATA}"
   ./generate_render_template.py  -t template-index.html --data ${INDEX_JSON_DATA} > index.html
-
 }
 
 Generate_Readme_Json_Data_Inner( )
