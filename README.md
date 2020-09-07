@@ -1,5 +1,6 @@
+<img src='https://bettercodehub.com/edge/badge/jaimevalero/managing-awesome-lists?branch=master'>
 <h1 > Awesome List Viewer </h1>
-[![BCH compliance](https://bettercodehub.com/edge/badge/jaimevalero/managing-awesome-lists?branch=master)](https://bettercodehub.com/)
+
 ![Aite](https://github.com/jaimevalero/managing-awesome-lists/blob/master/img/readme-animated.png)
 
 https://jaimevalero.github.io/managing-awesome-lists
