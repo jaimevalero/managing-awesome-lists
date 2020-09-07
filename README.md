@@ -1,4 +1,4 @@
-<img style="float: right; src='https://bettercodehub.com/edge/badge/jaimevalero/managing-awesome-lists?branch=master'>
+<img style="float: right;" src='https://bettercodehub.com/edge/badge/jaimevalero/managing-awesome-lists?branch=master'>
 <h1 > Awesome List Viewer </h1>
 
 ![Aite](https://github.com/jaimevalero/managing-awesome-lists/blob/master/img/readme-animated.png)
