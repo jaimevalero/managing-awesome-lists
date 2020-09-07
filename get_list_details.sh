@@ -71,29 +71,17 @@ Download_Readme( )
 
     if [[ ! -f ${RAW_CACHE_README_FILE} ]]
     then
-      Log Download_Readme README_NAME=${README_NAME}= ...
       Refresh_Credentials  ;     echo $CREDENTIALS
       curl -L --user  "$CREDENTIALS" -s "https://raw.githubusercontent.com/${URI}/master/${README_NAME}" > ${RAW_CACHE_README_FILE}
     fi
     Log Raw readme $URI` ls -latr ${RAW_CACHE_README_FILE} `
     ls -latr ${RAW_CACHE_README_FILE}
-
-
-    cat ${RAW_CACHE_README_FILE} | \
-      egrep -E  -o  'https://github.com/.*/.*'      | \
-      tr \" \  | \
-      sed -e 's@[>#"\) ]?@ @g' | \
-      tr '\#' ' '      |   \
-      awk '{print $1}' |   \
-      cut -d\/ -f 4-5  |   \
-      tr -d '\)'       |   \
-      tr -d ':'        |   \
-      tr -d ','        |   \
-      head -${RESULTS} |   \
-      sort -du  > ${CACHE_README_FILE}
+    cat ${RAW_CACHE_README_FILE} | egrep -E  -o  'https://github.com/.*/.*'    |  tr \" \  | \
+      sed -e 's@[>#"\) ]?@ @g' | tr '\#' ' '      |   awk '{print $1}' |   \
+      cut -d\/ -f 4-5  |  tr -d '\)'       |   tr -d ':'        |   tr -d ','        |   \
+      head -${RESULTS} |  sort -du  > ${CACHE_README_FILE}
   fi
   ls -latr ${CACHE_README_FILE}
-  Log ` ls -latr ${CACHE_README_FILE} `
 }
 
 Generate_Contents_Single_List( )
