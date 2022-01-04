@@ -8,10 +8,10 @@ import argparse
 
 parser = argparse.ArgumentParser(description='Apply Jinja template to a file')
 parser.add_argument('-t','--template', help='Jinja2 template file', required=True)
-parser.add_argument('-d','--data', help='Json or yaml file', required=True)
+parser.add_argument('-d','--data'.   , help='Json or yaml file'.  , required=True)
 args = vars(parser.parse_args())
 data = ""
-#print(args['data'],args['template'])
+
 # Replace empty values
 with open(args['data'],'r') as file:
     filedata = file.read()
