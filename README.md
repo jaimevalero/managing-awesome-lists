@@ -1,6 +1,4 @@
-./generate_render_template.py  -t template-readme.html --data /tmp/kk-readme.json
-
-<h3 > Awesome List Viewer </h3>
+<h2 > Awesome List Viewer </h2>
 
 https://jaimevalero.github.io/managing-awesome-lists
 
@@ -80,3 +78,9 @@ Lists : 62
 
 
 ----
+
+
+` bash `
+./generate_render_template.py  -t template-readme.html --data /tmp/kk-readme.json
+` `
+
