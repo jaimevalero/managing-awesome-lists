@@ -80,7 +80,7 @@ Lists : 62
 ----
 
 
-` bash `
+``` bash
 ./generate_render_template.py  -t template-readme.html --data /tmp/kk-readme.json
-` `
+```
 
