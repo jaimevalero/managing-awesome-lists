@@ -1,0 +1,3431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Awesome list viewer</title>
+		
+
+<!-- Meta Information -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Awesome list manager. Discover best resources from github.">
+<meta name="author" content="Jaime Valero">
+<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
+
+<!-- CSS Information -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- bootstrap theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Font-awesome -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- bootstrap4 -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+
+<!-- bootstrap4 -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+
+<style type="text/css">
+  * {
+    font-size: 16px;
+  }
+
+  .topic-tag {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    margin: 0 0.5em 0.5em 0;
+    white-space: nowrap;
+    background-color: #f1f8ff;
+    border-radius: 3px;
+    font-color: #0366d6;
+    color: #0366d6;
+  }
+</style>
+		<!-- Scripts: JQuery & Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+</script>
+
+<!-- bootstrap4 -->
+<script src="https://code.jquery.com/jquery-3.3.1.js">
+</script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
+</script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
+</script>
+
+<script type="text/javascript" language="JavaScript">
+  $(document).ready(function() {
+    $('#tabla').DataTable({
+      "order": [
+        [1, "desc"]
+      ]
+    });
+  });
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-146303223-1');
+</script>
+	</head>
+
+	<body>
+    <nav class="navbar navbar-inverse" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;">
+			
+				
+
+<div class="container-fluid" >
+	<!-- Brand and toggle get grouped for better mobile display -->
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li >
+				<a href="https://jaimevalero.github.io/managing-awesome-lists">Awesome list viewer <span class="sr-only">(current)</span></a>
+			</li>
+		</ul>
+
+		<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"
+					 role="button" aria-haspopup="true" aria-expanded="false">
+				 Select list
+				</a>
+				<ul class="dropdown-menu">
+
+
+          <li rel="tooltip"  title="Global list" >
+            <a href='https://jaimevalero.github.io/managing-awesome-lists'>
+            <i class="fa fa-internal-link" aria-hidden="true"></i> Global list
+            </a>
+          </li>
+          <li rel="tooltip"  title="Short CSS code snippets for all your development needs" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-30-seconds%4030-seconds-of-css.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> 30-seconds-of-css
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome actions to use on GitHub" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sdras%40awesome-actions.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> actions
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Android UI/UX libraries" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-wasabeef%40awesome-android-ui.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> android-ui
+						</a>
+					</li><li rel="tooltip"  title="Curated list of resources about Apache Airflow" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-jghoman%40awesome-apache-airflow.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> apache-airflow
+						</a>
+					</li><li rel="tooltip"  title="😎 Awesome lists about all kinds of interesting topics" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sindresorhus%40awesome.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> awesome
+						</a>
+					</li><li rel="tooltip"  title="Awesome-LLM: a curated list of Large Language Model" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-Hannibal046%40Awesome-LLM.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> Awesome-LLM
+						</a>
+					</li><li rel="tooltip"  title="A comprehensive list of pytorch related content on github,such as different models,implementations,helper libraries,tutorials etc." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-bharathgs%40Awesome-pytorch-list.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> Awesome-pytorch-list
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Amazon Web Services (AWS) libraries, open source repos, guides, blogs, and other resources.  Featuring the Fiery Meter of AWSome." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-donnemartin%40awesome-aws.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> aws
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome big data frameworks, ressources and other awesomeness." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-newTendermint%40awesome-bigdata.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> bigdata
+						</a>
+					</li><li rel="tooltip"  title="Curated list of blockchain services and exchanges 🔥🏦🔥🏦🔥🏦🔥" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-imbaniac%40awesome-blockchain.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> blockchain
+						</a>
+					</li><li rel="tooltip"  title="✨  Awesome - A curated list of amazing Bootstrap tools and themes." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-awesome-bootstrap-org%40awesome-bootstrap.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> bootstrap
+						</a>
+					</li><li rel="tooltip"  title="List of Continuous Integration services" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ligurio%40awesome-ci.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> ci
+						</a>
+					</li><li rel="tooltip"  title="🖥 📊 🕹 🛠 A curated list of command line apps" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-agarrharr%40awesome-cli-apps.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> cli-apps
+						</a>
+					</li><li rel="tooltip"  title=":books: List of awesome university courses for learning Computer Science!" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-prakhar1989%40awesome-courses.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> courses
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things. Inspired by awesome-... stuff." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-fffaraz%40awesome-cpp.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> cpp
+						</a>
+					</li><li rel="tooltip"  title="A list of D3 libraries, plugins and utilities" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-wbkd%40awesome-d3.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> d3
+						</a>
+					</li><li rel="tooltip"  title=":memo: An awesome Data Science repository to learn and apply for real world problems." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-academic%40awesome-datascience.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> datascience
+						</a>
+					</li><li rel="tooltip"  title=":chart_with_upwards_trend:  A curated list of awesome data visualization libraries and resources." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-javierluraschi%40awesome-dataviz.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> dataviz
+						</a>
+					</li><li rel="tooltip"  title="A curated list of amazingly awesome database libraries, resources and shiny things by https://www.numetriclabz.com/" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-numetriclabz%40awesome-db.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> db
+						</a>
+					</li><li rel="tooltip"  title="A curated list of Domain-Driven Design (DDD), Command Query Responsibility Segregation (CQRS), Event Sourcing, and Event Storming resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-heynickc%40awesome-ddd.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> ddd
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Deep Learning tutorials, projects and communities." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ChristosChristofidis%40awesome-deep-learning.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> deep-learning
+						</a>
+					</li><li rel="tooltip"  title="This is my awesome list with all open source and free applications that you can use in your management" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-joubertredrat%40awesome-devops.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> devops
+						</a>
+					</li><li rel="tooltip"  title=":whale: A curated list of Docker resources and projects" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-veggiemonk%40awesome-docker.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> docker
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Flask resources and plugins" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-humiaozuzu%40awesome-flask.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> flask
+						</a>
+					</li><li rel="tooltip"  title="A list of awesome beginners-friendly projects." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-MunGell%40awesome-for-beginners.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> for-beginners
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome forensic analysis tools and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-cugu%40awesome-forensics.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> forensics
+						</a>
+					</li><li rel="tooltip"  title="A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ripienaar%40free-for-dev.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> free-for-dev
+						</a>
+					</li><li rel="tooltip"  title="Manually curated collection of resources for frontend web developers." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-dypsilon%40frontend-dev-bookmarks.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> frontend-dev-bookmarks
+						</a>
+					</li><li rel="tooltip"  title="A list of cool features of Git and GitHub." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-tiimgreen%40github-cheat-sheet.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> github-cheat-sheet
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Go frameworks, libraries and software" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-avelino%40awesome-go.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> go
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome groovy libraries, frameworks and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-kdabir%40awesome-groovy.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> groovy
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Hacking tutorials, tools and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-carpedm20%40awesome-hacking.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> hacking
+						</a>
+					</li><li rel="tooltip"  title="✂A collection of useful .htaccess snippets." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-phanan%40htaccess.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> htaccess
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome frameworks, libraries and software for the Java programming language." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-akullpp%40awesome-java.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> java
+						</a>
+					</li><li rel="tooltip"  title="🐢 A collection of awesome browser-side  JavaScript libraries, resources and shiny things." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sorrycc%40awesome-javascript.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> javascript
+						</a>
+					</li><li rel="tooltip"  title="A collection of tips to help up your jQuery game 🎮" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-AllThingsSmitty%40jquery-tips-everyone-should-know.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> jquery-tips-everyone-should-know
+						</a>
+					</li><li rel="tooltip"  title="A curated list for awesome kubernetes sources :ship::tada:" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ramitsurana%40awesome-kubernetes.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> kubernetes
+						</a>
+					</li><li rel="tooltip"  title=":penguin: A list of awesome projects and resources that make Linux even more awesome. :penguin:" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-inputsh%40awesome-linux.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> linux
+						</a>
+					</li><li rel="tooltip"  title=" Now we have become very big, Different from the original idea. Collect premium software in various categories." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-jaywcjlove%40awesome-mac.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> mac
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Machine Learning frameworks, libraries and software." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-josephmisiti%40awesome-machine-learning.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> machine-learning
+						</a>
+					</li><li rel="tooltip"  title="Defund the Police." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-rshipp%40awesome-malware-analysis.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> malware-analysis
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome MySQL software, libraries, tools and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-shlomi-noach%40awesome-mysql.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> mysql
+						</a>
+					</li><li rel="tooltip"  title=":zap: Delightful Node.js packages and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sindresorhus%40awesome-nodejs.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> nodejs
+						</a>
+					</li><li rel="tooltip"  title="🚀 Awesome list of open source applications for macOS. https://t.me/s/opensourcemacosapps" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-serhii-londar%40open-source-mac-os-apps.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> open-source-mac-os-apps
+						</a>
+					</li><li rel="tooltip"  title="A curated list of amazingly awesome PHP libraries, resources and shiny things." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ziadoz%40awesome-php.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> php
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome pipeline toolkits inspired by Awesome Sysadmin" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-pditommaso%40awesome-pipeline.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> pipeline
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Python frameworks, libraries, software and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-vinta%40awesome-python.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> python
+						</a>
+					</li><li rel="tooltip"  title="📝 A curated list of awesome Raspberry Pi tools, projects, images and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-thibmaek%40awesome-raspberry-pi.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> raspberry-pi
+						</a>
+					</li><li rel="tooltip"  title="A collection of awesome things regarding React ecosystem" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-enaqx%40awesome-react.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> react
+						</a>
+					</li><li rel="tooltip"  title="📄 CLI that generates beautiful README.md files" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-kefranabg%40readme-md-generator.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> readme-md-generator
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome remote jobs and resources. Inspired by https://github.com/vinta/awesome-python" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-lukasz-madon%40awesome-remote-job.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> remote-job
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Ruby frameworks, libraries and resources. Inspired by awesome-php & awesome-python." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sdogruyol%40awesome-ruby.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> ruby
+						</a>
+					</li><li rel="tooltip"  title="The Patterns of Scalable, Reliable, and Performant Large-Scale Systems" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-binhnguyennus%40awesome-scalability.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> scalability
+						</a>
+					</li><li rel="tooltip"  title="A collection of awesome software, libraries, documents, books, resources and cools stuffs about security." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sbilly%40awesome-security.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> security
+						</a>
+					</li><li rel="tooltip"  title="A list of Free Software network services and web applications which can be hosted on your own servers" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-awesome-selfhosted%40awesome-selfhosted.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> selfhosted
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awesome-php." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-alebcay%40awesome-shell.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> shell
+						</a>
+					</li><li rel="tooltip"  title="A curated list of amazingly awesome open source sysadmin resources." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-awesome-foss%40awesome-sysadmin.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> sysadmin
+						</a>
+					</li><li rel="tooltip"  title="💥 A curated list of Terminal frameworks, plugins & resources for CLI lovers." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-k4m4%40terminals-are-sexy.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> terminals-are-sexy
+						</a>
+					</li><li rel="tooltip"  title="A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-trimstray%40the-book-of-secret-knowledge.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> the-book-of-secret-knowledge
+						</a>
+					</li><li rel="tooltip"  title="🎨 A curated list of delightful VS Code packages and resources." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-viatsko%40awesome-vscode.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> vscode
+						</a>
+					</li><li rel="tooltip"  title=":pencil: A curated list of Web Performance Optimization. Everyone can contribute here!" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-davidsonfellipe%40awesome-wpo.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> wpo
+						</a>
+					</li><li rel="tooltip"  title="A collection of ZSH frameworks, plugins, themes and tutorials." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-unixorn%40awesome-zsh-plugins.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> zsh-plugins
+						</a>
+					</li>
+
+
+				</ul>
+			</li>
+		</ul>
+
+
+	</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+
+
+<script type="text/javascript">
+    $(function () {
+        $("[rel='tooltip']").tooltip();
+    });
+</script>
+			
+		</nav>
+
+    <div class="container-fluid" >
+			<div class="row">
+				<!-- Main alert pop-ups -->
+        <div class="col-xl-12 mb-4">
+					
+
+
+<h2 >Topic:  <font class = "topic-tag"> rails</font> </h2>
+
+<div class="alert alert-info">
+	<i class="fa fa-eye" aria-hidden="true"></i>
+  This a generated list, with all the repos from the awesome lists, containing the topic
+  <strong>rails</strong>.
+</div>
+
+
+
+<br>
+<br>
+ Elements : 64
+ <br>
+    <div class="table-responsive">
+      <table id="tabla"     class="table table-hover table-condensed table-striped">
+
+        <thead>
+          <tr>
+            <th>Repo</th>
+            <th width="15%">Stars</th>
+            <th>Description</th>
+            <th width="15%">Created</th>
+            <th>Language</th>
+            <th>Tags</th>
+
+
+
+          </tr>
+        </thead>
+        <tbody>
+					
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/rails/rails">rails/rails</a></td>
+              <td>52739</td>
+              <td>Ruby on Rails</td>
+              <td>2008-04-11</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/activejob.html" >
+                  <font href= "" class = "topic-tag">activejob</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/activerecord.html" >
+                  <font href= "" class = "topic-tag">activerecord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/framework.html" >
+                  <font href= "" class = "topic-tag">framework</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/html.html" >
+                  <font href= "" class = "topic-tag">html</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mvc.html" >
+                  <font href= "" class = "topic-tag">mvc</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/discourse/discourse">discourse/discourse</a></td>
+              <td>37788</td>
+              <td>A platform for community discussion. Free, open, simple.</td>
+              <td>2013-01-12</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discourse.html" >
+                  <font href= "" class = "topic-tag">discourse</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ember.html" >
+                  <font href= "" class = "topic-tag">ember</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/forum.html" >
+                  <font href= "" class = "topic-tag">forum</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html" >
+                  <font href= "" class = "topic-tag">javascript</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/postgresql.html" >
+                  <font href= "" class = "topic-tag">postgresql</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/heartcombo/devise">heartcombo/devise</a></td>
+              <td>23160</td>
+              <td>Flexible authentication solution for Rails with Warden.</td>
+              <td>2009-09-16</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/authentication.html" >
+                  <font href= "" class = "topic-tag">authentication</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/devise.html" >
+                  <font href= "" class = "topic-tag">devise</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/chatwoot/chatwoot">chatwoot/chatwoot</a></td>
+              <td>15114</td>
+              <td>Open-source customer engagement suite, an alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬</td>
+              <td>2019-08-14</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/actioncable.html" >
+                  <font href= "" class = "topic-tag">actioncable</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/chat-widget.html" >
+                  <font href= "" class = "topic-tag">chat-widget</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/conversation.html" >
+                  <font href= "" class = "topic-tag">conversation</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/customer-support.html" >
+                  <font href= "" class = "topic-tag">customer-support</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/dashboard.html" >
+                  <font href= "" class = "topic-tag">dashboard</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/design.html" >
+                  <font href= "" class = "topic-tag">design</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/docker.html" >
+                  <font href= "" class = "topic-tag">docker</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/docker-image.html" >
+                  <font href= "" class = "topic-tag">docker-image</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/drift.html" >
+                  <font href= "" class = "topic-tag">drift</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/heroku.html" >
+                  <font href= "" class = "topic-tag">heroku</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/intercom.html" >
+                  <font href= "" class = "topic-tag">intercom</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html" >
+                  <font href= "" class = "topic-tag">javascript</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/livechat.html" >
+                  <font href= "" class = "topic-tag">livechat</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/opensource.html" >
+                  <font href= "" class = "topic-tag">opensource</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sass.html" >
+                  <font href= "" class = "topic-tag">sass</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/vuejs.html" >
+                  <font href= "" class = "topic-tag">vuejs</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/whatsapp.html" >
+                  <font href= "" class = "topic-tag">whatsapp</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/zendesk.html" >
+                  <font href= "" class = "topic-tag">zendesk</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/diaspora/diaspora">diaspora/diaspora</a></td>
+              <td>13233</td>
+              <td>A privacy-aware, distributed, open source social network.</td>
+              <td>2010-09-15</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/decentralized.html" >
+                  <font href= "" class = "topic-tag">decentralized</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/distributed.html" >
+                  <font href= "" class = "topic-tag">distributed</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/federated.html" >
+                  <font href= "" class = "topic-tag">federated</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html" >
+                  <font href= "" class = "topic-tag">hacktoberfest</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/social-network.html" >
+                  <font href= "" class = "topic-tag">social-network</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/spree/spree">spree/spree</a></td>
+              <td>12231</td>
+              <td>Open Source multi-language/multi-currency/multi-store eCommerce platform</td>
+              <td>2008-03-10</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cart.html" >
+                  <font href= "" class = "topic-tag">cart</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/e-commerce.html" >
+                  <font href= "" class = "topic-tag">e-commerce</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ecommerce.html" >
+                  <font href= "" class = "topic-tag">ecommerce</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ecommerce-platform.html" >
+                  <font href= "" class = "topic-tag">ecommerce-platform</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/graphql.html" >
+                  <font href= "" class = "topic-tag">graphql</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/headless-commerce.html" >
+                  <font href= "" class = "topic-tag">headless-commerce</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rubyonrails.html" >
+                  <font href= "" class = "topic-tag">rubyonrails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/shop.html" >
+                  <font href= "" class = "topic-tag">shop</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/spree.html" >
+                  <font href= "" class = "topic-tag">spree</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/spree-commerce.html" >
+                  <font href= "" class = "topic-tag">spree-commerce</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/spreecommerce.html" >
+                  <font href= "" class = "topic-tag">spreecommerce</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/store.html" >
+                  <font href= "" class = "topic-tag">store</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/activeadmin/activeadmin">activeadmin/activeadmin</a></td>
+              <td>9337</td>
+              <td>The administration framework for Ruby on Rails applications.</td>
+              <td>2010-04-15</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/activeadmin.html" >
+                  <font href= "" class = "topic-tag">activeadmin</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/admin-ui.html" >
+                  <font href= "" class = "topic-tag">admin-ui</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/arbre.html" >
+                  <font href= "" class = "topic-tag">arbre</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/heartcombo/simple_form">heartcombo/simple_form</a></td>
+              <td>8103</td>
+              <td>Forms made easy for Rails! It's tied to a simple DSL, with no opinion on markup.</td>
+              <td>2009-12-28</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/dsl.html" >
+                  <font href= "" class = "topic-tag">dsl</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/form-builder.html" >
+                  <font href= "" class = "topic-tag">form-builder</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails-helper.html" >
+                  <font href= "" class = "topic-tag">rails-helper</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/presidentbeef/brakeman">presidentbeef/brakeman</a></td>
+              <td>6642</td>
+              <td>A static analysis security vulnerability scanner for Ruby on Rails applications</td>
+              <td>2010-08-27</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/brakeman.html" >
+                  <font href= "" class = "topic-tag">brakeman</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/security.html" >
+                  <font href= "" class = "topic-tag">security</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/security-audit.html" >
+                  <font href= "" class = "topic-tag">security-audit</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/security-tools.html" >
+                  <font href= "" class = "topic-tag">security-tools</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/security-vulnerability.html" >
+                  <font href= "" class = "topic-tag">security-vulnerability</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/static-analysis.html" >
+                  <font href= "" class = "topic-tag">static-analysis</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/vulnerabilities.html" >
+                  <font href= "" class = "topic-tag">vulnerabilities</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/reactjs/react-rails">reactjs/react-rails</a></td>
+              <td>6625</td>
+              <td>Integrate React.js with Rails views and controllers, the asset pipeline, or webpacker.</td>
+              <td>2013-07-25</td>
+              <td>JavaScript</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jsx.html" >
+                  <font href= "" class = "topic-tag">jsx</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/react.html" >
+                  <font href= "" class = "topic-tag">react</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/react-rails.html" >
+                  <font href= "" class = "topic-tag">react-rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sprockets.html" >
+                  <font href= "" class = "topic-tag">sprockets</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webpacker.html" >
+                  <font href= "" class = "topic-tag">webpacker</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/ankane/searchkick">ankane/searchkick</a></td>
+              <td>6179</td>
+              <td>Intelligent search made easy</td>
+              <td>2013-07-15</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/elasticsearch.html" >
+                  <font href= "" class = "topic-tag">elasticsearch</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/opensearch.html" >
+                  <font href= "" class = "topic-tag">opensearch</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/norman/friendly_id">norman/friendly_id</a></td>
+              <td>5994</td>
+              <td>FriendlyId is the “Swiss Army bulldozer” of slugging and permalink plugins for ActiveRecord. It allows you to create pretty URL’s and work with human-friendly strings as if they were numeric ids for ActiveRecord models.</td>
+              <td>2008-04-18</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/friendly-url.html" >
+                  <font href= "" class = "topic-tag">friendly-url</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/plugin.html" >
+                  <font href= "" class = "topic-tag">plugin</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/slug.html" >
+                  <font href= "" class = "topic-tag">slug</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/sj26/mailcatcher">sj26/mailcatcher</a></td>
+              <td>5922</td>
+              <td>Catches mail and serves it through a dream.</td>
+              <td>2010-10-25</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/development.html" >
+                  <font href= "" class = "topic-tag">development</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/devtools.html" >
+                  <font href= "" class = "topic-tag">devtools</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mail.html" >
+                  <font href= "" class = "topic-tag">mail</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rubygems.html" >
+                  <font href= "" class = "topic-tag">rubygems</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/server.html" >
+                  <font href= "" class = "topic-tag">server</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/smtp.html" >
+                  <font href= "" class = "topic-tag">smtp</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/mislav/will_paginate">mislav/will_paginate</a></td>
+              <td>5686</td>
+              <td>Pagination library for Rails and other Ruby applications</td>
+              <td>2008-02-25</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pagination.html" >
+                  <font href= "" class = "topic-tag">pagination</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pagination-library.html" >
+                  <font href= "" class = "topic-tag">pagination-library</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/plugin.html" >
+                  <font href= "" class = "topic-tag">plugin</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sequel.html" >
+                  <font href= "" class = "topic-tag">sequel</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sinatra.html" >
+                  <font href= "" class = "topic-tag">sinatra</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/thoughtbot/administrate">thoughtbot/administrate</a></td>
+              <td>5575</td>
+              <td>A Rails engine that helps you put together a super-flexible admin dashboard.</td>
+              <td>2015-04-10</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/admin-dashboard.html" >
+                  <font href= "" class = "topic-tag">admin-dashboard</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/activerecord-hackery/ransack">activerecord-hackery/ransack</a></td>
+              <td>5402</td>
+              <td>Object-based searching. </td>
+              <td>2011-03-31</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/activerecord.html" >
+                  <font href= "" class = "topic-tag">activerecord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby-gem.html" >
+                  <font href= "" class = "topic-tag">ruby-gem</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby-library.html" >
+                  <font href= "" class = "topic-tag">ruby-library</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby-on-rails.html" >
+                  <font href= "" class = "topic-tag">ruby-on-rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/search.html" >
+                  <font href= "" class = "topic-tag">search</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/search-interface.html" >
+                  <font href= "" class = "topic-tag">search-interface</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sql.html" >
+                  <font href= "" class = "topic-tag">sql</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/CanCanCommunity/cancancan">CanCanCommunity/cancancan</a></td>
+              <td>5342</td>
+              <td>The authorization Gem for Ruby on Rails.</td>
+              <td>2014-02-19</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/authorization.html" >
+                  <font href= "" class = "topic-tag">authorization</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cancancan.html" >
+                  <font href= "" class = "topic-tag">cancancan</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/aasm/aasm">aasm/aasm</a></td>
+              <td>4763</td>
+              <td>AASM - State machines for Ruby classes (plain Ruby, ActiveRecord, Mongoid, NoBrainer, Dynamoid)</td>
+              <td>2008-02-28</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/aasm.html" >
+                  <font href= "" class = "topic-tag">aasm</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/activerecord.html" >
+                  <font href= "" class = "topic-tag">activerecord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html" >
+                  <font href= "" class = "topic-tag">hacktoberfest</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mongoid.html" >
+                  <font href= "" class = "topic-tag">mongoid</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/state-machine.html" >
+                  <font href= "" class = "topic-tag">state-machine</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/transition.html" >
+                  <font href= "" class = "topic-tag">transition</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/solidusio/solidus">solidusio/solidus</a></td>
+              <td>4629</td>
+              <td>🛒 Solidus, the open-source eCommerce framework for industry trailblazers.</td>
+              <td>2015-02-18</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ecommerce.html" >
+                  <font href= "" class = "topic-tag">ecommerce</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ecommerce-framework.html" >
+                  <font href= "" class = "topic-tag">ecommerce-framework</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ecommerce-platform.html" >
+                  <font href= "" class = "topic-tag">ecommerce-platform</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/solidus.html" >
+                  <font href= "" class = "topic-tag">solidus</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/storefront.html" >
+                  <font href= "" class = "topic-tag">storefront</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/simplecov-ruby/simplecov">simplecov-ruby/simplecov</a></td>
+              <td>4586</td>
+              <td>Code coverage for Ruby with a powerful configuration library and automatic merging of coverage across test suites</td>
+              <td>2010-08-15</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/code-quality.html" >
+                  <font href= "" class = "topic-tag">code-quality</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/coverage.html" >
+                  <font href= "" class = "topic-tag">coverage</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/coverage-library.html" >
+                  <font href= "" class = "topic-tag">coverage-library</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/coverage-report.html" >
+                  <font href= "" class = "topic-tag">coverage-report</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/test-coverage.html" >
+                  <font href= "" class = "topic-tag">test-coverage</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/mina-deploy/mina">mina-deploy/mina</a></td>
+              <td>4284</td>
+              <td>Blazing fast application deployment tool.</td>
+              <td>2012-06-01</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/deployment.html" >
+                  <font href= "" class = "topic-tag">deployment</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mina.html" >
+                  <font href= "" class = "topic-tag">mina</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ssh.html" >
+                  <font href= "" class = "topic-tag">ssh</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/octobox/octobox">octobox/octobox</a></td>
+              <td>4249</td>
+              <td>📮Untangle your GitHub Notifications</td>
+              <td>2016-12-16</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/github.html" >
+                  <font href= "" class = "topic-tag">github</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/github-notifications.html" >
+                  <font href= "" class = "topic-tag">github-notifications</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/inbox.html" >
+                  <font href= "" class = "topic-tag">inbox</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/notifications.html" >
+                  <font href= "" class = "topic-tag">notifications</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/octobox.html" >
+                  <font href= "" class = "topic-tag">octobox</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/triage.html" >
+                  <font href= "" class = "topic-tag">triage</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/ctran/annotate_models">ctran/annotate_models</a></td>
+              <td>4157</td>
+              <td>Annotate Rails classes with schema and routes info</td>
+              <td>2008-02-27</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/activerecord.html" >
+                  <font href= "" class = "topic-tag">activerecord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/thoughtbot/suspenders">thoughtbot/suspenders</a></td>
+              <td>3883</td>
+              <td>A Rails template with our standard defaults, ready to deploy to Heroku.</td>
+              <td>2010-05-14</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/template.html" >
+                  <font href= "" class = "topic-tag">template</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/thoughtbot/shoulda-matchers">thoughtbot/shoulda-matchers</a></td>
+              <td>3391</td>
+              <td>Simple one-liner tests for common Rails functionality</td>
+              <td>2010-12-15</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rspec.html" >
+                  <font href= "" class = "topic-tag">rspec</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/testing.html" >
+                  <font href= "" class = "topic-tag">testing</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/zammad/zammad">zammad/zammad</a></td>
+              <td>3386</td>
+              <td>Zammad is a web based open source helpdesk/customer support system</td>
+              <td>2012-04-02</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/coffeescript.html" >
+                  <font href= "" class = "topic-tag">coffeescript</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/customer-care.html" >
+                  <font href= "" class = "topic-tag">customer-care</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/customer-support.html" >
+                  <font href= "" class = "topic-tag">customer-support</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/helpdesk.html" >
+                  <font href= "" class = "topic-tag">helpdesk</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html" >
+                  <font href= "" class = "topic-tag">javascript</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/support.html" >
+                  <font href= "" class = "topic-tag">support</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ticketing.html" >
+                  <font href= "" class = "topic-tag">ticketing</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/zammad.html" >
+                  <font href= "" class = "topic-tag">zammad</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/gramantin/awesome-rails">gramantin/awesome-rails</a></td>
+              <td>3260</td>
+              <td>A curated list of awesome things related to Ruby on Rails</td>
+              <td>2014-07-20</td>
+              <td>None</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/awesome.html" >
+                  <font href= "" class = "topic-tag">awesome</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/awesome-list.html" >
+                  <font href= "" class = "topic-tag">awesome-list</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/opensource-apps.html" >
+                  <font href= "" class = "topic-tag">opensource-apps</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/jnunemaker/flipper">jnunemaker/flipper</a></td>
+              <td>3252</td>
+              <td>:dolphin: Beautiful, performant feature flags for Ruby.</td>
+              <td>2012-07-22</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/api.html" >
+                  <font href= "" class = "topic-tag">api</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/dalli.html" >
+                  <font href= "" class = "topic-tag">dalli</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/feature.html" >
+                  <font href= "" class = "topic-tag">feature</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/feature-flag.html" >
+                  <font href= "" class = "topic-tag">feature-flag</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/feature-flagging.html" >
+                  <font href= "" class = "topic-tag">feature-flagging</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/feature-flags.html" >
+                  <font href= "" class = "topic-tag">feature-flags</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/feature-toggle.html" >
+                  <font href= "" class = "topic-tag">feature-toggle</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/feature-toggles.html" >
+                  <font href= "" class = "topic-tag">feature-toggles</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/features.html" >
+                  <font href= "" class = "topic-tag">features</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flipper.html" >
+                  <font href= "" class = "topic-tag">flipper</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/http.html" >
+                  <font href= "" class = "topic-tag">http</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/memcached.html" >
+                  <font href= "" class = "topic-tag">memcached</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mongo.html" >
+                  <font href= "" class = "topic-tag">mongo</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mysql.html" >
+                  <font href= "" class = "topic-tag">mysql</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/postgres.html" >
+                  <font href= "" class = "topic-tag">postgres</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/redis.html" >
+                  <font href= "" class = "topic-tag">redis</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rollout.html" >
+                  <font href= "" class = "topic-tag">rollout</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/collectiveidea/audited">collectiveidea/audited</a></td>
+              <td>3153</td>
+              <td>Audited (formerly acts_as_audited) is an ORM extension that logs all changes to your Rails models.</td>
+              <td>2008-02-09</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/activerecord.html" >
+                  <font href= "" class = "topic-tag">activerecord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/audit.html" >
+                  <font href= "" class = "topic-tag">audit</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/audit-log.html" >
+                  <font href= "" class = "topic-tag">audit-log</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/audit-trail.html" >
+                  <font href= "" class = "topic-tag">audit-trail</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/auditing.html" >
+                  <font href= "" class = "topic-tag">auditing</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/SUSE/Portus">SUSE/Portus</a></td>
+              <td>2990</td>
+              <td>Authorization service and frontend for Docker registry (v2)</td>
+              <td>2015-04-13</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/containers.html" >
+                  <font href= "" class = "topic-tag">containers</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/docker.html" >
+                  <font href= "" class = "topic-tag">docker</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/docker-distribution.html" >
+                  <font href= "" class = "topic-tag">docker-distribution</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/security.html" >
+                  <font href= "" class = "topic-tag">security</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/comfy/comfortable-mexican-sofa">comfy/comfortable-mexican-sofa</a></td>
+              <td>2719</td>
+              <td>ComfortableMexicanSofa is a powerful Ruby on Rails 5.2+ CMS (Content Management System) Engine</td>
+              <td>2010-11-29</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cms.html" >
+                  <font href= "" class = "topic-tag">cms</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails-engine.html" >
+                  <font href= "" class = "topic-tag">rails-engine</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/NoamB/sorcery">NoamB/sorcery</a></td>
+              <td>2328</td>
+              <td>Magical authentication for Rails 3 & 4</td>
+              <td>2011-01-29</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/authentication.html" >
+                  <font href= "" class = "topic-tag">authentication</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/macournoyer/thin">macournoyer/thin</a></td>
+              <td>2220</td>
+              <td>A very fast & simple Ruby web server</td>
+              <td>2008-01-19</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rack.html" >
+                  <font href= "" class = "topic-tag">rack</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/server.html" >
+                  <font href= "" class = "topic-tag">server</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/thin.html" >
+                  <font href= "" class = "topic-tag">thin</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/web-server.html" >
+                  <font href= "" class = "topic-tag">web-server</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/rpush/rpush">rpush/rpush</a></td>
+              <td>2136</td>
+              <td>The push notification service for Ruby.</td>
+              <td>2013-01-02</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/apns.html" >
+                  <font href= "" class = "topic-tag">apns</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/apns2.html" >
+                  <font href= "" class = "topic-tag">apns2</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/fcm.html" >
+                  <font href= "" class = "topic-tag">fcm</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/firebase-cloud-messaging.html" >
+                  <font href= "" class = "topic-tag">firebase-cloud-messaging</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html" >
+                  <font href= "" class = "topic-tag">hacktoberfest</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/notification-service.html" >
+                  <font href= "" class = "topic-tag">notification-service</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/notifications.html" >
+                  <font href= "" class = "topic-tag">notifications</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/push-notifications.html" >
+                  <font href= "" class = "topic-tag">push-notifications</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pushy.html" >
+                  <font href= "" class = "topic-tag">pushy</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rpush.html" >
+                  <font href= "" class = "topic-tag">rpush</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webpush.html" >
+                  <font href= "" class = "topic-tag">webpush</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/windows-phone.html" >
+                  <font href= "" class = "topic-tag">windows-phone</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/wns.html" >
+                  <font href= "" class = "topic-tag">wns</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/ruby-shoryuken/shoryuken">ruby-shoryuken/shoryuken</a></td>
+              <td>1959</td>
+              <td>A super efficient Amazon SQS thread based message processor for Ruby</td>
+              <td>2014-09-02</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/activejob.html" >
+                  <font href= "" class = "topic-tag">activejob</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/aws-sdk-ruby.html" >
+                  <font href= "" class = "topic-tag">aws-sdk-ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/aws-sqs.html" >
+                  <font href= "" class = "topic-tag">aws-sqs</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/concurrent-ruby.html" >
+                  <font href= "" class = "topic-tag">concurrent-ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/message-processor.html" >
+                  <font href= "" class = "topic-tag">message-processor</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/shoryuken.html" >
+                  <font href= "" class = "topic-tag">shoryuken</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sqs-commands.html" >
+                  <font href= "" class = "topic-tag">sqs-commands</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/publify/publify">publify/publify</a></td>
+              <td>1800</td>
+              <td>A self hosted Web publishing platform on Rails.</td>
+              <td>2008-10-23</td>
+              <td>Less</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/blog-engine.html" >
+                  <font href= "" class = "topic-tag">blog-engine</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html" >
+                  <font href= "" class = "topic-tag">hacktoberfest</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/pat/thinking-sphinx">pat/thinking-sphinx</a></td>
+              <td>1618</td>
+              <td>Sphinx/Manticore plugin for ActiveRecord/Rails</td>
+              <td>2008-04-14</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/search.html" >
+                  <font href= "" class = "topic-tag">search</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sphinx.html" >
+                  <font href= "" class = "topic-tag">sphinx</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/bootstrap-ruby/bootstrap_form">bootstrap-ruby/bootstrap_form</a></td>
+              <td>1587</td>
+              <td>Official repository of the bootstrap_form gem, a Rails form builder that makes it super easy to create beautiful-looking forms using Bootstrap 5.</td>
+              <td>2012-01-06</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/bootstrap.html" >
+                  <font href= "" class = "topic-tag">bootstrap</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails-form-builder.html" >
+                  <font href= "" class = "topic-tag">rails-form-builder</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/thredded/thredded">thredded/thredded</a></td>
+              <td>1517</td>
+              <td>The best Rails forums engine ever.</td>
+              <td>2013-05-09</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/forums.html" >
+                  <font href= "" class = "topic-tag">forums</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/message-board.html" >
+                  <font href= "" class = "topic-tag">message-board</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails-engine.html" >
+                  <font href= "" class = "topic-tag">rails-engine</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/plentz/lol_dba">plentz/lol_dba</a></td>
+              <td>1505</td>
+              <td>lol_dba is a small package of rake tasks that scan your application models and displays a list of columns that probably should be indexed. Also, it can generate .sql migration scripts.</td>
+              <td>2012-02-28</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/database.html" >
+                  <font href= "" class = "topic-tag">database</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/database-migrations.html" >
+                  <font href= "" class = "topic-tag">database-migrations</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gem.html" >
+                  <font href= "" class = "topic-tag">gem</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/migrations.html" >
+                  <font href= "" class = "topic-tag">migrations</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby-on-rails.html" >
+                  <font href= "" class = "topic-tag">ruby-on-rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sql.html" >
+                  <font href= "" class = "topic-tag">sql</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/palkan/logidze">palkan/logidze</a></td>
+              <td>1388</td>
+              <td>Database changes log for Rails</td>
+              <td>2016-04-13</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/activerecord.html" >
+                  <font href= "" class = "topic-tag">activerecord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html" >
+                  <font href= "" class = "topic-tag">hacktoberfest</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/postgresql.html" >
+                  <font href= "" class = "topic-tag">postgresql</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/versioning.html" >
+                  <font href= "" class = "topic-tag">versioning</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/ManageIQ/manageiq">ManageIQ/manageiq</a></td>
+              <td>1269</td>
+              <td>ManageIQ Open-Source Management Platform</td>
+              <td>2014-06-13</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/amazon.html" >
+                  <font href= "" class = "topic-tag">amazon</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ansible.html" >
+                  <font href= "" class = "topic-tag">ansible</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/aws.html" >
+                  <font href= "" class = "topic-tag">aws</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/azure.html" >
+                  <font href= "" class = "topic-tag">azure</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cloud.html" >
+                  <font href= "" class = "topic-tag">cloud</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/containers.html" >
+                  <font href= "" class = "topic-tag">containers</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/foreman.html" >
+                  <font href= "" class = "topic-tag">foreman</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/google-cloud.html" >
+                  <font href= "" class = "topic-tag">google-cloud</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/kubernetes.html" >
+                  <font href= "" class = "topic-tag">kubernetes</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/manageiq.html" >
+                  <font href= "" class = "topic-tag">manageiq</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/management.html" >
+                  <font href= "" class = "topic-tag">management</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/nuage.html" >
+                  <font href= "" class = "topic-tag">nuage</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/openshift.html" >
+                  <font href= "" class = "topic-tag">openshift</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/openstack.html" >
+                  <font href= "" class = "topic-tag">openstack</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ovirt.html" >
+                  <font href= "" class = "topic-tag">ovirt</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rhev.html" >
+                  <font href= "" class = "topic-tag">rhev</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/vmware.html" >
+                  <font href= "" class = "topic-tag">vmware</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/TracksApp/tracks">TracksApp/tracks</a></td>
+              <td>1125</td>
+              <td>Tracks is a GTD™ web application, built with Ruby on Rails</td>
+              <td>2011-07-16</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/getting-things-done.html" >
+                  <font href= "" class = "topic-tag">getting-things-done</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gtd.html" >
+                  <font href= "" class = "topic-tag">gtd</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/productivity.html" >
+                  <font href= "" class = "topic-tag">productivity</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/todo.html" >
+                  <font href= "" class = "topic-tag">todo</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/tracks.html" >
+                  <font href= "" class = "topic-tag">tracks</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/blackcandy-org/black_candy">blackcandy-org/black_candy</a></td>
+              <td>975</td>
+              <td>A self hosted music streaming server</td>
+              <td>2018-02-07</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/audio.html" >
+                  <font href= "" class = "topic-tag">audio</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hotwire.html" >
+                  <font href= "" class = "topic-tag">hotwire</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/music.html" >
+                  <font href= "" class = "topic-tag">music</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/music-player.html" >
+                  <font href= "" class = "topic-tag">music-player</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/music-streaming.html" >
+                  <font href= "" class = "topic-tag">music-streaming</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/musicplayer.html" >
+                  <font href= "" class = "topic-tag">musicplayer</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/self-hosted.html" >
+                  <font href= "" class = "topic-tag">self-hosted</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/openfoodfoundation/openfoodnetwork">openfoodfoundation/openfoodnetwork</a></td>
+              <td>951</td>
+              <td>Connect suppliers, distributors and consumers to trade local produce. We're recruiting paid contributors, link below.</td>
+              <td>2012-10-17</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/farmers.html" >
+                  <font href= "" class = "topic-tag">farmers</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/food.html" >
+                  <font href= "" class = "topic-tag">food</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/food-hubs.html" >
+                  <font href= "" class = "topic-tag">food-hubs</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html" >
+                  <font href= "" class = "topic-tag">hacktoberfest</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/nonprofit.html" >
+                  <font href= "" class = "topic-tag">nonprofit</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sustainable-consumption.html" >
+                  <font href= "" class = "topic-tag">sustainable-consumption</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/airbrake/airbrake">airbrake/airbrake</a></td>
+              <td>945</td>
+              <td>The official Airbrake library for Ruby applications</td>
+              <td>2011-08-24</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/airbrake.html" >
+                  <font href= "" class = "topic-tag">airbrake</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/apm.html" >
+                  <font href= "" class = "topic-tag">apm</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/capistrano.html" >
+                  <font href= "" class = "topic-tag">capistrano</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/crash-reporting.html" >
+                  <font href= "" class = "topic-tag">crash-reporting</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/delayed-job.html" >
+                  <font href= "" class = "topic-tag">delayed-job</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/error-monitoring.html" >
+                  <font href= "" class = "topic-tag">error-monitoring</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/logger.html" >
+                  <font href= "" class = "topic-tag">logger</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/performance-monitoring.html" >
+                  <font href= "" class = "topic-tag">performance-monitoring</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rake.html" >
+                  <font href= "" class = "topic-tag">rake</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/resque.html" >
+                  <font href= "" class = "topic-tag">resque</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/shoryuken.html" >
+                  <font href= "" class = "topic-tag">shoryuken</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sidekiq.html" >
+                  <font href= "" class = "topic-tag">sidekiq</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sinatra.html" >
+                  <font href= "" class = "topic-tag">sinatra</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sneakers.html" >
+                  <font href= "" class = "topic-tag">sneakers</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/publiclab/plots2">publiclab/plots2</a></td>
+              <td>926</td>
+              <td>a collaborative knowledge-exchange platform in Rails; we welcome first-time contributors! :balloon:</td>
+              <td>2013-06-05</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/beginner-friendly.html" >
+                  <font href= "" class = "topic-tag">beginner-friendly</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/collaboration.html" >
+                  <font href= "" class = "topic-tag">collaboration</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/environment.html" >
+                  <font href= "" class = "topic-tag">environment</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/first-timers.html" >
+                  <font href= "" class = "topic-tag">first-timers</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html" >
+                  <font href= "" class = "topic-tag">hacktoberfest</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/help-wanted.html" >
+                  <font href= "" class = "topic-tag">help-wanted</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html" >
+                  <font href= "" class = "topic-tag">javascript</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/publiclab.html" >
+                  <font href= "" class = "topic-tag">publiclab</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/wiki.html" >
+                  <font href= "" class = "topic-tag">wiki</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/openSUSE/osem">openSUSE/osem</a></td>
+              <td>802</td>
+              <td>Open Source Event Manager. An event management tool tailored to Free and Open Source Software conferences.</td>
+              <td>2012-09-22</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/conference.html" >
+                  <font href= "" class = "topic-tag">conference</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/conferences.html" >
+                  <font href= "" class = "topic-tag">conferences</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/events.html" >
+                  <font href= "" class = "topic-tag">events</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html" >
+                  <font href= "" class = "topic-tag">hacktoberfest</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/osem.html" >
+                  <font href= "" class = "topic-tag">osem</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails-application.html" >
+                  <font href= "" class = "topic-tag">rails-application</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/schedule.html" >
+                  <font href= "" class = "topic-tag">schedule</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/AlchemyCMS/alchemy_cms">AlchemyCMS/alchemy_cms</a></td>
+              <td>787</td>
+              <td>AlchemyCMS is a Rails CMS engine</td>
+              <td>2011-04-07</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/admin.html" >
+                  <font href= "" class = "topic-tag">admin</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/alchemy-cms.html" >
+                  <font href= "" class = "topic-tag">alchemy-cms</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cms.html" >
+                  <font href= "" class = "topic-tag">cms</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/content-management-system.html" >
+                  <font href= "" class = "topic-tag">content-management-system</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails-engine.html" >
+                  <font href= "" class = "topic-tag">rails-engine</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/matestack/matestack-ui-core">matestack/matestack-ui-core</a></td>
+              <td>550</td>
+              <td>Component based web UIs in pure Ruby for Rails. Boost your productivity & easily create component based web UIs in pure Ruby.</td>
+              <td>2018-09-21</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/components.html" >
+                  <font href= "" class = "topic-tag">components</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/fullstack.html" >
+                  <font href= "" class = "topic-tag">fullstack</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby-gem.html" >
+                  <font href= "" class = "topic-tag">ruby-gem</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby-on-rails.html" >
+                  <font href= "" class = "topic-tag">ruby-on-rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rubygem.html" >
+                  <font href= "" class = "topic-tag">rubygem</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rubyonrails.html" >
+                  <font href= "" class = "topic-tag">rubyonrails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/server-side-rendering.html" >
+                  <font href= "" class = "topic-tag">server-side-rendering</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/glebm/order_query">glebm/order_query</a></td>
+              <td>508</td>
+              <td>Find next / previous Active Record(s) in one query</td>
+              <td>2014-03-10</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/activerecord.html" >
+                  <font href= "" class = "topic-tag">activerecord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/keyset-paging.html" >
+                  <font href= "" class = "topic-tag">keyset-paging</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pagination.html" >
+                  <font href= "" class = "topic-tag">pagination</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/etewiah/property_web_builder">etewiah/property_web_builder</a></td>
+              <td>483</td>
+              <td>Create a fully featured real estate website on Rails in minutes! ⛺</td>
+              <td>2016-11-04</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cms.html" >
+                  <font href= "" class = "topic-tag">cms</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/crm.html" >
+                  <font href= "" class = "topic-tag">crm</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/heroku.html" >
+                  <font href= "" class = "topic-tag">heroku</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/lead-generator.html" >
+                  <font href= "" class = "topic-tag">lead-generator</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mls.html" >
+                  <font href= "" class = "topic-tag">mls</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/opensource.html" >
+                  <font href= "" class = "topic-tag">opensource</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/property-management.html" >
+                  <font href= "" class = "topic-tag">property-management</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/proptech.html" >
+                  <font href= "" class = "topic-tag">proptech</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/real-estate.html" >
+                  <font href= "" class = "topic-tag">real-estate</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/real-estate-website.html" >
+                  <font href= "" class = "topic-tag">real-estate-website</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rets.html" >
+                  <font href= "" class = "topic-tag">rets</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/algolia/algoliasearch-rails">algolia/algoliasearch-rails</a></td>
+              <td>395</td>
+              <td>AlgoliaSearch integration to your favorite ORM</td>
+              <td>2013-09-17</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/activerecord.html" >
+                  <font href= "" class = "topic-tag">activerecord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/algolia.html" >
+                  <font href= "" class = "topic-tag">algolia</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gem.html" >
+                  <font href= "" class = "topic-tag">gem</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mongoid.html" >
+                  <font href= "" class = "topic-tag">mongoid</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/search.html" >
+                  <font href= "" class = "topic-tag">search</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sequel.html" >
+                  <font href= "" class = "topic-tag">sequel</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/chrisvel/wreeto_official">chrisvel/wreeto_official</a></td>
+              <td>379</td>
+              <td>Wreeto is an open source note-taking, knowledge management and wiki system.</td>
+              <td>2020-05-08</td>
+              <td>JavaScript</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/docker.html" >
+                  <font href= "" class = "topic-tag">docker</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/knowledge-management.html" >
+                  <font href= "" class = "topic-tag">knowledge-management</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/note-taking.html" >
+                  <font href= "" class = "topic-tag">note-taking</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/notes.html" >
+                  <font href= "" class = "topic-tag">notes</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/notetaking-applications.html" >
+                  <font href= "" class = "topic-tag">notetaking-applications</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails-framework.html" >
+                  <font href= "" class = "topic-tag">rails-framework</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/research.html" >
+                  <font href= "" class = "topic-tag">research</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/wiki.html" >
+                  <font href= "" class = "topic-tag">wiki</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/klausmeyer/docker-registry-browser">klausmeyer/docker-registry-browser</a></td>
+              <td>356</td>
+              <td>🐳 Web Interface for the Docker Registry HTTP API V2 written in Ruby on Rails.</td>
+              <td>2016-04-23</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/docker.html" >
+                  <font href= "" class = "topic-tag">docker</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/docker-registry.html" >
+                  <font href= "" class = "topic-tag">docker-registry</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/user-interface.html" >
+                  <font href= "" class = "topic-tag">user-interface</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/web-app.html" >
+                  <font href= "" class = "topic-tag">web-app</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/codidact/qpixel">codidact/qpixel</a></td>
+              <td>269</td>
+              <td>Q&A-based community knowledge-sharing software</td>
+              <td>2020-01-29</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/co-design.html" >
+                  <font href= "" class = "topic-tag">co-design</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html" >
+                  <font href= "" class = "topic-tag">hacktoberfest</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/q-and-a.html" >
+                  <font href= "" class = "topic-tag">q-and-a</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/diowa/ruby2-rails4-bootstrap-heroku">diowa/ruby2-rails4-bootstrap-heroku</a></td>
+              <td>176</td>
+              <td>A starter application based on Ruby 2.4, Rails 4.2 and Bootstrap for Sass 3, deployable on Heroku</td>
+              <td>2013-04-19</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/bootstrap.html" >
+                  <font href= "" class = "topic-tag">bootstrap</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/font-awesome.html" >
+                  <font href= "" class = "topic-tag">font-awesome</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/heroku.html" >
+                  <font href= "" class = "topic-tag">heroku</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/postgresql.html" >
+                  <font href= "" class = "topic-tag">postgresql</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sass.html" >
+                  <font href= "" class = "topic-tag">sass</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/slim.html" >
+                  <font href= "" class = "topic-tag">slim</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/starter-app.html" >
+                  <font href= "" class = "topic-tag">starter-app</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/samvera/hyrax">samvera/hyrax</a></td>
+              <td>163</td>
+              <td>Hyrax is a Ruby on Rails Engine built by the Samvera community. Hyrax provides a foundation for creating many different digital repository applications.</td>
+              <td>2016-11-29</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/blacklight.html" >
+                  <font href= "" class = "topic-tag">blacklight</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/fcrepo.html" >
+                  <font href= "" class = "topic-tag">fcrepo</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hydra-community.html" >
+                  <font href= "" class = "topic-tag">hydra-community</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hyrax.html" >
+                  <font href= "" class = "topic-tag">hyrax</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/repository.html" >
+                  <font href= "" class = "topic-tag">repository</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/samvera.html" >
+                  <font href= "" class = "topic-tag">samvera</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/samvera-community.html" >
+                  <font href= "" class = "topic-tag">samvera-community</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sufia.html" >
+                  <font href= "" class = "topic-tag">sufia</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/Retrospring/retrospring">Retrospring/retrospring</a></td>
+              <td>137</td>
+              <td>Q/A based social network</td>
+              <td>2015-07-06</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html" >
+                  <font href= "" class = "topic-tag">hacktoberfest</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/justask.html" >
+                  <font href= "" class = "topic-tag">justask</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/questions-and-answers.html" >
+                  <font href= "" class = "topic-tag">questions-and-answers</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/retrospring.html" >
+                  <font href= "" class = "topic-tag">retrospring</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby-on-rails.html" >
+                  <font href= "" class = "topic-tag">ruby-on-rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/social-network.html" >
+                  <font href= "" class = "topic-tag">social-network</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/AndyObtiva/puts_debuggerer">AndyObtiva/puts_debuggerer</a></td>
+              <td>85</td>
+              <td>Ruby library for improved puts debugging, automatically displaying bonus useful information such as source line number and source code.</td>
+              <td>2017-02-23</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/debugging-tool.html" >
+                  <font href= "" class = "topic-tag">debugging-tool</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/logger.html" >
+                  <font href= "" class = "topic-tag">logger</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/output.html" >
+                  <font href= "" class = "topic-tag">output</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/print-engine.html" >
+                  <font href= "" class = "topic-tag">print-engine</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/cercomp/weby">cercomp/weby</a></td>
+              <td>42</td>
+              <td>A simple, flexible and extensible CMS in Ruby on Rails</td>
+              <td>2013-12-27</td>
+              <td>SCSS</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cms.html" >
+                  <font href= "" class = "topic-tag">cms</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sites.html" >
+                  <font href= "" class = "topic-tag">sites</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/victor-am/rails-ranger">victor-am/rails-ranger</a></td>
+              <td>37</td>
+              <td>🤠 An opinionated AJAX client for Ruby on Rails APIs</td>
+              <td>2017-05-20</td>
+              <td>JavaScript</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ajax.html" >
+                  <font href= "" class = "topic-tag">ajax</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ajax-client.html" >
+                  <font href= "" class = "topic-tag">ajax-client</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/axios.html" >
+                  <font href= "" class = "topic-tag">axios</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html" >
+                  <font href= "" class = "topic-tag">javascript</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails-api.html" >
+                  <font href= "" class = "topic-tag">rails-api</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rest-client.html" >
+                  <font href= "" class = "topic-tag">rest-client</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/AndyObtiva/abstract_feature_branch">AndyObtiva/abstract_feature_branch</a></td>
+              <td>23</td>
+              <td>abstract_feature_branch is a Ruby gem that provides a variation on the Branch by Abstraction Pattern by Paul Hammant and the Feature Toggles Pattern by Martin Fowler (aka Feature Flags) to enable Continuous Integration and Trunk-Based Development. </td>
+              <td>2012-11-02</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/branch-by-abstraction.html" >
+                  <font href= "" class = "topic-tag">branch-by-abstraction</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/continuous-integration.html" >
+                  <font href= "" class = "topic-tag">continuous-integration</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/fault-tolerance.html" >
+                  <font href= "" class = "topic-tag">fault-tolerance</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/feature-flags.html" >
+                  <font href= "" class = "topic-tag">feature-flags</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/feature-flipper.html" >
+                  <font href= "" class = "topic-tag">feature-flipper</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/feature-flipping.html" >
+                  <font href= "" class = "topic-tag">feature-flipping</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/feature-rollout.html" >
+                  <font href= "" class = "topic-tag">feature-rollout</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/feature-toggles.html" >
+                  <font href= "" class = "topic-tag">feature-toggles</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/productivity.html" >
+                  <font href= "" class = "topic-tag">productivity</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/release-management.html" >
+                  <font href= "" class = "topic-tag">release-management</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/trunk-based-development.html" >
+                  <font href= "" class = "topic-tag">trunk-based-development</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/drabkirn/feedka">drabkirn/feedka</a></td>
+              <td>17</td>
+              <td>Get authentic, kindful, and constructive feedback from your friends, family, and co-workers.</td>
+              <td>2020-04-25</td>
+              <td>Ruby</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/co-working.html" >
+                  <font href= "" class = "topic-tag">co-working</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/constructive.html" >
+                  <font href= "" class = "topic-tag">constructive</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/family.html" >
+                  <font href= "" class = "topic-tag">family</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/feedback.html" >
+                  <font href= "" class = "topic-tag">feedback</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/friends.html" >
+                  <font href= "" class = "topic-tag">friends</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/kind.html" >
+                  <font href= "" class = "topic-tag">kind</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mysql.html" >
+                  <font href= "" class = "topic-tag">mysql</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rails.html" >
+                  <font href= "" class = "topic-tag">rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/redis.html" >
+                  <font href= "" class = "topic-tag">redis</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rspec.html" >
+                  <font href= "" class = "topic-tag">rspec</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rspec-rails.html" >
+                  <font href= "" class = "topic-tag">rspec-rails</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby.html" >
+                  <font href= "" class = "topic-tag">ruby</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ruby-on-rails.html" >
+                  <font href= "" class = "topic-tag">ruby-on-rails</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+        </tbody>
+      </table>
+		</div>
+
+
+
+
+				</div>
+
+
+			</div>
+			<!-- /.row -->
+
+		</div>
+		<!-- /.container -->
+
+		<footer>
+	<div class="container-fluid">
+    <div class="text-center">
+      <p>Awesome List management.
+    </div>
+	</div>
+
+</footer>
+
+	</body>
+
+</html>
