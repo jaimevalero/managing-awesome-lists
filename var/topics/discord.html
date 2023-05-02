@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Awesome list viewer</title>
+		
+
+<!-- Meta Information -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Awesome list manager. Discover best resources from github.">
+<meta name="author" content="Jaime Valero">
+<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
+
+<!-- CSS Information -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- bootstrap theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Font-awesome -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- bootstrap4 -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+
+<!-- bootstrap4 -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+
+<style type="text/css">
+  * {
+    font-size: 16px;
+  }
+
+  .topic-tag {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    margin: 0 0.5em 0.5em 0;
+    white-space: nowrap;
+    background-color: #f1f8ff;
+    border-radius: 3px;
+    font-color: #0366d6;
+    color: #0366d6;
+  }
+</style>
+		<!-- Scripts: JQuery & Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+</script>
+
+<!-- bootstrap4 -->
+<script src="https://code.jquery.com/jquery-3.3.1.js">
+</script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
+</script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
+</script>
+
+<script type="text/javascript" language="JavaScript">
+  $(document).ready(function() {
+    $('#tabla').DataTable({
+      "order": [
+        [1, "desc"]
+      ]
+    });
+  });
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-146303223-1');
+</script>
+	</head>
+
+	<body>
+    <nav class="navbar navbar-inverse" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;">
+			
+				
+
+<div class="container-fluid" >
+	<!-- Brand and toggle get grouped for better mobile display -->
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li >
+				<a href="https://jaimevalero.github.io/managing-awesome-lists">Awesome list viewer <span class="sr-only">(current)</span></a>
+			</li>
+		</ul>
+
+		<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"
+					 role="button" aria-haspopup="true" aria-expanded="false">
+				 Select list
+				</a>
+				<ul class="dropdown-menu">
+
+
+          <li rel="tooltip"  title="Global list" >
+            <a href='https://jaimevalero.github.io/managing-awesome-lists'>
+            <i class="fa fa-internal-link" aria-hidden="true"></i> Global list
+            </a>
+          </li>
+          <li rel="tooltip"  title="Short CSS code snippets for all your development needs" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-30-seconds%4030-seconds-of-css.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> 30-seconds-of-css
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome actions to use on GitHub" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sdras%40awesome-actions.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> actions
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Android UI/UX libraries" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-wasabeef%40awesome-android-ui.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> android-ui
+						</a>
+					</li><li rel="tooltip"  title="Curated list of resources about Apache Airflow" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-jghoman%40awesome-apache-airflow.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> apache-airflow
+						</a>
+					</li><li rel="tooltip"  title="😎 Awesome lists about all kinds of interesting topics" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sindresorhus%40awesome.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> awesome
+						</a>
+					</li><li rel="tooltip"  title="Awesome-LLM: a curated list of Large Language Model" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-Hannibal046%40Awesome-LLM.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> Awesome-LLM
+						</a>
+					</li><li rel="tooltip"  title="A comprehensive list of pytorch related content on github,such as different models,implementations,helper libraries,tutorials etc." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-bharathgs%40Awesome-pytorch-list.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> Awesome-pytorch-list
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Amazon Web Services (AWS) libraries, open source repos, guides, blogs, and other resources.  Featuring the Fiery Meter of AWSome." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-donnemartin%40awesome-aws.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> aws
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome big data frameworks, ressources and other awesomeness." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-newTendermint%40awesome-bigdata.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> bigdata
+						</a>
+					</li><li rel="tooltip"  title="Curated list of blockchain services and exchanges 🔥🏦🔥🏦🔥🏦🔥" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-imbaniac%40awesome-blockchain.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> blockchain
+						</a>
+					</li><li rel="tooltip"  title="✨  Awesome - A curated list of amazing Bootstrap tools and themes." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-awesome-bootstrap-org%40awesome-bootstrap.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> bootstrap
+						</a>
+					</li><li rel="tooltip"  title="List of Continuous Integration services" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ligurio%40awesome-ci.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> ci
+						</a>
+					</li><li rel="tooltip"  title="🖥 📊 🕹 🛠 A curated list of command line apps" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-agarrharr%40awesome-cli-apps.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> cli-apps
+						</a>
+					</li><li rel="tooltip"  title=":books: List of awesome university courses for learning Computer Science!" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-prakhar1989%40awesome-courses.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> courses
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things. Inspired by awesome-... stuff." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-fffaraz%40awesome-cpp.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> cpp
+						</a>
+					</li><li rel="tooltip"  title="A list of D3 libraries, plugins and utilities" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-wbkd%40awesome-d3.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> d3
+						</a>
+					</li><li rel="tooltip"  title=":memo: An awesome Data Science repository to learn and apply for real world problems." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-academic%40awesome-datascience.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> datascience
+						</a>
+					</li><li rel="tooltip"  title=":chart_with_upwards_trend:  A curated list of awesome data visualization libraries and resources." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-javierluraschi%40awesome-dataviz.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> dataviz
+						</a>
+					</li><li rel="tooltip"  title="A curated list of amazingly awesome database libraries, resources and shiny things by https://www.numetriclabz.com/" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-numetriclabz%40awesome-db.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> db
+						</a>
+					</li><li rel="tooltip"  title="A curated list of Domain-Driven Design (DDD), Command Query Responsibility Segregation (CQRS), Event Sourcing, and Event Storming resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-heynickc%40awesome-ddd.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> ddd
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Deep Learning tutorials, projects and communities." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ChristosChristofidis%40awesome-deep-learning.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> deep-learning
+						</a>
+					</li><li rel="tooltip"  title="This is my awesome list with all open source and free applications that you can use in your management" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-joubertredrat%40awesome-devops.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> devops
+						</a>
+					</li><li rel="tooltip"  title=":whale: A curated list of Docker resources and projects" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-veggiemonk%40awesome-docker.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> docker
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Flask resources and plugins" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-humiaozuzu%40awesome-flask.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> flask
+						</a>
+					</li><li rel="tooltip"  title="A list of awesome beginners-friendly projects." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-MunGell%40awesome-for-beginners.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> for-beginners
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome forensic analysis tools and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-cugu%40awesome-forensics.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> forensics
+						</a>
+					</li><li rel="tooltip"  title="A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ripienaar%40free-for-dev.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> free-for-dev
+						</a>
+					</li><li rel="tooltip"  title="Manually curated collection of resources for frontend web developers." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-dypsilon%40frontend-dev-bookmarks.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> frontend-dev-bookmarks
+						</a>
+					</li><li rel="tooltip"  title="A list of cool features of Git and GitHub." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-tiimgreen%40github-cheat-sheet.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> github-cheat-sheet
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Go frameworks, libraries and software" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-avelino%40awesome-go.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> go
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome groovy libraries, frameworks and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-kdabir%40awesome-groovy.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> groovy
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Hacking tutorials, tools and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-carpedm20%40awesome-hacking.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> hacking
+						</a>
+					</li><li rel="tooltip"  title="✂A collection of useful .htaccess snippets." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-phanan%40htaccess.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> htaccess
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome frameworks, libraries and software for the Java programming language." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-akullpp%40awesome-java.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> java
+						</a>
+					</li><li rel="tooltip"  title="🐢 A collection of awesome browser-side  JavaScript libraries, resources and shiny things." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sorrycc%40awesome-javascript.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> javascript
+						</a>
+					</li><li rel="tooltip"  title="A collection of tips to help up your jQuery game 🎮" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-AllThingsSmitty%40jquery-tips-everyone-should-know.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> jquery-tips-everyone-should-know
+						</a>
+					</li><li rel="tooltip"  title="A curated list for awesome kubernetes sources :ship::tada:" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ramitsurana%40awesome-kubernetes.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> kubernetes
+						</a>
+					</li><li rel="tooltip"  title=":penguin: A list of awesome projects and resources that make Linux even more awesome. :penguin:" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-inputsh%40awesome-linux.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> linux
+						</a>
+					</li><li rel="tooltip"  title=" Now we have become very big, Different from the original idea. Collect premium software in various categories." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-jaywcjlove%40awesome-mac.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> mac
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Machine Learning frameworks, libraries and software." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-josephmisiti%40awesome-machine-learning.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> machine-learning
+						</a>
+					</li><li rel="tooltip"  title="Defund the Police." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-rshipp%40awesome-malware-analysis.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> malware-analysis
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome MySQL software, libraries, tools and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-shlomi-noach%40awesome-mysql.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> mysql
+						</a>
+					</li><li rel="tooltip"  title=":zap: Delightful Node.js packages and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sindresorhus%40awesome-nodejs.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> nodejs
+						</a>
+					</li><li rel="tooltip"  title="🚀 Awesome list of open source applications for macOS. https://t.me/s/opensourcemacosapps" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-serhii-londar%40open-source-mac-os-apps.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> open-source-mac-os-apps
+						</a>
+					</li><li rel="tooltip"  title="A curated list of amazingly awesome PHP libraries, resources and shiny things." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ziadoz%40awesome-php.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> php
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome pipeline toolkits inspired by Awesome Sysadmin" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-pditommaso%40awesome-pipeline.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> pipeline
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Python frameworks, libraries, software and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-vinta%40awesome-python.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> python
+						</a>
+					</li><li rel="tooltip"  title="📝 A curated list of awesome Raspberry Pi tools, projects, images and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-thibmaek%40awesome-raspberry-pi.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> raspberry-pi
+						</a>
+					</li><li rel="tooltip"  title="A collection of awesome things regarding React ecosystem" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-enaqx%40awesome-react.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> react
+						</a>
+					</li><li rel="tooltip"  title="📄 CLI that generates beautiful README.md files" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-kefranabg%40readme-md-generator.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> readme-md-generator
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome remote jobs and resources. Inspired by https://github.com/vinta/awesome-python" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-lukasz-madon%40awesome-remote-job.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> remote-job
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Ruby frameworks, libraries and resources. Inspired by awesome-php & awesome-python." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sdogruyol%40awesome-ruby.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> ruby
+						</a>
+					</li><li rel="tooltip"  title="The Patterns of Scalable, Reliable, and Performant Large-Scale Systems" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-binhnguyennus%40awesome-scalability.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> scalability
+						</a>
+					</li><li rel="tooltip"  title="A collection of awesome software, libraries, documents, books, resources and cools stuffs about security." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sbilly%40awesome-security.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> security
+						</a>
+					</li><li rel="tooltip"  title="A list of Free Software network services and web applications which can be hosted on your own servers" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-awesome-selfhosted%40awesome-selfhosted.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> selfhosted
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awesome-php." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-alebcay%40awesome-shell.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> shell
+						</a>
+					</li><li rel="tooltip"  title="A curated list of amazingly awesome open source sysadmin resources." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-awesome-foss%40awesome-sysadmin.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> sysadmin
+						</a>
+					</li><li rel="tooltip"  title="💥 A curated list of Terminal frameworks, plugins & resources for CLI lovers." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-k4m4%40terminals-are-sexy.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> terminals-are-sexy
+						</a>
+					</li><li rel="tooltip"  title="A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-trimstray%40the-book-of-secret-knowledge.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> the-book-of-secret-knowledge
+						</a>
+					</li><li rel="tooltip"  title="🎨 A curated list of delightful VS Code packages and resources." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-viatsko%40awesome-vscode.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> vscode
+						</a>
+					</li><li rel="tooltip"  title=":pencil: A curated list of Web Performance Optimization. Everyone can contribute here!" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-davidsonfellipe%40awesome-wpo.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> wpo
+						</a>
+					</li><li rel="tooltip"  title="A collection of ZSH frameworks, plugins, themes and tutorials." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-unixorn%40awesome-zsh-plugins.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> zsh-plugins
+						</a>
+					</li>
+
+
+				</ul>
+			</li>
+		</ul>
+
+
+	</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+
+
+<script type="text/javascript">
+    $(function () {
+        $("[rel='tooltip']").tooltip();
+    });
+</script>
+			
+		</nav>
+
+    <div class="container-fluid" >
+			<div class="row">
+				<!-- Main alert pop-ups -->
+        <div class="col-xl-12 mb-4">
+					
+
+
+<h2 >Topic:  <font class = "topic-tag"> discord</font> </h2>
+
+<div class="alert alert-info">
+	<i class="fa fa-eye" aria-hidden="true"></i>
+  This a generated list, with all the repos from the awesome lists, containing the topic
+  <strong>discord</strong>.
+</div>
+
+
+
+<br>
+<br>
+ Elements : 21
+ <br>
+    <div class="table-responsive">
+      <table id="tabla"     class="table table-hover table-condensed table-striped">
+
+        <thead>
+          <tr>
+            <th>Repo</th>
+            <th width="15%">Stars</th>
+            <th>Description</th>
+            <th width="15%">Created</th>
+            <th>Language</th>
+            <th>Tags</th>
+
+
+
+          </tr>
+        </thead>
+        <tbody>
+					
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/tqdm/tqdm">tqdm/tqdm</a></td>
+              <td>24648</td>
+              <td>A Fast, Extensible Progress Bar for Python and CLI</td>
+              <td>2015-06-03</td>
+              <td>Python</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cli.html" >
+                  <font href= "" class = "topic-tag">cli</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/closember.html" >
+                  <font href= "" class = "topic-tag">closember</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/console.html" >
+                  <font href= "" class = "topic-tag">console</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gui.html" >
+                  <font href= "" class = "topic-tag">gui</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jupyter.html" >
+                  <font href= "" class = "topic-tag">jupyter</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/keras.html" >
+                  <font href= "" class = "topic-tag">keras</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/meter.html" >
+                  <font href= "" class = "topic-tag">meter</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pandas.html" >
+                  <font href= "" class = "topic-tag">pandas</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/parallel.html" >
+                  <font href= "" class = "topic-tag">parallel</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/progress.html" >
+                  <font href= "" class = "topic-tag">progress</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/progress-bar.html" >
+                  <font href= "" class = "topic-tag">progress-bar</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/progressbar.html" >
+                  <font href= "" class = "topic-tag">progressbar</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/progressmeter.html" >
+                  <font href= "" class = "topic-tag">progressmeter</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html" >
+                  <font href= "" class = "topic-tag">python</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rate.html" >
+                  <font href= "" class = "topic-tag">rate</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/telegram.html" >
+                  <font href= "" class = "topic-tag">telegram</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/terminal.html" >
+                  <font href= "" class = "topic-tag">terminal</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/time.html" >
+                  <font href= "" class = "topic-tag">time</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/utilities.html" >
+                  <font href= "" class = "topic-tag">utilities</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/OpenRCT2/OpenRCT2">OpenRCT2/OpenRCT2</a></td>
+              <td>11729</td>
+              <td>An open source re-implementation of RollerCoaster Tycoon 2 🎢</td>
+              <td>2014-04-01</td>
+              <td>C++</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/c.html" >
+                  <font href= "" class = "topic-tag">c</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/c-plus-plus.html" >
+                  <font href= "" class = "topic-tag">c-plus-plus</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cmake.html" >
+                  <font href= "" class = "topic-tag">cmake</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cpp.html" >
+                  <font href= "" class = "topic-tag">cpp</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/game.html" >
+                  <font href= "" class = "topic-tag">game</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html" >
+                  <font href= "" class = "topic-tag">hacktoberfest</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/linux.html" >
+                  <font href= "" class = "topic-tag">linux</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/msbuild.html" >
+                  <font href= "" class = "topic-tag">msbuild</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/multiplayer.html" >
+                  <font href= "" class = "topic-tag">multiplayer</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/opengl.html" >
+                  <font href= "" class = "topic-tag">opengl</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/openrct2.html" >
+                  <font href= "" class = "topic-tag">openrct2</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/roller-coaster.html" >
+                  <font href= "" class = "topic-tag">roller-coaster</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/roller-coaster-tycoon.html" >
+                  <font href= "" class = "topic-tag">roller-coaster-tycoon</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sdl2.html" >
+                  <font href= "" class = "topic-tag">sdl2</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/server.html" >
+                  <font href= "" class = "topic-tag">server</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/simulation.html" >
+                  <font href= "" class = "topic-tag">simulation</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/visual-studio.html" >
+                  <font href= "" class = "topic-tag">visual-studio</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/windows.html" >
+                  <font href= "" class = "topic-tag">windows</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/xcode.html" >
+                  <font href= "" class = "topic-tag">xcode</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/ramboxapp/community-edition">ramboxapp/community-edition</a></td>
+              <td>6343</td>
+              <td>Free and Open Source messaging and emailing app that combines common web applications into one.</td>
+              <td>2016-04-12</td>
+              <td>JavaScript</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/custom-services.html" >
+                  <font href= "" class = "topic-tag">custom-services</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/email.html" >
+                  <font href= "" class = "topic-tag">email</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/facebook-workplace.html" >
+                  <font href= "" class = "topic-tag">facebook-workplace</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gmail.html" >
+                  <font href= "" class = "topic-tag">gmail</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hangouts.html" >
+                  <font href= "" class = "topic-tag">hangouts</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hipchat.html" >
+                  <font href= "" class = "topic-tag">hipchat</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/icloud.html" >
+                  <font href= "" class = "topic-tag">icloud</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/inbox.html" >
+                  <font href= "" class = "topic-tag">inbox</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/linux.html" >
+                  <font href= "" class = "topic-tag">linux</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/macos.html" >
+                  <font href= "" class = "topic-tag">macos</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/messenger.html" >
+                  <font href= "" class = "topic-tag">messenger</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/microsoft-teams.html" >
+                  <font href= "" class = "topic-tag">microsoft-teams</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/outlook.html" >
+                  <font href= "" class = "topic-tag">outlook</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/skype.html" >
+                  <font href= "" class = "topic-tag">skype</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/slack.html" >
+                  <font href= "" class = "topic-tag">slack</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/telegram.html" >
+                  <font href= "" class = "topic-tag">telegram</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/tweetdeck.html" >
+                  <font href= "" class = "topic-tag">tweetdeck</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/whatsapp.html" >
+                  <font href= "" class = "topic-tag">whatsapp</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/windows.html" >
+                  <font href= "" class = "topic-tag">windows</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/ramboxapp/community-edition">ramboxapp/community-edition</a></td>
+              <td>6343</td>
+              <td>Free and Open Source messaging and emailing app that combines common web applications into one.</td>
+              <td>2016-04-12</td>
+              <td>JavaScript</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/custom-services.html" >
+                  <font href= "" class = "topic-tag">custom-services</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/email.html" >
+                  <font href= "" class = "topic-tag">email</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/facebook-workplace.html" >
+                  <font href= "" class = "topic-tag">facebook-workplace</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gmail.html" >
+                  <font href= "" class = "topic-tag">gmail</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hangouts.html" >
+                  <font href= "" class = "topic-tag">hangouts</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hipchat.html" >
+                  <font href= "" class = "topic-tag">hipchat</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/icloud.html" >
+                  <font href= "" class = "topic-tag">icloud</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/inbox.html" >
+                  <font href= "" class = "topic-tag">inbox</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/linux.html" >
+                  <font href= "" class = "topic-tag">linux</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/macos.html" >
+                  <font href= "" class = "topic-tag">macos</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/messenger.html" >
+                  <font href= "" class = "topic-tag">messenger</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/microsoft-teams.html" >
+                  <font href= "" class = "topic-tag">microsoft-teams</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/outlook.html" >
+                  <font href= "" class = "topic-tag">outlook</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/skype.html" >
+                  <font href= "" class = "topic-tag">skype</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/slack.html" >
+                  <font href= "" class = "topic-tag">slack</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/telegram.html" >
+                  <font href= "" class = "topic-tag">telegram</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/tweetdeck.html" >
+                  <font href= "" class = "topic-tag">tweetdeck</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/whatsapp.html" >
+                  <font href= "" class = "topic-tag">whatsapp</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/windows.html" >
+                  <font href= "" class = "topic-tag">windows</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/hugsy/gef">hugsy/gef</a></td>
+              <td>5533</td>
+              <td>GEF (GDB Enhanced Features) - a modern experience for GDB with advanced debugging capabilities for exploit devs & reverse engineers on Linux</td>
+              <td>2015-03-26</td>
+              <td>Python</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/binary-ninja.html" >
+                  <font href= "" class = "topic-tag">binary-ninja</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ctf.html" >
+                  <font href= "" class = "topic-tag">ctf</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/debugging.html" >
+                  <font href= "" class = "topic-tag">debugging</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/exploit.html" >
+                  <font href= "" class = "topic-tag">exploit</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/exploit-development.html" >
+                  <font href= "" class = "topic-tag">exploit-development</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gdb.html" >
+                  <font href= "" class = "topic-tag">gdb</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gef.html" >
+                  <font href= "" class = "topic-tag">gef</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ida-pro.html" >
+                  <font href= "" class = "topic-tag">ida-pro</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/linux.html" >
+                  <font href= "" class = "topic-tag">linux</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/malware-analysis.html" >
+                  <font href= "" class = "topic-tag">malware-analysis</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mips.html" >
+                  <font href= "" class = "topic-tag">mips</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/powerpc.html" >
+                  <font href= "" class = "topic-tag">powerpc</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pwn.html" >
+                  <font href= "" class = "topic-tag">pwn</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pwntools.html" >
+                  <font href= "" class = "topic-tag">pwntools</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html" >
+                  <font href= "" class = "topic-tag">python</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python-api.html" >
+                  <font href= "" class = "topic-tag">python-api</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/reverse-engineering.html" >
+                  <font href= "" class = "topic-tag">reverse-engineering</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sparc.html" >
+                  <font href= "" class = "topic-tag">sparc</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/bwmarrin/discordgo">bwmarrin/discordgo</a></td>
+              <td>3930</td>
+              <td> (Golang) Go bindings for Discord</td>
+              <td>2015-11-01</td>
+              <td>Go</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord-api.html" >
+                  <font href= "" class = "topic-tag">discord-api</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discordgo.html" >
+                  <font href= "" class = "topic-tag">discordgo</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/go.html" >
+                  <font href= "" class = "topic-tag">go</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/golang.html" >
+                  <font href= "" class = "topic-tag">golang</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/DV8FromTheWorld/JDA">DV8FromTheWorld/JDA</a></td>
+              <td>3663</td>
+              <td>Java wrapper for the popular chat & VOIP service: Discord https://discord.com</td>
+              <td>2015-12-12</td>
+              <td>Java</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/api.html" >
+                  <font href= "" class = "topic-tag">api</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/api-wrapper.html" >
+                  <font href= "" class = "topic-tag">api-wrapper</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/bot.html" >
+                  <font href= "" class = "topic-tag">bot</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/bot-api.html" >
+                  <font href= "" class = "topic-tag">bot-api</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html" >
+                  <font href= "" class = "topic-tag">hacktoberfest</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/java.html" >
+                  <font href= "" class = "topic-tag">java</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javadoc.html" >
+                  <font href= "" class = "topic-tag">javadoc</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jda.html" >
+                  <font href= "" class = "topic-tag">jda</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/promoted-downloads.html" >
+                  <font href= "" class = "topic-tag">promoted-downloads</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rest.html" >
+                  <font href= "" class = "topic-tag">rest</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rest-api.html" >
+                  <font href= "" class = "topic-tag">rest-api</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/websocket.html" >
+                  <font href= "" class = "topic-tag">websocket</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/ytmdesktop/ytmdesktop">ytmdesktop/ytmdesktop</a></td>
+              <td>2840</td>
+              <td>A Desktop App for YouTube Music</td>
+              <td>2018-10-19</td>
+              <td>JavaScript</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/app.html" >
+                  <font href= "" class = "topic-tag">app</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/desktop.html" >
+                  <font href= "" class = "topic-tag">desktop</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/electron.html" >
+                  <font href= "" class = "topic-tag">electron</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/electron-application.html" >
+                  <font href= "" class = "topic-tag">electron-application</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html" >
+                  <font href= "" class = "topic-tag">hacktoberfest</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html" >
+                  <font href= "" class = "topic-tag">javascript</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/linux.html" >
+                  <font href= "" class = "topic-tag">linux</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mac.html" >
+                  <font href= "" class = "topic-tag">mac</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/materializecss.html" >
+                  <font href= "" class = "topic-tag">materializecss</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/music.html" >
+                  <font href= "" class = "topic-tag">music</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/music-player.html" >
+                  <font href= "" class = "topic-tag">music-player</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/node.html" >
+                  <font href= "" class = "topic-tag">node</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rainmeter.html" >
+                  <font href= "" class = "topic-tag">rainmeter</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/scrobbler.html" >
+                  <font href= "" class = "topic-tag">scrobbler</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/windows.html" >
+                  <font href= "" class = "topic-tag">windows</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/youtube.html" >
+                  <font href= "" class = "topic-tag">youtube</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/youtube-music.html" >
+                  <font href= "" class = "topic-tag">youtube-music</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/youtube-music-player.html" >
+                  <font href= "" class = "topic-tag">youtube-music-player</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/youtube-player.html" >
+                  <font href= "" class = "topic-tag">youtube-player</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/mhxion/awesome-discord-communities">mhxion/awesome-discord-communities</a></td>
+              <td>2005</td>
+              <td>A curated list of awesome Discord communities for programmers</td>
+              <td>2019-08-21</td>
+              <td>Python</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/awesome.html" >
+                  <font href= "" class = "topic-tag">awesome</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/awesome-list.html" >
+                  <font href= "" class = "topic-tag">awesome-list</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/beginner.html" >
+                  <font href= "" class = "topic-tag">beginner</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/community.html" >
+                  <font href= "" class = "topic-tag">community</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord-server.html" >
+                  <font href= "" class = "topic-tag">discord-server</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/game-development.html" >
+                  <font href= "" class = "topic-tag">game-development</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/web.html" >
+                  <font href= "" class = "topic-tag">web</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/crazy-max/diun">crazy-max/diun</a></td>
+              <td>1938</td>
+              <td>Receive notifications when an image is updated on a Docker registry</td>
+              <td>2017-12-30</td>
+              <td>Go</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/automation.html" >
+                  <font href= "" class = "topic-tag">automation</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/docker.html" >
+                  <font href= "" class = "topic-tag">docker</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/golang.html" >
+                  <font href= "" class = "topic-tag">golang</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gotify.html" >
+                  <font href= "" class = "topic-tag">gotify</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/kubernetes.html" >
+                  <font href= "" class = "topic-tag">kubernetes</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/manifest.html" >
+                  <font href= "" class = "topic-tag">manifest</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/nomad.html" >
+                  <font href= "" class = "topic-tag">nomad</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/notifications.html" >
+                  <font href= "" class = "topic-tag">notifications</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pushover.html" >
+                  <font href= "" class = "topic-tag">pushover</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/registry.html" >
+                  <font href= "" class = "topic-tag">registry</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rocketchat.html" >
+                  <font href= "" class = "topic-tag">rocketchat</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/slack.html" >
+                  <font href= "" class = "topic-tag">slack</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/swarm.html" >
+                  <font href= "" class = "topic-tag">swarm</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/telegram.html" >
+                  <font href= "" class = "topic-tag">telegram</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/update.html" >
+                  <font href= "" class = "topic-tag">update</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/update-checker.html" >
+                  <font href= "" class = "topic-tag">update-checker</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/watch.html" >
+                  <font href= "" class = "topic-tag">watch</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/PufferPanel/PufferPanel">PufferPanel/PufferPanel</a></td>
+              <td>988</td>
+              <td>PufferPanel is an open source game server management panel, designed for both small networks and game server providers.</td>
+              <td>2013-10-21</td>
+              <td>Go</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/daemon.html" >
+                  <font href= "" class = "topic-tag">daemon</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/game-server.html" >
+                  <font href= "" class = "topic-tag">game-server</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/game-servers.html" >
+                  <font href= "" class = "topic-tag">game-servers</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/golang.html" >
+                  <font href= "" class = "topic-tag">golang</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/html.html" >
+                  <font href= "" class = "topic-tag">html</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/minecraft.html" >
+                  <font href= "" class = "topic-tag">minecraft</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/packagecloud.html" >
+                  <font href= "" class = "topic-tag">packagecloud</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/panel.html" >
+                  <font href= "" class = "topic-tag">panel</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pufferpanel.html" >
+                  <font href= "" class = "topic-tag">pufferpanel</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/srcds.html" >
+                  <font href= "" class = "topic-tag">srcds</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/abahmed/kwatch">abahmed/kwatch</a></td>
+              <td>749</td>
+              <td>:eyes: monitor & detect crashes in your Kubernetes(K8s) cluster instantly</td>
+              <td>2021-11-20</td>
+              <td>Go</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/crash-reporting.html" >
+                  <font href= "" class = "topic-tag">crash-reporting</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/event-notifier.html" >
+                  <font href= "" class = "topic-tag">event-notifier</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/go.html" >
+                  <font href= "" class = "topic-tag">go</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/golang.html" >
+                  <font href= "" class = "topic-tag">golang</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/k8s.html" >
+                  <font href= "" class = "topic-tag">k8s</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/kubernetes.html" >
+                  <font href= "" class = "topic-tag">kubernetes</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/kwatch.html" >
+                  <font href= "" class = "topic-tag">kwatch</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/monitoring.html" >
+                  <font href= "" class = "topic-tag">monitoring</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/slack.html" >
+                  <font href= "" class = "topic-tag">slack</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/brainboxdotcc/DPP">brainboxdotcc/DPP</a></td>
+              <td>673</td>
+              <td>C++ Discord API Bot Library - D++ is Lightweight and scalable for small and huge bots!</td>
+              <td>2021-03-25</td>
+              <td>C++</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/api.html" >
+                  <font href= "" class = "topic-tag">api</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/api-client.html" >
+                  <font href= "" class = "topic-tag">api-client</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/api-wrapper.html" >
+                  <font href= "" class = "topic-tag">api-wrapper</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cpp.html" >
+                  <font href= "" class = "topic-tag">cpp</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord-api.html" >
+                  <font href= "" class = "topic-tag">discord-api</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord-api-v10.html" >
+                  <font href= "" class = "topic-tag">discord-api-v10</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord-api-wrapper.html" >
+                  <font href= "" class = "topic-tag">discord-api-wrapper</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord-bot.html" >
+                  <font href= "" class = "topic-tag">discord-bot</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/docker.html" >
+                  <font href= "" class = "topic-tag">docker</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/dpp.html" >
+                  <font href= "" class = "topic-tag">dpp</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/etf.html" >
+                  <font href= "" class = "topic-tag">etf</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/json.html" >
+                  <font href= "" class = "topic-tag">json</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/library.html" >
+                  <font href= "" class = "topic-tag">library</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/linux.html" >
+                  <font href= "" class = "topic-tag">linux</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/osx.html" >
+                  <font href= "" class = "topic-tag">osx</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ssl.html" >
+                  <font href= "" class = "topic-tag">ssl</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/websocket.html" >
+                  <font href= "" class = "topic-tag">websocket</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/windows.html" >
+                  <font href= "" class = "topic-tag">windows</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/kha7iq/pingme">kha7iq/pingme</a></td>
+              <td>636</td>
+              <td>PingMe is a CLI which provides the ability to send messages or alerts to multiple messaging platforms & email.</td>
+              <td>2021-04-13</td>
+              <td>Go</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/alert.html" >
+                  <font href= "" class = "topic-tag">alert</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cli.html" >
+                  <font href= "" class = "topic-tag">cli</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/email.html" >
+                  <font href= "" class = "topic-tag">email</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/golang.html" >
+                  <font href= "" class = "topic-tag">golang</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gotify.html" >
+                  <font href= "" class = "topic-tag">gotify</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/line.html" >
+                  <font href= "" class = "topic-tag">line</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mastodon.html" >
+                  <font href= "" class = "topic-tag">mastodon</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mattermost.html" >
+                  <font href= "" class = "topic-tag">mattermost</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/messaging.html" >
+                  <font href= "" class = "topic-tag">messaging</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/microsoft-teams.html" >
+                  <font href= "" class = "topic-tag">microsoft-teams</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pingme.html" >
+                  <font href= "" class = "topic-tag">pingme</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pushbullet.html" >
+                  <font href= "" class = "topic-tag">pushbullet</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pushover.html" >
+                  <font href= "" class = "topic-tag">pushover</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rocketchat.html" >
+                  <font href= "" class = "topic-tag">rocketchat</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/slack.html" >
+                  <font href= "" class = "topic-tag">slack</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/telegram.html" >
+                  <font href= "" class = "topic-tag">telegram</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/twillio.html" >
+                  <font href= "" class = "topic-tag">twillio</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/wechat.html" >
+                  <font href= "" class = "topic-tag">wechat</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/tycrek/ass">tycrek/ass</a></td>
+              <td>439</td>
+              <td>The simple self-hosted ShareX server</td>
+              <td>2021-04-05</td>
+              <td>TypeScript</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/docker.html" >
+                  <font href= "" class = "topic-tag">docker</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/docker-compose.html" >
+                  <font href= "" class = "topic-tag">docker-compose</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/embeds.html" >
+                  <font href= "" class = "topic-tag">embeds</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/self-hosted.html" >
+                  <font href= "" class = "topic-tag">self-hosted</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sharex.html" >
+                  <font href= "" class = "topic-tag">sharex</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sharex-server.html" >
+                  <font href= "" class = "topic-tag">sharex-server</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sharex-uploader.html" >
+                  <font href= "" class = "topic-tag">sharex-uploader</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/diced/zipline">diced/zipline</a></td>
+              <td>427</td>
+              <td>A ShareX/file upload server that is easy to use, packed with features, and with an easy setup!</td>
+              <td>2020-04-22</td>
+              <td>TypeScript</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/api.html" >
+                  <font href= "" class = "topic-tag">api</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discordapp.html" >
+                  <font href= "" class = "topic-tag">discordapp</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/docker.html" >
+                  <font href= "" class = "topic-tag">docker</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/easy.html" >
+                  <font href= "" class = "topic-tag">easy</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/file-sharing.html" >
+                  <font href= "" class = "topic-tag">file-sharing</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/file-upload.html" >
+                  <font href= "" class = "topic-tag">file-upload</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gallery.html" >
+                  <font href= "" class = "topic-tag">gallery</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html" >
+                  <font href= "" class = "topic-tag">hacktoberfest</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/nextjs.html" >
+                  <font href= "" class = "topic-tag">nextjs</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/react.html" >
+                  <font href= "" class = "topic-tag">react</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/reactjs.html" >
+                  <font href= "" class = "topic-tag">reactjs</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/screenshot.html" >
+                  <font href= "" class = "topic-tag">screenshot</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/shares.html" >
+                  <font href= "" class = "topic-tag">shares</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sharex.html" >
+                  <font href= "" class = "topic-tag">sharex</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sharex-server.html" >
+                  <font href= "" class = "topic-tag">sharex-server</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/zipline.html" >
+                  <font href= "" class = "topic-tag">zipline</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/Cogmasters/concord">Cogmasters/concord</a></td>
+              <td>401</td>
+              <td>A Discord API wrapper library made in C</td>
+              <td>2022-01-06</td>
+              <td>C</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/api-client.html" >
+                  <font href= "" class = "topic-tag">api-client</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/api-rest.html" >
+                  <font href= "" class = "topic-tag">api-rest</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/api-wrapper.html" >
+                  <font href= "" class = "topic-tag">api-wrapper</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/bsd.html" >
+                  <font href= "" class = "topic-tag">bsd</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/c.html" >
+                  <font href= "" class = "topic-tag">c</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord-api.html" >
+                  <font href= "" class = "topic-tag">discord-api</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord-bot.html" >
+                  <font href= "" class = "topic-tag">discord-bot</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord-library.html" >
+                  <font href= "" class = "topic-tag">discord-library</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/linux.html" >
+                  <font href= "" class = "topic-tag">linux</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/websockets.html" >
+                  <font href= "" class = "topic-tag">websockets</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/windows.html" >
+                  <font href= "" class = "topic-tag">windows</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/sbpp/sourcebans-pp">sbpp/sourcebans-pp</a></td>
+              <td>292</td>
+              <td>Admin, ban, and comms management system for the Source engine</td>
+              <td>2014-11-15</td>
+              <td>PHP</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/alliedmodders.html" >
+                  <font href= "" class = "topic-tag">alliedmodders</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html" >
+                  <font href= "" class = "topic-tag">hacktoberfest</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/php.html" >
+                  <font href= "" class = "topic-tag">php</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/source-engine.html" >
+                  <font href= "" class = "topic-tag">source-engine</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sourcebans.html" >
+                  <font href= "" class = "topic-tag">sourcebans</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sourcemod.html" >
+                  <font href= "" class = "topic-tag">sourcemod</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sourcemod-plugin.html" >
+                  <font href= "" class = "topic-tag">sourcemod-plugin</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sourcepawn.html" >
+                  <font href= "" class = "topic-tag">sourcepawn</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/valve.html" >
+                  <font href= "" class = "topic-tag">valve</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/valve-servers.html" >
+                  <font href= "" class = "topic-tag">valve-servers</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/sarisia/actions-status-discord">sarisia/actions-status-discord</a></td>
+              <td>102</td>
+              <td>Post GitHub Actions status to Discord as an beautiful embed</td>
+              <td>2019-11-23</td>
+              <td>TypeScript</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord-webhook.html" >
+                  <font href= "" class = "topic-tag">discord-webhook</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/github-actions.html" >
+                  <font href= "" class = "topic-tag">github-actions</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webhook.html" >
+                  <font href= "" class = "topic-tag">webhook</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/ewohltman/ephemeral-roles">ewohltman/ephemeral-roles</a></td>
+              <td>79</td>
+              <td>A Discord bot for managing ephemeral roles based upon voice channel member presence.</td>
+              <td>2017-12-19</td>
+              <td>Go</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord-api.html" >
+                  <font href= "" class = "topic-tag">discord-api</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord-go.html" >
+                  <font href= "" class = "topic-tag">discord-go</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discordgo.html" >
+                  <font href= "" class = "topic-tag">discordgo</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discordrus.html" >
+                  <font href= "" class = "topic-tag">discordrus</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/go.html" >
+                  <font href= "" class = "topic-tag">go</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/golang.html" >
+                  <font href= "" class = "topic-tag">golang</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/logrus.html" >
+                  <font href= "" class = "topic-tag">logrus</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+					
+					
+
+            <tr>
+              <td><a href="https://github.com/appleboy/discord-action">appleboy/discord-action</a></td>
+              <td>76</td>
+              <td>GitHub Action that sends a Discord message.</td>
+              <td>2019-02-24</td>
+              <td>Dockerfile</td>
+              <td>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord.html" >
+                  <font href= "" class = "topic-tag">discord</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/discord-bot.html" >
+                  <font href= "" class = "topic-tag">discord-bot</font>
+                </a>
+                
+                <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/github-actions.html" >
+                  <font href= "" class = "topic-tag">github-actions</font>
+                </a>
+                
+              </td>
+            </tr>
+					
+
+          
+        </tbody>
+      </table>
+		</div>
+
+
+
+
+				</div>
+
+
+			</div>
+			<!-- /.row -->
+
+		</div>
+		<!-- /.container -->
+
+		<footer>
+	<div class="container-fluid">
+    <div class="text-center">
+      <p>Awesome List management.
+    </div>
+	</div>
+
+</footer>
+
+	</body>
+
+</html>
