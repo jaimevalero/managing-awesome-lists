@@ -1,0 +1,2991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Awesome list viewer</title>
+		
+
+<!-- Meta Information -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Awesome list manager. Discover best resources from github.">
+<meta name="author" content="Jaime Valero">
+<link rel="icon" type="image/png" href="https://github.githubassets.com/favicon.ico">
+
+<!-- CSS Information -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- bootstrap theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Font-awesome -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- bootstrap4 -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+
+<!-- bootstrap4 -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+
+<style type="text/css">
+  * {
+    font-size: 16px;
+  }
+
+  .topic-tag {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    margin: 0 0.5em 0.5em 0;
+    white-space: nowrap;
+    background-color: #f1f8ff;
+    border-radius: 3px;
+    font-color: #0366d6;
+    color: #0366d6;
+  }
+</style>
+		<!-- Scripts: JQuery & Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+</script>
+
+<!-- bootstrap4 -->
+<script src="https://code.jquery.com/jquery-3.3.1.js">
+</script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
+</script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
+</script>
+
+<script type="text/javascript" language="JavaScript">
+  $(document).ready(function() {
+    $('#tabla').DataTable({
+      "order": [
+        [1, "desc"]
+      ]
+    });
+  });
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146303223-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-146303223-1');
+</script>
+	</head>
+
+	<body>
+    <nav class="navbar navbar-inverse" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;">
+			
+				
+
+<div class="container-fluid" >
+	<!-- Brand and toggle get grouped for better mobile display -->
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li >
+				<a href="https://jaimevalero.github.io/managing-awesome-lists">Awesome list viewer <span class="sr-only">(current)</span></a>
+			</li>
+		</ul>
+
+		<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"
+					 role="button" aria-haspopup="true" aria-expanded="false">
+				 Select list
+				</a>
+				<ul class="dropdown-menu">
+
+
+          <li rel="tooltip"  title="Global list" >
+            <a href='https://jaimevalero.github.io/managing-awesome-lists'>
+            <i class="fa fa-internal-link" aria-hidden="true"></i> Global list
+            </a>
+          </li>
+          <li rel="tooltip"  title="Short CSS code snippets for all your development needs" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-30-seconds%4030-seconds-of-css.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> 30-seconds-of-css
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome actions to use on GitHub" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sdras%40awesome-actions.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> actions
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Android UI/UX libraries" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-wasabeef%40awesome-android-ui.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> android-ui
+						</a>
+					</li><li rel="tooltip"  title="Curated list of resources about Apache Airflow" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-jghoman%40awesome-apache-airflow.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> apache-airflow
+						</a>
+					</li><li rel="tooltip"  title="😎 Awesome lists about all kinds of interesting topics" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sindresorhus%40awesome.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> awesome
+						</a>
+					</li><li rel="tooltip"  title="Awesome-LLM: a curated list of Large Language Model" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-Hannibal046%40Awesome-LLM.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> Awesome-LLM
+						</a>
+					</li><li rel="tooltip"  title="A comprehensive list of pytorch related content on github,such as different models,implementations,helper libraries,tutorials etc." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-bharathgs%40Awesome-pytorch-list.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> Awesome-pytorch-list
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Amazon Web Services (AWS) libraries, open source repos, guides, blogs, and other resources.  Featuring the Fiery Meter of AWSome." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-donnemartin%40awesome-aws.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> aws
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome big data frameworks, ressources and other awesomeness." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-newTendermint%40awesome-bigdata.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> bigdata
+						</a>
+					</li><li rel="tooltip"  title="Curated list of blockchain services and exchanges 🔥🏦🔥🏦🔥🏦🔥" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-imbaniac%40awesome-blockchain.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> blockchain
+						</a>
+					</li><li rel="tooltip"  title="✨  Awesome - A curated list of amazing Bootstrap tools and themes." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-awesome-bootstrap-org%40awesome-bootstrap.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> bootstrap
+						</a>
+					</li><li rel="tooltip"  title="List of Continuous Integration services" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ligurio%40awesome-ci.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> ci
+						</a>
+					</li><li rel="tooltip"  title="🖥 📊 🕹 🛠 A curated list of command line apps" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-agarrharr%40awesome-cli-apps.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> cli-apps
+						</a>
+					</li><li rel="tooltip"  title=":books: List of awesome university courses for learning Computer Science!" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-prakhar1989%40awesome-courses.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> courses
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things. Inspired by awesome-... stuff." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-fffaraz%40awesome-cpp.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> cpp
+						</a>
+					</li><li rel="tooltip"  title="A list of D3 libraries, plugins and utilities" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-wbkd%40awesome-d3.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> d3
+						</a>
+					</li><li rel="tooltip"  title=":memo: An awesome Data Science repository to learn and apply for real world problems." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-academic%40awesome-datascience.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> datascience
+						</a>
+					</li><li rel="tooltip"  title=":chart_with_upwards_trend:  A curated list of awesome data visualization libraries and resources." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-javierluraschi%40awesome-dataviz.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> dataviz
+						</a>
+					</li><li rel="tooltip"  title="A curated list of amazingly awesome database libraries, resources and shiny things by https://www.numetriclabz.com/" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-numetriclabz%40awesome-db.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> db
+						</a>
+					</li><li rel="tooltip"  title="A curated list of Domain-Driven Design (DDD), Command Query Responsibility Segregation (CQRS), Event Sourcing, and Event Storming resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-heynickc%40awesome-ddd.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> ddd
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Deep Learning tutorials, projects and communities." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ChristosChristofidis%40awesome-deep-learning.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> deep-learning
+						</a>
+					</li><li rel="tooltip"  title="This is my awesome list with all open source and free applications that you can use in your management" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-joubertredrat%40awesome-devops.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> devops
+						</a>
+					</li><li rel="tooltip"  title=":whale: A curated list of Docker resources and projects" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-veggiemonk%40awesome-docker.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> docker
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Flask resources and plugins" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-humiaozuzu%40awesome-flask.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> flask
+						</a>
+					</li><li rel="tooltip"  title="A list of awesome beginners-friendly projects." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-MunGell%40awesome-for-beginners.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> for-beginners
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome forensic analysis tools and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-cugu%40awesome-forensics.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> forensics
+						</a>
+					</li><li rel="tooltip"  title="A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ripienaar%40free-for-dev.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> free-for-dev
+						</a>
+					</li><li rel="tooltip"  title="Manually curated collection of resources for frontend web developers." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-dypsilon%40frontend-dev-bookmarks.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> frontend-dev-bookmarks
+						</a>
+					</li><li rel="tooltip"  title="A list of cool features of Git and GitHub." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-tiimgreen%40github-cheat-sheet.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> github-cheat-sheet
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Go frameworks, libraries and software" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-avelino%40awesome-go.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> go
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome groovy libraries, frameworks and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-kdabir%40awesome-groovy.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> groovy
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Hacking tutorials, tools and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-carpedm20%40awesome-hacking.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> hacking
+						</a>
+					</li><li rel="tooltip"  title="✂A collection of useful .htaccess snippets." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-phanan%40htaccess.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> htaccess
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome frameworks, libraries and software for the Java programming language." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-akullpp%40awesome-java.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> java
+						</a>
+					</li><li rel="tooltip"  title="🐢 A collection of awesome browser-side  JavaScript libraries, resources and shiny things." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sorrycc%40awesome-javascript.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> javascript
+						</a>
+					</li><li rel="tooltip"  title="A collection of tips to help up your jQuery game 🎮" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-AllThingsSmitty%40jquery-tips-everyone-should-know.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> jquery-tips-everyone-should-know
+						</a>
+					</li><li rel="tooltip"  title="A curated list for awesome kubernetes sources :ship::tada:" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ramitsurana%40awesome-kubernetes.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> kubernetes
+						</a>
+					</li><li rel="tooltip"  title=":penguin: A list of awesome projects and resources that make Linux even more awesome. :penguin:" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-inputsh%40awesome-linux.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> linux
+						</a>
+					</li><li rel="tooltip"  title=" Now we have become very big, Different from the original idea. Collect premium software in various categories." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-jaywcjlove%40awesome-mac.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> mac
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Machine Learning frameworks, libraries and software." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-josephmisiti%40awesome-machine-learning.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> machine-learning
+						</a>
+					</li><li rel="tooltip"  title="Defund the Police." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-rshipp%40awesome-malware-analysis.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> malware-analysis
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome MySQL software, libraries, tools and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-shlomi-noach%40awesome-mysql.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> mysql
+						</a>
+					</li><li rel="tooltip"  title=":zap: Delightful Node.js packages and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sindresorhus%40awesome-nodejs.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> nodejs
+						</a>
+					</li><li rel="tooltip"  title="🚀 Awesome list of open source applications for macOS. https://t.me/s/opensourcemacosapps" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-serhii-londar%40open-source-mac-os-apps.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> open-source-mac-os-apps
+						</a>
+					</li><li rel="tooltip"  title="A curated list of amazingly awesome PHP libraries, resources and shiny things." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-ziadoz%40awesome-php.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> php
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome pipeline toolkits inspired by Awesome Sysadmin" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-pditommaso%40awesome-pipeline.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> pipeline
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Python frameworks, libraries, software and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-vinta%40awesome-python.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> python
+						</a>
+					</li><li rel="tooltip"  title="📝 A curated list of awesome Raspberry Pi tools, projects, images and resources" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-thibmaek%40awesome-raspberry-pi.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> raspberry-pi
+						</a>
+					</li><li rel="tooltip"  title="A collection of awesome things regarding React ecosystem" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-enaqx%40awesome-react.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> react
+						</a>
+					</li><li rel="tooltip"  title="📄 CLI that generates beautiful README.md files" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-kefranabg%40readme-md-generator.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> readme-md-generator
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome remote jobs and resources. Inspired by https://github.com/vinta/awesome-python" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-lukasz-madon%40awesome-remote-job.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> remote-job
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome Ruby frameworks, libraries and resources. Inspired by awesome-php & awesome-python." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sdogruyol%40awesome-ruby.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> ruby
+						</a>
+					</li><li rel="tooltip"  title="The Patterns of Scalable, Reliable, and Performant Large-Scale Systems" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-binhnguyennus%40awesome-scalability.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> scalability
+						</a>
+					</li><li rel="tooltip"  title="A collection of awesome software, libraries, documents, books, resources and cools stuffs about security." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-sbilly%40awesome-security.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> security
+						</a>
+					</li><li rel="tooltip"  title="A list of Free Software network services and web applications which can be hosted on your own servers" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-awesome-selfhosted%40awesome-selfhosted.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> selfhosted
+						</a>
+					</li><li rel="tooltip"  title="A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awesome-php." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-alebcay%40awesome-shell.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> shell
+						</a>
+					</li><li rel="tooltip"  title="A curated list of amazingly awesome open source sysadmin resources." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-awesome-foss%40awesome-sysadmin.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> sysadmin
+						</a>
+					</li><li rel="tooltip"  title="💥 A curated list of Terminal frameworks, plugins & resources for CLI lovers." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-k4m4%40terminals-are-sexy.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> terminals-are-sexy
+						</a>
+					</li><li rel="tooltip"  title="A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-trimstray%40the-book-of-secret-knowledge.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> the-book-of-secret-knowledge
+						</a>
+					</li><li rel="tooltip"  title="🎨 A curated list of delightful VS Code packages and resources." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-viatsko%40awesome-vscode.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> vscode
+						</a>
+					</li><li rel="tooltip"  title=":pencil: A curated list of Web Performance Optimization. Everyone can contribute here!" >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-davidsonfellipe%40awesome-wpo.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> wpo
+						</a>
+					</li><li rel="tooltip"  title="A collection of ZSH frameworks, plugins, themes and tutorials." >
+          	<a href='https://jaimevalero.github.io/managing-awesome-lists/var/awl-unixorn%40awesome-zsh-plugins.html'>
+						<i class="fa fa-internal-link" aria-hidden="true"></i> zsh-plugins
+						</a>
+					</li>
+
+
+				</ul>
+			</li>
+		</ul>
+
+
+	</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+
+
+<script type="text/javascript">
+    $(function () {
+        $("[rel='tooltip']").tooltip();
+    });
+</script>
+			
+		</nav>
+
+    <div class="container-fluid" >
+			<div class="row">
+				<!-- Main alert pop-ups -->
+        <div class="col-xl-12 mb-4">
+					
+
+
+
+
+<h2>List <a href="https://github.com/humiaozuzu/awesome-flask">humiaozuzu/awesome-flask</a> </h2>
+<h3>A curated list of awesome Flask resources and plugins </h3>
+
+Elements : 104
+<br>
+<div class="table-responsive">
+  <table id="tabla" class="table table-hover table-condensed table-striped">
+
+    <thead>
+      <tr>
+        <th>Repo</th>
+        <th width="15%">Stars</th>
+        <th>Description</th>
+        <th width="15%">Last Updated</th>
+        <th>Language</th>
+        <th>Tags</th>
+
+
+
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td><a href="https://github.com/sindresorhus/awesome">sindresorhus/awesome</a></td>
+        <td>251870</td>
+        <td>😎 Awesome lists about all kinds of interesting topics</td>
+        <td>2023-05-01</td>
+        <td>None</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/awesome.html">
+            <font href="" class="topic-tag">awesome</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/awesome-list.html">
+            <font href="" class="topic-tag">awesome-list</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/lists.html">
+            <font href="" class="topic-tag">lists</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/resources.html">
+            <font href="" class="topic-tag">resources</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/unicorns.html">
+            <font href="" class="topic-tag">unicorns</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/apache/airflow">apache/airflow</a></td>
+        <td>30023</td>
+        <td>Apache Airflow - A platform to programmatically author, schedule, and monitor workflows</td>
+        <td>2023-05-02</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/airflow.html">
+            <font href="" class="topic-tag">airflow</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/apache.html">
+            <font href="" class="topic-tag">apache</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/apache-airflow.html">
+            <font href="" class="topic-tag">apache-airflow</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html">
+            <font href="" class="topic-tag">hacktoberfest</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/scheduler.html">
+            <font href="" class="topic-tag">scheduler</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/workflow.html">
+            <font href="" class="topic-tag">workflow</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/celery/celery">celery/celery</a></td>
+        <td>21419</td>
+        <td>Distributed Task Queue (development branch)</td>
+        <td>2023-05-02</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/amqp.html">
+            <font href="" class="topic-tag">amqp</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python-library.html">
+            <font href="" class="topic-tag">python-library</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python3.html">
+            <font href="" class="topic-tag">python3</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/queue-tasks.html">
+            <font href="" class="topic-tag">queue-tasks</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/queue-workers.html">
+            <font href="" class="topic-tag">queue-workers</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/queued-jobs.html">
+            <font href="" class="topic-tag">queued-jobs</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/redis.html">
+            <font href="" class="topic-tag">redis</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/redis-queue.html">
+            <font href="" class="topic-tag">redis-queue</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sqs.html">
+            <font href="" class="topic-tag">sqs</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sqs-queue.html">
+            <font href="" class="topic-tag">sqs-queue</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/task-manager.html">
+            <font href="" class="topic-tag">task-manager</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/task-runner.html">
+            <font href="" class="topic-tag">task-runner</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/task-scheduler.html">
+            <font href="" class="topic-tag">task-scheduler</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/Miserlou/Zappa">Miserlou/Zappa</a></td>
+        <td>11892</td>
+        <td>Serverless Python</td>
+        <td>2023-03-23</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/api-gateway.html">
+            <font href="" class="topic-tag">api-gateway</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/aws-lambda.html">
+            <font href="" class="topic-tag">aws-lambda</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/bottle.html">
+            <font href="" class="topic-tag">bottle</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/django.html">
+            <font href="" class="topic-tag">django</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/lambda.html">
+            <font href="" class="topic-tag">lambda</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/pyramid.html">
+            <font href="" class="topic-tag">pyramid</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/serverless.html">
+            <font href="" class="topic-tag">serverless</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/serverless-framework.html">
+            <font href="" class="topic-tag">serverless-framework</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/zappa.html">
+            <font href="" class="topic-tag">zappa</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/pyeve/eve">pyeve/eve</a></td>
+        <td>6609</td>
+        <td>REST API framework designed for human beings</td>
+        <td>2023-03-22</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mongodb.html">
+            <font href="" class="topic-tag">mongodb</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rest.html">
+            <font href="" class="topic-tag">rest</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/flask-restful/flask-restful">flask-restful/flask-restful</a></td>
+        <td>6570</td>
+        <td>Simple framework for creating REST APIs</td>
+        <td>2023-03-23</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/flask-admin/flask-admin">flask-admin/flask-admin</a></td>
+        <td>5340</td>
+        <td>Simple and extensible administrative interface framework for Flask</td>
+        <td>2023-04-27</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/miguelgrinberg/Flask-SocketIO">miguelgrinberg/Flask-SocketIO</a></td>
+        <td>5005</td>
+        <td>Socket.IO integration for Flask applications.</td>
+        <td>2023-05-02</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-socketio.html">
+            <font href="" class="topic-tag">flask-socketio</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/socket-io.html">
+            <font href="" class="topic-tag">socket-io</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/websocket.html">
+            <font href="" class="topic-tag">websocket</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/coleifer/huey">coleifer/huey</a></td>
+        <td>4462</td>
+        <td>a little task queue for python</td>
+        <td>2023-04-28</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/dank.html">
+            <font href="" class="topic-tag">dank</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/queue.html">
+            <font href="" class="topic-tag">queue</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/redis.html">
+            <font href="" class="topic-tag">redis</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/task-queue.html">
+            <font href="" class="topic-tag">task-queue</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/realpython/discover-flask">realpython/discover-flask</a></td>
+        <td>4405</td>
+        <td>Full Stack Web Development with Flask.</td>
+        <td>2020-09-30</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/Netflix/security_monkey">Netflix/security_monkey</a></td>
+        <td>4333</td>
+        <td>Security Monkey monitors AWS, GCP, OpenStack, and GitHub orgs for assets and their changes over time.</td>
+        <td>2021-02-11</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/aws.html">
+            <font href="" class="topic-tag">aws</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/aws-ec2.html">
+            <font href="" class="topic-tag">aws-ec2</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/aws-iam.html">
+            <font href="" class="topic-tag">aws-iam</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/aws-policy-tracking.html">
+            <font href="" class="topic-tag">aws-policy-tracking</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/aws-s3.html">
+            <font href="" class="topic-tag">aws-s3</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/aws-security.html">
+            <font href="" class="topic-tag">aws-security</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/aws-sqs.html">
+            <font href="" class="topic-tag">aws-sqs</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/aws-vpc.html">
+            <font href="" class="topic-tag">aws-vpc</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/boto.html">
+            <font href="" class="topic-tag">boto</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/boto3.html">
+            <font href="" class="topic-tag">boto3</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/botocore.html">
+            <font href="" class="topic-tag">botocore</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/security.html">
+            <font href="" class="topic-tag">security</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/cookiecutter-flask/cookiecutter-flask">cookiecutter-flask/cookiecutter-flask</a></td>
+        <td>4332</td>
+        <td>A flask template with Bootstrap, asset bundling+minification with webpack, starter templates, and registration/authentication. For use with cookiecutter.</td>
+        <td>2023-05-02</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/bootstrap.html">
+            <font href="" class="topic-tag">bootstrap</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cookiecutter.html">
+            <font href="" class="topic-tag">cookiecutter</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cookiecutter-flask.html">
+            <font href="" class="topic-tag">cookiecutter-flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html">
+            <font href="" class="topic-tag">hacktoberfest</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/webpack.html">
+            <font href="" class="topic-tag">webpack</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/spec-first/connexion">spec-first/connexion</a></td>
+        <td>4231</td>
+        <td>Swagger/OpenAPI First framework for Python on top of Flask with automatic endpoint validation & OAuth2 support</td>
+        <td>2023-05-02</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/api-first.html">
+            <font href="" class="topic-tag">api-first</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/api-rest.html">
+            <font href="" class="topic-tag">api-rest</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-extensions.html">
+            <font href="" class="topic-tag">flask-extensions</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/microservices.html">
+            <font href="" class="topic-tag">microservices</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/openapi.html">
+            <font href="" class="topic-tag">openapi</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/swagger.html">
+            <font href="" class="topic-tag">swagger</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/web.html">
+            <font href="" class="topic-tag">web</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/dpgaspar/Flask-AppBuilder">dpgaspar/Flask-AppBuilder</a></td>
+        <td>4148</td>
+        <td>Simple and rapid application development framework, built on top of Flask. includes detailed security, auto CRUD generation for your models, google charts and much more. Demo (login with guest/welcome) - http://flaskappbuilder.pythonanywhere.com/</td>
+        <td>2023-05-01</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/authentication.html">
+            <font href="" class="topic-tag">authentication</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/crud.html">
+            <font href="" class="topic-tag">crud</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rbac.html">
+            <font href="" class="topic-tag">rbac</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rest.html">
+            <font href="" class="topic-tag">rest</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rest-api.html">
+            <font href="" class="topic-tag">rest-api</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sql.html">
+            <font href="" class="topic-tag">sql</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/web.html">
+            <font href="" class="topic-tag">web</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/pallets-eco/flask-sqlalchemy">pallets-eco/flask-sqlalchemy</a></td>
+        <td>3989</td>
+        <td>Adds SQLAlchemy support to Flask</td>
+        <td>2023-05-02</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-sqlalchemy.html">
+            <font href="" class="topic-tag">flask-sqlalchemy</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sqlalchemy.html">
+            <font href="" class="topic-tag">sqlalchemy</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/lepture/authlib">lepture/authlib</a></td>
+        <td>3621</td>
+        <td>The ultimate Python library in building OAuth, OpenID Connect clients and servers. JWS,JWE,JWK,JWA,JWT included.</td>
+        <td>2023-04-23</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/django.html">
+            <font href="" class="topic-tag">django</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jose.html">
+            <font href="" class="topic-tag">jose</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jwe.html">
+            <font href="" class="topic-tag">jwe</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jwk.html">
+            <font href="" class="topic-tag">jwk</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jws.html">
+            <font href="" class="topic-tag">jws</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jwt.html">
+            <font href="" class="topic-tag">jwt</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/oauth.html">
+            <font href="" class="topic-tag">oauth</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/oauth2.html">
+            <font href="" class="topic-tag">oauth2</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/oauth2-provider.html">
+            <font href="" class="topic-tag">oauth2-provider</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/oauth2-server.html">
+            <font href="" class="topic-tag">oauth2-server</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/oidc.html">
+            <font href="" class="topic-tag">oidc</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/openid-connect.html">
+            <font href="" class="topic-tag">openid-connect</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/Bogdanp/dramatiq">Bogdanp/dramatiq</a></td>
+        <td>3555</td>
+        <td>A fast and reliable background task processing library for Python 3.</td>
+        <td>2023-04-23</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/distributed-lock.html">
+            <font href="" class="topic-tag">distributed-lock</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rabbit.html">
+            <font href="" class="topic-tag">rabbit</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/redis.html">
+            <font href="" class="topic-tag">redis</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/task.html">
+            <font href="" class="topic-tag">task</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/task-manager.html">
+            <font href="" class="topic-tag">task-manager</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/task-runner.html">
+            <font href="" class="topic-tag">task-runner</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/task-scheduler.html">
+            <font href="" class="topic-tag">task-scheduler</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/nylas/sync-engine">nylas/sync-engine</a></td>
+        <td>3512</td>
+        <td>:incoming_envelope: IMAP/SMTP sync system with modern APIs</td>
+        <td>2020-03-27</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/maxcountryman/flask-login">maxcountryman/flask-login</a></td>
+        <td>3273</td>
+        <td>Flask user session management.</td>
+        <td>2023-05-01</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/authentication.html">
+            <font href="" class="topic-tag">authentication</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/login-system.html">
+            <font href="" class="topic-tag">login-system</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/session-management.html">
+            <font href="" class="topic-tag">session-management</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/flasgger/flasgger">flasgger/flasgger</a></td>
+        <td>3242</td>
+        <td>Easy OpenAPI specs and Swagger UI for your Flask API</td>
+        <td>2023-04-12</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/api.html">
+            <font href="" class="topic-tag">api</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/api-documentation.html">
+            <font href="" class="topic-tag">api-documentation</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/api-framework.html">
+            <font href="" class="topic-tag">api-framework</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-extension.html">
+            <font href="" class="topic-tag">flask-extension</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-extensions.html">
+            <font href="" class="topic-tag">flask-extensions</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-restful.html">
+            <font href="" class="topic-tag">flask-restful</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/marshmallow.html">
+            <font href="" class="topic-tag">marshmallow</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/openapi.html">
+            <font href="" class="topic-tag">openapi</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/openapi-specification.html">
+            <font href="" class="topic-tag">openapi-specification</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rest-api.html">
+            <font href="" class="topic-tag">rest-api</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/restful.html">
+            <font href="" class="topic-tag">restful</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/swagger.html">
+            <font href="" class="topic-tag">swagger</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/swagger-ui.html">
+            <font href="" class="topic-tag">swagger-ui</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/noirbizarre/flask-restplus">noirbizarre/flask-restplus</a></td>
+        <td>2688</td>
+        <td>Fully featured framework for fast, easy and documented API development with Flask</td>
+        <td>2023-03-22</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/api.html">
+            <font href="" class="topic-tag">api</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/json.html">
+            <font href="" class="topic-tag">json</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rest.html">
+            <font href="" class="topic-tag">rest</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/restful.html">
+            <font href="" class="topic-tag">restful</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/restplus.html">
+            <font href="" class="topic-tag">restplus</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/swagger.html">
+            <font href="" class="topic-tag">swagger</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/flaskbb/flaskbb">flaskbb/flaskbb</a></td>
+        <td>2358</td>
+        <td>A classic Forum Software in Python using Flask.</td>
+        <td>2023-03-13</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flaskbb.html">
+            <font href="" class="topic-tag">flaskbb</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/forum.html">
+            <font href="" class="topic-tag">forum</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/social.html">
+            <font href="" class="topic-tag">social</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/mjhea0/flaskr-tdd">mjhea0/flaskr-tdd</a></td>
+        <td>2238</td>
+        <td> Flaskr: Intro to Flask, Test-Driven Development (TDD), and JavaScript</td>
+        <td>2023-05-01</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/javascript.html">
+            <font href="" class="topic-tag">javascript</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/tdd.html">
+            <font href="" class="topic-tag">tdd</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/test-driven-development.html">
+            <font href="" class="topic-tag">test-driven-development</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/quokkaproject/quokka">quokkaproject/quokka</a></td>
+        <td>2223</td>
+        <td>LOOKING FOR NEW MAINTAINER - Quokka is a Content Management System - `docker run --rm -it -p 5000:5000 quokka/quokka`</td>
+        <td>2019-11-19</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cmf.html">
+            <font href="" class="topic-tag">cmf</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cms.html">
+            <font href="" class="topic-tag">cms</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/content-management.html">
+            <font href="" class="topic-tag">content-management</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/content-management-system.html">
+            <font href="" class="topic-tag">content-management-system</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-admin.html">
+            <font href="" class="topic-tag">flask-admin</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/framework.html">
+            <font href="" class="topic-tag">framework</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mongodb.html">
+            <font href="" class="topic-tag">mongodb</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python3.html">
+            <font href="" class="topic-tag">python3</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/static-site.html">
+            <font href="" class="topic-tag">static-site</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/static-site-generator.html">
+            <font href="" class="topic-tag">static-site-generator</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/tinydb.html">
+            <font href="" class="topic-tag">tinydb</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/miguelgrinberg/Flask-Migrate">miguelgrinberg/Flask-Migrate</a></td>
+        <td>2199</td>
+        <td>SQLAlchemy database migrations for Flask applications using Alembic</td>
+        <td>2023-04-14</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/alembic.html">
+            <font href="" class="topic-tag">alembic</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/database.html">
+            <font href="" class="topic-tag">database</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/migrations.html">
+            <font href="" class="topic-tag">migrations</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sqlalchemy-database-migrations.html">
+            <font href="" class="topic-tag">sqlalchemy-database-migrations</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/google/timesketch">google/timesketch</a></td>
+        <td>2184</td>
+        <td>Collaborative forensic timeline analysis</td>
+        <td>2023-05-02</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/analysis.html">
+            <font href="" class="topic-tag">analysis</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/dfir.html">
+            <font href="" class="topic-tag">dfir</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/forensics.html">
+            <font href="" class="topic-tag">forensics</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/security.html">
+            <font href="" class="topic-tag">security</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/timeline.html">
+            <font href="" class="topic-tag">timeline</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/imwilsonxu/fbone">imwilsonxu/fbone</a></td>
+        <td>1699</td>
+        <td>Fbone (Flask bone) is a Flask (Python microframework) starter/template/bootstrap/boilerplate application.</td>
+        <td>2022-05-17</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/mattupstate/flask-security">mattupstate/flask-security</a></td>
+        <td>1599</td>
+        <td>Quick and simple security for Flask applications</td>
+        <td>2021-01-25</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/mattupstate/overholt">mattupstate/overholt</a></td>
+        <td>1588</td>
+        <td>Example Flask application illustrating some of my common practices</td>
+        <td>2020-03-28</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/getsentry/sentry-python">getsentry/sentry-python</a></td>
+        <td>1509</td>
+        <td>The official Python SDK for Sentry.io</td>
+        <td>2023-05-01</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/crash-reporting.html">
+            <font href="" class="topic-tag">crash-reporting</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html">
+            <font href="" class="topic-tag">hacktoberfest</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sentry.html">
+            <font href="" class="topic-tag">sentry</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sentry-python.html">
+            <font href="" class="topic-tag">sentry-python</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/indico/indico">indico/indico</a></td>
+        <td>1476</td>
+        <td>Indico - A feature-rich event management system, made @ CERN, the place where the Web was born.</td>
+        <td>2023-05-02</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/conferences.html">
+            <font href="" class="topic-tag">conferences</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/events.html">
+            <font href="" class="topic-tag">events</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html">
+            <font href="" class="topic-tag">hacktoberfest</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sqlalchemy.html">
+            <font href="" class="topic-tag">sqlalchemy</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/wtforms/flask-wtf">wtforms/flask-wtf</a></td>
+        <td>1365</td>
+        <td>Simple integration of Flask and WTForms, including CSRF, file upload and Recaptcha integration.</td>
+        <td>2023-05-02</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-wtf.html">
+            <font href="" class="topic-tag">flask-wtf</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/forms.html">
+            <font href="" class="topic-tag">forms</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/html.html">
+            <font href="" class="topic-tag">html</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/wtforms.html">
+            <font href="" class="topic-tag">wtforms</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/graphql-python/flask-graphql">graphql-python/flask-graphql</a></td>
+        <td>1301</td>
+        <td>Adds GraphQL support to your Flask application.</td>
+        <td>2023-01-03</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-application.html">
+            <font href="" class="topic-tag">flask-application</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/graphene.html">
+            <font href="" class="topic-tag">graphene</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/graphql.html">
+            <font href="" class="topic-tag">graphql</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/web.html">
+            <font href="" class="topic-tag">web</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/JackStouffer/Flask-Foundation">JackStouffer/Flask-Foundation</a></td>
+        <td>1281</td>
+        <td>A solid foundation for your flask app</td>
+        <td>2023-05-01</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/miguelgrinberg/Flask-HTTPAuth">miguelgrinberg/Flask-HTTPAuth</a></td>
+        <td>1171</td>
+        <td>Simple extension that provides Basic, Digest and Token HTTP authentication for Flask routes</td>
+        <td>2023-04-27</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/authentication.html">
+            <font href="" class="topic-tag">authentication</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-httpauth.html">
+            <font href="" class="topic-tag">flask-httpauth</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/security.html">
+            <font href="" class="topic-tag">security</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/tokens.html">
+            <font href="" class="topic-tag">tokens</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/pythoncn/june">pythoncn/june</a></td>
+        <td>1094</td>
+        <td>June is a forum (Deprecated)</td>
+        <td>2022-09-15</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jfinkels/flask-restless">jfinkels/flask-restless</a></td>
+        <td>1030</td>
+        <td>NO LONGER MAINTAINED - A Flask extension for creating simple ReSTful JSON APIs from SQLAlchemy models.</td>
+        <td>2020-05-16</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/lingthio/Flask-User">lingthio/Flask-User</a></td>
+        <td>1011</td>
+        <td>Customizable User Authorization & User Management: Register, Confirm, Login, Change username/password, Forgot password and more.</td>
+        <td>2022-02-03</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/authomatic/authomatic">authomatic/authomatic</a></td>
+        <td>1008</td>
+        <td>Simple yet powerful authorization / authentication client library for Python web applications.</td>
+        <td>2022-12-12</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/authentication.html">
+            <font href="" class="topic-tag">authentication</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/authorization.html">
+            <font href="" class="topic-tag">authorization</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/oauth-client.html">
+            <font href="" class="topic-tag">oauth-client</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/oauth2-client.html">
+            <font href="" class="topic-tag">oauth2-client</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/openid-client.html">
+            <font href="" class="topic-tag">openid-client</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/alisaifee/flask-limiter">alisaifee/flask-limiter</a></td>
+        <td>963</td>
+        <td>Rate Limiting extension for Flask </td>
+        <td>2023-05-01</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/memcached.html">
+            <font href="" class="topic-tag">memcached</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rate-limiting.html">
+            <font href="" class="topic-tag">rate-limiting</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/redis.html">
+            <font href="" class="topic-tag">redis</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/singingwolfboy/flask-dance">singingwolfboy/flask-dance</a></td>
+        <td>934</td>
+        <td>Doing the OAuth dance with style using Flask, requests, and oauthlib.</td>
+        <td>2023-04-25</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/klen/mixer">klen/mixer</a></td>
+        <td>897</td>
+        <td>Mixer -- Is a fixtures replacement. Supported Django, Flask, SqlAlchemy and custom python objects. </td>
+        <td>2023-04-10</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/django.html">
+            <font href="" class="topic-tag">django</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sqlalchemy.html">
+            <font href="" class="topic-tag">sqlalchemy</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/testing.html">
+            <font href="" class="topic-tag">testing</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/testing-tools.html">
+            <font href="" class="topic-tag">testing-tools</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jmcarp/nplusone">jmcarp/nplusone</a></td>
+        <td>883</td>
+        <td>Auto-detecting the n+1 queries problem in Python</td>
+        <td>2022-11-25</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/pallets-eco/flask-debugtoolbar">pallets-eco/flask-debugtoolbar</a></td>
+        <td>870</td>
+        <td>A toolbar overlay for debugging Flask applications</td>
+        <td>2023-04-24</td>
+        <td>JavaScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/debug.html">
+            <font href="" class="topic-tag">debug</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/development.html">
+            <font href="" class="topic-tag">development</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-debugtoolbar.html">
+            <font href="" class="topic-tag">flask-debugtoolbar</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/MongoEngine/flask-mongoengine">MongoEngine/flask-mongoengine</a></td>
+        <td>829</td>
+        <td>MongoEngine flask extension with WTF model forms support</td>
+        <td>2023-04-21</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mongoengine.html">
+            <font href="" class="topic-tag">mongoengine</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mongondb.html">
+            <font href="" class="topic-tag">mongondb</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/wtforms.html">
+            <font href="" class="topic-tag">wtforms</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/corydolphin/flask-cors">corydolphin/flask-cors</a></td>
+        <td>821</td>
+        <td>Cross Origin Resource Sharing ( CORS ) support for Flask </td>
+        <td>2023-04-16</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cors.html">
+            <font href="" class="topic-tag">cors</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-cors.html">
+            <font href="" class="topic-tag">flask-cors</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-extensions.html">
+            <font href="" class="topic-tag">flask-extensions</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/pallets-eco/flask-caching">pallets-eco/flask-caching</a></td>
+        <td>792</td>
+        <td>A caching extension for Flask</td>
+        <td>2023-05-02</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/cache.html">
+            <font href="" class="topic-tag">cache</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/extension.html">
+            <font href="" class="topic-tag">extension</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/marshmallow-code/flask-marshmallow">marshmallow-code/flask-marshmallow</a></td>
+        <td>786</td>
+        <td>Flask + marshmallow for beautiful APIs</td>
+        <td>2023-05-01</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/marshmallow.html">
+            <font href="" class="topic-tag">marshmallow</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python-3.html">
+            <font href="" class="topic-tag">python-3</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rest-api.html">
+            <font href="" class="topic-tag">rest-api</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sqlalchemy.html">
+            <font href="" class="topic-tag">sqlalchemy</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/dropbox/changes">dropbox/changes</a></td>
+        <td>763</td>
+        <td>A dashboard for your code. A build system.</td>
+        <td>2016-11-05</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/laiwei/thepast">laiwei/thepast</a></td>
+        <td>754</td>
+        <td>thepast.me ｜ 个人杂志计划</td>
+        <td>2015-07-14</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/Frozen-Flask/Frozen-Flask">Frozen-Flask/Frozen-Flask</a></td>
+        <td>748</td>
+        <td>Freezes a Flask application into a set of static files.</td>
+        <td>2022-12-13</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/static-site-generation.html">
+            <font href="" class="topic-tag">static-site-generation</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/muatik/flask-profiler">muatik/flask-profiler</a></td>
+        <td>723</td>
+        <td>a flask profiler which watches endpoint calls and tries to make some analysis.</td>
+        <td>2022-12-02</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/admin.html">
+            <font href="" class="topic-tag">admin</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/analytics.html">
+            <font href="" class="topic-tag">analytics</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/dashboard.html">
+            <font href="" class="topic-tag">dashboard</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/monitoring.html">
+            <font href="" class="topic-tag">monitoring</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/profiler.html">
+            <font href="" class="topic-tag">profiler</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/flask-dashboard/Flask-MonitoringDashboard">flask-dashboard/Flask-MonitoringDashboard</a></td>
+        <td>685</td>
+        <td>Automatically monitor the evolving performance of Flask/Python web services.</td>
+        <td>2023-03-14</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/dashboard.html">
+            <font href="" class="topic-tag">dashboard</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-extension.html">
+            <font href="" class="topic-tag">flask-extension</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-monitoring-dashboard.html">
+            <font href="" class="topic-tag">flask-monitoring-dashboard</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/monitoring.html">
+            <font href="" class="topic-tag">monitoring</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/profiler.html">
+            <font href="" class="topic-tag">profiler</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jmcarp/flask-apispec">jmcarp/flask-apispec</a></td>
+        <td>628</td>
+        <td>None</td>
+        <td>2023-04-14</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/flask-extensions/Flask-GoogleMaps">flask-extensions/Flask-GoogleMaps</a></td>
+        <td>621</td>
+        <td>Easy way to add GoogleMaps to Flask applications. maintainer: @getcake</td>
+        <td>2022-11-28</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-extensions.html">
+            <font href="" class="topic-tag">flask-extensions</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/google-maps.html">
+            <font href="" class="topic-tag">google-maps</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/google-maps-api.html">
+            <font href="" class="topic-tag">google-maps-api</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/googlemaps.html">
+            <font href="" class="topic-tag">googlemaps</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest.html">
+            <font href="" class="topic-tag">hacktoberfest</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/hacktoberfest2020.html">
+            <font href="" class="topic-tag">hacktoberfest2020</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/map.html">
+            <font href="" class="topic-tag">map</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/maps.html">
+            <font href="" class="topic-tag">maps</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/mattupstate/flask-mail">mattupstate/flask-mail</a></td>
+        <td>563</td>
+        <td>Flask-Mail adds SMTP mail sending to your Flask applications</td>
+        <td>2022-09-25</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/laoqiu/pypress">laoqiu/pypress</a></td>
+        <td>550</td>
+        <td>flask team blog</td>
+        <td>2020-03-28</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/closeio/flask-mongorest">closeio/flask-mongorest</a></td>
+        <td>528</td>
+        <td>Restful API framework wrapped around MongoEngine</td>
+        <td>2022-09-12</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/jarus/flask-testing">jarus/flask-testing</a></td>
+        <td>493</td>
+        <td>Unittest extensions for Flask</td>
+        <td>2023-01-03</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/biosustain/potion">biosustain/potion</a></td>
+        <td>489</td>
+        <td>Flask-Potion is a RESTful API framework for Flask and SQLAlchemy, Peewee or MongoEngine</td>
+        <td>2019-04-23</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-extensions.html">
+            <font href="" class="topic-tag">flask-extensions</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mongoengine.html">
+            <font href="" class="topic-tag">mongoengine</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/peewee.html">
+            <font href="" class="topic-tag">peewee</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sqlalchemy.html">
+            <font href="" class="topic-tag">sqlalchemy</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/pytest-dev/pytest-flask">pytest-dev/pytest-flask</a></td>
+        <td>445</td>
+        <td>A set of pytest fixtures to test Flask applications</td>
+        <td>2023-02-18</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/testing.html">
+            <font href="" class="topic-tag">testing</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/unit-testing.html">
+            <font href="" class="topic-tag">unit-testing</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/miracle2k/flask-assets">miracle2k/flask-assets</a></td>
+        <td>437</td>
+        <td>Flask webassets integration.</td>
+        <td>2022-08-18</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/fengsp/flask-session">fengsp/flask-session</a></td>
+        <td>414</td>
+        <td>Server side session extension for Flask</td>
+        <td>2023-04-26</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sessions.html">
+            <font href="" class="topic-tag">sessions</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/python-babel/flask-babel">python-babel/flask-babel</a></td>
+        <td>410</td>
+        <td>i18n and l10n support for Flask based on Babel and pytz</td>
+        <td>2023-04-07</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/no13bus/redispapa">no13bus/redispapa</a></td>
+        <td>393</td>
+        <td>another redis monitor by using flask, react, vite, socket.io</td>
+        <td>2023-05-01</td>
+        <td>TypeScript</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/angular.html">
+            <font href="" class="topic-tag">angular</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/antd-design.html">
+            <font href="" class="topic-tag">antd-design</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/highcharts.html">
+            <font href="" class="topic-tag">highcharts</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/react.html">
+            <font href="" class="topic-tag">react</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/redis-server.html">
+            <font href="" class="topic-tag">redis-server</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/socket.html">
+            <font href="" class="topic-tag">socket</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/typscript.html">
+            <font href="" class="topic-tag">typscript</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/vitejs.html">
+            <font href="" class="topic-tag">vitejs</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/elastic/apm-agent-python">elastic/apm-agent-python</a></td>
+        <td>382</td>
+        <td>Official Python agent for Elastic APM</td>
+        <td>2023-05-01</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/apm.html">
+            <font href="" class="topic-tag">apm</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/django.html">
+            <font href="" class="topic-tag">django</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/skylines-project/skylines">skylines-project/skylines</a></td>
+        <td>371</td>
+        <td>Live tracking, flight database and competition framework</td>
+        <td>2023-04-17</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/ember.html">
+            <font href="" class="topic-tag">ember</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gliding.html">
+            <font href="" class="topic-tag">gliding</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/paragliding.html">
+            <font href="" class="topic-tag">paragliding</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/skylines.html">
+            <font href="" class="topic-tag">skylines</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/xcsoar.html">
+            <font href="" class="topic-tag">xcsoar</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/miguelgrinberg/Flask-Moment">miguelgrinberg/Flask-Moment</a></td>
+        <td>357</td>
+        <td>Formatting of dates and times in Flask templates using moment.js.</td>
+        <td>2023-05-01</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-moment.html">
+            <font href="" class="topic-tag">flask-moment</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/moment-js.html">
+            <font href="" class="topic-tag">moment-js</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/render-timestamps.html">
+            <font href="" class="topic-tag">render-timestamps</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/timestamp.html">
+            <font href="" class="topic-tag">timestamp</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/utc.html">
+            <font href="" class="topic-tag">utc</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/dusktreader/flask-praetorian">dusktreader/flask-praetorian</a></td>
+        <td>332</td>
+        <td>Strong, Simple, and Precise security for Flask APIs (using jwt)</td>
+        <td>2023-02-16</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/limboy/chat">limboy/chat</a></td>
+        <td>313</td>
+        <td>a live chat built with python(flask + gevent + apscheduler) + redis</td>
+        <td>2022-09-15</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/maxcountryman/flask-bcrypt">maxcountryman/flask-bcrypt</a></td>
+        <td>312</td>
+        <td>Flask-Bcrypt is a Flask extension that provides bcrypt hashing utilities for your application.</td>
+        <td>2022-09-25</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/cenobites/flask-jsonrpc">cenobites/flask-jsonrpc</a></td>
+        <td>276</td>
+        <td>Basic JSON-RPC implementation for your Flask-powered sites</td>
+        <td>2023-05-01</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-extensions.html">
+            <font href="" class="topic-tag">flask-extensions</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/jsonrpc.html">
+            <font href="" class="topic-tag">jsonrpc</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/lixxu/flask-paginate">lixxu/flask-paginate</a></td>
+        <td>267</td>
+        <td>Pagination support for flask</td>
+        <td>2022-09-16</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/paginate.html">
+            <font href="" class="topic-tag">paginate</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/ethanchewy/PythonBuddy">ethanchewy/PythonBuddy</a></td>
+        <td>260</td>
+        <td>1st Online Python Editor With Live Syntax Checking and Execution</td>
+        <td>2023-05-01</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/editor.html">
+            <font href="" class="topic-tag">editor</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/linter.html">
+            <font href="" class="topic-tag">linter</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/live.html">
+            <font href="" class="topic-tag">live</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/mooc.html">
+            <font href="" class="topic-tag">mooc</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/online.html">
+            <font href="" class="topic-tag">online</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/syntax-checker.html">
+            <font href="" class="topic-tag">syntax-checker</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/text-editor.html">
+            <font href="" class="topic-tag">text-editor</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/kvesteri/sqlalchemy-searchable">kvesteri/sqlalchemy-searchable</a></td>
+        <td>243</td>
+        <td>Fulltext searchable models for SQLAlchemy. Only supports PostgreSQL</td>
+        <td>2023-02-15</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/mattupstate/flask-rq">mattupstate/flask-rq</a></td>
+        <td>204</td>
+        <td>RQ (Redis Queue) integration for Flask applications</td>
+        <td>2022-09-10</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/honmaple/flask-msearch">honmaple/flask-msearch</a></td>
+        <td>202</td>
+        <td>Full text search for flask.</td>
+        <td>2021-06-05</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/search.html">
+            <font href="" class="topic-tag">search</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/sqlalchemy.html">
+            <font href="" class="topic-tag">sqlalchemy</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/whoosh.html">
+            <font href="" class="topic-tag">whoosh</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/e-dard/flask-s3">e-dard/flask-s3</a></td>
+        <td>190</td>
+        <td>Seamlessly serve your static assets of your Flask app from Amazon S3</td>
+        <td>2022-09-15</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/defshine/flaskblog">defshine/flaskblog</a></td>
+        <td>175</td>
+        <td>Learn python and flask,just a tony blog system </td>
+        <td>2017-04-18</td>
+        <td>CSS</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/lepture/zerqu">lepture/zerqu</a></td>
+        <td>171</td>
+        <td>ZERQU is a content-focused API-based platform.</td>
+        <td>2020-03-28</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/numberly/flask2postman">numberly/flask2postman</a></td>
+        <td>139</td>
+        <td>:rocket: Generate a Postman collection from your Flask application</td>
+        <td>2022-09-15</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/postman.html">
+            <font href="" class="topic-tag">postman</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python3.html">
+            <font href="" class="topic-tag">python3</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/opentracing-contrib/python-flask">opentracing-contrib/python-flask</a></td>
+        <td>135</td>
+        <td>OpenTracing instrumentation for the Flask microframework</td>
+        <td>2023-04-20</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/opentracing.html">
+            <font href="" class="topic-tag">opentracing</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/rachelsanders/Flask-FeatureFlags">rachelsanders/Flask-FeatureFlags</a></td>
+        <td>132</td>
+        <td>A Flask extension that enables or disables features based on configuration.</td>
+        <td>2018-06-26</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/alexandre-old/flask-rest-template">alexandre-old/flask-rest-template</a></td>
+        <td>108</td>
+        <td>template for a rest app with flask, flask-rest and more...</td>
+        <td>2022-11-16</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/blueprints.html">
+            <font href="" class="topic-tag">blueprints</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/boilerplate.html">
+            <font href="" class="topic-tag">boilerplate</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-application.html">
+            <font href="" class="topic-tag">flask-application</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/public-domain.html">
+            <font href="" class="topic-tag">public-domain</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/rest.html">
+            <font href="" class="topic-tag">rest</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/template.html">
+            <font href="" class="topic-tag">template</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/defshine/cleanblog">defshine/cleanblog</a></td>
+        <td>107</td>
+        <td>A clean and simple  blog system based on Flask and MongoDB</td>
+        <td>2016-12-10</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/hamidfzm/Flask-HTMLmin">hamidfzm/Flask-HTMLmin</a></td>
+        <td>91</td>
+        <td>Flask HTML response minifier</td>
+        <td>2023-02-16</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-extensions.html">
+            <font href="" class="topic-tag">flask-extensions</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-htmlmin.html">
+            <font href="" class="topic-tag">flask-htmlmin</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/htmlmin.html">
+            <font href="" class="topic-tag">htmlmin</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/minify.html">
+            <font href="" class="topic-tag">minify</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/minify-html.html">
+            <font href="" class="topic-tag">minify-html</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/wrobstory/mcflyin">wrobstory/mcflyin</a></td>
+        <td>85</td>
+        <td>A small timeseries transformation API built on Flask and Pandas</td>
+        <td>2022-09-16</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/zzzsochi/Flask-Gravatar">zzzsochi/Flask-Gravatar</a></td>
+        <td>81</td>
+        <td>Small and simple gravatar usage in Flask.</td>
+        <td>2022-09-15</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/avatar.html">
+            <font href="" class="topic-tag">avatar</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/avatar-generator.html">
+            <font href="" class="topic-tag">avatar-generator</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/avatar-service.html">
+            <font href="" class="topic-tag">avatar-service</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask.html">
+            <font href="" class="topic-tag">flask</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/gravatar.html">
+            <font href="" class="topic-tag">gravatar</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/python.html">
+            <font href="" class="topic-tag">python</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/citruspi/Flask-Analytics">citruspi/Flask-Analytics</a></td>
+        <td>78</td>
+        <td>Analytics snippets generator extension for the Flask framework.</td>
+        <td>2016-10-12</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/danjac/newsmeme">danjac/newsmeme</a></td>
+        <td>78</td>
+        <td>mirror of bitbucket project</td>
+        <td>2010-11-20</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/airbrake/airbrake-python">airbrake/airbrake-python</a></td>
+        <td>51</td>
+        <td>Airbrake Python</td>
+        <td>2022-09-12</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/anurag90x/flask-pundit">anurag90x/flask-pundit</a></td>
+        <td>50</td>
+        <td>A flask extension for managing permissions and scopes</td>
+        <td>2023-05-01</td>
+        <td>Python</td>
+        <td>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/authorization.html">
+            <font href="" class="topic-tag">authorization</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/flask-extension.html">
+            <font href="" class="topic-tag">flask-extension</font>
+          </a>
+          
+          <a href="https://jaimevalero.github.io/managing-awesome-lists/var/topics/permissions.html">
+            <font href="" class="topic-tag">permissions</font>
+          </a>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/lowrain/GuitarFan">lowrain/GuitarFan</a></td>
+        <td>48</td>
+        <td>guitar tab</td>
+        <td>2020-03-28</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/rhyselsmore/flask-reggie">rhyselsmore/flask-reggie</a></td>
+        <td>48</td>
+        <td>Regex Converter for Flask URL Routes</td>
+        <td>2013-07-08</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/notedit/motiky">notedit/motiky</a></td>
+        <td>40</td>
+        <td>backend api  of the motiky app</td>
+        <td>2013-06-26</td>
+        <td>None</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/qiajigou/flask-zipkin">qiajigou/flask-zipkin</a></td>
+        <td>40</td>
+        <td>a flask zipkin extension based on py_zipkin.</td>
+        <td>2022-09-10</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/rdegges/flask-heroku-cacheify">rdegges/flask-heroku-cacheify</a></td>
+        <td>40</td>
+        <td>Automatic Flask cache configuration on Heroku.</td>
+        <td>2018-09-26</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/AamAadmiParty/cleansweep">AamAadmiParty/cleansweep</a></td>
+        <td>39</td>
+        <td>Volunteer & Campaign Management System</td>
+        <td>2020-03-28</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/kennethreitz/flask-sslify">kennethreitz/flask-sslify</a></td>
+        <td>26</td>
+        <td>Force SSL on your Flask app. </td>
+        <td>2022-09-15</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/alejoar/Flask-Azure-Storage">alejoar/Flask-Azure-Storage</a></td>
+        <td>18</td>
+        <td>Flask extension that provides integration with Azure Storage</td>
+        <td>2018-04-13</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/LucasHild/flask-matomo">LucasHild/flask-matomo</a></td>
+        <td>14</td>
+        <td>Track requests to your Flask website with Matomo </td>
+        <td>2020-09-30</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/iurisilvio/Flask-Pusher">iurisilvio/Flask-Pusher</a></td>
+        <td>9</td>
+        <td>Flask extension for Pusher</td>
+        <td>2021-03-19</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/notedit/missing">notedit/missing</a></td>
+        <td>9</td>
+        <td>None</td>
+        <td>2013-01-26</td>
+        <td>JavaScript</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td><a href="https://github.com/cenkalti/flask-debug-toolbar-mongo">cenkalti/flask-debug-toolbar-mongo</a></td>
+        <td>4</td>
+        <td>MongoDB panel for the Flask Debug Toolbar</td>
+        <td>2017-02-04</td>
+        <td>Python</td>
+        <td>
+          
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+
+
+
+				</div>
+
+
+			</div>
+			<!-- /.row -->
+
+		</div>
+		<!-- /.container -->
+
+		<footer>
+	<div class="container-fluid">
+    <div class="text-center">
+      <p>Awesome List management.
+    </div>
+	</div>
+
+</footer>
+
+	</body>
+
+</html>
