@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h2 > Awesome List Viewer </h2>
 
 https://jaimevalero.github.io/managing-awesome-lists
@@ -84,3 +85,6 @@ Lists : 62
 ./generate_render_template.py  -t template-readme.html --data /tmp/kk-readme.json
 ```
 
+=======
+./generate_render_template.py  -t template-readme.html --data /tmp/kk-readme.json
+>>>>>>> e0c12e17 (Templatin')
