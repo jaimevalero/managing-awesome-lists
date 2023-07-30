@@ -123,9 +123,9 @@ Generate_Render_Single_List( )
   FILE_HTML=`echo ${MY_URI} | tr \/ @  `
   LISTA_JSON_DATA="/tmp/lista-${FILE_HTML}.json"
   Log Preparando lista AWESOME_LIST_URL=$AWESOME_LIST_URL= FILE_HTML=$FILE_HTML=
-
-  ####Generate_Contents_Single_List ${AWESOME_LIST_URL}
-  ####Create_Info_Render_Wrapper "${MY_URI}" > ${LISTA_JSON_DATA}
+  
+  Generate_Contents_Single_List ${AWESOME_LIST_URL}
+  Create_Info_Render_Wrapper "${MY_URI}" > ${LISTA_JSON_DATA}
 
   if [ `cat ${LISTA_JSON_DATA} | grep ' "repos" : \[  \]' | wc -l ` -eq 1 ]
   then
