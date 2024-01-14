@@ -4,6 +4,25 @@ from src.models.AwesomeModel import AwesomeModel
 from src.serializers.AbstractSerializer import AbstractSerializer
 
 class AwesomeSerializer(AbstractSerializer):
+    """
+    A subclass of AbstractSerializer that provides serialization and deserialization for AwesomeModel objects.
+
+    This class overrides the to_file method of AbstractSerializer to provide a way to serialize AwesomeModel objects.
+    The serialized objects are stored in a .json file in the "./var/awesome" directory. The filename is based on the 
+    full_name attribute of the repo_meta_data of the AwesomeModel, with '/' replaced by '@'.
+
+    Attributes
+    ----------
+    CATEGORY : str
+        The category of the repositories. In this case, it's "awesome".
+
+    Methods
+    -------
+    to_file(awesome_category: AwesomeModel)
+        Serializes the given AwesomeModel object to a .json file. The filename is based on the full_name attribute of 
+        the repo_meta_data of the AwesomeModel, with '/' replaced by '@'.
+    """
+    ...
     CATEGORY = "awesome"
     @staticmethod
     def to_file(awesome_category):

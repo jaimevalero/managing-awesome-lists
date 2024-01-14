@@ -8,6 +8,25 @@ from src.serializers.AbstractSerializer import AbstractSerializer
 
 
 class TopicSerializer(AbstractSerializer):
+    """
+    A subclass of AbstractSerializer that provides serialization for TopicModel objects.
+
+    This class overrides the to_file method of AbstractSerializer to provide a way to serialize TopicModel objects.
+    The serialized objects are stored in a .json file in the "./var/topic" directory. The filename is based on the 
+    category_name attribute of the TopicModel, with '/' replaced by '@'.
+
+    Attributes
+    ----------
+    CATEGORY : str
+        The category of the repositories. In this case, it's "topic".
+
+    Methods
+    -------
+    to_file(topic_category: AbstractCategory)
+        Serializes the given TopicModel object to a .json file. The filename is based on the category_name attribute of 
+        the TopicModel, with '/' replaced by '@'.
+    """
+    
     CATEGORY = "topic"
     @staticmethod
     def to_file(topic_category:AbstractCategory):
