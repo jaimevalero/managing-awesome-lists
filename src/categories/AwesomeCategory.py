@@ -1,6 +1,7 @@
 from src.categories.AbstractCategory import AbstractCategory
 from src.populators.AwesomePopulator import AwesomePopulator
-from src.serializers.RepoSerializer import AwesomeSerializer, RepoMetaDataSerializer
+from src.serializers.AwesomeSerializer import AwesomeSerializer
+from src.serializers.RepoMetaDataSerializer import RepoMetaDataSerializer
 from loguru import logger
 import os
 import re
@@ -19,7 +20,7 @@ class AwesomeCategory(AbstractCategory):
         self.serializer = AwesomeSerializer
         self.repo_meta_data = RepoListDownloader(access_token,[category_name])[0]
         self.repo_list_models = self.populator(self.access_token, self.category_name).populate()
-        
+        self.frecuent_topics = self.get_frecuent_topics(self.repo_list_models)
     def to_file(self):
         self.serializer.to_file(self)
 

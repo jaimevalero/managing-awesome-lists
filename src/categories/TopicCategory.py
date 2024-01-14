@@ -1,5 +1,6 @@
 from typing import List
-from categories.AbstractCategory import AbstractCategory
+from src.serializers.TopicSerializer import TopicSerializer
+from src.categories.AbstractCategory import AbstractCategory
 
 from src.populators.TopicPopulator import TopicPopulator
 from src.models.RepoModel import RepoModel  
@@ -11,11 +12,12 @@ class TopicCategory(AbstractCategory):
         self.category_type = "topic"
         self.category_name = category_name
         self.populator = TopicPopulator(all_repo_models, category_name)
-        #self.serializer = TopicSerializer       
-        self.repo_list_models = self.populator(self.access_token, self.category_name).populate()        
+        self.serializer = TopicSerializer       
+        self.repo_list_models = self.populator.populate()        
         logger.info(f"Populating topic {category_name} with {len(self.repo_list_models)} repos")
+        self.frecuent_topics = self.get_frecuent_topics(self.repo_list_models)
     def to_file(self):
-        #self.serializer.to_file(self)
+        self.serializer.to_file(self)
         pass 
     
     def __del__(self):

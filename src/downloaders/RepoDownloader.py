@@ -1,6 +1,6 @@
 from loguru import logger
 import requests
-from src.serializers.RepoSerializer import RepoMetaDataSerializer 
+from src.serializers.RepoMetaDataSerializer import RepoMetaDataSerializer 
 
 from src.adapters.RepoAdapter import RepoAdapter
 from itertools import product

@@ -1,7 +1,8 @@
 from loguru import logger
 from abc import ABC, abstractmethod
 from typing import List
-from src.serializers.RepoSerializer import RepoMetaDataSerializer
+from src.helpers.RepoModelList import delete_duplicates, sort_by_star
+from src.serializers.RepoMetaDataSerializer import RepoMetaDataSerializer
 
 from src.models.RepoModel import RepoModel
 
@@ -39,3 +40,10 @@ class AbstractPopulator(ABC):
 
     def populate(self)->List[RepoModel]:
         raise NotImplementedError("Please Implement this method")
+    
+    def normalize(self, repos_data: List[RepoModel])->List[RepoModel]:
+        """ Normalize the data from the repos """
+        repos_data=sort_by_star(repos_data)
+        repos_data=delete_duplicates(repos_data)
+        return repos_data
+    

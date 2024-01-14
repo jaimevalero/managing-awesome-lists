@@ -17,6 +17,8 @@ class AwesomePopulator(AbstractPopulator):
         repo_names = self.__get_repo_names_from_readme()
         access_token = self.access_token
         repos_data = RepoListDownloader(access_token,repo_names)
+        # Avoid duplicates, and sort by stars
+        repos_data = self.normalize(repos_data)
         self.repos_data = repos_data
         return repos_data
     
