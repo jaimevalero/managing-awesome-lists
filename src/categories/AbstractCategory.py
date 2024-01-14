@@ -8,7 +8,6 @@ from abc import ABC
 from loguru import logger
 
 class AbstractCategory(ABC):
-class AbstractCategory(ABC):
     """
     An abstract base class that represents a category of repositories.
 
