@@ -1,23 +1,39 @@
-
-import re
 from typing import List
-from src.downloaders.RepoDownloader import ReadmeDownloader
+from categories.AbstractCategory import AbstractCategory
 
-from populators.AwesomePopulator import AwesomeListPopulator
-from src.serializers.RepoSerializer import AbstractSerializer, AwesomeSerializer
-from src.populators.AbstractPopulator import AbstractPopulator
-from models.RepoModel import RepoModel  
-from abc import ABC
+from src.populators.TopicPopulator import TopicPopulator
+from src.models.RepoModel import RepoModel  
 from loguru import logger
 
 class TopicCategory(AbstractCategory):
     """ This class represents a given topic in github, containing a list of repos"""
-    def __init__(self, RepoMetaData: RepoModel):
-        self.category_name = "topic"
-        self.RepoMetaData = RepoMetaData
-        self.RepoList = []
-        self.populate_repo_list()
+    def __init__(self, category_name : str, all_repo_models : List[RepoModel]):
+        self.category_type = "topic"
+        self.category_name = category_name
+        self.populator = TopicPopulator(all_repo_models, category_name)
+        #self.serializer = TopicSerializer       
+        self.repo_list_models = self.populator(self.access_token, self.category_name).populate()        
+        logger.info(f"Populating topic {category_name} with {len(self.repo_list_models)} repos")
+    def to_file(self):
+        #self.serializer.to_file(self)
+        pass 
+    
+    def __del__(self):
+        """ Serialize the data from the repos when the object is deleted """
+        self.to_file()
+        
+# def main():
+#     # Load the .env file
+#     load_dotenv()
+#     access_token = os.getenv("CREDENTIALS")
+#     awesome_list_name = "viatsko/awesome-vscode"
 
-    def populate_repo_list(self):
-        for topic in self.RepoMetaData.topics:
-            self.RepoList.append(topic)
+#     awesome_category = AwesomeCategory(awesome_list_name, access_token)
+#     #awesome_category.to_file()
+#     a = 0
+# if __name__ == "__main__":
+#     main()
+
+
+            
+
