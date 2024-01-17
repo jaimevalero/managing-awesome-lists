@@ -2,7 +2,8 @@ from src.populators.AbstractPopulator import AbstractPopulator
 from loguru import logger
 
 class TopicPopulator(AbstractPopulator):
-    """ This class extract the repos from a list of repos that have a given topic"""
+    """ This class extract the repos from a list of repos 
+    that have a given topic"""
     def __init__(self, all_repo_models, category_name):
         self.all_repo_models = all_repo_models
         self.category_name = category_name

@@ -32,7 +32,7 @@ class AwesomeSerializer(AbstractSerializer):
             category_type=awesome_category.category_type,
             category_name=awesome_category.category_name,
             repo_meta_data=awesome_category.repo_meta_data,
-            repo_list_models=awesome_category.repo_list_models,
+            repos_data=awesome_category.repos_data,
             frecuent_topics=awesome_category.frecuent_topics
         )        
         filename_clean = repo_meta_data.full_name.replace('/', '@')

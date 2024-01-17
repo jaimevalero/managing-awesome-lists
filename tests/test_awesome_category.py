@@ -17,8 +17,8 @@ class TestAwesomeCategory(unittest.TestCase):
 
         # Comprobar que se ha cargado correctamente
         self.assertIsNotNone(awesome_category.repo_meta_data)
-        self.assertIsNotNone(awesome_category.repo_list_models)
-        self.assertGreater(len(awesome_category.repo_list_models), 0)
+        self.assertIsNotNone(awesome_category.repos_data)
+        self.assertGreater(len(awesome_category.repos_data), 0)
 
     def test_serialize_awesome_category(self):
         # Crear una instancia de AwesomeCategory

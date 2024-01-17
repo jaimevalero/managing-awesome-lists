@@ -7,7 +7,7 @@ class AbstractModel(BaseModel):
     """
     category_type: str
     category_name: str
-    repo_list_models: List[RepoModel]
+    repos_data: List[RepoModel]
     frecuent_topics: dict
     
     class Config:

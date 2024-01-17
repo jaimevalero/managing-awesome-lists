@@ -9,20 +9,14 @@ from loguru import logger
 class TopicCategory(AbstractCategory):
     """ This class represents a given topic in github, containing a list of repos"""
     def __init__(self, category_name : str, all_repo_models : List[RepoModel]):
+        super().__init__(category_name, "", TopicPopulator(all_repo_models, category_name), TopicSerializer)
         self.category_type = "topic"
-        self.category_name = category_name
-        self.populator = TopicPopulator(all_repo_models, category_name)
-        self.serializer = TopicSerializer       
-        self.repo_list_models = self.populator.populate()        
-        logger.info(f"Populating topic {category_name} with {len(self.repo_list_models)} repos")
-        self.frecuent_topics = self.get_frecuent_topics(self.repo_list_models)
-    def to_file(self):
-        self.serializer.to_file(self)
-        pass 
+        logger.info(f"Populating topic {category_name} with {len(self.repos_data)} repos")
+
+
+
     
-    def __del__(self):
-        """ Serialize the data from the repos when the object is deleted """
-        self.to_file()
+
         
 # def main():
 #     # Load the .env file
