@@ -34,7 +34,7 @@ class TopicSerializer(AbstractSerializer):
         topic_model = TopicModel(
             category_type=topic_category.category_type,
             category_name=topic_category.category_name,
-            repo_list_models=topic_category.repo_list_models,
+            repos_data=topic_category.repos_data,
             frecuent_topics=topic_category.frecuent_topics
         )        
         filename_clean = topic_model.category_name.replace('/', '@')

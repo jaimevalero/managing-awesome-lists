@@ -55,15 +55,22 @@ class AbstractCategory(ABC):
     serializer: AbstractSerializer  # Class to serialize the data for the instance
     frecuent_topics: dict   # Dict counter of most frecuent topics for the repos 
     
-    def __init__(self, category_name: str, access_token: str, populator, serializer):
+    def __init__(self, category_name: str, access_token: str, populator, serializer,category_type):
         self.category_name = category_name
         self.access_token = access_token
         self.populator = populator
         self.serializer = serializer
         self.repo_list_names = []
-        self.repos_data = self.populator(self.access_token, self.category_name).populate()
+        try : 
+            # I would say this is not used anymore
+            self.repos_data = self.populator(self.access_token, self.category_name).populate()
+        except Exception as e:
+            self.repos_data = self.populator.populate()           
         self.frecuent_topics = self.get_frecuent_topics(self.repos_data)
-
+        try: 
+            self.category_type = category_type
+        except:
+            pass
     def get_frecuent_topics(self,repos_data):
         try : 
             frecuent_topics = get_frecuent_topics(repos_data)
