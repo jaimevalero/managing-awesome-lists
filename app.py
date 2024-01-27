@@ -82,7 +82,7 @@ def create_topic_category(access_token, has_replace):
     # Sort by start and delete duplicates for topics_array
 
 
-        
+         
     topics_set = sorted(set(topics_array))
     for topic in topics_set:
         try:
