@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "AwesomePopulator",
+            "type": "python",
+            "request": "launch",
+            "module": "src.populators.AwesomePopulator",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "AwesomeCategory",
+            "type": "python",
+            "request": "launch",
+            "module": "src.categories.AwesomeCategory",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },        
+        {
+            "name": "Python: app.py",
+            "type": "python",
+            "request": "launch",
+            "program": "app.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: All Tests",
+            "type": "python",
+            "request": "launch",
+            "module": "unittest",
+            "args": [
+                "discover", "-s", "tests", "-p", "test_*.py"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+
+        
+    ]
+}

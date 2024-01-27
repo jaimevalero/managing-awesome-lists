@@ -1,0 +1,1 @@
+{"category_type":"topic","category_name":"wgan-gp","repos_data":[{"full_name":"caogang/wgan-gp","description":"A pytorch implementation of Paper \"Improved Training of Wasserstein GANs\"","topics":["wgan-gp","pytorch"],"created_at":"2017-05-04T15:07:18Z","pushed_at":"2023-07-18T07:54:22Z","stargazers_count":1459,"language":"Python"}],"frecuent_topics":{"wgan-gp":1,"pytorch":1}}
