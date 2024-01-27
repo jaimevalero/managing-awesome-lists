@@ -1,4 +1,4 @@
-<h3 > Awesome List Viewer </h3>
+<h1 > Awesome List Viewer </h1>
 
 https://managing-awesome-lists.vercel.app/
 
@@ -58,7 +58,7 @@ Lists : 62
 |[sbilly/awesome-security](https://jaimevalero.github.io/managing-awesome-lists/var/awl-sbilly%40awesome-security.html)| A collection of awesome software, libraries, documents, books, resources and cools stuffs about security. | 10074 |
 |[rshipp/awesome-malware-analysis](https://jaimevalero.github.io/managing-awesome-lists/var/awl-rshipp%40awesome-malware-analysis.html)| Defund the Police. | 10042 |
 |[davidsonfellipe/awesome-wpo](https://jaimevalero.github.io/managing-awesome-lists/var/awl-davidsonfellipe%40awesome-wpo.html)| :pencil: A curated list of Web Performance Optimization. Everyone can contribute here! | 8009 |
-|[Hannibal046/Awesome-LLM](https://jaimevalero.github.io/managing-awesome-lists/var/awl-Hannibal046%40Awesome-LLM.html)| Awesome-LLM: a curated list of Large Language Model | 6423 |
+|[Hannibal046/Awesome-LLM](https://jaimevalero.github.io/managing-awesome-lists/var/awl-Hannibal046%40Awesome-LLM.html)| Awesome-LLM: a curated list of Large Language Model, ChatGPT like technologies | 6423 |
 |[pditommaso/awesome-pipeline](https://jaimevalero.github.io/managing-awesome-lists/var/awl-pditommaso%40awesome-pipeline.html)| A curated list of awesome pipeline toolkits inspired by Awesome Sysadmin | 5516 |
 |[wbkd/awesome-d3](https://jaimevalero.github.io/managing-awesome-lists/var/awl-wbkd%40awesome-d3.html)| A list of D3 libraries, plugins and utilities | 5035 |
 |[AllThingsSmitty/jquery-tips-everyone-should-know](https://jaimevalero.github.io/managing-awesome-lists/var/awl-AllThingsSmitty%40jquery-tips-everyone-should-know.html)| A collection of tips to help up your jQuery game 🎮 | 4229 |
