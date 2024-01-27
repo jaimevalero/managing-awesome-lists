@@ -2,7 +2,3 @@ werkzeug==2.0.3
 pyjson
 argparse
 jinja2
-pydantic
-python-dotenv
-unittest
-coverage
