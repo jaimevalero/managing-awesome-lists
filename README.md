@@ -1,13 +1,10 @@
-./generate_render_template.py  -t template-readme.html --data /tmp/kk-readme.json
-
 <h3 > Awesome List Viewer </h3>
 
-https://jaimevalero.github.io/managing-awesome-lists
+https://managing-awesome-lists.vercel.app/
 
 Discover new and amazing resources in the awesome lists!
 
-This repo format the awesome list by number of stars, add tags and filters.
-
+This repo extract awesome list.
 
 
 Lists : 62
