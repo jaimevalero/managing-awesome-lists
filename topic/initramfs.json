@@ -1,0 +1,1 @@
+{"category_type":"topic","category_name":"initramfs","repos_data":[{"full_name":"anatol/booster","description":"Fast and secure initramfs generator","topics":["linux","boot","initramfs"],"created_at":"2020-12-11T08:08:14Z","pushed_at":"2023-10-26T21:38:54Z","stargazers_count":420,"language":"Go"}],"frecuent_topics":{"linux":1,"boot":1,"initramfs":1}}

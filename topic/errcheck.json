@@ -1,0 +1,1 @@
+{"category_type":"topic","category_name":"errcheck","repos_data":[{"full_name":"kisielk/errcheck","description":"errcheck checks that you checked errors.","topics":["go","errcheck","error","linter"],"created_at":"2013-02-24T22:32:02Z","pushed_at":"2023-12-07T05:08:40Z","stargazers_count":2180,"language":"Go"}],"frecuent_topics":{"go":1,"errcheck":1,"error":1,"linter":1}}

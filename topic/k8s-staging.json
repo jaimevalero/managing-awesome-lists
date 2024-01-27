@@ -1,0 +1,1 @@
+{"category_type":"topic","category_name":"k8s-staging","repos_data":[{"full_name":"kubernetes/kubectl","description":"Issue tracker and mirror of kubectl code","topics":["k8s-sig-cli","k8s-staging"],"created_at":"2017-03-30T19:50:22Z","pushed_at":"2024-01-11T22:12:10Z","stargazers_count":2583,"language":"Go"}],"frecuent_topics":{"k8s-sig-cli":1,"k8s-staging":1}}

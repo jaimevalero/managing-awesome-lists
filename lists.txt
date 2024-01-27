@@ -1,5 +1,5 @@
 https://github.com/Hannibal046/Awesome-LLM
-https://github.com/Chalarangelo/30-seconds-of-css
+https://github.com/30-seconds/30-seconds-of-css
 https://github.com/academic/awesome-datascience
 https://github.com/agarrharr/awesome-cli-apps
 https://github.com/akullpp/awesome-java

@@ -1,0 +1,1 @@
+{"category_type":"topic","category_name":"llvm-ir","repos_data":[{"full_name":"llir/llvm","description":"Library for interacting with LLVM IR in pure Go.","topics":["llvm-ir","go","golang","llvm"],"created_at":"2014-09-19T11:18:44Z","pushed_at":"2023-08-25T11:34:37Z","stargazers_count":1118,"language":"Go"}],"frecuent_topics":{"llvm-ir":1,"go":1,"golang":1,"llvm":1}}
