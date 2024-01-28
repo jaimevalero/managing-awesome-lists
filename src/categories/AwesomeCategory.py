@@ -11,7 +11,7 @@ from src.downloaders.RepoDownloader import RepoListDownloader
 class AwesomeCategory(AbstractCategory):
     """ This class represents an awesome list in github, containing a list of repos"""
     def __init__(self, category_name : str, access_token = ""):
-        super().__init__(category_name, access_token, AwesomePopulator, AwesomeSerializer)
+        super().__init__(category_name, access_token, AwesomePopulator, AwesomeSerializer,"awesome")
         self.category_type = "awesome"
         self.repo_meta_data = RepoListDownloader(access_token,[category_name])[0]
 
