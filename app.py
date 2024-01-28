@@ -1,3 +1,4 @@
+from src.helpers.FileManager import FileManager
 from src.helpers.RepoModelList import delete_duplicates, sort_by_star
 from src.adapters.RepoModelListAdapter import RepoModelListAdapter
 from src.categories.AwesomeCategory import AwesomeCategory
@@ -7,7 +8,7 @@ from src.serializers.RepoMetaDataSerializer import RepoMetaDataSerializer
 from loguru import logger
 from dotenv import load_dotenv
 import os
-
+import shutil
 awesome_list_name = "Hannibal046/Awesome-LLM"
 # load .env
 
@@ -95,11 +96,17 @@ def create_topic_category(access_token, has_replace):
         
     logger.info(f"Loaded {len(topics_set)} topics from the directory ./var/repo")
 
-    
+
 
 if __name__ == "__main__":
-    #create_awesome_category(access_token, has_replace)
+    has_replace= False
+    create_awesome_category(access_token, has_replace)
     create_topic_category(access_token, has_replace)
+    
+    backend_dir = "~/git/managing-awesome-lists"
+    frontend_dir = "~/git/managing-awesome-lists-frontend"  
+    file_manager = FileManager(backend_dir, frontend_dir)
+    file_manager.run()
 
 
     
