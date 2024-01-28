@@ -1,5 +1,6 @@
 from loguru import logger
 import requests
+from src.helpers.RepoModelList import delete_duplicates
 from src.serializers.RepoMetaDataSerializer import RepoMetaDataSerializer 
 
 from src.adapters.RepoAdapter import RepoAdapter
@@ -137,8 +138,24 @@ class RepoListDownloader:
                     logger.warning(f"Error downloading repo "+ str(response.json()["errors"]))
                 else : 
                     repo_data = RepoAdapter.convert_graphql_to_repo_metadata(repo_data)
+                    has_the_repo_been_transfered = repo_data.full_name not in repo_block
+                    if has_the_repo_been_transfered:
+                        
+                        # Example. repo returned by api is 'unslothai/hyperlearn', but we were looking for 'danielhanchen/hyperlearn',
+                        for element in repo_block:
+                            short_repo_name_is_equal = element.split("/")[-1] == repo_data.full_name.split("/")[-1]
+                            if short_repo_name_is_equal :
+                                logger.info(f"Repo {element}  has been transfered to another user {repo_data.full_name} ")
+                                repo_data.full_name = element        
+                                break
                     repos_data.append(repo_data)
+        repos_data = delete_duplicates(repos_data)
         self.repos_data  = repos_data
+        # Check that the names from the repos_data are the same as the repo_full_names
+        # because sometimes the repos are transferred to another user, and the name changes
+
+
+
         return repos_data
 
     def __get_repository_data_cache(self, repo_full_names):
@@ -161,3 +178,19 @@ class RepoListDownloader:
                 
         return cached_repos, repo_full_names_curated
     
+
+
+if __name__ == "__main__":
+    from dotenv import load_dotenv
+    import os
+    load_dotenv()
+
+    access_token = os.getenv("CREDENTIALS")
+    repo_full_names = ["basecamp/sub"]
+
+    # Crea una instancia de RepoListDownloader
+    repo_downloader = RepoListDownloader(access_token, repo_full_names)
+
+    # Imprime los datos de los repositorios descargados
+    for repo in repo_downloader:
+        print(repo)
