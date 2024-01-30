@@ -1,4 +1,5 @@
 
+import json
 from src.models.RepoModel import RepoModel
 from src.models.AwesomeModel import AwesomeModel  
 from src.serializers.AbstractSerializer import AbstractSerializer
@@ -41,4 +42,9 @@ class AwesomeSerializer(AbstractSerializer):
         object_serialized_path = f"./var/{AwesomeSerializer.CATEGORY}/{filename_clean}.json"
         with open(object_serialized_path, 'w') as f:
                     f.write(awesome_model.model_dump_json())
-  
+ 
+    @staticmethod
+    def from_file(filename: str) -> AwesomeModel:
+        with open(filename) as f:
+            data = json.load(f)
+        return AwesomeModel(**data)    

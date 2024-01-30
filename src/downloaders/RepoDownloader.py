@@ -138,6 +138,8 @@ class RepoListDownloader:
                     logger.warning(f"Error downloading repo "+ str(response.json()["errors"]))
                 else : 
                     repo_data = RepoAdapter.convert_graphql_to_repo_metadata(repo_data)
+                    # Check that the names from the repos_data are the same as the repo_full_names
+                    # because sometimes the repos are transferred to another user, and the name changes
                     has_the_repo_been_transfered = repo_data.full_name not in repo_block
                     if has_the_repo_been_transfered:
                         
@@ -146,13 +148,12 @@ class RepoListDownloader:
                             short_repo_name_is_equal = element.split("/")[-1] == repo_data.full_name.split("/")[-1]
                             if short_repo_name_is_equal :
                                 logger.info(f"Repo {element}  has been transfered to another user {repo_data.full_name} ")
+                                # "Undo" the transfer, so that the repo is correctly serialized to file
                                 repo_data.full_name = element        
                                 break
                     repos_data.append(repo_data)
         repos_data = delete_duplicates(repos_data)
         self.repos_data  = repos_data
-        # Check that the names from the repos_data are the same as the repo_full_names
-        # because sometimes the repos are transferred to another user, and the name changes
 
 
 
