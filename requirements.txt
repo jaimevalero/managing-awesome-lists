@@ -4,5 +4,8 @@ argparse
 jinja2
 pydantic
 python-dotenv
-unittest
+#unittest
 coverage
+loguru
+requests
+python-dateutil

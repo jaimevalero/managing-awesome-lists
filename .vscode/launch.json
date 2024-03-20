@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Coverage",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "coverage",
+            "args": ["run", "-m", "unittest", "discover", "-p", "test_*.py", "-s", "tests"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Coverage generate report XML",
+            "type": "python",
+            "request": "launch",
+            "module": "coverage",
+            "args": ["xml"],
+            "console": "integratedTerminal"
+        },
+
+
+
+    ]
+}
