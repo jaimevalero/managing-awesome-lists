@@ -2,5 +2,5 @@ projectKey=managing-awesome-lists
 serverUrl=http://epg-sonar-02:9000
 serverVersion=10.3.0.82913
 dashboardUrl=http://epg-sonar-02:9000/dashboard?id=managing-awesome-lists
-ceTaskId=AY5bRd9f6mYSB3qBTPj6
-ceTaskUrl=http://epg-sonar-02:9000/api/ce/task?id=AY5bRd9f6mYSB3qBTPj6
+ceTaskId=AY5bTNr76mYSB3qBTPj7
+ceTaskUrl=http://epg-sonar-02:9000/api/ce/task?id=AY5bTNr76mYSB3qBTPj7

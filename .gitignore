@@ -7,3 +7,7 @@ __pycache__
 *pyc
 var/*
 .coverage
+.coverage
+.scannerwork/
+.scannerwork
+.scannerwork/*
