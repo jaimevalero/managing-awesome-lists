@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
@@ -30,5 +31,85 @@
 
 
 
+=======
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    {
+        "type": "bashdb",
+        "request": "launch",
+        "name": "Bash-Debug (hardcoded script name)",
+        "cwd": "${workspaceFolder}",
+        "program": "${workspaceFolder}/path/to/script.sh",
+        "args": []
+    },
+        {
+            "name": "Python: app.py",
+            "type": "python",
+            "request": "launch",
+            "program": "app.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd" : "/home/jaimevalero/git/managing-awesome-lists/",
+            "env": {"PATH": "${env:PATH}:/home/jaimevalero/git/managing-awesome-lists"}
+
+        },
+
+        {
+            "name": "Python: Module RepoDownloader",
+            "type": "python",
+            "request": "launch",
+            "module": "src.downloaders.RepoDownloader",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd" : "/home/jaimevalero/git/managing-awesome-lists/",
+            "env": {"PATH": "${env:PATH}:/home/jaimevalero/git/managing-awesome-lists"}
+        }
+        {
+            "name": "Python: Module FileManager",
+            "type": "python",
+            "request": "launch",
+            "module": "src.helpers.FileManager",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd" : "/home/jaimevalero/git/managing-awesome-lists/",
+            "env": {"PATH": "${env:PATH}:/home/jaimevalero/git/managing-awesome-lists"}
+        },
+        // Agregar archivo actual
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd" : "/home/jaimevalero/git/managing-awesome-lists/",
+            "env": {"PATH": "${env:PATH}:/home/jaimevalero/git/managing-awesome-lists"}
+        },
+        // run coverage (coverage run -m unittest discover -p test_*.py -s tests + coverage report)
+        {
+            "name": "Python: Coverage",
+            "type": "python",
+            "request": "launch",
+            "module": "unittest",
+            "args": ["discover", "-p", "test_*.py", "-s", "tests"],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd" : "/home/jaimevalero/git/managing-awesome-lists",
+            "env": {"PATH": "${env:PATH}:/home/jaimevalero/anaconda3/bin/"}
+        } ,
+        {
+            "name": "Python: Run Coverage",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_coverage.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd" : "/home/jaimevalero/git/managing-awesome-lists",
+            "env": {"PATH": "${env:PATH}:/home/jaimevalero/anaconda3/bin/"}
+        }
+>>>>>>> fc13fd8e (prepare sonar)
     ]
 }
