@@ -39,11 +39,11 @@ class FileManager:
 
     def move_data_frontend_dir(self):
         """ Move the generated data from backend to frontend repos"""
-        # self.clean_directory(f"{self.frontend_dir}/public/awesome/")
-        # self.copy_directories(f"{self.backend_dir}/var/awesome/", f"{self.frontend_dir}/public/awesome")
+        self.clean_directory(f"{self.frontend_dir}/public/awesome/")
+        self.copy_directories(f"{self.backend_dir}/var/awesome/", f"{self.frontend_dir}/public/awesome")
 
-        # self.clean_directory(f"{self.frontend_dir}/public/topic/")    
-        # self.copy_directories(f"{self.backend_dir}/var/topic/", f"{self.frontend_dir}/public/topic")
+        self.clean_directory(f"{self.frontend_dir}/public/topic/")    
+        self.copy_directories(f"{self.backend_dir}/var/topic/", f"{self.frontend_dir}/public/topic")
 
         self.generate_json_files()    
         self.copy_files(f"{self.backend_dir}/lists.json", f"{self.frontend_dir}/public/lists.json")

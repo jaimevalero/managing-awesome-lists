@@ -1,52 +1,12 @@
 {
-<<<<<<< HEAD
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python Debugger: Current File",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal"
-        },
-        {
-            "name": "Python: Coverage",
-            "type": "debugpy",
-            "request": "launch",
-            "module": "coverage",
-            "args": ["run", "-m", "unittest", "discover", "-p", "test_*.py", "-s", "tests"],
-            "console": "integratedTerminal"
-        },
-        {
-            "name": "Python: Coverage generate report XML",
-            "type": "python",
-            "request": "launch",
-            "module": "coverage",
-            "args": ["xml"],
-            "console": "integratedTerminal"
-        },
-
-
-
-=======
     // Use IntelliSense para saber los atributos posibles.
     // Mantenga el puntero para ver las descripciones de los existentes atributos.
     // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-    {
-        "type": "bashdb",
-        "request": "launch",
-        "name": "Bash-Debug (hardcoded script name)",
-        "cwd": "${workspaceFolder}",
-        "program": "${workspaceFolder}/path/to/script.sh",
-        "args": []
-    },
+
         {
-            "name": "Python: app.py",
+            "name": "Python: app.py mensual",
             "type": "python",
             "request": "launch",
             "program": "app.py",
@@ -66,7 +26,7 @@
             "justMyCode": true,
             "cwd" : "/home/jaimevalero/git/managing-awesome-lists/",
             "env": {"PATH": "${env:PATH}:/home/jaimevalero/git/managing-awesome-lists"}
-        }
+        },
         {
             "name": "Python: Module FileManager",
             "type": "python",
@@ -110,6 +70,5 @@
             "cwd" : "/home/jaimevalero/git/managing-awesome-lists",
             "env": {"PATH": "${env:PATH}:/home/jaimevalero/anaconda3/bin/"}
         }
->>>>>>> fc13fd8e (prepare sonar)
     ]
 }
