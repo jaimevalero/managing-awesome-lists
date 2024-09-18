@@ -73,4 +73,5 @@ https://github.com/vsouza/awesome-ios
 https://github.com/wasabeef/awesome-android-ui
 https://github.com/wbkd/awesome-d3
 https://github.com/webpro/awesome-dotfiles
+https://github.com/wilsonfreitas/awesome-quant
 https://github.com/ziadoz/awesome-php
