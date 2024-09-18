@@ -1,3 +1,4 @@
+https://github.com/abhisheknaiidu/awesome-github-profile-readme
 https://github.com/academic/awesome-datascience
 https://github.com/agarrharr/awesome-cli-apps
 https://github.com/akullpp/awesome-java
@@ -16,7 +17,9 @@ https://github.com/ChristosChristofidis/awesome-deep-learning
 https://github.com/cugu/awesome-forensics
 https://github.com/davidsonfellipe/awesome-wpo
 https://github.com/dhamaniasad/awesome-postgres
+https://github.com/docker/awesome-compose
 https://github.com/donnemartin/awesome-aws
+https://github.com/DovAmir/awesome-design-patterns
 https://github.com/dypsilon/frontend-dev-bookmarks
 https://github.com/enaqx/awesome-react
 https://github.com/fffaraz/awesome-cpp
@@ -44,16 +47,17 @@ https://github.com/newTendermint/awesome-bigdata
 https://github.com/numetriclabz/awesome-db
 https://github.com/pditommaso/awesome-pipeline
 https://github.com/phanan/htaccess
+https://github.com/pluja/awesome-privacy
 https://github.com/prakhar1989/awesome-courses
 https://github.com/ramitsurana/awesome-kubernetes
 https://github.com/ripienaar/free-for-dev
 https://github.com/rshipp/awesome-malware-analysis
+https://github.com/rust-unofficial/awesome-rust
 https://github.com/sbilly/awesome-security
 https://github.com/sdogruyol/awesome-ruby
 https://github.com/sdras/awesome-actions
 https://github.com/serhii-londar/open-source-mac-os-apps
 https://github.com/shlomi-noach/awesome-mysql
-https://github.com/sindresorhus/awesome
 https://github.com/sindresorhus/awesome-nodejs
 https://github.com/sorrycc/awesome-javascript
 https://github.com/thangchung/awesome-dotnet-core
