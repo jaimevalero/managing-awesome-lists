@@ -1,7 +1,7 @@
 <h1>Folders</h1>
 
 <h2>utils</h2>
-<p><em>Utility classes for downloading READMEs and repository lists from GitHub.</em></p>
+<blockquote><em>Utility classes for downloading READMEs and repository lists from GitHub.</em></blockquote>
 <table>
   <tr>
     <th>Class Name</th>
