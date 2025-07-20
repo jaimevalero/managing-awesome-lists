@@ -1,6 +1,7 @@
 <h1>Folders</h1>
 
 <h2>utils</h2>
+<p><em>Utility classes for downloading READMEs and repository lists from GitHub.</em></p>
 <table>
   <tr>
     <th>Class Name</th>
@@ -17,6 +18,7 @@
 </table>
 
 <h2>models</h2>
+<p><em>Data models for representing awesome lists, topics, categories, and repositories.</em></p>
 <table>
   <tr>
     <th>Class Name</th>
@@ -41,6 +43,7 @@
 </table>
 
 <h2>adapters</h2>
+<p><em>Convert GitHub API responses to internal models and handle RepoModel lists.</em></p>
 <table>
   <tr>
     <th>Class Name</th>
@@ -57,6 +60,7 @@
 </table>
 
 <h2>categories</h2>
+<p><em>Classes representing types of repository groupings, such as awesome lists and topics.</em></p>
 <table>
   <tr>
     <th>Class Name</th>
@@ -77,6 +81,7 @@
 </table>
 
 <h2>downloaders</h2>
+<p><em>Components for downloading README files and repository metadata.</em></p>
 <table>
   <tr>
     <th>Class Name</th>
@@ -93,6 +98,7 @@
 </table>
 
 <h2>helpers</h2>
+<p><em>Utilities for file operations and processing lists of RepoModel objects.</em></p>
 <table>
   <tr>
     <th>Class Name</th>
@@ -109,6 +115,7 @@
 </table>
 
 <h2>populators</h2>
+<p><em>Populate repository lists from awesome-list READMEs or GitHub topics.</em></p>
 <table>
   <tr>
     <th>Class Name</th>
@@ -129,6 +136,7 @@
 </table>
 
 <h2>serializers</h2>
+<p><em>Serialize and deserialize repository, category, and metadata objects.</em></p>
 <table>
   <tr>
     <th>Class Name</th>
