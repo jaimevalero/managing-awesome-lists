@@ -1,8 +1,11 @@
 # Awesome List Viewer
 
+**Discover and explore the best GitHub resources with Awesome List Viewer!**
+
 [Live Demo](https://managing-awesome-lists.vercel.app/)
 
 **Awesome List Viewer** is a backend utility for discovering and managing GitHub "awesome lists". It downloads metadata about curated awesome lists from GitHub, stores the data as JSON, and makes it available for querying through a dedicated frontend application.
+
 
 ---
 
@@ -125,8 +128,5 @@ This project is released under the MIT License.
 
 ---
 
-**Discover and explore the best GitHub resources with Awesome List Viewer!**
 
----
 
-Let me know if you want the README in another format (Markdown table, shorter version, etc.) or want to focus on a specific section.
