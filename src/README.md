@@ -18,7 +18,7 @@
 </table>
 
 <h2>models</h2>
-<p><em>Data models for representing awesome lists, topics, categories, and repositories.</em></p>
+<blockquote><em>Data models for representing awesome lists, topics, categories, and repositories.</em></blockquote>
 <table>
   <tr>
     <th>Class Name</th>
@@ -43,7 +43,7 @@
 </table>
 
 <h2>adapters</h2>
-<p><em>Convert GitHub API responses to internal models and handle RepoModel lists.</em></p>
+<blockquote><em>Convert GitHub API responses to internal models and handle RepoModel lists.</em></blockquote>
 <table>
   <tr>
     <th>Class Name</th>
@@ -60,7 +60,7 @@
 </table>
 
 <h2>categories</h2>
-<p><em>Classes representing types of repository groupings, such as awesome lists and topics.</em></p>
+<blockquote><em>Classes representing types of repository groupings, such as awesome lists and topics.</em></blockquote>
 <table>
   <tr>
     <th>Class Name</th>
@@ -81,7 +81,7 @@
 </table>
 
 <h2>downloaders</h2>
-<p><em>Components for downloading README files and repository metadata.</em></p>
+<blockquote><em>Components for downloading README files and repository metadata.</em></blockquote>
 <table>
   <tr>
     <th>Class Name</th>
@@ -98,7 +98,7 @@
 </table>
 
 <h2>helpers</h2>
-<p><em>Utilities for file operations and processing lists of RepoModel objects.</em></p>
+<blockquote><em>Utilities for file operations and processing lists of RepoModel objects.</em></blockquote>
 <table>
   <tr>
     <th>Class Name</th>
@@ -115,7 +115,7 @@
 </table>
 
 <h2>populators</h2>
-<p><em>Populate repository lists from awesome-list READMEs or GitHub topics.</em></p>
+<blockquote><em>Populate repository lists from awesome-list READMEs or GitHub topics.</em></blockquote>
 <table>
   <tr>
     <th>Class Name</th>
@@ -136,7 +136,7 @@
 </table>
 
 <h2>serializers</h2>
-<p><em>Serialize and deserialize repository, category, and metadata objects.</em></p>
+<blockquote><em>Serialize and deserialize repository, category, and metadata objects.</em></blockquote>
 <table>
   <tr>
     <th>Class Name</th>
