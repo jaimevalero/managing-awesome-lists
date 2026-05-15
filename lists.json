@@ -56,8 +56,33 @@
     },
     {
         "category_name": "ligurio/awesome-ci",
-        "description": "List of Continuous Integration services",
+        "description": "The list of continuous integration services and tools",
         "display": "ci"
+    },
+    {
+        "category_name": "alvinunreal/awesome-claude",
+        "description": "A curated list of awesome things related to Anthropic Claude",
+        "display": "claude"
+    },
+    {
+        "category_name": "hesreallyhim/awesome-claude-code",
+        "description": "A curated list of awesome skills, hooks, slash-commands, agent orchestrators, applications, and plugins for Claude Code by Anthropic",
+        "display": "claude-code"
+    },
+    {
+        "category_name": "langgptai/awesome-claude-prompts",
+        "description": "This repo includes Claude prompt curation to use Claude better.",
+        "display": "claude-prompts"
+    },
+    {
+        "category_name": "travisvn/awesome-claude-skills",
+        "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows \u2014 particularly Claude Code",
+        "display": "claude-skills"
+    },
+    {
+        "category_name": "VoltAgent/awesome-claude-code-subagents",
+        "description": "A collection of 100+ specialized Claude Code subagents covering a wide range of development use cases",
+        "display": "claude-subagents"
     },
     {
         "category_name": "agarrharr/awesome-cli-apps",
@@ -115,11 +140,6 @@
         "display": "docker"
     },
     {
-        "category_name": "webpro/awesome-dotfiles",
-        "description": "A curated list of dotfiles resources.",
-        "display": "dotfiles"
-    },
-    {
         "category_name": "thangchung/awesome-dotnet-core",
         "description": ":honeybee: A collection of awesome .NET core libraries, tools, frameworks and software",
         "display": "dotnet-core"
@@ -136,7 +156,7 @@
     },
     {
         "category_name": "cugu/awesome-forensics",
-        "description": "A curated list of awesome forensic analysis tools and resources",
+        "description": "\u2b50\ufe0f A curated list of awesome forensic analysis tools and resources",
         "display": "forensics"
     },
     {
@@ -223,6 +243,11 @@
         "category_name": "rshipp/awesome-malware-analysis",
         "description": "Defund the Police.",
         "display": "malware-analysis"
+    },
+    {
+        "category_name": "punkpeye/awesome-mcp-servers",
+        "description": "A collection of MCP servers.",
+        "display": "mcp-servers"
     },
     {
         "category_name": "mfornos/awesome-microservices",
