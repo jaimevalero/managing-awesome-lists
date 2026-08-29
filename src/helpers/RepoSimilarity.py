@@ -45,6 +45,8 @@ class RepoSimilarity:
     MAX_RESULTS : int
         How many similar repos are kept per repo. Beyond a handful it stops being a
         suggestion and becomes another list to read.
+    MAX_DERIVATIVE_RESULTS : int
+        How many of those may be derivative works of the repo (see __is_derivative_of).
     MIN_SCORE, MIN_EMBEDDING_SCORE : float
         Similarity below this, for each signal, is not shown at all. A "similar repos"
         section that sometimes shows junk teaches people to ignore it for good.
@@ -63,6 +65,7 @@ class RepoSimilarity:
     """
 
     MAX_RESULTS = 5
+    MAX_DERIVATIVE_RESULTS = 1
     MIN_SCORE = 0.3
     MIN_EMBEDDING_SCORE = 0.65
     EMBEDDING_CANDIDATES = 20
@@ -105,23 +108,52 @@ class RepoSimilarity:
         return self.__best_results(repo, self.__fuse_rankings(candidates, vocabulary_scores, embedding_scores))
 
     def __best_results(self, repo: RepoModel, best: list) -> List[SimilarRepoModel]:
-        """ The first results, keeping only one repo per name.
+        """ The first results, keeping only one repo per name and few derivative works.
 
         Two repos with the same name (Picocrypt/Picocrypt and HACKERALERT/Picocrypt) are
         the same project living in two places, a mirror or a fork, and deduplication does
         not merge them because github says they are different repos. They are still the
         same suggestion, and there are only five slots.
+
+        Derivative works are limited for the same reason. A repo with a big ecosystem
+        buries everything else under its own plugins: the five repos most similar to
+        apache/airflow were airflow-supervisor, airflow-config, airflow-code-editor,
+        docker-airflow and airflow-maintenance-dags, while dagster, which does the same
+        job, sat in position 75. Reserving four of the five slots for repos that are not
+        built on top of this one is what leaves room for the alternatives.
         """
-        results, seen_names = [], {repo.full_name.split('/')[-1].lower()}
+        results, seen_names, derivatives = [], {repo.full_name.split('/')[-1].lower()}, 0
         for candidate in best:
-            name = self.repo_list[candidate].full_name.split('/')[-1].lower()
+            similar = self.repo_list[candidate]
+            name = similar.full_name.split('/')[-1].lower()
             if name in seen_names:
                 continue
+            if self.__is_derivative_of(repo, similar):
+                if derivatives >= RepoSimilarity.MAX_DERIVATIVE_RESULTS:
+                    continue
+                derivatives += 1
             seen_names.add(name)
             results.append(self.__as_similar_repo(repo, candidate))
             if len(results) == RepoSimilarity.MAX_RESULTS:
                 break
         return results
+
+    def __is_derivative_of(self, repo: RepoModel, candidate: RepoModel) -> bool:
+        """ True if the candidate is built on top of the repo, instead of being another
+        repo like it: a plugin, a wrapper, an image, a list of resources about it.
+
+        Only the name is looked at, on purpose. A derivative work is named after what it
+        extends (airflow-config, airflow-code-editor, docker-airflow), while an
+        alternative is not: nobody calls their orchestrator "airflow-something".
+
+        Looking at the description too was tried and it was worse: the good alternatives
+        are precisely the ones that describe themselves against the original ("a small
+        self-contained alternative to readline"), so replxx and Crossline were thrown out
+        of linenoise and junk took their place.
+        """
+        name = repo.full_name.split('/')[-1].lower()
+        candidate_name = candidate.full_name.split('/')[-1].lower()
+        return name in candidate_name
 
     def __fuse_rankings(self, candidates: set, vocabulary_scores: dict, embedding_scores: dict) -> list:
         """ Orders the candidates by their position in each signal instead of by score.
@@ -141,8 +173,12 @@ class RepoSimilarity:
 
     def __as_similar_repo(self, repo: RepoModel, candidate: int) -> SimilarRepoModel:
         similar = self.repo_list[candidate]
+        description = similar.description or ''
+        if len(description) > SimilarRepoModel.MAX_DESCRIPTION_LENGTH:
+            description = description[:SimilarRepoModel.MAX_DESCRIPTION_LENGTH].rstrip() + '...'
         return SimilarRepoModel(
             full_name=similar.full_name,
+            description=description,
             stargazers_count=similar.stargazers_count,
             language=similar.language,
             shared_topics=sorted(set(repo.topics) & set(similar.topics)))
