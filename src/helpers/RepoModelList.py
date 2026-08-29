@@ -23,17 +23,22 @@ def delete_duplicates(repo_list: List[RepoModel])-> List[RepoModel]:
                     if repo.is_current_name_of(kept) or (
                         not kept.is_current_name_of(repo) and repo.is_fresher_than(kept)
                     ):
-                        logger.info(f"Repo {kept.full_name} is an old name of {repo.full_name}, keeping the latter")
+                        logger.debug(f"Repo {kept.full_name} is an old name of {repo.full_name}, keeping the latter")
                         duplicates[index] = repo
                     else:
-                        logger.info(f"Repo {repo.full_name} is an old name of {kept.full_name}, keeping the latter")
+                        logger.debug(f"Repo {repo.full_name} is an old name of {kept.full_name}, keeping the latter")
                     break
             else:
                 duplicates.append(repo)
 
         # The repos keep the order they came in, deduplication should not reorder them
         kept = {id(repo) for duplicates in kept_by_identity.values() for repo in duplicates}
-        return [repo for repo in repo_list if id(repo) in kept]
+        deduplicated = [repo for repo in repo_list if id(repo) in kept]
+        # One line instead of one per duplicate: a monthly batch that prints 300 lines
+        # about repos that changed owner is a batch nobody reads
+        if len(deduplicated) < len(repo_list):
+            logger.info(f"Deleted {len(repo_list) - len(deduplicated)} repos duplicated under an old name")
+        return deduplicated
     except Exception as e:
         logger.error(e)
         return repo_list
