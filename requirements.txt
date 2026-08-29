@@ -10,3 +10,4 @@ loguru
 requests
 python-dateutil
 tqdm
+numpy

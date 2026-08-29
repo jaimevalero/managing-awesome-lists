@@ -44,6 +44,14 @@
     <td><a href="models/TopicIndexModel.py">TopicIndexModel</a></td>
     <td>One entry (name + repo count) of the topic search index used by the frontend.</td>
   </tr>
+  <tr>
+    <td><a href="models/SimilarRepoModel.py">SimilarRepoModel</a></td>
+    <td>One repo shown as similar to another one, with the topics both share.</td>
+  </tr>
+  <tr>
+    <td><a href="models/RelatedReposModel.py">RelatedReposModel</a></td>
+    <td>This class is for serializing the repos similar to a given repo.</td>
+  </tr>
 </table>
 
 <h2>adapters</h2>
@@ -99,6 +107,10 @@
     <td><a href="downloaders/RepoDownloader.py">RepoListDownloader</a></td>
     <td>Downloads metadata for lists of GitHub repositories.</td>
   </tr>
+  <tr>
+    <td><a href="downloaders/EmbeddingDownloader.py">EmbeddingDownloader</a></td>
+    <td>Downloads the embeddings of the repos from a local ollama.</td>
+  </tr>
 </table>
 
 <h2>helpers</h2>
@@ -115,6 +127,10 @@
   <tr>
     <td><a href="helpers/RepoModelList.py">RepoModelList</a></td>
     <td>Utility functions for processing lists of RepoModel objects.</td>
+  </tr>
+  <tr>
+    <td><a href="helpers/RepoSimilarity.py">RepoSimilarity</a></td>
+    <td>Finds the repos most similar to a given one, by vocabulary and by embeddings.</td>
   </tr>
 </table>
 
@@ -165,6 +181,10 @@
   <tr>
     <td><a href="serializers/TopicIndexSerializer.py">TopicIndexSerializer</a></td>
     <td>Builds and serializes topics.json, the topic index the frontend search bar loads.</td>
+  </tr>
+  <tr>
+    <td><a href="serializers/RelatedReposSerializer.py">RelatedReposSerializer</a></td>
+    <td>Serializes the repos similar to a given repo, one file per repo.</td>
   </tr>
 </table>
 

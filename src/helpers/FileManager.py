@@ -49,6 +49,9 @@ class FileManager:
         self.generate_json_files()    
         self.copy_files(f"{self.backend_dir}/lists.json", f"{self.frontend_dir}/public/lists.json")
 
+        self.clean_directory(f"{self.frontend_dir}/public/related/")
+        self.copy_directories(f"{self.backend_dir}/var/related/", f"{self.frontend_dir}/public/related")
+
         self.generate_topics_index()
         self.copy_files(f"{self.backend_dir}/{TopicIndexSerializer.INDEX_FILENAME}",
                         f"{self.frontend_dir}/public/{TopicIndexSerializer.INDEX_FILENAME}")

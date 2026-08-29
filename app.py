@@ -2,12 +2,16 @@ import os
 import shutil
 
 from dotenv import load_dotenv
+from tqdm import tqdm
 from loguru import logger
 
 from src.adapters.RepoModelListAdapter import RepoModelListAdapter
 from src.categories.AwesomeCategory import AwesomeCategory
 from src.categories.TopicCategory import TopicCategory
+from src.downloaders.EmbeddingDownloader import EmbeddingDownloader
 from src.helpers.FileManager import FileManager
+from src.helpers.RepoSimilarity import RepoSimilarity
+from src.serializers.RelatedReposSerializer import RelatedReposSerializer
 from src.serializers.RepoMetaDataSerializer import RepoMetaDataSerializer
 
 
@@ -68,6 +72,48 @@ def create_awesome_category(access_token, has_replace):
             logger.exception(f"An error occurred while loading the awesome list {e}")
             pass
 
+def create_related_repos(has_replace):
+    """ Post processing, once every list has been downloaded: for each repo, which other
+    repos are similar to it.
+
+    It runs at the end and not while downloading because a repo cannot be compared against
+    repos that have not been downloaded yet. Everything it needs is already in ./var/repo,
+    so it costs no request to github.
+    """
+    if has_replace:
+        shutil.rmtree("./var/related", ignore_errors=True)
+        logger.info("Deleted all the files in the directory ./var/related")
+
+    if not os.path.exists("./var/related"):
+        os.makedirs("./var/related")
+        logger.info("Created the directory ./var/related")
+
+    repo_list = load_repo_list()
+    # Embeddings are a second opinion on top of the vocabulary; if ollama is not running
+    # this returns None and the similarity uses the vocabulary alone
+    embeddings = EmbeddingDownloader.download(repo_list)
+    similarity = RepoSimilarity(repo_list, embeddings)
+
+    repos_with_related = 0
+    for repo in tqdm(repo_list, desc="Finding similar repos", unit="repo"):
+        related = similarity.most_similar(repo)
+        if related:
+            RelatedReposSerializer.to_file(repo.full_name, related)
+            repos_with_related += 1
+    logger.info(f"Found similar repos for {repos_with_related} of {len(repo_list)} repos")
+
+
+def load_repo_list():
+    """ All the repos downloaded so far, without the duplicates left by the repos that
+    changed owner """
+    MAX_REPOS_DEBUG = 50000
+    repo_list = [RepoMetaDataSerializer.from_file(filename) for filename in get_topics_iterator("./var/repo", MAX_REPOS_DEBUG)]
+    logger.info(f"Loaded {len(repo_list)} repos from the directory ./var/repo")
+    repo_list = RepoModelListAdapter.adapt(repo_list)
+    logger.info(f"Adapted {len(repo_list)} repos from the directory ./var/repo")
+    return repo_list
+
+
 def create_topic_category(access_token, has_replace):
     if has_replace:
         # Delete all the files in the directory ./var/topic
@@ -79,13 +125,7 @@ def create_topic_category(access_token, has_replace):
         logger.info("Created the directory ./var/topic")
 
     # Load all the repos from the directory ./var/repo
-    repo_list = []
-    # Load the first MAX_REPOS_DEBUG repos, for debugging purposes
-    MAX_REPOS_DEBUG = 50000
-    repo_list = [RepoMetaDataSerializer.from_file(filename) for filename in get_topics_iterator("./var/repo", MAX_REPOS_DEBUG)]
-    logger.info(f"Loaded {len(repo_list)} repos from the directory ./var/repo")
-    repo_list = RepoModelListAdapter.adapt(repo_list)
-    logger.info(f"Adapted {len(repo_list)} repos from the directory ./var/repo")
+    repo_list = load_repo_list()
 
     # Extract all the topics from the repos, and create a set with all the topics
     topics_array = []
@@ -112,6 +152,7 @@ if __name__ == "__main__":
     has_replace= False
     create_awesome_category(access_token, has_replace)
     create_topic_category(access_token, has_replace)
+    create_related_repos(has_replace)
     
     backend_dir = "~/git/managing-awesome-lists"
     frontend_dir = "~/git/managing-awesome-lists-frontend"  
