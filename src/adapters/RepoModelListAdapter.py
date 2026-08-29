@@ -1,11 +1,13 @@
 from typing import List
+from src.helpers.RepoModelList import delete_duplicates
 from src.models.RepoModel import RepoModel
 
 class RepoModelListAdapter:
     """
     A helper class that provides static methods to manipulate lists of RepoModel objects.
 
-    This class provides methods to delete duplicate RepoModel objects based on their full_name attribute,
+    This class provides methods to delete duplicate RepoModel objects (the same repo served
+    under two names after being transferred to another owner),
     sort RepoModel objects by their stargazers_count attribute, and adapt a list of RepoModel objects
     by deleting duplicates and sorting by stargazers_count.
 
@@ -22,13 +24,8 @@ class RepoModelListAdapter:
     """    
     @staticmethod
     def delete_duplicates(repo_list: List[RepoModel]):
-        seen = set()
-        new_list = []
-        for repo in repo_list:
-            if repo.full_name not in seen:
-                seen.add(repo.full_name)
-                new_list.append(repo)
-        return new_list
+        # Deduplication lives in the helper, so lists and topics drop the same duplicates
+        return delete_duplicates(repo_list)
 
     @staticmethod
     def sort_by_star(repo_list: List[RepoModel]):

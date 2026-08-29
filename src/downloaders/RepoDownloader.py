@@ -168,6 +168,10 @@ class RepoListDownloader:
                             short_repo_name_is_equal = element.split("/")[-1] == repo_data.full_name.split("/")[-1]
                             if short_repo_name_is_equal :
                                 logger.info(f"Repo {element}  has been transfered to another user {repo_data.full_name} ")
+                                # Keep the name github answered with: it is the only way to know
+                                # later that this copy is the old name of a repo that lives
+                                # somewhere else, and drop it as a duplicate of that one
+                                repo_data.transferred_to = repo_data.full_name
                                 # "Undo" the transfer, so that the repo is correctly serialized to file
                                 repo_data.full_name = element        
                                 break

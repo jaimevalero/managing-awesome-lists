@@ -5,17 +5,35 @@ from loguru import logger
 
 def delete_duplicates(repo_list: List[RepoModel])-> List[RepoModel]:
     """ This function deletes duplicates from a list of repos
+
+    A repo is a duplicate of another when both are the same repo under two different
+    names, which happens when the repo is transferred to another owner and github keeps
+    serving it under both (see RepoModel.is_same_repo_as). The copy that survives is the
+    one at the name the repo lives at now; when nothing recorded which name that is, the
+    least outdated copy is kept instead.
     """
-    # Key is full_name
     try :
-        seen = set()
-        new_list = []
+        # Repos are grouped by identity (the creation date) so that each repo is only
+        # compared against the handful of repos created in that same second.
+        kept_by_identity = {}
         for repo in repo_list:
-            lower_name = repo.full_name.lower()
-            if lower_name not in seen:
-                seen.add(lower_name)
-                new_list.append(repo)
-        return new_list
+            duplicates = kept_by_identity.setdefault(repo.identity, [])
+            for index, kept in enumerate(duplicates):
+                if repo.is_same_repo_as(kept):
+                    if repo.is_current_name_of(kept) or (
+                        not kept.is_current_name_of(repo) and repo.is_fresher_than(kept)
+                    ):
+                        logger.info(f"Repo {kept.full_name} is an old name of {repo.full_name}, keeping the latter")
+                        duplicates[index] = repo
+                    else:
+                        logger.info(f"Repo {repo.full_name} is an old name of {kept.full_name}, keeping the latter")
+                    break
+            else:
+                duplicates.append(repo)
+
+        # The repos keep the order they came in, deduplication should not reorder them
+        kept = {id(repo) for duplicates in kept_by_identity.values() for repo in duplicates}
+        return [repo for repo in repo_list if id(repo) in kept]
     except Exception as e:
         logger.error(e)
         return repo_list
