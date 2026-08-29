@@ -9,3 +9,4 @@ coverage
 loguru
 requests
 python-dateutil
+tqdm

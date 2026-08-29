@@ -70,6 +70,11 @@
         "display": "claude-code"
     },
     {
+        "category_name": "VoltAgent/awesome-claude-code-subagents",
+        "description": "A collection of 100+ specialized Claude Code subagents covering a wide range of development use cases",
+        "display": "claude-code-subagents"
+    },
+    {
         "category_name": "langgptai/awesome-claude-prompts",
         "description": "This repo includes Claude prompt curation to use Claude better.",
         "display": "claude-prompts"
@@ -80,14 +85,14 @@
         "display": "claude-skills"
     },
     {
-        "category_name": "VoltAgent/awesome-claude-code-subagents",
-        "description": "A collection of 100+ specialized Claude Code subagents covering a wide range of development use cases",
-        "display": "claude-subagents"
-    },
-    {
         "category_name": "agarrharr/awesome-cli-apps",
         "description": "\ud83d\udda5 \ud83d\udcca \ud83d\udd79 \ud83d\udee0 A curated list of command line apps",
         "display": "cli-apps"
+    },
+    {
+        "category_name": "docker/awesome-compose",
+        "description": "Awesome Docker Compose samples",
+        "display": "compose"
     },
     {
         "category_name": "prakhar1989/awesome-courses",
@@ -128,6 +133,11 @@
         "category_name": "ChristosChristofidis/awesome-deep-learning",
         "description": "A curated list of awesome Deep Learning tutorials, projects and communities.",
         "display": "deep-learning"
+    },
+    {
+        "category_name": "DovAmir/awesome-design-patterns",
+        "description": "A curated list of software and architecture related design patterns.",
+        "display": "design-patterns"
     },
     {
         "category_name": "joubertredrat/awesome-devops",
@@ -173,6 +183,11 @@
         "category_name": "tiimgreen/github-cheat-sheet",
         "description": "A list of cool features of Git and GitHub.",
         "display": "github-cheat-sheet"
+    },
+    {
+        "category_name": "abhisheknaiidu/awesome-github-profile-readme",
+        "description": "\ud83d\ude0e A curated list of awesome GitHub Profile which updates in real time ",
+        "display": "github-profile-readme"
     },
     {
         "category_name": "avelino/awesome-go",
@@ -285,6 +300,11 @@
         "display": "postgres"
     },
     {
+        "category_name": "pluja/awesome-privacy",
+        "description": "Awesome Privacy - A curated list of services and alternatives that respect your privacy because PRIVACY MATTERS.",
+        "display": "privacy"
+    },
+    {
         "category_name": "vinta/awesome-python",
         "description": "An opinionated list of awesome Python frameworks, libraries, software and resources.",
         "display": "python"
@@ -293,6 +313,11 @@
         "category_name": "bharathgs/Awesome-pytorch-list",
         "description": "A comprehensive list of pytorch related content on github,such as different models,implementations,helper libraries,tutorials etc.",
         "display": "pytorch-list"
+    },
+    {
+        "category_name": "wilsonfreitas/awesome-quant",
+        "description": "A curated list of insanely awesome libraries, packages and resources for Quants (Quantitative Finance)",
+        "display": "quant"
     },
     {
         "category_name": "thibmaek/awesome-raspberry-pi",

@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 from typing import List
 from src.models.RepoModel import RepoModel
 
@@ -10,5 +10,4 @@ class AbstractModel(BaseModel):
     repos_data: List[RepoModel]
     frecuent_topics: dict
     
-    class Config:
-        arbitrary_types_allowed = True
+    model_config = ConfigDict(arbitrary_types_allowed=True)

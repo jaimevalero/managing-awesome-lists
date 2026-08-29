@@ -1,3 +1,4 @@
+app.log
 .credentials
 .env
 other-*.md

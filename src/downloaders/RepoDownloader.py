@@ -89,22 +89,26 @@ class RepoListDownloader:
         # GitHub GraphQL API endpoint
         api_url = 'https://api.github.com/graphql'
 
-        # GraphQL query for multiple repositories
+        # GraphQL query for multiple repositories with rate limit monitoring
         graphql_query = '''
         query {
           %s
+          rateLimit {
+            limit
+            remaining
+            resetAt
+          }
         }
         '''
         # Look for data in the cache, before making the request to graph ql
         repos_data, repo_full_names = self.__get_repository_data_cache(repo_full_names)
-        logger.debug(f"Cached repos: {len(repos_data)}. Not cached respo:  {len(repo_full_names)}")
-                     
-        if repos_data:
-            repos_data.extend(repos_data)
-
+        logger.debug(f"Cached repos: {len(repos_data)}. Not cached repos: {len(repo_full_names)}")
             
         # Prepare the list of repositories for the query
-        REPO_GROUP_SIZE = 20
+        # GitHub GraphQL API can handle larger batches without hitting rate limits
+        # Each query costs points based on complexity, not number of repos
+        # Optimal size balances: fewer HTTP requests vs manageable query complexity
+        REPO_GROUP_SIZE = 50
         for i in range(0, len(repo_full_names), REPO_GROUP_SIZE):
 
             repo_block = repo_full_names[i:i+REPO_GROUP_SIZE]
@@ -132,7 +136,23 @@ class RepoListDownloader:
 
             # Make the request to GitHub API, to load block of metadata for multiple repositories   
             response = requests.post(api_url, headers=headers, json=payload)
-            for repo_data in response.json()['data'].values():
+            
+            # Validate HTTP response before processing
+            if response.status_code != HTTPStatus.OK:
+                logger.error(f"GitHub API request failed with status {response.status_code}: {response.text}")
+                continue
+            
+            response_data = response.json()
+            
+            # Log rate limit information for monitoring
+            if 'data' in response_data and 'rateLimit' in response_data['data']:
+                rate_limit = response_data['data']['rateLimit']
+                logger.info(f"GitHub API rate limit: {rate_limit['remaining']}/{rate_limit['limit']} remaining. Resets at {rate_limit['resetAt']}")
+            
+            # Process repository data (skip rateLimit key)
+            for key, repo_data in response_data['data'].items():
+                if key == 'rateLimit':
+                    continue
                 # Crate a topic plane list 
                 if not repo_data:
                     logger.warning(f"Error downloading repo "+ str(response.json()["errors"]))

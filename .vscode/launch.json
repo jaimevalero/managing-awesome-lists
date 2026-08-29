@@ -7,10 +7,12 @@
 
         {
             "name": "Python: app.py mensual",
-            "type": "python",
+            "type": "debugpy",
+            "python": "/home/jaimevalero/anaconda3/envs/managing-awesome-lists/bin/python",
             "request": "launch",
             "program": "app.py",
-            "console": "integratedTerminal",
+            "args" : ["true"],
+            "console": "internalConsole",
             "justMyCode": true,
             "cwd" : "/home/jaimevalero/git/managing-awesome-lists/",
             "env": {"PATH": "${env:PATH}:/home/jaimevalero/git/managing-awesome-lists"}
@@ -19,20 +21,22 @@
 
         {
             "name": "Python: Module RepoDownloader",
-            "type": "python",
+            "type": "debugpy",
+            "python": "/home/jaimevalero/anaconda3/envs/managing-awesome-lists/bin/python",
             "request": "launch",
             "module": "src.downloaders.RepoDownloader",
-            "console": "integratedTerminal",
+            "console": "internalConsole",
             "justMyCode": true,
             "cwd" : "/home/jaimevalero/git/managing-awesome-lists/",
             "env": {"PATH": "${env:PATH}:/home/jaimevalero/git/managing-awesome-lists"}
         },
         {
             "name": "Python: Module FileManager",
-            "type": "python",
+            "type": "debugpy",
+            "python": "/home/jaimevalero/anaconda3/envs/managing-awesome-lists/bin/python",
             "request": "launch",
             "module": "src.helpers.FileManager",
-            "console": "integratedTerminal",
+            "console": "internalConsole",
             "justMyCode": true,
             "cwd" : "/home/jaimevalero/git/managing-awesome-lists/",
             "env": {"PATH": "${env:PATH}:/home/jaimevalero/git/managing-awesome-lists"}
@@ -40,10 +44,11 @@
         // Agregar archivo actual
         {
             "name": "Python: Current File",
-            "type": "python",
+            "type": "debugpy",
+            "python": "/home/jaimevalero/anaconda3/envs/managing-awesome-lists/bin/python",
             "request": "launch",
             "program": "${file}",
-            "console": "integratedTerminal",
+            "console": "internalConsole",
             "justMyCode": true,
             "cwd" : "/home/jaimevalero/git/managing-awesome-lists/",
             "env": {"PATH": "${env:PATH}:/home/jaimevalero/git/managing-awesome-lists"}
@@ -51,21 +56,23 @@
         // run coverage (coverage run -m unittest discover -p test_*.py -s tests + coverage report)
         {
             "name": "Python: Coverage",
-            "type": "python",
+            "type": "debugpy",
+            "python": "/home/jaimevalero/anaconda3/envs/managing-awesome-lists/bin/python",
             "request": "launch",
             "module": "unittest",
             "args": ["discover", "-p", "test_*.py", "-s", "tests"],
-            "console": "integratedTerminal",
+            "console": "internalConsole",
             "justMyCode": false,
             "cwd" : "/home/jaimevalero/git/managing-awesome-lists",
             "env": {"PATH": "${env:PATH}:/home/jaimevalero/anaconda3/bin/"}
         } ,
         {
             "name": "Python: Run Coverage",
-            "type": "python",
+            "type": "debugpy",
+            "python": "/home/jaimevalero/anaconda3/envs/managing-awesome-lists/bin/python",
             "request": "launch",
             "program": "${workspaceFolder}/run_coverage.py",
-            "console": "integratedTerminal",
+            "console": "internalConsole",
             "justMyCode": false,
             "cwd" : "/home/jaimevalero/git/managing-awesome-lists",
             "env": {"PATH": "${env:PATH}:/home/jaimevalero/anaconda3/bin/"}

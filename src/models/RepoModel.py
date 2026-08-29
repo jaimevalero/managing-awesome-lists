@@ -1,17 +1,11 @@
 from dateutil.parser import parse
-from pydantic import BaseModel, conint, conlist, constr, validator
+from pydantic import BaseModel, conint, conlist, constr, field_validator
 
 
 from typing import Optional
 from datetime import datetime
 
-class CustomDateTimeModel(BaseModel):
-    class Config:
-        json_encoders = {
-            datetime: lambda v: v.strftime('%Y-%m-%d %H:%M:%S'),
-        }
-
-class RepoModel(CustomDateTimeModel):
+class RepoModel(BaseModel):
     """
     Model for storing metadata of a repository.
 
@@ -27,36 +21,19 @@ class RepoModel(CustomDateTimeModel):
     full_name: str
     description: str
     topics: conlist(str)
-    created_at: str
-    pushed_at: str
+    created_at: datetime
+    pushed_at: datetime
     stargazers_count: conint(ge=0)
     # language is an array of strings or None
     language: Optional[constr(min_length=1)] = None
 
-    @validator('created_at', 'pushed_at')
+    @field_validator('created_at', 'pushed_at', mode='before')
+    @classmethod
     def parse_date(cls, v):
-        return parse(v)
+        return parse(v) if isinstance(v, str) else v
 
-    @validator('topics', pre=True, always=True)
+    @field_validator('topics', mode='before')
+    @classmethod
     def convert_topics(cls, value):
         return [topic.lower() for topic in value]
-    
 
-"""
-example_data = {
-    "full_name": "cbovis/awesome-digital-nomads",
-    "description": "🏝 A curated list of awesome resources for Digital Nomads.",
-    "topics": [
-        "awesome",
-        "awesome-list",
-        "digital-nomad",
-        "digital-nomads",
-        "nomad",
-        "remote-work"
-    ],
-    "created_at": "2017-02-02T07:12:11Z",
-    "pushed_at": "2023-05-03T15:27:59Z",
-    "stargazers_count": 798,
-    "language": "python"
-}
-"""    
