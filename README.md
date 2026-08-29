@@ -4,6 +4,8 @@
 
 [Live Demo](https://managing-awesome-lists.vercel.app/)
 
+![Demo](img/demo.gif)
+
 **Awesome List Viewer** is a backend utility for discovering and managing GitHub "awesome lists". It downloads metadata about curated awesome lists from GitHub, stores the data as JSON, and makes it available for querying through a dedicated frontend application.
 
 
