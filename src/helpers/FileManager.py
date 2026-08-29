@@ -6,6 +6,7 @@ from tqdm import tqdm
 import json
 
 from src.serializers.AwesomeSerializer import AwesomeSerializer
+from src.serializers.TopicIndexSerializer import TopicIndexSerializer
 
 class FileManager:
     def __init__(self, backend_dir: str, frontend_dir: str):
@@ -47,6 +48,19 @@ class FileManager:
 
         self.generate_json_files()    
         self.copy_files(f"{self.backend_dir}/lists.json", f"{self.frontend_dir}/public/lists.json")
+
+        self.generate_topics_index()
+        self.copy_files(f"{self.backend_dir}/{TopicIndexSerializer.INDEX_FILENAME}",
+                        f"{self.frontend_dir}/public/{TopicIndexSerializer.INDEX_FILENAME}")
+
+    def generate_topics_index(self):
+        """ Build the index the frontend search bar uses to find topics.
+
+        The work belongs to TopicIndexSerializer; here it is only wired into the
+        same step that already builds lists.json before copying it over.
+        """
+        topics = TopicIndexSerializer.from_directory(f"{self.backend_dir}/var/{TopicIndexSerializer.CATEGORY}")
+        TopicIndexSerializer.to_file(topics, f"{self.backend_dir}/{TopicIndexSerializer.INDEX_FILENAME}")
 
     def generate_json_files(self):
         # Read all the yaml files from the /var/awesome/directory, as AwesomeCategory

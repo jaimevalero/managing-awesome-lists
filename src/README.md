@@ -40,6 +40,10 @@
     <td><a href="models/TopicModel.py">TopicModel</a></td>
     <td>This class is for serializing the topic list only.</td>
   </tr>
+  <tr>
+    <td><a href="models/TopicIndexModel.py">TopicIndexModel</a></td>
+    <td>One entry (name + repo count) of the topic search index used by the frontend.</td>
+  </tr>
 </table>
 
 <h2>adapters</h2>
@@ -157,6 +161,10 @@
   <tr>
     <td><a href="serializers/TopicSerializer.py">TopicSerializer</a></td>
     <td>Serializes/deserializes TopicCategory objects.</td>
+  </tr>
+  <tr>
+    <td><a href="serializers/TopicIndexSerializer.py">TopicIndexSerializer</a></td>
+    <td>Builds and serializes topics.json, the topic index the frontend search bar loads.</td>
   </tr>
 </table>
 
