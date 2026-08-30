@@ -6,6 +6,7 @@ from tqdm import tqdm
 import json
 
 from src.serializers.AwesomeSerializer import AwesomeSerializer
+from src.serializers.SimilarReposSerializer import SimilarReposSerializer
 from src.serializers.TopicIndexSerializer import TopicIndexSerializer
 
 class FileManager:
@@ -49,8 +50,9 @@ class FileManager:
         self.generate_json_files()    
         self.copy_files(f"{self.backend_dir}/lists.json", f"{self.frontend_dir}/public/lists.json")
 
-        self.clean_directory(f"{self.frontend_dir}/public/related/")
-        self.copy_directories(f"{self.backend_dir}/var/related/", f"{self.frontend_dir}/public/related")
+        self.clean_directory(f"{self.frontend_dir}/public/{SimilarReposSerializer.CATEGORY}/")
+        self.copy_directories(f"{self.backend_dir}/var/{SimilarReposSerializer.CATEGORY}/",
+                              f"{self.frontend_dir}/public/{SimilarReposSerializer.CATEGORY}")
 
         self.generate_topics_index()
         self.copy_files(f"{self.backend_dir}/{TopicIndexSerializer.INDEX_FILENAME}",

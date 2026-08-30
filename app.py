@@ -11,7 +11,7 @@ from src.categories.TopicCategory import TopicCategory
 from src.downloaders.EmbeddingDownloader import EmbeddingDownloader
 from src.helpers.FileManager import FileManager
 from src.helpers.RepoSimilarity import RepoSimilarity
-from src.serializers.RelatedReposSerializer import RelatedReposSerializer
+from src.serializers.SimilarReposSerializer import SimilarReposSerializer
 from src.serializers.RepoMetaDataSerializer import RepoMetaDataSerializer
 
 
@@ -72,7 +72,7 @@ def create_awesome_category(access_token, has_replace):
             logger.exception(f"An error occurred while loading the awesome list {e}")
             pass
 
-def create_related_repos(has_replace):
+def create_similar_repos(has_replace):
     """ Post processing, once every list has been downloaded: for each repo, which other
     repos are similar to it.
 
@@ -80,13 +80,14 @@ def create_related_repos(has_replace):
     repos that have not been downloaded yet. Everything it needs is already in ./var/repo,
     so it costs no request to github.
     """
+    similar_path = f"./var/{SimilarReposSerializer.CATEGORY}"
     if has_replace:
-        shutil.rmtree("./var/related", ignore_errors=True)
-        logger.info("Deleted all the files in the directory ./var/related")
+        shutil.rmtree(similar_path, ignore_errors=True)
+        logger.info(f"Deleted all the files in the directory {similar_path}")
 
-    if not os.path.exists("./var/related"):
-        os.makedirs("./var/related")
-        logger.info("Created the directory ./var/related")
+    if not os.path.exists(similar_path):
+        os.makedirs(similar_path)
+        logger.info(f"Created the directory {similar_path}")
 
     repo_list = load_repo_list()
     # Embeddings are a second opinion on top of the vocabulary; if ollama is not running
@@ -94,13 +95,13 @@ def create_related_repos(has_replace):
     embeddings = EmbeddingDownloader.download(repo_list)
     similarity = RepoSimilarity(repo_list, embeddings)
 
-    repos_with_related = 0
+    repos_with_similar = 0
     for repo in tqdm(repo_list, desc="Finding similar repos", unit="repo"):
-        related = similarity.most_similar(repo)
-        if related:
-            RelatedReposSerializer.to_file(repo.full_name, related)
-            repos_with_related += 1
-    logger.info(f"Found similar repos for {repos_with_related} of {len(repo_list)} repos")
+        similar = similarity.most_similar(repo)
+        if similar:
+            SimilarReposSerializer.to_file(repo, similar)
+            repos_with_similar += 1
+    logger.info(f"Found similar repos for {repos_with_similar} of {len(repo_list)} repos")
 
 
 def load_repo_list():
@@ -152,7 +153,7 @@ if __name__ == "__main__":
     has_replace= False
     create_awesome_category(access_token, has_replace)
     create_topic_category(access_token, has_replace)
-    create_related_repos(has_replace)
+    create_similar_repos(has_replace)
     
     backend_dir = "~/git/managing-awesome-lists"
     frontend_dir = "~/git/managing-awesome-lists-frontend"  

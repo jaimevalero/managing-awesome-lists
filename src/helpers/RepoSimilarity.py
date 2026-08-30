@@ -43,13 +43,15 @@ class RepoSimilarity:
     Attributes
     ----------
     MAX_RESULTS : int
-        How many similar repos are kept per repo. Beyond a handful it stops being a
-        suggestion and becomes another list to read.
-    MAX_DERIVATIVE_RESULTS : int
-        How many of those may be derivative works of the repo (see __is_derivative_of).
+        How many similar repos are kept per repo.
+    DERIVATIVE_WINDOW : int
+        One derivative work (see __is_derivative_of) is allowed per this many results.
     MIN_SCORE, MIN_EMBEDDING_SCORE : float
-        Similarity below this, for each signal, is not shown at all. A "similar repos"
-        section that sometimes shows junk teaches people to ignore it for good.
+        Similarity below this, for each signal, is not enough to become a candidate.
+    MIN_CORROBORATION_SCORE : float
+        Vocabulary a candidate needs to survive no matter which signal proposed it. A
+        "similar repos" section that sometimes shows junk teaches people to ignore it
+        for good.
     EMBEDDING_CANDIDATES : int
         How many nearest neighbours by embedding enter the candidate list of each repo.
     MAX_DOCUMENT_FREQUENCY : float
@@ -64,10 +66,26 @@ class RepoSimilarity:
         enough.
     """
 
-    MAX_RESULTS = 5
-    MAX_DERIVATIVE_RESULTS = 1
+    # Five is what the popover shows; the rest are for the /a-similar page, where the
+    # reader jumps from neighbour to neighbour and needs a real choice at each jump. With
+    # only five per hop, one bad suggestion is not a bad result: it is the door into a
+    # whole wrong neighbourhood, and three hops later half the walk is lost.
+    MAX_RESULTS = 12
+    # Per window, not a flat cap: a flat 1-in-12 would let two plugins into the first
+    # five and change what the popover has been showing, and a flat 2-in-12 would let
+    # them clump at the top. One per five keeps the head as clean as it is today.
+    DERIVATIVE_WINDOW = 5
     MIN_SCORE = 0.3
     MIN_EMBEDDING_SCORE = 0.65
+    # Embeddings propose, vocabulary confirms. Above 0.65 the embedding cosine stops
+    # telling repos apart: among the neighbours of linenoise, redis scores 0.74 and
+    # replxx 0.70, so raising MIN_EMBEDDING_SCORE cuts the good one first. What does
+    # tell them apart is whether they share any vocabulary at all -- the junk sits at
+    # exactly 0.00 -- so a candidate is kept only when both signals see something.
+    # Measured over the 25.190 repos: it takes the median from 12 neighbours to 5 and
+    # leaves 3.708 repos with no suggestions at all, which is the honest answer for
+    # them -- linenoise keeps its three real alternatives and loses redis and ravendb.
+    MIN_CORROBORATION_SCORE = 0.10
     EMBEDDING_CANDIDATES = 20
     # Rank fusion constant: how much a first position is worth over a second one. 60 is
     # the usual value, high enough that no single signal decides the whole order
@@ -102,6 +120,10 @@ class RepoSimilarity:
         } | {
             candidate for candidate, score in embedding_scores.items() if score >= RepoSimilarity.MIN_EMBEDDING_SCORE
         }
+        candidates = {
+            candidate for candidate in candidates
+            if vocabulary_scores.get(candidate, 0.0) >= RepoSimilarity.MIN_CORROBORATION_SCORE
+        }
         if not candidates:
             return []
 
@@ -113,14 +135,14 @@ class RepoSimilarity:
         Two repos with the same name (Picocrypt/Picocrypt and HACKERALERT/Picocrypt) are
         the same project living in two places, a mirror or a fork, and deduplication does
         not merge them because github says they are different repos. They are still the
-        same suggestion, and there are only five slots.
+        same suggestion, and the slots are counted.
 
         Derivative works are limited for the same reason. A repo with a big ecosystem
         buries everything else under its own plugins: the five repos most similar to
         apache/airflow were airflow-supervisor, airflow-config, airflow-code-editor,
         docker-airflow and airflow-maintenance-dags, while dagster, which does the same
-        job, sat in position 75. Reserving four of the five slots for repos that are not
-        built on top of this one is what leaves room for the alternatives.
+        job, sat in position 75. Reserving four of every five slots for repos that are
+        not built on top of this one is what leaves room for the alternatives.
         """
         results, seen_names, derivatives = [], {repo.full_name.split('/')[-1].lower()}, 0
         for candidate in best:
@@ -129,11 +151,13 @@ class RepoSimilarity:
             if name in seen_names:
                 continue
             if self.__is_derivative_of(repo, similar):
-                if derivatives >= RepoSimilarity.MAX_DERIVATIVE_RESULTS:
+                # The next derivative only fits once the results it shares its window
+                # with are already there, so they can never pile up at the top
+                if derivatives * RepoSimilarity.DERIVATIVE_WINDOW > len(results):
                     continue
                 derivatives += 1
             seen_names.add(name)
-            results.append(self.__as_similar_repo(repo, candidate))
+            results.append(self.__as_similar_repo(candidate))
             if len(results) == RepoSimilarity.MAX_RESULTS:
                 break
         return results
@@ -171,7 +195,14 @@ class RepoSimilarity:
                     fused[candidate] += weight / (RepoSimilarity.RANK_FUSION_CONSTANT + rank)
         return sorted(fused, key=lambda candidate: (-fused[candidate], -stars[candidate]))
 
-    def __as_similar_repo(self, repo: RepoModel, candidate: int) -> SimilarRepoModel:
+    def __as_similar_repo(self, candidate: int) -> SimilarRepoModel:
+        """ A neighbour, with everything the frontend paints for a repo.
+
+        The topics, the creation date and the push date are copied because the page of
+        similar repos is the generic category page, and its Hot, New and Recently
+        updated orders read those dates. Without them the page loads and the orders
+        silently do nothing.
+        """
         similar = self.repo_list[candidate]
         description = similar.description or ''
         if len(description) > SimilarRepoModel.MAX_DESCRIPTION_LENGTH:
@@ -181,7 +212,9 @@ class RepoSimilarity:
             description=description,
             stargazers_count=similar.stargazers_count,
             language=similar.language,
-            shared_topics=sorted(set(repo.topics) & set(similar.topics)))
+            topics=similar.topics,
+            created_at=similar.created_at,
+            pushed_at=similar.pushed_at)
 
     def __score_by_embedding(self, position: int) -> dict:
         """ The nearest neighbours of a repo in the embedding space, empty when ollama was
