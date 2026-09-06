@@ -1,0 +1,470 @@
+[
+    {
+        "category_name": "Chalarangelo/30-seconds-of-css",
+        "description": "Short CSS code snippets for all your development needs",
+        "display": "30-seconds-of-css",
+        "icon": "mdi-language-css3"
+    },
+    {
+        "category_name": "sdras/awesome-actions",
+        "description": "A curated list of awesome actions to use on GitHub",
+        "display": "actions",
+        "icon": "mdi-flash"
+    },
+    {
+        "category_name": "wasabeef/awesome-android-ui",
+        "description": "A curated list of awesome Android UI/UX libraries",
+        "display": "android-ui",
+        "icon": "mdi-cellphone-cog"
+    },
+    {
+        "category_name": "jghoman/awesome-apache-airflow",
+        "description": "Curated list of resources about Apache Airflow",
+        "display": "apache-airflow",
+        "icon": "mdi-sitemap-outline"
+    },
+    {
+        "category_name": "donnemartin/awesome-aws",
+        "description": "A curated list of awesome Amazon Web Services (AWS) libraries, open source repos, guides, blogs, and other resources.  Featuring the Fiery Meter of AWSome.",
+        "display": "aws",
+        "icon": "mdi-aws"
+    },
+    {
+        "category_name": "newTendermint/awesome-bigdata",
+        "description": "A curated list of awesome big data frameworks, ressources and other awesomeness.",
+        "display": "bigdata",
+        "icon": "mdi-database-arrow-right"
+    },
+    {
+        "category_name": "imbaniac/awesome-blockchain",
+        "description": "Curated list of blockchain services and exchanges \ud83d\udd25\ud83c\udfe6\ud83d\udd25\ud83c\udfe6\ud83d\udd25\ud83c\udfe6\ud83d\udd25",
+        "display": "blockchain",
+        "icon": "mdi-link-variant"
+    },
+    {
+        "category_name": "awesome-bootstrap-org/awesome-bootstrap",
+        "description": "\u2728  Awesome - A curated list of amazing Bootstrap tools and themes.",
+        "display": "bootstrap",
+        "icon": "mdi-bootstrap"
+    },
+    {
+        "category_name": "therebelrobot/awesome-bootstrap",
+        "description": "\u2728  Awesome - A curated list of amazing Bootstrap tools and themes.",
+        "display": "bootstrap",
+        "icon": "mdi-bootstrap"
+    },
+    {
+        "category_name": "ligurio/awesome-ci",
+        "description": "The list of continuous integration services and tools",
+        "display": "ci",
+        "icon": "mdi-sync"
+    },
+    {
+        "category_name": "alvinunreal/awesome-claude",
+        "description": "A curated list of awesome things related to Anthropic Claude",
+        "display": "claude",
+        "icon": "mdi-robot-happy-outline"
+    },
+    {
+        "category_name": "hesreallyhim/awesome-claude-code",
+        "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins",
+        "display": "claude-code",
+        "icon": "mdi-code-braces-box"
+    },
+    {
+        "category_name": "VoltAgent/awesome-claude-code-subagents",
+        "description": "A collection of 100+ specialized Claude Code subagents covering a wide range of development use cases",
+        "display": "claude-code-subagents",
+        "icon": "mdi-account-group-outline"
+    },
+    {
+        "category_name": "langgptai/awesome-claude-prompts",
+        "description": "This repo includes Claude prompt curation to use Claude better.",
+        "display": "claude-prompts",
+        "icon": "mdi-message-text-outline"
+    },
+    {
+        "category_name": "travisvn/awesome-claude-skills",
+        "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows \u2014 particularly Claude Code",
+        "display": "claude-skills",
+        "icon": "mdi-school-outline"
+    },
+    {
+        "category_name": "agarrharr/awesome-cli-apps",
+        "description": "\ud83d\udda5 \ud83d\udcca \ud83d\udd79 \ud83d\udee0 A curated list of command line apps",
+        "display": "cli-apps",
+        "icon": "mdi-console"
+    },
+    {
+        "category_name": "docker/awesome-compose",
+        "description": "Awesome Docker Compose samples",
+        "display": "compose",
+        "icon": "mdi-docker"
+    },
+    {
+        "category_name": "prakhar1989/awesome-courses",
+        "description": ":books: List of awesome university courses for learning Computer Science!",
+        "display": "courses",
+        "icon": "mdi-school"
+    },
+    {
+        "category_name": "fffaraz/awesome-cpp",
+        "description": "A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things. Inspired by awesome-... stuff.",
+        "display": "cpp",
+        "icon": "mdi-language-cpp"
+    },
+    {
+        "category_name": "wbkd/awesome-d3",
+        "description": "A list of D3 libraries, plugins and utilities",
+        "display": "d3",
+        "icon": "mdi-chart-line"
+    },
+    {
+        "category_name": "academic/awesome-datascience",
+        "description": ":memo: An awesome Data Science repository to learn and apply for real world problems.",
+        "display": "datascience",
+        "icon": "mdi-chart-scatter-plot"
+    },
+    {
+        "category_name": "javierluraschi/awesome-dataviz",
+        "description": ":chart_with_upwards_trend:  A curated list of awesome data visualization libraries and resources.",
+        "display": "dataviz",
+        "icon": "mdi-chart-box-outline"
+    },
+    {
+        "category_name": "numetriclabz/awesome-db",
+        "description": "A curated list of amazingly awesome database libraries, resources and shiny things by https://www.numetriclabz.com/",
+        "display": "db",
+        "icon": "mdi-database"
+    },
+    {
+        "category_name": "heynickc/awesome-ddd",
+        "description": "A curated list of Domain-Driven Design (DDD), Command Query Responsibility Segregation (CQRS), Event Sourcing, and Event Storming resources",
+        "display": "ddd",
+        "icon": "mdi-domain"
+    },
+    {
+        "category_name": "ChristosChristofidis/awesome-deep-learning",
+        "description": "A curated list of awesome Deep Learning tutorials, projects and communities.",
+        "display": "deep-learning",
+        "icon": "mdi-brain"
+    },
+    {
+        "category_name": "DovAmir/awesome-design-patterns",
+        "description": "A curated list of software and architecture related design patterns.",
+        "display": "design-patterns",
+        "icon": "mdi-palette"
+    },
+    {
+        "category_name": "joubertredrat/awesome-devops",
+        "description": "This is my awesome list with all open source and free applications that you can use in your management",
+        "display": "devops",
+        "icon": "mdi-cog-outline"
+    },
+    {
+        "category_name": "veggiemonk/awesome-docker",
+        "description": ":whale: A curated list of Docker resources and projects",
+        "display": "docker",
+        "icon": "mdi-docker"
+    },
+    {
+        "category_name": "thangchung/awesome-dotnet-core",
+        "description": ":honeybee: A collection of awesome .NET core libraries, tools, frameworks and software",
+        "display": "dotnet-core",
+        "icon": "mdi-dot-net"
+    },
+    {
+        "category_name": "humiaozuzu/awesome-flask",
+        "description": "A curated list of awesome Flask resources and plugins",
+        "display": "flask",
+        "icon": "mdi-flask"
+    },
+    {
+        "category_name": "MunGell/awesome-for-beginners",
+        "description": "A list of awesome beginners-friendly projects.",
+        "display": "for-beginners",
+        "icon": "mdi-lightbulb-on-outline"
+    },
+    {
+        "category_name": "cugu/awesome-forensics",
+        "description": "\u2b50\ufe0f A curated list of awesome forensic analysis tools and resources",
+        "display": "forensics",
+        "icon": "mdi-fingerprint"
+    },
+    {
+        "category_name": "ripienaar/free-for-dev",
+        "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
+        "display": "free-for-dev",
+        "icon": "mdi-gift-outline"
+    },
+    {
+        "category_name": "dypsilon/frontend-dev-bookmarks",
+        "description": "Manually curated collection of resources for frontend web developers.",
+        "display": "frontend-dev-bookmarks",
+        "icon": "mdi-monitor"
+    },
+    {
+        "category_name": "tiimgreen/github-cheat-sheet",
+        "description": "A list of cool features of Git and GitHub.",
+        "display": "github-cheat-sheet",
+        "icon": "mdi-github"
+    },
+    {
+        "category_name": "abhisheknaiidu/awesome-github-profile-readme",
+        "description": "\ud83d\ude0e A curated list of awesome GitHub Profile which updates in real time ",
+        "display": "github-profile-readme",
+        "icon": "mdi-github"
+    },
+    {
+        "category_name": "avelino/awesome-go",
+        "description": "A curated list of awesome Go frameworks, libraries and software",
+        "display": "go",
+        "icon": "mdi-language-go"
+    },
+    {
+        "category_name": "kdabir/awesome-groovy",
+        "description": "A curated list of awesome groovy libraries, frameworks and resources",
+        "display": "groovy",
+        "icon": "mdi-code-braces"
+    },
+    {
+        "category_name": "carpedm20/awesome-hacking",
+        "description": "A curated list of awesome Hacking tutorials, tools and resources",
+        "display": "hacking",
+        "icon": "mdi-shield-bug"
+    },
+    {
+        "category_name": "phanan/htaccess",
+        "description": "\u2702A collection of useful .htaccess snippets.",
+        "display": "htaccess",
+        "icon": "mdi-file-cog-outline"
+    },
+    {
+        "category_name": "vsouza/awesome-ios",
+        "description": "A curated list of awesome iOS ecosystem, including Objective-C and Swift Projects ",
+        "display": "ios",
+        "icon": "mdi-apple-ios"
+    },
+    {
+        "category_name": "akullpp/awesome-java",
+        "description": "A curated list of awesome frameworks, libraries and software for the Java programming language.",
+        "display": "java",
+        "icon": "mdi-language-java"
+    },
+    {
+        "category_name": "sorrycc/awesome-javascript",
+        "description": "\ud83d\udc22 A collection of awesome browser-side  JavaScript libraries, resources and shiny things.",
+        "display": "javascript",
+        "icon": "mdi-language-javascript"
+    },
+    {
+        "category_name": "AllThingsSmitty/jquery-tips-everyone-should-know",
+        "description": "A collection of tips to help up your jQuery game. \ud83c\udfae",
+        "display": "jquery-tips-everyone-should-know",
+        "icon": "mdi-language-javascript"
+    },
+    {
+        "category_name": "KotlinBy/awesome-kotlin",
+        "description": "A curated list of awesome Kotlin related stuff Inspired by awesome-java. ",
+        "display": "kotlin",
+        "icon": "mdi-language-kotlin"
+    },
+    {
+        "category_name": "inputsh/awesome-linux",
+        "description": ":penguin: A list of awesome projects and resources that make Linux even more awesome. :penguin:",
+        "display": "linux",
+        "icon": "mdi-linux"
+    },
+    {
+        "category_name": "Hannibal046/Awesome-LLM",
+        "description": "Awesome-LLM: a curated list of Large Language Model",
+        "display": "llm",
+        "icon": "mdi-robot-outline"
+    },
+    {
+        "category_name": "jaywcjlove/awesome-mac",
+        "description": "\uf8ff This project is dedicated to collecting high-quality macOS software and organizing them systematically by different categories for easy search and use.",
+        "display": "mac",
+        "icon": "mdi-apple"
+    },
+    {
+        "category_name": "josephmisiti/awesome-machine-learning",
+        "description": "A curated list of awesome Machine Learning frameworks, libraries and software.",
+        "display": "machine-learning",
+        "icon": "mdi-brain"
+    },
+    {
+        "category_name": "rshipp/awesome-malware-analysis",
+        "description": "Defund the Police.",
+        "display": "malware-analysis",
+        "icon": "mdi-bug-outline"
+    },
+    {
+        "category_name": "punkpeye/awesome-mcp-servers",
+        "description": "A collection of MCP servers.",
+        "display": "mcp-servers",
+        "icon": "mdi-server-network"
+    },
+    {
+        "category_name": "mfornos/awesome-microservices",
+        "description": "A curated list of Microservice Architecture related principles and technologies.",
+        "display": "microservices",
+        "icon": "mdi-hexagon-multiple-outline"
+    },
+    {
+        "category_name": "shlomi-noach/awesome-mysql",
+        "description": "A curated list of awesome MySQL software, libraries, tools and resources",
+        "display": "mysql",
+        "icon": "mdi-database"
+    },
+    {
+        "category_name": "sindresorhus/awesome-nodejs",
+        "description": ":zap: Delightful Node.js packages and resources [BECAUSE OF TOO MUCH SPAM AND LOW-QUALITY SUBMISSIONS, SUBMISSIONS ARE PAUSED UNTIL JULY]",
+        "display": "nodejs",
+        "icon": "mdi-nodejs"
+    },
+    {
+        "category_name": "serhii-londar/open-source-mac-os-apps",
+        "description": "\ud83d\ude80 Awesome list of open source applications for macOS. https://t.me/s/opensourcemacosapps",
+        "display": "open-source-mac-os-apps",
+        "icon": "mdi-apple"
+    },
+    {
+        "category_name": "ziadoz/awesome-php",
+        "description": "A curated list of amazingly awesome PHP libraries, resources and shiny things.",
+        "display": "php",
+        "icon": "mdi-language-php"
+    },
+    {
+        "category_name": "pditommaso/awesome-pipeline",
+        "description": "A curated list of awesome pipeline toolkits inspired by Awesome Sysadmin",
+        "display": "pipeline",
+        "icon": "mdi-pipe"
+    },
+    {
+        "category_name": "dhamaniasad/awesome-postgres",
+        "description": "A curated list of awesome PostgreSQL software, libraries, tools and resources, inspired by awesome-mysql",
+        "display": "postgres",
+        "icon": "mdi-database"
+    },
+    {
+        "category_name": "pluja/awesome-privacy",
+        "description": "Awesome Privacy - A curated list of services and alternatives that respect your privacy because PRIVACY MATTERS.",
+        "display": "privacy",
+        "icon": "mdi-shield-lock-outline"
+    },
+    {
+        "category_name": "vinta/awesome-python",
+        "description": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
+        "display": "python",
+        "icon": "mdi-language-python"
+    },
+    {
+        "category_name": "bharathgs/Awesome-pytorch-list",
+        "description": "A comprehensive list of pytorch related content on github,such as different models,implementations,helper libraries,tutorials etc.",
+        "display": "pytorch-list",
+        "icon": "mdi-fire"
+    },
+    {
+        "category_name": "wilsonfreitas/awesome-quant",
+        "description": "A curated list of insanely awesome libraries, packages and resources for Quants (Quantitative Finance)",
+        "display": "quant",
+        "icon": "mdi-finance"
+    },
+    {
+        "category_name": "thibmaek/awesome-raspberry-pi",
+        "description": "\ud83d\udcdd A curated list of awesome Raspberry Pi tools, projects, images and resources",
+        "display": "raspberry-pi",
+        "icon": "mdi-raspberry-pi"
+    },
+    {
+        "category_name": "enaqx/awesome-react",
+        "description": "A collection of awesome things regarding React ecosystem",
+        "display": "react",
+        "icon": "mdi-react"
+    },
+    {
+        "category_name": "matiassingers/awesome-readme",
+        "description": "A curated list of awesome READMEs",
+        "display": "readme",
+        "icon": "mdi-book-open-outline"
+    },
+    {
+        "category_name": "lukasz-madon/awesome-remote-job",
+        "description": "A curated list of awesome remote jobs and resources. Inspired by https://github.com/vinta/awesome-python",
+        "display": "remote-job",
+        "icon": "mdi-briefcase-outline"
+    },
+    {
+        "category_name": "sdogruyol/awesome-ruby",
+        "description": "A curated list of awesome Ruby frameworks, libraries and resources. Inspired by awesome-php & awesome-python.",
+        "display": "ruby",
+        "icon": "mdi-language-ruby"
+    },
+    {
+        "category_name": "lauris/awesome-scala",
+        "description": "A community driven list of useful Scala libraries, frameworks and software.",
+        "display": "scala",
+        "icon": "mdi-code-braces"
+    },
+    {
+        "category_name": "sbilly/awesome-security",
+        "description": "A collection of awesome software, libraries, documents, books, resources and cools stuffs about security.",
+        "display": "security",
+        "icon": "mdi-shield-lock"
+    },
+    {
+        "category_name": "awesome-selfhosted/awesome-selfhosted",
+        "description": "A list of Free Software network services and web applications which can be hosted on your own servers",
+        "display": "selfhosted",
+        "icon": "mdi-server"
+    },
+    {
+        "category_name": "Kickball/awesome-selfhosted",
+        "description": "A list of Free Software network services and web applications which can be hosted on your own servers",
+        "display": "selfhosted",
+        "icon": "mdi-server"
+    },
+    {
+        "category_name": "alebcay/awesome-shell",
+        "description": "A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awesome-php.",
+        "display": "shell",
+        "icon": "mdi-console-line"
+    },
+    {
+        "category_name": "awesome-foss/awesome-sysadmin",
+        "description": "A curated list of amazingly awesome open-source sysadmin resources.",
+        "display": "sysadmin",
+        "icon": "mdi-account-cog-outline"
+    },
+    {
+        "category_name": "k4m4/terminals-are-sexy",
+        "description": "\ud83d\udca5 A curated list of Terminal frameworks, plugins & resources for CLI lovers.",
+        "display": "terminals-are-sexy",
+        "icon": "mdi-console"
+    },
+    {
+        "category_name": "trimstray/the-book-of-secret-knowledge",
+        "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.",
+        "display": "the-book-of-secret-knowledge",
+        "icon": "mdi-book-lock-outline"
+    },
+    {
+        "category_name": "viatsko/awesome-vscode",
+        "description": "\ud83c\udfa8 A curated list of delightful VS Code packages and resources.",
+        "display": "vscode",
+        "icon": "mdi-microsoft-visual-studio-code"
+    },
+    {
+        "category_name": "davidsonfellipe/awesome-wpo",
+        "description": "A curated list of Web Performance Optimization. ",
+        "display": "wpo",
+        "icon": "mdi-speedometer"
+    },
+    {
+        "category_name": "unixorn/awesome-zsh-plugins",
+        "description": "A collection of ZSH frameworks, plugins, themes and tutorials.",
+        "display": "zsh-plugins",
+        "icon": "mdi-console-line"
+    }
+]
