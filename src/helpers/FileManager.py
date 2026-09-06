@@ -2,6 +2,8 @@ import os
 import shutil
 import glob
 import logging
+import subprocess
+import datetime
 from tqdm import tqdm
 import json
 
@@ -92,8 +94,51 @@ class FileManager:
         with open(f"{self.backend_dir}/lists.json", "w") as f:
             f.write(json.dumps(index_json_contents, indent=4))
 
+    def git(self, *args, check=True):
+        """ Corre un comando git en el repo del frontend y devuelve su salida. """
+        result = subprocess.run(
+            ["git", "-C", self.frontend_dir, *args],
+            capture_output=True, text=True
+        )
+        if check and result.returncode != 0:
+            raise RuntimeError(f"git {' '.join(args)}: {result.stderr.strip()}")
+        return result.stdout.strip()
+
+    def publish_frontend(self):
+        """ Sube al frontend los datos que se acaban de copiar.
+
+        Sin esto la cadena se corta justo al final: el cron regenera todo y lo
+        deja en el disco, pero hasta que alguien no hace push a mano Vercel no
+        construye, asi que la web sigue sirviendo los datos del mes pasado.
+
+        No revienta el ciclo si algo va mal: los datos ya estan copiados y el
+        push se puede repetir a mano. Solo se avisa en el log.
+        """
+        try:
+            rama = self.git("rev-parse", "--abbrev-ref", "HEAD")
+            if rama not in ("master", "main"):
+                self.logger.warning(f"El frontend esta en la rama {rama}: no se publica")
+                return
+
+            if not self.git("status", "--porcelain"):
+                self.logger.info("El frontend no tiene cambios: no hay nada que publicar")
+                return
+
+            self.git("add", "-A")
+            fecha = datetime.date.today().isoformat()
+            self.git("commit", "-m", f"Monthly update {fecha}")
+
+            # Alguien pudo tocar el frontend entre medias; sin esto el push se
+            # rechaza y los datos se quedan sin publicar.
+            self.git("pull", "--rebase", "--autostash", "origin", rama)
+            self.git("push", "origin", rama)
+            self.logger.info(f"Frontend publicado en {rama}: Vercel construira solo")
+        except Exception as error:
+            self.logger.error(f"No se pudo publicar el frontend: {error}")
+
     def run(self):
         self.move_data_frontend_dir()
+        self.publish_frontend()
 
 # main
 if __name__ == "__main__":
