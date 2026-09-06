@@ -37,6 +37,7 @@ import numpy as np
 from loguru import logger
 
 REPO_DIR = "./var/repo"
+CATEGORY_DIRS = ["./var/topic", "./var/awesome", "./var/similar"]
 README_DIR = "./var/readme"
 FRONTEND_PUBLIC = os.path.expanduser("~/git/managing-awesome-lists-frontend/public")
 
@@ -88,20 +89,56 @@ def build_text(repo):
 
 
 def load_repos(limit=None):
-    repos = []
-    for filename in sorted(os.listdir(REPO_DIR)):
-        if not filename.endswith(".json"):
+    """
+    Los repos conocidos, vengan de donde vengan.
+
+    var/repo son fichas sueltas, pero renew.sh lo vacia al empezar el ciclo, asi
+    que ahi no siempre hay nada. Las categorias llevan los mismos campos dentro
+    de repos_data y sobreviven al borrado. Mismo criterio que fetch_readmes.py,
+    para que ambos vean exactamente la misma lista de repos: si uno viera mas
+    que el otro, habria vectores sin README o README sin vector.
+
+    Un repo sale en varias categorias; gana la copia con el pushed_at mas
+    reciente, que es la que trae las estrellas mas frescas.
+    """
+    vistos = {}
+
+    def considerar(repo):
+        nombre = repo.get("full_name")
+        if not nombre:
+            return
+        previo = vistos.get(nombre)
+        if previo is None or (repo.get("pushed_at") or "") > (previo.get("pushed_at") or ""):
+            vistos[nombre] = repo
+
+    if os.path.isdir(REPO_DIR):
+        for filename in os.listdir(REPO_DIR):
+            if not filename.endswith(".json"):
+                continue
+            try:
+                with open(os.path.join(REPO_DIR, filename), encoding="utf-8") as f:
+                    considerar(json.load(f))
+            except (ValueError, OSError):
+                continue
+
+    for categoria in CATEGORY_DIRS:
+        if not os.path.isdir(categoria):
             continue
-        try:
-            with open(os.path.join(REPO_DIR, filename), encoding="utf-8") as f:
-                repo = json.load(f)
-        except (ValueError, OSError):
-            continue
-        if repo.get("full_name"):
-            repos.append(repo)
-        if limit and len(repos) >= limit:
-            break
-    return repos
+        for filename in os.listdir(categoria):
+            if not filename.endswith(".json"):
+                continue
+            try:
+                with open(os.path.join(categoria, filename), encoding="utf-8") as f:
+                    data = json.load(f)
+            except (ValueError, OSError):
+                continue
+            for repo in data.get("repos_data") or []:
+                considerar(repo)
+
+    # Orden estable: el indice i del binario tiene que ser siempre el repo i
+    # del meta, y ambos se regeneran juntos cada mes.
+    repos = [vistos[nombre] for nombre in sorted(vistos)]
+    return repos[:limit] if limit else repos
 
 
 def quantize(vectors):
