@@ -97,12 +97,31 @@ def identidad(repo):
     return repo.get("created_at") or repo["full_name"]
 
 
-def frequent_topics(repos):
+def frequent_topics(repo, vecinos):
+    """
+    Las etiquetas que se enseñan como "related topics".
+
+    Cuentan las de los vecinos, pero mandan las del propio repo. Cuando los
+    vecinos se elegian por compartir topics esto daba igual, porque salian los
+    del repo por construccion; eligiendolos por parecido de texto ya no, y
+    duckdb/duckdb acababa etiquetado con mysql, cockroachdb y duckdb: el
+    primero es de un vecino que no viene a cuento, el segundo el nombre de
+    otro proyecto y el tercero el suyo propio.
+
+    Asi que primero van las del repo, ordenadas por lo frecuentes que sean en
+    el vecindario (que es la señal util: de mis etiquetas, cuales comparte la
+    gente que se me parece), y solo se rellena con las del vecindario si el
+    repo no trae suficientes, que los hay sin ninguna.
+    """
     contador = Counter()
-    for repo in repos:
-        for topic in repo.get("topics") or []:
+    for vecino in vecinos:
+        for topic in vecino.get("topics") or []:
             contador[topic] += 1
-    return dict(contador.most_common(5))
+
+    propios = set(repo.get("topics") or [])
+    del_repo = [(t, n) for t, n in contador.most_common() if t in propios]
+    del_resto = [(t, n) for t, n in contador.most_common() if t not in propios]
+    return dict((del_repo + del_resto)[:5])
 
 
 def slim(repo):
@@ -218,7 +237,7 @@ def main():
                 "category_type": "similar",
                 "category_name": repo["full_name"],
                 "repos_data": vecinos_data,
-                "frecuent_topics": frequent_topics(vecinos_data),
+                "frecuent_topics": frequent_topics(repo, vecinos_data),
                 "repo_meta_data": slim(repo),
             }
             destino = os.path.join(SIMILAR_DIR, repo["full_name"].replace("/", "@") + ".json")
