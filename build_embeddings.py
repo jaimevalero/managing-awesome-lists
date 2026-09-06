@@ -49,6 +49,10 @@ DIMS = 384
 # debajo de los 512 que acepta el modelo. Pasarse solo sirve para que trunque.
 MAX_TEXT_CHARS = 1800
 
+# Cuantos textos se le pasan de una vez a fastembed. Mantiene el consumo de
+# memoria acotado, independientemente de cuantos repos haya que vectorizar.
+CHUNK = 512
+
 
 def clean_markdown(text):
     """
@@ -218,19 +222,31 @@ def main():
     # bge-small ya devuelve los vectores normalizados a norma 1, que es lo que
     # necesita el cliente para resolver el coseno con un producto escalar.
     # Se rellena un array reservado de antemano en vez de acumular una lista de
-    # 23.473 arrays sueltos: son 36 MB frente a los varios GB que ocupaba ir
-    # apilandolos, y asi el consumo no depende del numero de repos.
+    # 23.473 arrays sueltos: son 36 MB fijos, no crecen con el numero de repos.
     vectors = np.empty((len(textos), DIMS), dtype=np.float32)
+
+    # Y se le da el trabajo en trozos en vez de la lista entera. Pasandole los
+    # 23.473 de golpe, fastembed se comia los 15 GB de la maquina y la tumbaba,
+    # mientras que con 500 se quedaba en 5: algo de su cocina interna crece con
+    # el tamaño del lote. Troceando, el consumo depende de CHUNK y no del
+    # numero de repos, que es lo que hace que esto siga funcionando el dia que
+    # sean 50.000.
+    escritos = 0
     ultimo_aviso = time.time()
-    for i, vector in enumerate(model.embed(textos, batch_size=args.batch)):
-        vectors[i] = vector
+    for principio in range(0, len(textos), CHUNK):
+        trozo = textos[principio:principio + CHUNK]
+        for vector in model.embed(trozo, batch_size=args.batch):
+            vectors[escritos] = vector
+            escritos += 1
         if time.time() - ultimo_aviso > 60:
-            hechos = i + 1
-            ritmo = hechos / (time.time() - inicio)
-            queda = (len(textos) - hechos) / ritmo / 60
-            logger.info(f"{hechos}/{len(textos)} ({100*hechos//len(textos)}%), "
+            ritmo = escritos / (time.time() - inicio)
+            queda = (len(textos) - escritos) / max(ritmo, 0.01) / 60
+            logger.info(f"{escritos}/{len(textos)} ({100*escritos//len(textos)}%), "
                         f"{ritmo:.0f}/s, quedan ~{queda:.0f} min")
             ultimo_aviso = time.time()
+
+    if escritos != len(textos):
+        raise SystemExit(f"se esperaban {len(textos)} vectores y salieron {escritos}")
 
     normas = np.linalg.norm(vectors, axis=1)
     if not np.allclose(normas, 1.0, atol=1e-3):
