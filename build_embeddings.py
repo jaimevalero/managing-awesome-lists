@@ -192,6 +192,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--limit", type=int, help="procesa solo N repos")
     parser.add_argument("--batch", type=int, default=256)
+    # parallel=0 le dice a fastembed que reparta el lote entre todos los nucleos.
+    # Por defecto se queda en dos y pico de los doce de torre, y el trabajo es
+    # perfectamente paralelo: cada texto se vectoriza por su cuenta.
+    parser.add_argument("--parallel", type=int, default=0,
+                        help="procesos en paralelo (0 = todos los nucleos)")
     args = parser.parse_args()
 
     from fastembed import TextEmbedding
@@ -203,12 +208,15 @@ def main():
     con_readme = sum(1 for t, r in zip(textos, repos) if len(t) > 300)
     logger.info(f"{con_readme} ({100*con_readme//max(len(repos),1)}%) con texto abundante")
 
-    logger.info(f"Cargando {MODEL_NAME} (onnxruntime)")
+    logger.info(f"Cargando {MODEL_NAME} (onnxruntime, parallel={args.parallel})")
     model = TextEmbedding(MODEL_NAME)
 
     # bge-small ya devuelve los vectores normalizados a norma 1, que es lo que
     # necesita el cliente para resolver el coseno con un producto escalar.
-    vectors = np.array(list(model.embed(textos, batch_size=args.batch)), dtype=np.float32)
+    vectors = np.array(
+        list(model.embed(textos, batch_size=args.batch, parallel=args.parallel)),
+        dtype=np.float32,
+    )
 
     normas = np.linalg.norm(vectors, axis=1)
     if not np.allclose(normas, 1.0, atol=1e-3):
