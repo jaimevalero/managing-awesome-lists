@@ -35,6 +35,7 @@ from dotenv import load_dotenv
 from loguru import logger
 
 REPO_DIR = "./var/repo"
+CATEGORY_DIRS = ["./var/topic", "./var/awesome", "./var/similar"]
 README_DIR = "./var/readme"
 STATE_FILE = "./var/readme-state.json"
 
@@ -67,17 +68,53 @@ def readme_path(full_name):
 
 
 def iter_known_repos():
-    """(full_name, pushed_at) de cada repo cacheado por app.py."""
-    for filename in sorted(os.listdir(REPO_DIR)):
-        if not filename.endswith(".json"):
+    """
+    (full_name, pushed_at) de cada repo conocido.
+
+    var/repo son fichas sueltas por repo, pero renew.sh lo vacia al empezar el
+    ciclo mensual, asi que ahi no siempre hay nada. Las categorias
+    (var/topic, var/awesome, var/similar) llevan los mismos campos dentro de
+    repos_data y sobreviven al borrado, asi que valen de respaldo: leyendo
+    ambas cosas esto funciona en cualquier punto del ciclo.
+
+    Un repo sale en varias categorias; nos quedamos con el pushed_at mas
+    reciente, que es el que decide si hay que volver a bajar el README.
+    """
+    vistos = {}
+
+    if os.path.isdir(REPO_DIR):
+        for filename in os.listdir(REPO_DIR):
+            if not filename.endswith(".json"):
+                continue
+            try:
+                with open(os.path.join(REPO_DIR, filename), encoding="utf-8") as f:
+                    repo = json.load(f)
+            except (ValueError, OSError):
+                continue
+            if repo.get("full_name"):
+                nombre = repo["full_name"]
+                pushed = repo.get("pushed_at", "")
+                vistos[nombre] = max(vistos.get(nombre, ""), pushed)
+
+    for categoria in CATEGORY_DIRS:
+        if not os.path.isdir(categoria):
             continue
-        try:
-            with open(os.path.join(REPO_DIR, filename), encoding="utf-8") as f:
-                data = json.load(f)
-        except (ValueError, OSError):
-            continue
-        if data.get("full_name"):
-            yield data["full_name"], data.get("pushed_at", "")
+        for filename in os.listdir(categoria):
+            if not filename.endswith(".json"):
+                continue
+            try:
+                with open(os.path.join(categoria, filename), encoding="utf-8") as f:
+                    data = json.load(f)
+            except (ValueError, OSError):
+                continue
+            for repo in data.get("repos_data") or []:
+                nombre = repo.get("full_name")
+                if nombre:
+                    pushed = repo.get("pushed_at", "")
+                    vistos[nombre] = max(vistos.get(nombre, ""), pushed)
+
+    for nombre in sorted(vistos):
+        yield nombre, vistos[nombre]
 
 
 def needs_download(full_name, pushed_at, state, force):
