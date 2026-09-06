@@ -11,6 +11,14 @@ from src.serializers.AwesomeSerializer import AwesomeSerializer
 from src.serializers.SimilarReposSerializer import SimilarReposSerializer
 from src.serializers.TopicIndexSerializer import TopicIndexSerializer
 
+# lists.json es la fuente de verdad, escrita a mano. Lo que consume el frontend
+# es esto otro: lo mismo mas el nombre para mostrar y la descripcion que llega de
+# github. Nombres distintos a proposito, para que se vea cual se edita y cual se
+# regenera en cada pasada.
+ENRICHED_LISTS_FILE = "lists_enriched.json"
+SOURCE_LISTS_FILE = "lists.json"
+
+
 class FileManager:
     def __init__(self, backend_dir: str, frontend_dir: str):
         self.backend_dir = os.path.expanduser(backend_dir)
@@ -50,7 +58,8 @@ class FileManager:
         self.copy_directories(f"{self.backend_dir}/var/topic/", f"{self.frontend_dir}/public/topic")
 
         self.generate_json_files()    
-        self.copy_files(f"{self.backend_dir}/lists.json", f"{self.frontend_dir}/public/lists.json")
+        self.copy_files(f"{self.backend_dir}/{ENRICHED_LISTS_FILE}",
+                        f"{self.frontend_dir}/public/{ENRICHED_LISTS_FILE}")
 
         self.clean_directory(f"{self.frontend_dir}/public/{SimilarReposSerializer.CATEGORY}/")
         self.copy_directories(f"{self.backend_dir}/var/{SimilarReposSerializer.CATEGORY}/",
@@ -69,6 +78,22 @@ class FileManager:
         topics = TopicIndexSerializer.from_directory(f"{self.backend_dir}/var/{TopicIndexSerializer.CATEGORY}")
         TopicIndexSerializer.to_file(topics, f"{self.backend_dir}/{TopicIndexSerializer.INDEX_FILENAME}")
 
+    def load_source_icons(self):
+        """ El icono de cada lista, indexado por owner/repo en minusculas. """
+        ruta = os.path.join(self.backend_dir, SOURCE_LISTS_FILE)
+        try:
+            with open(ruta, encoding="utf-8") as f:
+                entradas = json.load(f)
+        except (OSError, ValueError):
+            self.logger.warning(f"No se pudo leer {ruta}: las listas saldran sin icono")
+            return {}
+        iconos = {}
+        for entrada in entradas:
+            nombre = entrada.get("url", "").replace("https://github.com/", "").rstrip("/")
+            if nombre and entrada.get("icon"):
+                iconos[nombre.lower()] = entrada["icon"]
+        return iconos
+
     def generate_json_files(self):
         # Read all the yaml files from the /var/awesome/directory, as AwesomeCategory
         read_directory = "f{self.frontend_dir}/public/awesome/"
@@ -83,15 +108,19 @@ class FileManager:
                 has_repos = len(awesome_list.repos_data) > 0
                 if has_repos:
                     awesome_lists.append(awesome_list)
-        index_json_contents = [ 
-            { 
+        # El icono lo pone la fuente de verdad; el frontend solo lo pinta, y ya no
+        # necesita saber que lista es cual.
+        iconos = self.load_source_icons()
+        index_json_contents = [
+            {
                 'category_name': awesome_list.category_name,
                 'description': awesome_list.repo_meta_data.description,
-                'display': awesome_list.category_name.split("/")[1].lower().replace("awesome-","")
+                'display': awesome_list.category_name.split("/")[1].lower().replace("awesome-",""),
+                'icon': iconos.get(awesome_list.category_name.lower(), '')
             } for awesome_list in awesome_lists]
         # sort index_json_contents by key display
         index_json_contents = sorted(index_json_contents, key=lambda k: k['display'])
-        with open(f"{self.backend_dir}/lists.json", "w") as f:
+        with open(f"{self.backend_dir}/{ENRICHED_LISTS_FILE}", "w") as f:
             f.write(json.dumps(index_json_contents, indent=4))
 
     def git(self, *args, check=True):

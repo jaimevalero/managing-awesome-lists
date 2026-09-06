@@ -28,18 +28,34 @@ has_replace = os.getenv("REPLACE","False")
 has_replace = has_replace.lower() == "true"
 
 
+import json
 import os
 import shutil
 import logging
 
 logger = logging.getLogger(__name__)
 
-def get_awesome_lists_iterator(file_path):
-    with open(file_path, "r") as lists_file:
-        for line in lists_file:
-            awesome_list_name = line.strip()
-            awesome_list_name = awesome_list_name.replace("https://github.com/", "")
-            yield awesome_list_name
+# La fuente de verdad de que listas se procesan y con que icono se pintan.
+# Se edita a mano; todo lo demas (descripcion, nombre para mostrar, repos) se
+# descarga o se deriva.
+LISTS_FILE = "lists.json"
+
+def get_awesome_lists_iterator(file_path=LISTS_FILE):
+    """ Los nombres owner/repo de las listas a procesar.
+
+    Antes era lists.txt, una URL por linea, y el icono de cada lista vivia en
+    el frontend, en iconMapper.ts. Eso obligaba a tocar dos repos para añadir
+    una lista, y olvidarse del segundo no daba ningun error: la lista salia con
+    un icono generico. Asi se llego a 42 de 78 sin icono propio.
+    """
+    for entrada in load_awesome_lists(file_path):
+        yield entrada["url"].replace("https://github.com/", "").rstrip("/")
+
+def load_awesome_lists(file_path=LISTS_FILE):
+    """ Las listas tal cual estan en el fichero: url e icono. """
+    with open(file_path, encoding="utf-8") as f:
+        return json.load(f)
+
 
 def get_topics_iterator(directory, max_files=None):
     filenames = os.listdir(directory)
@@ -63,7 +79,7 @@ def create_awesome_category(access_token, has_replace):
         logger.info("Created the directory ./var/repo")
 
     # Load lists.txt file and for each line create a category
-    for awesome_list_name in get_awesome_lists_iterator("lists.txt"):
+    for awesome_list_name in get_awesome_lists_iterator():
         try:
             logger.info(f"Loading awesome list {awesome_list_name}")
             awesome_category = AwesomeCategory(awesome_list_name, access_token)
