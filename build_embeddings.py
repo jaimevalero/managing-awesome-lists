@@ -32,6 +32,7 @@ import json
 import os
 import re
 import struct
+import time
 
 import numpy as np
 from loguru import logger
@@ -192,15 +193,18 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--limit", type=int, help="procesa solo N repos")
     parser.add_argument("--batch", type=int, default=256)
-    # parallel=0 le dice a fastembed que reparta el lote entre todos los nucleos.
-    # Por defecto se queda en dos y pico de los doce de torre, y el trabajo es
-    # perfectamente paralelo: cada texto se vectoriza por su cuenta.
-    parser.add_argument("--parallel", type=int, default=0,
-                        help="procesos en paralelo (0 = todos los nucleos)")
+    # Hilos, no procesos. fastembed sabe repartir el lote entre varios procesos
+    # (parallel=0), pero cada uno se trae su copia del modelo y de los datos: en
+    # torre eran 12 GB de los 15 y la maquina se fue a swap, con la carga por
+    # encima de 70. Los hilos de onnxruntime comparten memoria y dan el mismo
+    # reparto de trabajo, que es intensivo en CPU y no en E/S.
+    parser.add_argument("--threads", type=int, default=os.cpu_count() or 4,
+                        help="hilos de onnxruntime (por defecto, todos los nucleos)")
     args = parser.parse_args()
 
     from fastembed import TextEmbedding
 
+    inicio = time.time()
     repos = load_repos(args.limit)
     logger.info(f"{len(repos)} repos a vectorizar")
 
@@ -208,15 +212,25 @@ def main():
     con_readme = sum(1 for t, r in zip(textos, repos) if len(t) > 300)
     logger.info(f"{con_readme} ({100*con_readme//max(len(repos),1)}%) con texto abundante")
 
-    logger.info(f"Cargando {MODEL_NAME} (onnxruntime, parallel={args.parallel})")
-    model = TextEmbedding(MODEL_NAME)
+    logger.info(f"Cargando {MODEL_NAME} (onnxruntime, {args.threads} hilos)")
+    model = TextEmbedding(MODEL_NAME, threads=args.threads)
 
     # bge-small ya devuelve los vectores normalizados a norma 1, que es lo que
     # necesita el cliente para resolver el coseno con un producto escalar.
-    vectors = np.array(
-        list(model.embed(textos, batch_size=args.batch, parallel=args.parallel)),
-        dtype=np.float32,
-    )
+    # Se rellena un array reservado de antemano en vez de acumular una lista de
+    # 23.473 arrays sueltos: son 36 MB frente a los varios GB que ocupaba ir
+    # apilandolos, y asi el consumo no depende del numero de repos.
+    vectors = np.empty((len(textos), DIMS), dtype=np.float32)
+    ultimo_aviso = time.time()
+    for i, vector in enumerate(model.embed(textos, batch_size=args.batch)):
+        vectors[i] = vector
+        if time.time() - ultimo_aviso > 60:
+            hechos = i + 1
+            ritmo = hechos / (time.time() - inicio)
+            queda = (len(textos) - hechos) / ritmo / 60
+            logger.info(f"{hechos}/{len(textos)} ({100*hechos//len(textos)}%), "
+                        f"{ritmo:.0f}/s, quedan ~{queda:.0f} min")
+            ultimo_aviso = time.time()
 
     normas = np.linalg.norm(vectors, axis=1)
     if not np.allclose(normas, 1.0, atol=1e-3):
