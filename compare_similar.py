@@ -24,12 +24,40 @@ from build_embeddings import DIMS, FRONTEND_PUBLIC, build_text, load_repos
 
 TOP_K = 10
 
+# Cuantos candidatos aporta cada metodo a la fusion.
+POOL = 60
+
+# Constante de la fusion por rangos (RRF). Amortigua las primeras posiciones:
+# con k=60, ser primero vale 1/61 y ser decimo 1/70, no diez veces menos. Evita
+# que un metodo se lleve la lista entera por un solo acierto muy puntuado.
+RRF_K = 60
+
 
 def cargar_densos():
     with open(os.path.join(FRONTEND_PUBLIC, "embeddings.bin"), "rb") as f:
         raw = f.read()
     _, count, dims = struct.unpack("<HII", raw[4:14])
     return np.frombuffer(raw[14:], dtype=np.int8).reshape(count, dims).astype(np.float32) / 127.0
+
+
+def fusionar(rank_a, rank_b):
+    """
+    Fusion por rangos (Reciprocal Rank Fusion).
+
+    No se pueden sumar las puntuaciones de los dos metodos: TF-IDF se mueve
+    entre 0,38 y 0,07 y el denso entre 0,86 y 0,80, asi que cualquier suma la
+    domina el denso por pura escala. Lo que si es comparable es la posicion:
+    ser el tercero de una lista significa lo mismo en las dos.
+
+    Un repo que sale bien colocado en ambas sube; uno que solo aparece en una
+    se queda a medio camino, que es justo lo que se busca al combinar un
+    metodo que entiende sinonimos con otro que pesa terminos raros.
+    """
+    puntos = {}
+    for lista in (rank_a, rank_b):
+        for posicion, idx in enumerate(lista):
+            puntos[idx] = puntos.get(idx, 0.0) + 1.0 / (RRF_K + posicion + 1)
+    return sorted(puntos.items(), key=lambda kv: -kv[1])
 
 
 def mostrar(titulo, repos, pares):
@@ -75,14 +103,19 @@ def main():
         i = indice[nombre]
         print(f"\n{'='*72}\n{nombre}")
 
+        rankings = {}
         for titulo, puntuaciones in (
             ("TF-IDF", (disperso @ disperso[i].T).toarray().ravel()),
             ("DENSO (bge-small)", denso @ denso[i]),
         ):
             puntuaciones[i] = -1
-            top = np.argpartition(-puntuaciones, args.top_k)[:args.top_k]
+            top = np.argpartition(-puntuaciones, POOL)[:POOL]
             top = top[np.argsort(-puntuaciones[top])]
-            mostrar(titulo, repos, [(int(c), float(puntuaciones[c])) for c in top])
+            rankings[titulo] = list(top)
+            mostrar(titulo, repos, [(int(c), float(puntuaciones[c])) for c in top[:args.top_k]])
+
+        fusion = fusionar(rankings["TF-IDF"], rankings["DENSO (bge-small)"])
+        mostrar("HIBRIDO (fusion por rangos)", repos, fusion[:args.top_k])
 
 
 if __name__ == "__main__":
