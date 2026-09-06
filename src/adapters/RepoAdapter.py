@@ -1,3 +1,5 @@
+from datetime import datetime, timezone
+
 from src.models.RepoModel import RepoModel
 
 
@@ -24,4 +26,8 @@ class RepoAdapter():
                 repo_formatted["language"] = "unknown"
         except:
             repo_formatted["language"] = "unknown"
+        # Stamped here and nowhere else: this is the only path the data takes when it
+        # really comes from github. Stamping it on serialization instead would refresh
+        # the date of the repos that were only read from the cache and rewritten.
+        repo_formatted["cached_at"] = datetime.now(timezone.utc)
         return RepoModel(**repo_formatted)

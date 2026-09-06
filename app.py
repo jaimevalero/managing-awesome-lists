@@ -150,7 +150,11 @@ def create_topic_category(access_token, has_replace):
 
 
 if __name__ == "__main__":
-    has_replace= False
+    # has_replace comes from $REPLACE (top of this file). It used to be reassigned to
+    # False right here, which made the three "if has_replace" branches below unreachable
+    # and left ./var/repo growing forever. The routine expiry is the TTL in
+    # RepoMetaDataSerializer; REPLACE=true is only for wiping everything by hand.
+    logger.info(f"Replace mode: {has_replace}")
     create_awesome_category(access_token, has_replace)
     create_topic_category(access_token, has_replace)
     create_similar_repos(has_replace)

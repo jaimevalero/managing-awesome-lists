@@ -40,5 +40,6 @@ class TopicSerializer(AbstractSerializer):
         filename_clean = topic_model.category_name.replace('/', '@')
         object_serialized_path = f"./var/{TopicSerializer.CATEGORY}/{filename_clean}.json"
         with open(object_serialized_path, 'w') as f:
-                    f.write(topic_model.model_dump_json())
+                    # cached_at solo sirve para expirar ./var/repo, no se publica al frontend
+                    f.write(topic_model.model_dump_json(exclude={"repos_data": {"__all__": {"cached_at"}}, "repo_meta_data": {"cached_at"}}))
 

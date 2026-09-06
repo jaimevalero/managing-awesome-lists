@@ -20,6 +20,8 @@ class RepoModel(BaseModel):
         is_archived (bool): True if the repo is archived (read only) on github.
         transferred_to (str): Current full name of the repository, when full_name is the
             old one it was transferred from. None while full_name is the current one.
+        cached_at (datetime): When this copy was downloaded from github. None for copies
+            cached before it started being recorded, which count as expired.
     """
     full_name: str
     description: str
@@ -39,8 +41,12 @@ class RepoModel(BaseModel):
     # the repo was transferred to another owner. full_name is kept as the name it was
     # requested by (that is how it is cached), and this holds the name it lives at now.
     transferred_to: Optional[str] = None
+    # Age of the cached copy, not of the repo. pushed_at and stargazers_count go stale
+    # the moment they are written, so the cache needs to know when it captured them to
+    # be able to expire them. See RepoMetaDataSerializer.exists_file.
+    cached_at: Optional[datetime] = None
 
-    @field_validator('created_at', 'pushed_at', mode='before')
+    @field_validator('created_at', 'pushed_at', 'cached_at', mode='before')
     @classmethod
     def parse_date(cls, v):
         return parse(v) if isinstance(v, str) else v
