@@ -14,6 +14,9 @@ class RepoAdapter():
         repo_formatted["created_at"] = repo_data["createdAt"]
         repo_formatted["pushed_at"] = repo_data["pushedAt"]
         repo_formatted["stargazers_count"] = repo_data["stargazers"]["totalCount"]
+        # Los repos cacheados antes de pedir este campo no lo traen: se asume
+        # que siguen vivos y se corrige solo cuando toque refrescarlos.
+        repo_formatted["is_archived"] = bool(repo_data.get("isArchived", False))
         try :
             if repo_data["languages"]["edges"]:
                 repo_formatted["language"] = repo_data["languages"]["edges"][0]["node"]["name"]

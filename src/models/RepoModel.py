@@ -17,6 +17,7 @@ class RepoModel(BaseModel):
         pushed_at (datetime): Date of the last update of the repository.
         stargazers_count (int): Number of stars of the repository.
         language (str): Main language of the repository.
+        is_archived (bool): True if the repo is archived (read only) on github.
         transferred_to (str): Current full name of the repository, when full_name is the
             old one it was transferred from. None while full_name is the current one.
     """
@@ -28,6 +29,12 @@ class RepoModel(BaseModel):
     stargazers_count: conint(ge=0)
     # language is an array of strings or None
     language: Optional[constr(min_length=1)] = None
+    # True when the owner archived the repo: github marks it read only, so it will
+    # never get another commit. It still shows up in awesome lists for years, and
+    # ordering by "hot" only softens it because an old archived repo with many
+    # stars can still outrank a live one. Defaults to False so repos cached before
+    # this field existed keep loading.
+    is_archived: bool = False
     # Set when github answers a request for this repo with a different name, which means
     # the repo was transferred to another owner. full_name is kept as the name it was
     # requested by (that is how it is cached), and this holds the name it lives at now.

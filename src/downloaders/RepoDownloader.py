@@ -124,7 +124,7 @@ class RepoListDownloader:
                 owner, name = short_repo.split('/')
                 repo_query = f'repo_{index}: repository(owner: "{owner}", name: "{name}") {{\n' \
                             f'  nameWithOwner\n  description\n  repositoryTopics(first: 10) {{ nodes {{ topic {{ name }} }} }}\n  createdAt\n' \
-                            f'  pushedAt\n  stargazers {{ totalCount }}\n  languages(first: 1) {{ edges {{ node {{ name }} }} }}\n}}'              
+                            f'  pushedAt\n  isArchived\n  stargazers {{ totalCount }}\n  languages(first: 1) {{ edges {{ node {{ name }} }} }}\n}}'              
                 repositories_query += repo_query + '\n'
 
             # Construct the final GraphQL query
