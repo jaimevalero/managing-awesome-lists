@@ -10,5 +10,5 @@ loguru
 requests
 python-dateutil
 tqdm
-sentence-transformers
+fastembed
 numpy

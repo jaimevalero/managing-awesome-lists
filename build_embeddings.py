@@ -13,6 +13,12 @@ viven en el mismo espacio. Por eso bge-small (33M parametros, 384 dims, 512
 tokens): ~30 MB en Transformers.js y encaja con los ~460 tokens de README
 limpio que sale de media.
 
+Se vectoriza con fastembed, que corre sobre ONNX Runtime, y no con torch. Pesa
+60 MB en vez de 5 GB de CUDA, y sobre todo es el mismo runtime que usa
+Transformers.js en el navegador: mismo grafo a los dos lados, en vez de
+PyTorch aqui y ONNX alli. En CPU son unos 5 minutos para 23.000 textos, de
+sobra para un proceso mensual.
+
 Salida en public/ del frontend:
     embeddings.bin        int8, N x 384, normalizado  (~5 MB)
     embeddings-meta.json  full_name y datos para pintar resultados
@@ -151,8 +157,7 @@ def main():
     parser.add_argument("--batch", type=int, default=256)
     args = parser.parse_args()
 
-    from sentence_transformers import SentenceTransformer
-    import torch
+    from fastembed import TextEmbedding
 
     repos = load_repos(args.limit)
     logger.info(f"{len(repos)} repos a vectorizar")
@@ -161,17 +166,16 @@ def main():
     con_readme = sum(1 for t, r in zip(textos, repos) if len(t) > 300)
     logger.info(f"{con_readme} ({100*con_readme//max(len(repos),1)}%) con texto abundante")
 
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    logger.info(f"Cargando {MODEL_NAME} en {device}")
-    model = SentenceTransformer(MODEL_NAME, device=device)
+    logger.info(f"Cargando {MODEL_NAME} (onnxruntime)")
+    model = TextEmbedding(MODEL_NAME)
 
-    vectors = model.encode(
-        textos,
-        batch_size=args.batch,
-        normalize_embeddings=True,   # imprescindible: el cliente hace producto escalar
-        show_progress_bar=True,
-        convert_to_numpy=True,
-    )
+    # bge-small ya devuelve los vectores normalizados a norma 1, que es lo que
+    # necesita el cliente para resolver el coseno con un producto escalar.
+    vectors = np.array(list(model.embed(textos, batch_size=args.batch)), dtype=np.float32)
+
+    normas = np.linalg.norm(vectors, axis=1)
+    if not np.allclose(normas, 1.0, atol=1e-3):
+        raise SystemExit(f"vectores sin normalizar (norma media {normas.mean():.4f})")
 
     bin_path, meta_path = write_index(repos, vectors)
     logger.info(
