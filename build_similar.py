@@ -44,6 +44,10 @@ MIN_SIMILARITY = 0.62
 # Bloques para no materializar la matriz entera: 23.473^2 en float32 son 2,2 GB.
 BLOCK = 1024
 
+# Se miran mas candidatos de los que se publican, porque al descartar copias
+# del mismo repo hay que poder rellenar el hueco con el siguiente.
+CANDIDATE_FACTOR = 4
+
 
 def load_vectors():
     path = os.path.join(FRONTEND_PUBLIC, "embeddings.bin")
@@ -58,6 +62,22 @@ def load_vectors():
     # De int8 a float32 para operar; siguen normalizados, asi que el producto
     # escalar es directamente el coseno.
     return (vectors.astype(np.float32) / 127.0), count
+
+
+def identidad(repo):
+    """
+    Que hace unico a un repo, sobreviviendo a los cambios de dueño.
+
+    RepoModel ya lo explica: full_name no identifica, porque cuando un repo se
+    traspasa github lo sigue sirviendo con los dos nombres y acaba cacheado dos
+    veces. La fecha de creacion si sobrevive al traspaso, al segundo.
+
+    Con vectores esto se nota mucho mas que antes: las dos copias tienen el
+    mismo README, sacan 0,99 y se plantan en los primeros puestos. Le pasaba a
+    apache/airflow con airbnb/airflow y a ggml-org/llama.cpp con
+    ggerganov/llama.cpp.
+    """
+    return repo.get("created_at") or repo["full_name"]
 
 
 def frequent_topics(repos):
@@ -124,13 +144,25 @@ def main():
 
         for fila, idx in enumerate(bloque):
             puntuaciones = similitudes[fila]
-            # argpartition evita ordenar los 23.473 para quedarnos con 20.
-            candidatos = np.argpartition(-puntuaciones, args.top_k)[:args.top_k]
-            candidatos = candidatos[np.argsort(-puntuaciones[candidatos])]
-            vecinos = [(int(c), float(puntuaciones[c])) for c in candidatos
-                       if puntuaciones[c] >= args.min_similarity]
-
             repo = repos[idx]
+
+            # argpartition evita ordenar los 23.473 para quedarnos con unos pocos.
+            cuantos = min(args.top_k * CANDIDATE_FACTOR, len(puntuaciones) - 1)
+            candidatos = np.argpartition(-puntuaciones, cuantos)[:cuantos]
+            candidatos = candidatos[np.argsort(-puntuaciones[candidatos])]
+
+            vecinos = []
+            vistas = {identidad(repo)}   # el propio repo, con cualquiera de sus nombres
+            for c in candidatos:
+                if puntuaciones[c] < args.min_similarity:
+                    break
+                quien = identidad(repos[c])
+                if quien in vistas:
+                    continue
+                vistas.add(quien)
+                vecinos.append((int(c), float(puntuaciones[c])))
+                if len(vecinos) >= args.top_k:
+                    break
             if not vecinos:
                 sin_vecinos += 1
                 if args.dry_run:
